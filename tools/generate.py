@@ -178,7 +178,7 @@ def outputs():
     result['docs/provenance.md'] = '\n'.join(provenance)
 
     stream=io.StringIO(newline='')
-    writer=csv.writer(stream)
+    writer=csv.writer(stream,lineterminator='\n')
     writer.writerow(['id','title','authors','year','venue','paper_url','arxiv_id','doi','paper_sections','citation_aliases','metadata_status'])
     for p in papers:
         row=[p['id'],p['title'],'; '.join(p['authors']),p['year'],p['venue'],p['paper_url'],p['arxiv_id'],p['doi'],'; '.join(p['cited_in']),'; '.join(p['aliases']),p['metadata_status']]
