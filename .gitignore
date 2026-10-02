@@ -1,0 +1,13 @@
+# Private research material, task state and previous deliverables.
+.codex/
+outputs/
+
+# Local tooling and downloaded archives.
+__pycache__/
+*.py[cod]
+.venv/
+.playwright-cli/
+.DS_Store
+Thumbs.db
+*.zip
+*.log

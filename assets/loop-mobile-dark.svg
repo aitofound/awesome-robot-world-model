@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="580" viewBox="0 0 600 580" role="img" aria-labelledby="title desc">
+<title id="title">From prediction to control</title>
+<desc id="desc">A conceptual observe, predict, use and execute loop. Predictions can support policy learning, planning or evaluation. Feedback destinations depend on the method.</desc>
+<rect width="600" height="580" rx="24" fill="#0d1117"/>
+<defs><marker id="arrow" markerWidth="9" markerHeight="9" refX="7" refY="4" orient="auto"><path d="M1 1 L7 4 L1 7" fill="none" stroke="#7bb9ff" stroke-width="1.7"/></marker></defs>
+<g font-family="Inter, Segoe UI, Arial, sans-serif"><text x="24" y="30" fill="#a1adbb" font-size="13" letter-spacing="2.6">THE ROBOT LEARNING LOOP</text>
+<rect x="24" y="58" width="252" height="180" rx="20" fill="#161b22" stroke="#303946"/>
+<text x="46" y="88" fill="#a1adbb" font-size="12" letter-spacing="1.5">01</text>
+<text x="46" y="133" fill="#f0f6fc" font-size="29" font-weight="600">Observe</text>
+<text x="46" y="160" fill="#a1adbb" font-size="16">State and history</text>
+<circle cx="50" cy="211" r="4" fill="#7bb9ff"/>
+<path d="M63 211 H251" stroke="#303946" stroke-width="2"/>
+<rect x="324" y="58" width="252" height="180" rx="20" fill="#161b22" stroke="#303946"/>
+<text x="346" y="88" fill="#a1adbb" font-size="12" letter-spacing="1.5">02</text>
+<text x="346" y="133" fill="#f0f6fc" font-size="29" font-weight="600">Predict</text>
+<text x="346" y="160" fill="#a1adbb" font-size="16">Conditioned futures</text>
+<path d="M348 210 C409 210 424 188 552 188" fill="none" stroke="#303946" stroke-width="2"/>
+<path d="M348 210 C409 210 424 204 552 204" fill="none" stroke="#7bb9ff" stroke-width="3"/>
+<path d="M348 210 C409 210 424 220 552 220" fill="none" stroke="#303946" stroke-width="2"/>
+<rect x="324" y="304" width="252" height="180" rx="20" fill="#161b22" stroke="#303946"/>
+<text x="346" y="334" fill="#a1adbb" font-size="12" letter-spacing="1.5">03</text>
+<text x="346" y="379" fill="#f0f6fc" font-size="29" font-weight="600">Use</text>
+<text x="346" y="406" fill="#a1adbb" font-size="16">Learn · plan · evaluate</text>
+<circle cx="350" cy="457" r="4" fill="#7bb9ff"/>
+<path d="M363 457 H551" stroke="#303946" stroke-width="2"/>
+<rect x="24" y="304" width="252" height="180" rx="20" fill="#161b22" stroke="#303946"/>
+<text x="46" y="334" fill="#a1adbb" font-size="12" letter-spacing="1.5">04</text>
+<text x="46" y="379" fill="#f0f6fc" font-size="29" font-weight="600">Execute</text>
+<text x="46" y="406" fill="#a1adbb" font-size="16">External interaction</text>
+<circle cx="50" cy="457" r="4" fill="#7bb9ff"/>
+<path d="M63 457 H251" stroke="#303946" stroke-width="2"/>
+<path d="M278 150 H317" fill="none" stroke="#7bb9ff" stroke-width="2.5" marker-end="url(#arrow)"/>
+<path d="M450 242 V296" fill="none" stroke="#7bb9ff" stroke-width="2.5" marker-end="url(#arrow)"/>
+<path d="M319 396 H282" fill="none" stroke="#7bb9ff" stroke-width="2.5" marker-end="url(#arrow)"/>
+<path d="M150 300 V248" fill="none" stroke="#7bb9ff" stroke-width="2" stroke-dasharray="5 6" marker-end="url(#arrow)"/>
+<text x="300" y="534" text-anchor="middle" fill="#a1adbb" font-size="17">Feedback destination varies by method</text>
+</g></svg>

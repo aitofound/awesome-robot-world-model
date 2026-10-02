@@ -1,0 +1,6186 @@
+{
+  "schema_version": 1,
+  "reviewed_at": "2026-10-02",
+  "basis": "Editorial routes based on manuscript citation contexts; source order is traceability, not a mandatory reading order. A placement is not strict world-model qualification.",
+  "tracks": [
+    {
+      "id": "foundations",
+      "title": "Foundations and the Prediction-to-Control Gap",
+      "purpose": "Define the model’s downstream use and distinguish predictive quality from decision utility."
+    },
+    {
+      "id": "representations",
+      "title": "Representations and predictive mechanics",
+      "purpose": "Choose a state substrate, action interface and rollout mechanism that preserve task-relevant consequences."
+    },
+    {
+      "id": "learning-control",
+      "title": "Policy learning and planning",
+      "purpose": "Separate actor learning through imagination from action selection through search or control."
+    },
+    {
+      "id": "simulation",
+      "title": "Foundation priors, simulation and generated experience",
+      "purpose": "Distinguish general priors, interactive neural environments and pipelines that generate training data."
+    },
+    {
+      "id": "tactile",
+      "title": "Touch and contact",
+      "purpose": "Connect hidden contact state to predictive control, corrective action and multisensory learning."
+    },
+    {
+      "id": "human-data",
+      "title": "Human video and embodiment grounding",
+      "purpose": "Separate passive priors, action proxies, paired supervision and deployment-time human context."
+    },
+    {
+      "id": "embodiment",
+      "title": "Embodiments and task interfaces",
+      "purpose": "Read manipulation, navigation, locomotion and driving through their action units and feedback requirements."
+    },
+    {
+      "id": "evaluation",
+      "title": "Evaluation, reliability and safety",
+      "purpose": "Assess model quality, policy utility and deployment reliability with use-specific evidence."
+    },
+    {
+      "id": "resources",
+      "title": "Datasets, environments and benchmarks",
+      "purpose": "Find the data, tools and evaluation fixtures that support a particular interface."
+    },
+    {
+      "id": "interaction",
+      "title": "Interaction and continual improvement",
+      "purpose": "Track what feedback updates: context, actions, policy, model parameters or memory."
+    },
+    {
+      "id": "frontiers",
+      "title": "Open problems and frontier directions",
+      "purpose": "Follow unresolved questions in efficiency, streaming, memory, causality and accountable systems."
+    }
+  ],
+  "placements": [
+    {
+      "paper": "oneX2026worldmodelpolicy",
+      "track": "simulation",
+      "context_group": "argument-102",
+      "all_groups": [
+        "argument-102"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "shanghailab2026definitionroadmap",
+      "track": "foundations",
+      "context_group": "argument-005",
+      "all_groups": [
+        "argument-005",
+        "argument-006"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "zhong2026stflowh2r",
+      "track": "embodiment",
+      "context_group": "argument-060",
+      "all_groups": [
+        "argument-060"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "abotphysworld2026",
+      "track": "simulation",
+      "context_group": "argument-077",
+      "all_groups": [
+        "argument-077",
+        "argument-086"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "chen2026agenticreal2sim",
+      "track": "representations",
+      "context_group": "argument-021",
+      "all_groups": [
+        "argument-021"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "shen2026efficient",
+      "track": "embodiment",
+      "context_group": "argument-056",
+      "all_groups": [
+        "argument-056"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "zhang2026anticipate",
+      "track": "embodiment",
+      "context_group": "argument-056",
+      "all_groups": [
+        "argument-018",
+        "argument-056"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "agrawal2026anysafe",
+      "track": "evaluation",
+      "context_group": "argument-101",
+      "all_groups": [
+        "argument-101"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "chen2026anyworld",
+      "track": "human-data",
+      "context_group": "argument-053",
+      "all_groups": [
+        "argument-053"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "zhou2026assist",
+      "track": "simulation",
+      "context_group": "argument-100",
+      "all_groups": [
+        "argument-100"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "worldlabs2026atlas",
+      "track": "simulation",
+      "context_group": "argument-038",
+      "all_groups": [
+        "argument-038",
+        "argument-039"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "garcin2026persist",
+      "track": "frontiers",
+      "context_group": "argument-097",
+      "all_groups": [
+        "argument-085",
+        "argument-086",
+        "argument-097"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "nam2026causaljepa",
+      "track": "representations",
+      "context_group": "argument-023",
+      "all_groups": [
+        "argument-023"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "wei2026cdlam",
+      "track": "learning-control",
+      "context_group": "argument-067",
+      "all_groups": [
+        "argument-067"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "clap2026",
+      "track": "human-data",
+      "context_group": "argument-050",
+      "all_groups": [
+        "argument-050",
+        "argument-082"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "li2026clawsbench",
+      "track": "evaluation",
+      "context_group": "argument-042",
+      "all_groups": [
+        "argument-042"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "xu2026cgp",
+      "track": "tactile",
+      "context_group": "argument-047",
+      "all_groups": [
+        "argument-047"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "zhang2026contactworld",
+      "track": "tactile",
+      "context_group": "argument-046",
+      "all_groups": [
+        "argument-041",
+        "argument-046"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "nvidia2026cosmos3",
+      "track": "simulation",
+      "context_group": "argument-039",
+      "all_groups": [
+        "argument-001",
+        "argument-039",
+        "argument-085",
+        "argument-086",
+        "argument-103"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "ni2026creflow",
+      "track": "learning-control",
+      "context_group": "argument-067",
+      "all_groups": [
+        "argument-067"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "wang2026crisp",
+      "track": "simulation",
+      "context_group": "argument-013",
+      "all_groups": [
+        "argument-013"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "guo2026ctrl",
+      "track": "representations",
+      "context_group": "argument-024",
+      "all_groups": [
+        "argument-024",
+        "argument-092"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "yang2026decmem",
+      "track": "frontiers",
+      "context_group": "argument-097",
+      "all_groups": [
+        "argument-097"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "yuan2026dextacwam",
+      "track": "tactile",
+      "context_group": "argument-048",
+      "all_groups": [
+        "argument-048"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "vifailback2026",
+      "track": "interaction",
+      "context_group": "argument-082",
+      "all_groups": [
+        "argument-082"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "motamed2026physicsiq",
+      "track": "evaluation",
+      "context_group": "argument-043",
+      "all_groups": [
+        "argument-043",
+        "argument-061",
+        "argument-064",
+        "argument-067",
+        "argument-072",
+        "argument-084"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "chen2026worldsync",
+      "track": "learning-control",
+      "context_group": "argument-029",
+      "all_groups": [
+        "argument-029",
+        "argument-038",
+        "argument-067"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "zhang2026world",
+      "track": "embodiment",
+      "context_group": "argument-059",
+      "all_groups": [
+        "argument-059"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "lou2026dreamtac",
+      "track": "tactile",
+      "context_group": "argument-046",
+      "all_groups": [
+        "argument-046",
+        "argument-048"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "dharmarajan2026dream2flow",
+      "track": "simulation",
+      "context_group": "argument-013",
+      "all_groups": [
+        "argument-013"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "gao2026dreamdojo",
+      "track": "simulation",
+      "context_group": "argument-038",
+      "all_groups": [
+        "argument-038",
+        "argument-051",
+        "argument-057",
+        "argument-059",
+        "argument-086",
+        "argument-103"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "zhang2026duplexsla",
+      "track": "frontiers",
+      "context_group": "argument-096",
+      "all_groups": [
+        "argument-096"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "shan2026dvg",
+      "track": "representations",
+      "context_group": "argument-024",
+      "all_groups": [
+        "argument-024"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "nagano2026dyaplex",
+      "track": "frontiers",
+      "context_group": "argument-096",
+      "all_groups": [
+        "argument-096"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "zhong2026efficient",
+      "track": "embodiment",
+      "context_group": "argument-060",
+      "all_groups": [
+        "argument-060"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "li2026efficientwam",
+      "track": "tactile",
+      "context_group": "argument-043",
+      "all_groups": [
+        "argument-043"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "wang2026ego2robot",
+      "track": "human-data",
+      "context_group": "argument-053",
+      "all_groups": [
+        "argument-053"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "hoque2026egodex",
+      "track": "human-data",
+      "context_group": "argument-048",
+      "all_groups": [
+        "argument-048",
+        "argument-049",
+        "argument-050",
+        "argument-051"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "egoexowm2026",
+      "track": "human-data",
+      "context_group": "argument-052",
+      "all_groups": [
+        "argument-052"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "zheng2026egoscale",
+      "track": "human-data",
+      "context_group": "argument-049",
+      "all_groups": [
+        "argument-049",
+        "argument-086"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "egoverse2026",
+      "track": "human-data",
+      "context_group": "argument-048",
+      "all_groups": [
+        "argument-048"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "egowam2026",
+      "track": "human-data",
+      "context_group": "argument-051",
+      "all_groups": [
+        "argument-009",
+        "argument-051",
+        "argument-085",
+        "argument-086",
+        "argument-093"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "zhang2026emboalign",
+      "track": "learning-control",
+      "context_group": "argument-067",
+      "all_groups": [
+        "argument-067"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "wang2026embodmocap",
+      "track": "simulation",
+      "context_group": "argument-013",
+      "all_groups": [
+        "argument-013"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "ma2026feelworld",
+      "track": "tactile",
+      "context_group": "argument-041",
+      "all_groups": [
+        "argument-041"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "fieldai2026ffm",
+      "track": "simulation",
+      "context_group": "argument-102",
+      "all_groups": [
+        "argument-102"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "zhong2026finemld",
+      "track": "embodiment",
+      "context_group": "argument-060",
+      "all_groups": [
+        "argument-060"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "yan2026flexpi",
+      "track": "simulation",
+      "context_group": "argument-039",
+      "all_groups": [
+        "argument-039",
+        "argument-085",
+        "argument-086",
+        "argument-095"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "huang2026flexitac",
+      "track": "tactile",
+      "context_group": "argument-044",
+      "all_groups": [
+        "argument-044"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "dong2026forcedelta",
+      "track": "tactile",
+      "context_group": "argument-034",
+      "all_groups": [
+        "argument-034",
+        "argument-041"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "yuan2026ftp",
+      "track": "tactile",
+      "context_group": "argument-082",
+      "all_groups": [
+        "argument-082"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "zhang2026futurenav",
+      "track": "embodiment",
+      "context_group": "argument-018",
+      "all_groups": [
+        "argument-018"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "zhang2026gaussiandream",
+      "track": "representations",
+      "context_group": "argument-021",
+      "all_groups": [
+        "argument-021"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "qiu2026gesim2",
+      "track": "simulation",
+      "context_group": "argument-038",
+      "all_groups": [
+        "argument-038",
+        "argument-091",
+        "argument-103"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "wang2026generalizing",
+      "track": "simulation",
+      "context_group": "argument-013",
+      "all_groups": [
+        "argument-013"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "gu2026geniworld",
+      "track": "simulation",
+      "context_group": "argument-038",
+      "all_groups": [
+        "argument-038"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "chang2026geometry",
+      "track": "simulation",
+      "context_group": "argument-100",
+      "all_groups": [
+        "argument-100"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "chen2026goalvla",
+      "track": "representations",
+      "context_group": "argument-021",
+      "all_groups": [
+        "argument-021"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "xie2026grail",
+      "track": "embodiment",
+      "context_group": "argument-057",
+      "all_groups": [
+        "argument-013",
+        "argument-057"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "handedit2026",
+      "track": "human-data",
+      "context_group": "argument-053",
+      "all_groups": [
+        "argument-053"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "li2026hiwm",
+      "track": "simulation",
+      "context_group": "argument-038",
+      "all_groups": [
+        "argument-038",
+        "argument-060",
+        "argument-083",
+        "argument-090"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "zhang2026hierarchical",
+      "track": "frontiers",
+      "context_group": "argument-097",
+      "all_groups": [
+        "argument-097"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "wang2026hil",
+      "track": "simulation",
+      "context_group": "argument-013",
+      "all_groups": [
+        "argument-013"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "cheng2026horizonstreamlonghorizonattentionstreaming",
+      "track": "frontiers",
+      "context_group": "argument-096",
+      "all_groups": [
+        "argument-096"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "yu2026howshould",
+      "track": "evaluation",
+      "context_group": "argument-067",
+      "all_groups": [
+        "argument-067",
+        "argument-068"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "nakamura2026train",
+      "track": "evaluation",
+      "context_group": "argument-101",
+      "all_groups": [
+        "argument-101"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "humanego2026",
+      "track": "human-data",
+      "context_group": "argument-050",
+      "all_groups": [
+        "argument-050",
+        "argument-052"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "gu2026humanoid",
+      "track": "embodiment",
+      "context_group": "argument-057",
+      "all_groups": [
+        "argument-057"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "ma2026humanscale",
+      "track": "human-data",
+      "context_group": "argument-049",
+      "all_groups": [
+        "argument-049"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "hydra02026",
+      "track": "simulation",
+      "context_group": "argument-036",
+      "all_groups": [
+        "argument-036",
+        "argument-085",
+        "argument-086"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "icwm2026",
+      "track": "interaction",
+      "context_group": "argument-090",
+      "all_groups": [
+        "argument-031",
+        "argument-090"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "qi2026inference",
+      "track": "representations",
+      "context_group": "argument-024",
+      "all_groups": [
+        "argument-024"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "interactiveworldsim2026",
+      "track": "simulation",
+      "context_group": "argument-034",
+      "all_groups": [
+        "argument-002",
+        "argument-010",
+        "argument-015",
+        "argument-026",
+        "argument-028",
+        "argument-032",
+        "argument-034",
+        "argument-038",
+        "argument-055",
+        "argument-062",
+        "argument-065",
+        "argument-066",
+        "argument-071",
+        "argument-077",
+        "argument-082",
+        "argument-085",
+        "argument-086",
+        "argument-087",
+        "argument-100",
+        "argument-113"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "figure2026helix02",
+      "track": "simulation",
+      "context_group": "argument-102",
+      "all_groups": [
+        "argument-102"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "decart2026oasis3",
+      "track": "simulation",
+      "context_group": "argument-039",
+      "all_groups": [
+        "argument-039"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "shan2026learningphysicalinteractionsurvey",
+      "track": "tactile",
+      "context_group": "argument-045",
+      "all_groups": [
+        "argument-045"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "rome2026unfold",
+      "track": "representations",
+      "context_group": "argument-022",
+      "all_groups": [
+        "argument-022"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "kuhn2026levjepa",
+      "track": "representations",
+      "context_group": "argument-020",
+      "all_groups": [
+        "argument-020"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "maes2026leworldmodel",
+      "track": "representations",
+      "context_group": "argument-020",
+      "all_groups": [
+        "argument-020"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "lidea2026",
+      "track": "human-data",
+      "context_group": "argument-052",
+      "all_groups": [
+        "argument-052"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "huang2026live",
+      "track": "frontiers",
+      "context_group": "argument-097",
+      "all_groups": [
+        "argument-097"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "cheng2026longstreamlongsequencestreamingautoregressive",
+      "track": "frontiers",
+      "context_group": "argument-096",
+      "all_groups": [
+        "argument-096"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "lu2026loopwm",
+      "track": "representations",
+      "context_group": "argument-024",
+      "all_groups": [
+        "argument-024",
+        "argument-095",
+        "argument-099"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "alzayer2026maskedvisual",
+      "track": "learning-control",
+      "context_group": "argument-029",
+      "all_groups": [
+        "argument-029",
+        "argument-036",
+        "argument-067",
+        "argument-085",
+        "argument-086"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "yu2026maskwam",
+      "track": "learning-control",
+      "context_group": "argument-071",
+      "all_groups": [
+        "argument-071"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "lepert2025masquerade",
+      "track": "human-data",
+      "context_group": "argument-053",
+      "all_groups": [
+        "argument-053"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "wang2026matrixgame3",
+      "track": "frontiers",
+      "context_group": "argument-096",
+      "all_groups": [
+        "argument-086",
+        "argument-096"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "nsim_memworld",
+      "track": "simulation",
+      "context_group": "argument-038",
+      "all_groups": [
+        "argument-038"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "cherepanov2026mikasa",
+      "track": "resources",
+      "context_group": "argument-069",
+      "all_groups": [
+        "argument-069"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "moxin2026moworld",
+      "track": "frontiers",
+      "context_group": "argument-095",
+      "all_groups": [
+        "argument-095"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "clark2026muse",
+      "track": "tactile",
+      "context_group": "argument-048",
+      "all_groups": [
+        "argument-048",
+        "argument-090"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "zhang2026lingbotva2",
+      "track": "frontiers",
+      "context_group": "argument-103",
+      "all_groups": [
+        "argument-103"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "nvidia2026groot17",
+      "track": "simulation",
+      "context_group": "argument-036",
+      "all_groups": [
+        "argument-036",
+        "argument-086"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "liu2026odeworld",
+      "track": "representations",
+      "context_group": "argument-020",
+      "all_groups": [
+        "argument-020",
+        "argument-024",
+        "argument-025",
+        "argument-026"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "liu2026omnieva",
+      "track": "embodiment",
+      "context_group": "argument-056",
+      "all_groups": [
+        "argument-056"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "omnivta2026",
+      "track": "tactile",
+      "context_group": "argument-046",
+      "all_groups": [
+        "argument-002",
+        "argument-011",
+        "argument-016",
+        "argument-017",
+        "argument-032",
+        "argument-034",
+        "argument-037",
+        "argument-041",
+        "argument-046",
+        "argument-048",
+        "argument-065",
+        "argument-071",
+        "argument-080",
+        "argument-082",
+        "argument-086",
+        "argument-087",
+        "argument-094",
+        "argument-108",
+        "argument-109",
+        "argument-113"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "ontheflyvla2026",
+      "track": "interaction",
+      "context_group": "argument-090",
+      "all_groups": [
+        "argument-031",
+        "argument-090"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "liu2026palm",
+      "track": "learning-control",
+      "context_group": "argument-093",
+      "all_groups": [
+        "argument-093"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "yin2026physcore",
+      "track": "representations",
+      "context_group": "argument-022",
+      "all_groups": [
+        "argument-022"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "radsch2026physicsiqverified",
+      "track": "evaluation",
+      "context_group": "argument-067",
+      "all_groups": [
+        "argument-067"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "zhang2026physisforcing",
+      "track": "learning-control",
+      "context_group": "argument-067",
+      "all_groups": [
+        "argument-067"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "yin2026playworld",
+      "track": "interaction",
+      "context_group": "argument-089",
+      "all_groups": [
+        "argument-089"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "pointworld2026",
+      "track": "representations",
+      "context_group": "argument-021",
+      "all_groups": [
+        "argument-011",
+        "argument-021",
+        "argument-029",
+        "argument-032",
+        "argument-034",
+        "argument-035",
+        "argument-054",
+        "argument-055",
+        "argument-059",
+        "argument-071",
+        "argument-077",
+        "argument-085",
+        "argument-086",
+        "argument-087"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "yu2026prism",
+      "track": "resources",
+      "context_group": "argument-082",
+      "all_groups": [
+        "argument-082"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "liao2026puffinworld",
+      "track": "simulation",
+      "context_group": "argument-039",
+      "all_groups": [
+        "argument-039",
+        "argument-085",
+        "argument-086"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "yuan2026qwen",
+      "track": "embodiment",
+      "context_group": "argument-054",
+      "all_groups": [
+        "argument-054"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "zhang2026responsible",
+      "track": "tactile",
+      "context_group": "argument-041",
+      "all_groups": [
+        "argument-041"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "ma2026rest3d",
+      "track": "simulation",
+      "context_group": "argument-013",
+      "all_groups": [
+        "argument-013"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "nsim_rise",
+      "track": "simulation",
+      "context_group": "argument-038",
+      "all_groups": [
+        "argument-038"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "nasiriany2026robocasa365",
+      "track": "resources",
+      "context_group": "argument-069",
+      "all_groups": [
+        "argument-069"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "robocurate2026",
+      "track": "interaction",
+      "context_group": "argument-091",
+      "all_groups": [
+        "argument-091"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "chen2026robodojo",
+      "track": "resources",
+      "context_group": "argument-083",
+      "all_groups": [
+        "argument-083"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "lei2026robomemarena",
+      "track": "resources",
+      "context_group": "argument-069",
+      "all_groups": [
+        "argument-069"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "dai2026robomme",
+      "track": "resources",
+      "context_group": "argument-069",
+      "all_groups": [
+        "argument-069"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "wang2026roboomni",
+      "track": "simulation",
+      "context_group": "argument-039",
+      "all_groups": [
+        "argument-039"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "RoboScape-R",
+      "track": "simulation",
+      "context_group": "argument-026",
+      "all_groups": [
+        "argument-026"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "dgac2026",
+      "track": "interaction",
+      "context_group": "argument-088",
+      "all_groups": [
+        "argument-088",
+        "argument-091"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "jiang2026robottt",
+      "track": "interaction",
+      "context_group": "argument-090",
+      "all_groups": [
+        "argument-090"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "nsim_roboworld",
+      "track": "evaluation",
+      "context_group": "argument-038",
+      "all_groups": [
+        "argument-038"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "worldmodelrisks2026",
+      "track": "evaluation",
+      "context_group": "argument-088",
+      "all_groups": [
+        "argument-032",
+        "argument-034",
+        "argument-042",
+        "argument-054",
+        "argument-066",
+        "argument-081",
+        "argument-086",
+        "argument-088",
+        "argument-112",
+        "argument-113"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "geiping2025recurrentdepth",
+      "track": "frontiers",
+      "context_group": "argument-095",
+      "all_groups": [
+        "argument-095",
+        "argument-099"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "zhang2026worldevolver",
+      "track": "interaction",
+      "context_group": "argument-088",
+      "all_groups": [
+        "argument-088",
+        "argument-090",
+        "argument-096"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "ranawaka2026simfoundry",
+      "track": "simulation",
+      "context_group": "argument-038",
+      "all_groups": [
+        "argument-013",
+        "argument-038",
+        "argument-085",
+        "argument-086"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "huang2026solarwm",
+      "track": "simulation",
+      "context_group": "argument-077",
+      "all_groups": [
+        "argument-077",
+        "argument-085",
+        "argument-086",
+        "argument-096"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "lee2026space",
+      "track": "simulation",
+      "context_group": "argument-082",
+      "all_groups": [
+        "argument-082"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "tu2026streamt1",
+      "track": "interaction",
+      "context_group": "argument-090",
+      "all_groups": [
+        "argument-090",
+        "argument-096"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "shao2026symskill",
+      "track": "frontiers",
+      "context_group": "argument-086",
+      "all_groups": [
+        "argument-086"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "huang2026synctwin",
+      "track": "representations",
+      "context_group": "argument-021",
+      "all_groups": [
+        "argument-021"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "niu2026t",
+      "track": "tactile",
+      "context_group": "argument-082",
+      "all_groups": [
+        "argument-082"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "zang2026tacforesight",
+      "track": "tactile",
+      "context_group": "argument-047",
+      "all_groups": [
+        "argument-016",
+        "argument-047",
+        "argument-086"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "liu2026taco",
+      "track": "tactile",
+      "context_group": "argument-041",
+      "all_groups": [
+        "argument-041"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "tactalign2026",
+      "track": "human-data",
+      "context_group": "argument-052",
+      "all_groups": [
+        "argument-052"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "wu2026tactilewam",
+      "track": "tactile",
+      "context_group": "argument-048",
+      "all_groups": [
+        "argument-041",
+        "argument-048"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "wang2026temporalstraightening",
+      "track": "representations",
+      "context_group": "argument-020",
+      "all_groups": [
+        "argument-020"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "zhao2026ttswam",
+      "track": "interaction",
+      "context_group": "argument-090",
+      "all_groups": [
+        "argument-090",
+        "argument-096"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "zhou2026touchworld",
+      "track": "tactile",
+      "context_group": "argument-046",
+      "all_groups": [
+        "argument-016",
+        "argument-046"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "cao2026tract",
+      "track": "learning-control",
+      "context_group": "argument-029",
+      "all_groups": [
+        "argument-029",
+        "argument-036",
+        "argument-085",
+        "argument-086"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "li2026training",
+      "track": "embodiment",
+      "context_group": "argument-054",
+      "all_groups": [
+        "argument-054"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "meta2026vjepa21",
+      "track": "representations",
+      "context_group": "argument-020",
+      "all_groups": [
+        "argument-020",
+        "argument-086"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "visualverification2026",
+      "track": "evaluation",
+      "context_group": "argument-082",
+      "all_groups": [
+        "argument-082"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "visuotactilewm2026",
+      "track": "tactile",
+      "context_group": "argument-043",
+      "all_groups": [
+        "argument-002",
+        "argument-010",
+        "argument-011",
+        "argument-032",
+        "argument-034",
+        "argument-037",
+        "argument-041",
+        "argument-043",
+        "argument-045",
+        "argument-048",
+        "argument-050",
+        "argument-052",
+        "argument-054",
+        "argument-055",
+        "argument-061",
+        "argument-065",
+        "argument-071",
+        "argument-080",
+        "argument-082",
+        "argument-086",
+        "argument-087",
+        "argument-094",
+        "argument-108",
+        "argument-109",
+        "argument-113"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "huang2026vitacworld",
+      "track": "tactile",
+      "context_group": "argument-046",
+      "all_groups": [
+        "argument-046"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "huang2026vlareplica",
+      "track": "resources",
+      "context_group": "argument-083",
+      "all_groups": [
+        "argument-083"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "vlaw2026",
+      "track": "interaction",
+      "context_group": "argument-088",
+      "all_groups": [
+        "argument-033",
+        "argument-038",
+        "argument-053",
+        "argument-054",
+        "argument-055",
+        "argument-085",
+        "argument-086",
+        "argument-088",
+        "argument-090",
+        "argument-100",
+        "argument-107",
+        "argument-109"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "tian2026vtwam",
+      "track": "tactile",
+      "context_group": "argument-048",
+      "all_groups": [
+        "argument-041",
+        "argument-048",
+        "argument-085",
+        "argument-086"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "yuan2026vtam",
+      "track": "tactile",
+      "context_group": "argument-048",
+      "all_groups": [
+        "argument-048"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "xsquare2026wallwm",
+      "track": "simulation",
+      "context_group": "argument-039",
+      "all_groups": [
+        "argument-009",
+        "argument-039",
+        "argument-086"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "wamrl2026",
+      "track": "interaction",
+      "context_group": "argument-033",
+      "all_groups": [
+        "argument-033"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "feng2026wamttt",
+      "track": "interaction",
+      "context_group": "argument-090",
+      "all_groups": [
+        "argument-090"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "jain2026texttt",
+      "track": "representations",
+      "context_group": "argument-024",
+      "all_groups": [
+        "argument-024"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "terver2026jepawm",
+      "track": "representations",
+      "context_group": "argument-020",
+      "all_groups": [
+        "argument-011",
+        "argument-020"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "lam2026physicians",
+      "track": "evaluation",
+      "context_group": "argument-042",
+      "all_groups": [
+        "argument-042"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "ups2026",
+      "track": "evaluation",
+      "context_group": "argument-082",
+      "all_groups": [
+        "argument-082",
+        "argument-101"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "nsim_wise",
+      "track": "simulation",
+      "context_group": "argument-038",
+      "all_groups": [
+        "argument-038"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "ye2026dreamzero",
+      "track": "representations",
+      "context_group": "argument-025",
+      "all_groups": [
+        "argument-009",
+        "argument-017",
+        "argument-025",
+        "argument-036",
+        "argument-039",
+        "argument-043",
+        "argument-071",
+        "argument-085",
+        "argument-086",
+        "argument-103"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "govind2026regen",
+      "track": "interaction",
+      "context_group": "argument-090",
+      "all_groups": [
+        "argument-090"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "shen2026wamsurvey",
+      "track": "foundations",
+      "context_group": "argument-009",
+      "all_groups": [
+        "argument-005",
+        "argument-006",
+        "argument-009"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "wang2026wamnextfrontier",
+      "track": "foundations",
+      "context_group": "argument-009",
+      "all_groups": [
+        "argument-005",
+        "argument-006",
+        "argument-009"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "hou2026worldmodelrobotlearning",
+      "track": "foundations",
+      "context_group": "argument-005",
+      "all_groups": [
+        "argument-004",
+        "argument-005",
+        "argument-006",
+        "argument-086",
+        "argument-112",
+        "argument-113"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "worldgymnast2026",
+      "track": "interaction",
+      "context_group": "argument-053",
+      "all_groups": [
+        "argument-038",
+        "argument-053"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "worldinworld2025",
+      "track": "evaluation",
+      "context_group": "argument-061",
+      "all_groups": [
+        "argument-001",
+        "argument-008",
+        "argument-034",
+        "argument-040",
+        "argument-061",
+        "argument-064",
+        "argument-066",
+        "argument-069",
+        "argument-072",
+        "argument-073",
+        "argument-079",
+        "argument-083",
+        "argument-084",
+        "argument-085",
+        "argument-086",
+        "argument-091",
+        "argument-092",
+        "argument-099",
+        "argument-113"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "shang2026worldarena",
+      "track": "evaluation",
+      "context_group": "argument-067",
+      "all_groups": [
+        "argument-067",
+        "argument-069"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "yi2026worldkv",
+      "track": "frontiers",
+      "context_group": "argument-095",
+      "all_groups": [
+        "argument-095"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "xue2026worldsample",
+      "track": "interaction",
+      "context_group": "argument-088",
+      "all_groups": [
+        "argument-038",
+        "argument-088",
+        "argument-091",
+        "argument-100",
+        "argument-103",
+        "argument-107",
+        "argument-109"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "nsim_wovr",
+      "track": "simulation",
+      "context_group": "argument-038",
+      "all_groups": [
+        "argument-038"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "xted2026",
+      "track": "interaction",
+      "context_group": "argument-090",
+      "all_groups": [
+        "argument-031",
+        "argument-090"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "zhou2026zerowam",
+      "track": "human-data",
+      "context_group": "argument-051",
+      "all_groups": [
+        "argument-051",
+        "argument-090",
+        "argument-092"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "ding2026zetta",
+      "track": "interaction",
+      "context_group": "argument-090",
+      "all_groups": [
+        "argument-090"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "chen2026zeva",
+      "track": "interaction",
+      "context_group": "argument-090",
+      "all_groups": [
+        "argument-090"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "pi2026pi07",
+      "track": "simulation",
+      "context_group": "argument-036",
+      "all_groups": [
+        "argument-036",
+        "argument-086"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "zhou2026tau0wm",
+      "track": "representations",
+      "context_group": "argument-024",
+      "all_groups": [
+        "argument-024",
+        "argument-029"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "li2026omega0",
+      "track": "embodiment",
+      "context_group": "argument-057",
+      "all_groups": [
+        "argument-057"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "ho2025_1xworldmodel",
+      "track": "simulation",
+      "context_group": "argument-102",
+      "all_groups": [
+        "argument-102"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "li2025embodiedworldmodels",
+      "track": "foundations",
+      "context_group": "argument-005",
+      "all_groups": [
+        "argument-004",
+        "argument-005",
+        "argument-006"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "ai2025learningdynamicsmanipulation",
+      "track": "foundations",
+      "context_group": "argument-005",
+      "all_groups": [
+        "argument-004",
+        "argument-005",
+        "argument-006"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "zhang2025manipulationworldmodels",
+      "track": "foundations",
+      "context_group": "argument-005",
+      "all_groups": [
+        "argument-004",
+        "argument-005",
+        "argument-006"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "sun2025survey",
+      "track": "evaluation",
+      "context_group": "argument-042",
+      "all_groups": [
+        "argument-042"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "feng2025survey",
+      "track": "embodiment",
+      "context_group": "argument-058",
+      "all_groups": [
+        "argument-058"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "vlac2025",
+      "track": "interaction",
+      "context_group": "argument-091",
+      "all_groups": [
+        "argument-010",
+        "argument-015",
+        "argument-028",
+        "argument-032",
+        "argument-034",
+        "argument-040",
+        "argument-062",
+        "argument-071",
+        "argument-072",
+        "argument-073",
+        "argument-086",
+        "argument-087",
+        "argument-091",
+        "argument-113"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "actjepa2025",
+      "track": "representations",
+      "context_group": "argument-095",
+      "all_groups": [
+        "argument-095"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "bu2025agibot",
+      "track": "resources",
+      "context_group": "argument-049",
+      "all_groups": [
+        "argument-049",
+        "argument-082",
+        "argument-092"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "feng2025anytouch",
+      "track": "tactile",
+      "context_group": "argument-044",
+      "all_groups": [
+        "argument-044"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "he2025asap",
+      "track": "interaction",
+      "context_group": "argument-088",
+      "all_groups": [
+        "argument-088"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "zhou2025autoeval",
+      "track": "evaluation",
+      "context_group": "argument-062",
+      "all_groups": [
+        "argument-062",
+        "argument-063",
+        "argument-066",
+        "argument-072"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "nazari2025bioinspired",
+      "track": "tactile",
+      "context_group": "argument-041",
+      "all_groups": [
+        "argument-041"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "skild2025brain",
+      "track": "simulation",
+      "context_group": "argument-102",
+      "all_groups": [
+        "argument-102"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "voelcker2025calibrated",
+      "track": "foundations",
+      "context_group": "argument-093",
+      "all_groups": [
+        "argument-093"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "xu2025can",
+      "track": "evaluation",
+      "context_group": "argument-101",
+      "all_groups": [
+        "argument-101"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "zhang2025contactdexnet",
+      "track": "tactile",
+      "context_group": "argument-041",
+      "all_groups": [
+        "argument-041"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "yang2025contactsdf",
+      "track": "tactile",
+      "context_group": "argument-041",
+      "all_groups": [
+        "argument-041"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "liu2025onlinewm",
+      "track": "interaction",
+      "context_group": "argument-090",
+      "all_groups": [
+        "argument-090"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "nvidia2025cosmos",
+      "track": "simulation",
+      "context_group": "argument-034",
+      "all_groups": [
+        "argument-001",
+        "argument-007",
+        "argument-008",
+        "argument-034",
+        "argument-038",
+        "argument-059",
+        "argument-073",
+        "argument-077",
+        "argument-084",
+        "argument-086",
+        "argument-102",
+        "argument-113"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "nvidia2025cosmosreason1",
+      "track": "simulation",
+      "context_group": "argument-001",
+      "all_groups": [
+        "argument-001"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "lin2024datascaling",
+      "track": "interaction",
+      "context_group": "argument-092",
+      "all_groups": [
+        "argument-092"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "zhou2025dinowm",
+      "track": "representations",
+      "context_group": "argument-019",
+      "all_groups": [
+        "argument-010",
+        "argument-011",
+        "argument-019",
+        "argument-020"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "DiWA",
+      "track": "learning-control",
+      "context_group": "argument-027",
+      "all_groups": [
+        "argument-027"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "ni2025don",
+      "track": "evaluation",
+      "context_group": "argument-042",
+      "all_groups": [
+        "argument-042"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "jang2025dreamgen",
+      "track": "simulation",
+      "context_group": "argument-038",
+      "all_groups": [
+        "argument-013",
+        "argument-025",
+        "argument-038",
+        "argument-051",
+        "argument-057",
+        "argument-085",
+        "argument-086",
+        "argument-092",
+        "argument-100"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "liang2025dreamitate",
+      "track": "simulation",
+      "context_group": "argument-057",
+      "all_groups": [
+        "argument-013",
+        "argument-057"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "zhao2025drivedreamer2",
+      "track": "embodiment",
+      "context_group": "argument-058",
+      "all_groups": [
+        "argument-054",
+        "argument-058"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "wang2025correctionfeedback",
+      "track": "embodiment",
+      "context_group": "argument-060",
+      "all_groups": [
+        "argument-060"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "egovisioncontact2025",
+      "track": "learning-control",
+      "context_group": "argument-029",
+      "all_groups": [
+        "argument-014",
+        "argument-029",
+        "argument-032",
+        "argument-037",
+        "argument-054",
+        "argument-063",
+        "argument-064",
+        "argument-066",
+        "argument-071",
+        "argument-073",
+        "argument-079",
+        "argument-086",
+        "argument-094",
+        "argument-113"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "egobridge2025",
+      "track": "human-data",
+      "context_group": "argument-050",
+      "all_groups": [
+        "argument-050",
+        "argument-052",
+        "argument-059",
+        "argument-086"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "egozero2025",
+      "track": "human-data",
+      "context_group": "argument-050",
+      "all_groups": [
+        "argument-050",
+        "argument-051"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "yang2025embodiedbench",
+      "track": "evaluation",
+      "context_group": "argument-072",
+      "all_groups": [
+        "argument-072"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "qiu2025emerging",
+      "track": "evaluation",
+      "context_group": "argument-042",
+      "all_groups": [
+        "argument-042"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "emma2025",
+      "track": "human-data",
+      "context_group": "argument-051",
+      "all_groups": [
+        "argument-051"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "nsim_veo",
+      "track": "evaluation",
+      "context_group": "argument-038",
+      "all_groups": [
+        "argument-038"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "liu2025evovla",
+      "track": "interaction",
+      "context_group": "argument-088",
+      "all_groups": [
+        "argument-088",
+        "argument-096"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "yue2025ewmbench",
+      "track": "evaluation",
+      "context_group": "argument-072",
+      "all_groups": [
+        "argument-072"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "dai2026exploring",
+      "track": "representations",
+      "context_group": "argument-019",
+      "all_groups": [
+        "argument-019"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "ferraro2025focus",
+      "track": "representations",
+      "context_group": "argument-021",
+      "all_groups": [
+        "argument-021"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "firoozi2025foundation",
+      "track": "foundations",
+      "context_group": "argument-042",
+      "all_groups": [
+        "argument-004",
+        "argument-006",
+        "argument-007",
+        "argument-042"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "yin2024causvid",
+      "track": "frontiers",
+      "context_group": "argument-095",
+      "all_groups": [
+        "argument-095"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "russell2025gaia2",
+      "track": "embodiment",
+      "context_group": "argument-058",
+      "all_groups": [
+        "argument-054",
+        "argument-058"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "escontrela2025gaussgym",
+      "track": "representations",
+      "context_group": "argument-021",
+      "all_groups": [
+        "argument-013",
+        "argument-021"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "team2025gemini15",
+      "track": "simulation",
+      "context_group": "argument-102",
+      "all_groups": [
+        "argument-102"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "team2025gemini",
+      "track": "simulation",
+      "context_group": "argument-102",
+      "all_groups": [
+        "argument-102"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "bharadhwaj2025gen2act",
+      "track": "simulation",
+      "context_group": "argument-057",
+      "all_groups": [
+        "argument-013",
+        "argument-057"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "nakamura2025generalizing",
+      "track": "evaluation",
+      "context_group": "argument-101",
+      "all_groups": [
+        "argument-101"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "deepmind2025genie3",
+      "track": "simulation",
+      "context_group": "argument-039",
+      "all_groups": [
+        "argument-039",
+        "argument-096"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "liao2025genie",
+      "track": "frontiers",
+      "context_group": "argument-103",
+      "all_groups": [
+        "argument-103"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "nvidia2025groot",
+      "track": "simulation",
+      "context_group": "argument-026",
+      "all_groups": [
+        "argument-026",
+        "argument-030",
+        "argument-032",
+        "argument-034",
+        "argument-036",
+        "argument-054",
+        "argument-059",
+        "argument-073",
+        "argument-075",
+        "argument-084",
+        "argument-086",
+        "argument-087",
+        "argument-102",
+        "argument-113"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "cheng2025graphguidedscenereconstructionimages",
+      "track": "representations",
+      "context_group": "argument-022",
+      "all_groups": [
+        "argument-022"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "unece2025ads",
+      "track": "evaluation",
+      "context_group": "argument-042",
+      "all_groups": [
+        "argument-042"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "h2oplus2025",
+      "track": "learning-control",
+      "context_group": "argument-031",
+      "all_groups": [
+        "argument-031"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "h2r2025",
+      "track": "human-data",
+      "context_group": "argument-050",
+      "all_groups": [
+        "argument-050",
+        "argument-052",
+        "argument-053"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "weng2025hdmi",
+      "track": "embodiment",
+      "context_group": "argument-057",
+      "all_groups": [
+        "argument-057"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "figure2025helix",
+      "track": "simulation",
+      "context_group": "argument-102",
+      "all_groups": [
+        "argument-102"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "chang2025far",
+      "track": "simulation",
+      "context_group": "argument-100",
+      "all_groups": [
+        "argument-100"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "zhu2025irasim",
+      "track": "representations",
+      "context_group": "argument-024",
+      "all_groups": [
+        "argument-024"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "iso10218part2",
+      "track": "evaluation",
+      "context_group": "argument-063",
+      "all_groups": [
+        "argument-063"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "chen2025largevideoplanner",
+      "track": "learning-control",
+      "context_group": "argument-029",
+      "all_groups": [
+        "argument-008",
+        "argument-014",
+        "argument-029",
+        "argument-032",
+        "argument-034",
+        "argument-037",
+        "argument-043",
+        "argument-064",
+        "argument-070",
+        "argument-071",
+        "argument-086",
+        "argument-113"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "wmr2025",
+      "track": "embodiment",
+      "context_group": "argument-030",
+      "all_groups": [
+        "argument-010",
+        "argument-011",
+        "argument-030",
+        "argument-032",
+        "argument-034",
+        "argument-054",
+        "argument-057",
+        "argument-063",
+        "argument-064",
+        "argument-066",
+        "argument-070",
+        "argument-071",
+        "argument-073",
+        "argument-086",
+        "argument-094",
+        "argument-113"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "hedlundbotti2025lifi",
+      "track": "embodiment",
+      "context_group": "argument-060",
+      "all_groups": [
+        "argument-060"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "balestriero2025lejepa",
+      "track": "representations",
+      "context_group": "argument-020",
+      "all_groups": [
+        "argument-020"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "locoformer2025",
+      "track": "interaction",
+      "context_group": "argument-090",
+      "all_groups": [
+        "argument-031",
+        "argument-090"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "po2025ssmwm",
+      "track": "frontiers",
+      "context_group": "argument-097",
+      "all_groups": [
+        "argument-097"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "luu2025manifeel",
+      "track": "resources",
+      "context_group": "argument-082",
+      "all_groups": [
+        "argument-082"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "yu2025manigaussianpp",
+      "track": "representations",
+      "context_group": "argument-021",
+      "all_groups": [
+        "argument-021"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "he2025matrixgame2",
+      "track": "frontiers",
+      "context_group": "argument-096",
+      "all_groups": [
+        "argument-096"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "zhang2025mem2ego",
+      "track": "embodiment",
+      "context_group": "argument-056",
+      "all_groups": [
+        "argument-056"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "guo2025mineworld",
+      "track": "frontiers",
+      "context_group": "argument-096",
+      "all_groups": [
+        "argument-096"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "su2025mixucb",
+      "track": "evaluation",
+      "context_group": "argument-042",
+      "all_groups": [
+        "argument-042"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "wang2025monofusion",
+      "track": "simulation",
+      "context_group": "argument-013",
+      "all_groups": [
+        "argument-013"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "liu2025siriusfleet",
+      "track": "evaluation",
+      "context_group": "argument-088",
+      "all_groups": [
+        "argument-060",
+        "argument-088",
+        "argument-092"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "bar2025navigation",
+      "track": "embodiment",
+      "context_group": "argument-056",
+      "all_groups": [
+        "argument-056"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "nakamura2025not",
+      "track": "evaluation",
+      "context_group": "argument-101",
+      "all_groups": [
+        "argument-101"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "jeong2025objectcentric",
+      "track": "representations",
+      "context_group": "argument-021",
+      "all_groups": [
+        "argument-021"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "zhang2025omnidexvlg",
+      "track": "simulation",
+      "context_group": "argument-035",
+      "all_groups": [
+        "argument-035"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "cheng2025omnivtla",
+      "track": "tactile",
+      "context_group": "argument-046",
+      "all_groups": [
+        "argument-046"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "cheng2025outdoormonocularslamglobal",
+      "track": "frontiers",
+      "context_group": "argument-096",
+      "all_groups": [
+        "argument-096"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "zhang2025particle",
+      "track": "representations",
+      "context_group": "argument-041",
+      "all_groups": [
+        "argument-041"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "huang2025particleformer",
+      "track": "representations",
+      "context_group": "argument-021",
+      "all_groups": [
+        "argument-021",
+        "argument-042"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "mandyam2025perry",
+      "track": "evaluation",
+      "context_group": "argument-042",
+      "all_groups": [
+        "argument-042"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "lepert2025phantomtrainingrobots",
+      "track": "human-data",
+      "context_group": "argument-053",
+      "all_groups": [
+        "argument-053"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "jiang2025phystwin",
+      "track": "representations",
+      "context_group": "argument-022",
+      "all_groups": [
+        "argument-022",
+        "argument-041",
+        "argument-086",
+        "argument-100"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "sgft2025",
+      "track": "interaction",
+      "context_group": "argument-090",
+      "all_groups": [
+        "argument-031",
+        "argument-090"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "xue2025reactive",
+      "track": "tactile",
+      "context_group": "argument-047",
+      "all_groups": [
+        "argument-041",
+        "argument-047",
+        "argument-095"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "zhang2025responsiblerobotbench",
+      "track": "evaluation",
+      "context_group": "argument-042",
+      "all_groups": [
+        "argument-042"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "rewind2025",
+      "track": "interaction",
+      "context_group": "argument-091",
+      "all_groups": [
+        "argument-040",
+        "argument-091"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "yu2025rgbonlygaussiansplattingslam",
+      "track": "frontiers",
+      "context_group": "argument-096",
+      "all_groups": [
+        "argument-096"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "atreya2025roboarena",
+      "track": "evaluation",
+      "context_group": "argument-062",
+      "all_groups": [
+        "argument-062",
+        "argument-072",
+        "argument-085",
+        "argument-086"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "robohorizon2025",
+      "track": "embodiment",
+      "context_group": "argument-055",
+      "all_groups": [
+        "argument-014",
+        "argument-054",
+        "argument-055",
+        "argument-062",
+        "argument-066",
+        "argument-073",
+        "argument-086",
+        "argument-113"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "hejna2025deminf",
+      "track": "interaction",
+      "context_group": "argument-091",
+      "all_groups": [
+        "argument-091"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "mao2025physworld",
+      "track": "simulation",
+      "context_group": "argument-013",
+      "all_groups": [
+        "argument-013"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "sirius2022",
+      "track": "interaction",
+      "context_group": "argument-053",
+      "all_groups": [
+        "argument-053",
+        "argument-060",
+        "argument-088",
+        "argument-091"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "rtr2025",
+      "track": "interaction",
+      "context_group": "argument-090",
+      "all_groups": [
+        "argument-031",
+        "argument-090"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "patel2025rigvid",
+      "track": "embodiment",
+      "context_group": "argument-057",
+      "all_groups": [
+        "argument-013",
+        "argument-057"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "li2025roboticworldmodel",
+      "track": "simulation",
+      "context_group": "argument-034",
+      "all_groups": [
+        "argument-008",
+        "argument-028",
+        "argument-032",
+        "argument-034",
+        "argument-038",
+        "argument-062",
+        "argument-064",
+        "argument-066",
+        "argument-071",
+        "argument-073",
+        "argument-077",
+        "argument-082",
+        "argument-085",
+        "argument-086",
+        "argument-087",
+        "argument-113"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "jeong2025robots",
+      "track": "evaluation",
+      "context_group": "argument-101",
+      "all_groups": [
+        "argument-101"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "chen2025robotwin2",
+      "track": "resources",
+      "context_group": "argument-069",
+      "all_groups": [
+        "argument-069"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "robowheel2025",
+      "track": "human-data",
+      "context_group": "argument-052",
+      "all_groups": [
+        "argument-052"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "muennighoff2025s1",
+      "track": "interaction",
+      "context_group": "argument-090",
+      "all_groups": [
+        "argument-090"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "li2025scalable",
+      "track": "human-data",
+      "context_group": "argument-051",
+      "all_groups": [
+        "argument-051",
+        "argument-053"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "huang2025selfforcing",
+      "track": "frontiers",
+      "context_group": "argument-095",
+      "all_groups": [
+        "argument-095"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "cui2025selfforcingpp",
+      "track": "frontiers",
+      "context_group": "argument-095",
+      "all_groups": [
+        "argument-095"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "liu2025spatialcot",
+      "track": "embodiment",
+      "context_group": "argument-056",
+      "all_groups": [
+        "argument-056"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "moran2025splatting",
+      "track": "simulation",
+      "context_group": "argument-013",
+      "all_groups": [
+        "argument-013"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "kodaira2025streamdit",
+      "track": "frontiers",
+      "context_group": "argument-096",
+      "all_groups": [
+        "argument-096"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "wu2025tacdiffusion",
+      "track": "tactile",
+      "context_group": "argument-047",
+      "all_groups": [
+        "argument-047"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "huang2025tactilevla",
+      "track": "tactile",
+      "context_group": "argument-046",
+      "all_groups": [
+        "argument-046"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "farid2025taskdriven",
+      "track": "evaluation",
+      "context_group": "argument-063",
+      "all_groups": [
+        "argument-063"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "zhen2025tesseract",
+      "track": "simulation",
+      "context_group": "argument-037",
+      "all_groups": [
+        "argument-037"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "wang2025thisandthat",
+      "track": "simulation",
+      "context_group": "argument-037",
+      "all_groups": [
+        "argument-037"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "zhu2025touchwild",
+      "track": "tactile",
+      "context_group": "argument-046",
+      "all_groups": [
+        "argument-046"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "wang2025towards",
+      "track": "tactile",
+      "context_group": "argument-041",
+      "all_groups": [
+        "argument-041"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "saferobotfoundation2025",
+      "track": "evaluation",
+      "context_group": "argument-032",
+      "all_groups": [
+        "argument-015",
+        "argument-032",
+        "argument-034",
+        "argument-042",
+        "argument-066",
+        "argument-071",
+        "argument-081",
+        "argument-085",
+        "argument-086",
+        "argument-087",
+        "argument-109",
+        "argument-113"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "hafner2025dreamer4",
+      "track": "learning-control",
+      "context_group": "argument-097",
+      "all_groups": [
+        "argument-086",
+        "argument-097"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "yang2025twintrack",
+      "track": "tactile",
+      "context_group": "argument-041",
+      "all_groups": [
+        "argument-041"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "pappone2025twoscale",
+      "track": "frontiers",
+      "context_group": "argument-095",
+      "all_groups": [
+        "argument-095"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "seo2025uncertainty",
+      "track": "evaluation",
+      "context_group": "argument-101",
+      "all_groups": [
+        "argument-101"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "nsim_rwmu",
+      "track": "simulation",
+      "context_group": "argument-038",
+      "all_groups": [
+        "argument-038"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "ding2024understandingworld",
+      "track": "foundations",
+      "context_group": "argument-005",
+      "all_groups": [
+        "argument-005",
+        "argument-006"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "li2025uva",
+      "track": "learning-control",
+      "context_group": "argument-010",
+      "all_groups": [
+        "argument-009",
+        "argument-010",
+        "argument-017"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "agia2025unpacking",
+      "track": "evaluation",
+      "context_group": "argument-062",
+      "all_groups": [
+        "argument-062",
+        "argument-063",
+        "argument-101"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "santos2025updating",
+      "track": "evaluation",
+      "context_group": "argument-101",
+      "all_groups": [
+        "argument-101"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "assran2025vjepa2",
+      "track": "representations",
+      "context_group": "argument-019",
+      "all_groups": [
+        "argument-019",
+        "argument-020",
+        "argument-029",
+        "argument-085",
+        "argument-086",
+        "argument-092",
+        "argument-093"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "zheng2025vbench2",
+      "track": "evaluation",
+      "context_group": "argument-072",
+      "all_groups": [
+        "argument-072"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "hu2025vggt4dminingmotioncues",
+      "track": "representations",
+      "context_group": "argument-022",
+      "all_groups": [
+        "argument-022"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "xie2025vid2sim",
+      "track": "simulation",
+      "context_group": "argument-013",
+      "all_groups": [
+        "argument-013"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "wu2025spatialmem",
+      "track": "frontiers",
+      "context_group": "argument-097",
+      "all_groups": [
+        "argument-097"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "vlareview2025",
+      "track": "foundations",
+      "context_group": "argument-034",
+      "all_groups": [
+        "argument-004",
+        "argument-006",
+        "argument-034",
+        "argument-036",
+        "argument-054",
+        "argument-060",
+        "argument-086",
+        "argument-112"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "allshire2025videomimic",
+      "track": "embodiment",
+      "context_group": "argument-057",
+      "all_groups": [
+        "argument-013",
+        "argument-057"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "heng2025vitacformer",
+      "track": "tactile",
+      "context_group": "argument-046",
+      "all_groups": [
+        "argument-046"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "vlarft2025",
+      "track": "interaction",
+      "context_group": "argument-033",
+      "all_groups": [
+        "argument-033",
+        "argument-040",
+        "argument-085",
+        "argument-086"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "zhu2025vrrobo",
+      "track": "simulation",
+      "context_group": "argument-013",
+      "all_groups": [
+        "argument-013"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "huang2025vtrefine",
+      "track": "tactile",
+      "context_group": "argument-046",
+      "all_groups": [
+        "argument-046"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "liu2025future",
+      "track": "representations",
+      "context_group": "argument-019",
+      "all_groups": [
+        "argument-019"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "li2025worldeval",
+      "track": "evaluation",
+      "context_group": "argument-065",
+      "all_groups": [
+        "argument-002",
+        "argument-010",
+        "argument-015",
+        "argument-017",
+        "argument-027",
+        "argument-032",
+        "argument-034",
+        "argument-040",
+        "argument-065",
+        "argument-066",
+        "argument-070",
+        "argument-071",
+        "argument-072",
+        "argument-079",
+        "argument-081",
+        "argument-085",
+        "argument-086",
+        "argument-087",
+        "argument-093",
+        "argument-100",
+        "argument-103",
+        "argument-104",
+        "argument-105",
+        "argument-109",
+        "argument-113"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "quevedo2025wpe",
+      "track": "evaluation",
+      "context_group": "argument-062",
+      "all_groups": [
+        "argument-062",
+        "argument-103"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "xiao2025worldmem",
+      "track": "frontiers",
+      "context_group": "argument-097",
+      "all_groups": [
+        "argument-086",
+        "argument-097"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "worldplanner2025",
+      "track": "learning-control",
+      "context_group": "argument-029",
+      "all_groups": [
+        "argument-002",
+        "argument-010",
+        "argument-012",
+        "argument-014",
+        "argument-017",
+        "argument-024",
+        "argument-029",
+        "argument-032",
+        "argument-034",
+        "argument-037",
+        "argument-054",
+        "argument-055",
+        "argument-066",
+        "argument-071",
+        "argument-085",
+        "argument-086",
+        "argument-113"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "duan2025worldscore",
+      "track": "evaluation",
+      "context_group": "argument-072",
+      "all_groups": [
+        "argument-072"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "dan2025xsim",
+      "track": "simulation",
+      "context_group": "argument-013",
+      "all_groups": [
+        "argument-013"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "pi2025pistar06",
+      "track": "interaction",
+      "context_group": "argument-088",
+      "all_groups": [
+        "argument-036",
+        "argument-086",
+        "argument-088"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "pi2025pi05",
+      "track": "simulation",
+      "context_group": "argument-036",
+      "all_groups": [
+        "argument-036"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "huang2024vitac",
+      "track": "tactile",
+      "context_group": "argument-046",
+      "all_groups": [
+        "argument-046"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "zhang2024collision",
+      "track": "evaluation",
+      "context_group": "argument-042",
+      "all_groups": [
+        "argument-042"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "conlon2024survey",
+      "track": "evaluation",
+      "context_group": "argument-101",
+      "all_groups": [
+        "argument-101"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "wei2024unified",
+      "track": "evaluation",
+      "context_group": "argument-062",
+      "all_groups": [
+        "argument-062"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "zhang2024ad",
+      "track": "embodiment",
+      "context_group": "argument-054",
+      "all_groups": [
+        "argument-054"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "zhang2024adaptigraph",
+      "track": "representations",
+      "context_group": "argument-022",
+      "all_groups": [
+        "argument-022",
+        "argument-090"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "hou2024adaptive",
+      "track": "tactile",
+      "context_group": "argument-047",
+      "all_groups": [
+        "argument-047"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "huang2024adaptive",
+      "track": "tactile",
+      "context_group": "argument-041",
+      "all_groups": [
+        "argument-041"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "gu2024dwl",
+      "track": "embodiment",
+      "context_group": "argument-063",
+      "all_groups": [
+        "argument-063"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "duan2024aha",
+      "track": "interaction",
+      "context_group": "argument-091",
+      "all_groups": [
+        "argument-082",
+        "argument-091"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "shumailov2024collapse",
+      "track": "interaction",
+      "context_group": "argument-091",
+      "all_groups": [
+        "argument-091"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "liu2024embodiedai",
+      "track": "foundations",
+      "context_group": "argument-006",
+      "all_groups": [
+        "argument-004",
+        "argument-006"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "bhirangi2024anyskin",
+      "track": "tactile",
+      "context_group": "argument-043",
+      "all_groups": [
+        "argument-043",
+        "argument-044"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "sun2024arch",
+      "track": "learning-control",
+      "context_group": "argument-042",
+      "all_groups": [
+        "argument-042"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "ahn2024autort",
+      "track": "interaction",
+      "context_group": "argument-092",
+      "all_groups": [
+        "argument-092"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "lekeufack2024conformal",
+      "track": "evaluation",
+      "context_group": "argument-101",
+      "all_groups": [
+        "argument-101"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "dexmimicgen",
+      "track": "resources",
+      "context_group": "argument-026",
+      "all_groups": [
+        "argument-026",
+        "argument-032",
+        "argument-066",
+        "argument-073",
+        "argument-078",
+        "argument-085",
+        "argument-086",
+        "argument-113"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "si2024difftactile",
+      "track": "tactile",
+      "context_group": "argument-041",
+      "all_groups": [
+        "argument-041"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "alonso2024diamond",
+      "track": "representations",
+      "context_group": "argument-043",
+      "all_groups": [
+        "argument-043",
+        "argument-093"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "yang2024diffusion",
+      "track": "learning-control",
+      "context_group": "argument-042",
+      "all_groups": [
+        "argument-042"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "lambeta2024digit360",
+      "track": "tactile",
+      "context_group": "argument-044",
+      "all_groups": [
+        "argument-044"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "wang2024drivedreamer",
+      "track": "embodiment",
+      "context_group": "argument-058",
+      "all_groups": [
+        "argument-054",
+        "argument-058"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "khazatsky2024droid",
+      "track": "resources",
+      "context_group": "argument-092",
+      "all_groups": [
+        "argument-064",
+        "argument-082",
+        "argument-084",
+        "argument-092"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "zhang2024dynprompt",
+      "track": "interaction",
+      "context_group": "argument-090",
+      "all_groups": [
+        "argument-090"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "egomimic2024",
+      "track": "human-data",
+      "context_group": "argument-050",
+      "all_groups": [
+        "argument-050",
+        "argument-051"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "patterson2024empirical",
+      "track": "evaluation",
+      "context_group": "argument-062",
+      "all_groups": [
+        "argument-062"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "ma2023eureka",
+      "track": "interaction",
+      "context_group": "argument-091",
+      "all_groups": [
+        "argument-091"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "li2024simpler",
+      "track": "evaluation",
+      "context_group": "argument-062",
+      "all_groups": [
+        "argument-062",
+        "argument-063",
+        "argument-072",
+        "argument-084"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "zheng2024genadend2end",
+      "track": "embodiment",
+      "context_group": "argument-058",
+      "all_groups": [
+        "argument-058"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "yang2024genad",
+      "track": "embodiment",
+      "context_group": "argument-058",
+      "all_groups": [
+        "argument-058"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "bruce2024genie",
+      "track": "simulation",
+      "context_group": "argument-025",
+      "all_groups": [
+        "argument-025"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "wang2024gensim",
+      "track": "simulation",
+      "context_group": "argument-100",
+      "all_groups": [
+        "argument-100"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "grape2024",
+      "track": "evaluation",
+      "context_group": "argument-040",
+      "all_groups": [
+        "argument-040"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "sferrazza2024humanoidbench",
+      "track": "resources",
+      "context_group": "argument-057",
+      "all_groups": [
+        "argument-057",
+        "argument-069"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "fu2024icrt",
+      "track": "interaction",
+      "context_group": "argument-090",
+      "all_groups": [
+        "argument-090"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "vosylius2024instantpolicy",
+      "track": "interaction",
+      "context_group": "argument-090",
+      "all_groups": [
+        "argument-090"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "hoque2024intervengen",
+      "track": "interaction",
+      "context_group": "argument-082",
+      "all_groups": [
+        "argument-082"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "sohn2024rfm1",
+      "track": "simulation",
+      "context_group": "argument-102",
+      "all_groups": [
+        "argument-102"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "liang2024introspective",
+      "track": "evaluation",
+      "context_group": "argument-101",
+      "all_groups": [
+        "argument-101"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "gerstgrasser2024collapse",
+      "track": "interaction",
+      "context_group": "argument-091",
+      "all_groups": [
+        "argument-091"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "wu2024ivideogpt",
+      "track": "representations",
+      "context_group": "argument-024",
+      "all_groups": [
+        "argument-024"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "humanoidx2024",
+      "track": "human-data",
+      "context_group": "argument-050",
+      "all_groups": [
+        "argument-050"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "yang2024unisim",
+      "track": "simulation",
+      "context_group": "argument-025",
+      "all_groups": [
+        "argument-025",
+        "argument-033",
+        "argument-092"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "sun2024ttt",
+      "track": "interaction",
+      "context_group": "argument-090",
+      "all_groups": [
+        "argument-090"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "xu2024letacmpc",
+      "track": "tactile",
+      "context_group": "argument-045",
+      "all_groups": [
+        "argument-045"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "shao2024lmdrive",
+      "track": "embodiment",
+      "context_group": "argument-054",
+      "all_groups": [
+        "argument-054"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "lu2024manigaussian",
+      "track": "representations",
+      "context_group": "argument-021",
+      "all_groups": [
+        "argument-021"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "maniskill3",
+      "track": "resources",
+      "context_group": "argument-069",
+      "all_groups": [
+        "argument-069",
+        "argument-073",
+        "argument-076",
+        "argument-079",
+        "argument-083",
+        "argument-084",
+        "argument-086",
+        "argument-113"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "liu2024runtime",
+      "track": "evaluation",
+      "context_group": "argument-060",
+      "all_groups": [
+        "argument-010",
+        "argument-016",
+        "argument-017",
+        "argument-060"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "defossez2024moshi",
+      "track": "frontiers",
+      "context_group": "argument-096",
+      "all_groups": [
+        "argument-096"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "liu2024not",
+      "track": "representations",
+      "context_group": "argument-019",
+      "all_groups": [
+        "argument-019"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "decart2024oasis",
+      "track": "simulation",
+      "context_group": "argument-039",
+      "all_groups": [
+        "argument-039",
+        "argument-096"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "zheng2024occworld",
+      "track": "embodiment",
+      "context_group": "argument-058",
+      "all_groups": [
+        "argument-054",
+        "argument-058"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "yu2024octopi",
+      "track": "tactile",
+      "context_group": "argument-044",
+      "all_groups": [
+        "argument-044"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "openxembodiment2023",
+      "track": "resources",
+      "context_group": "argument-026",
+      "all_groups": [
+        "argument-001",
+        "argument-026",
+        "argument-030",
+        "argument-054",
+        "argument-059",
+        "argument-064",
+        "argument-073",
+        "argument-074",
+        "argument-082",
+        "argument-084",
+        "argument-085",
+        "argument-086",
+        "argument-087",
+        "argument-113"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "openvla2024",
+      "track": "simulation",
+      "context_group": "argument-034",
+      "all_groups": [
+        "argument-010",
+        "argument-011",
+        "argument-026",
+        "argument-030",
+        "argument-032",
+        "argument-034",
+        "argument-035",
+        "argument-036",
+        "argument-059",
+        "argument-071",
+        "argument-073",
+        "argument-075",
+        "argument-084",
+        "argument-085",
+        "argument-086",
+        "argument-113"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "zhang2024physdreamer",
+      "track": "representations",
+      "context_group": "argument-019",
+      "all_groups": [
+        "argument-019"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "luo2024hilserl",
+      "track": "embodiment",
+      "context_group": "argument-060",
+      "all_groups": [
+        "argument-060",
+        "argument-082"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "radosavovic2024realworld",
+      "track": "embodiment",
+      "context_group": "argument-057",
+      "all_groups": [
+        "argument-057"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "torne2024rialto",
+      "track": "representations",
+      "context_group": "argument-022",
+      "all_groups": [
+        "argument-013",
+        "argument-022",
+        "argument-100"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "bardes2024revisiting",
+      "track": "representations",
+      "context_group": "argument-019",
+      "all_groups": [
+        "argument-019"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "lidard2024rcip",
+      "track": "embodiment",
+      "context_group": "argument-060",
+      "all_groups": [
+        "argument-060"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "robodreamer2024",
+      "track": "simulation",
+      "context_group": "argument-034",
+      "all_groups": [
+        "argument-002",
+        "argument-012",
+        "argument-024",
+        "argument-032",
+        "argument-034",
+        "argument-037",
+        "argument-071",
+        "argument-085",
+        "argument-086",
+        "argument-113"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "li2024robogsim",
+      "track": "representations",
+      "context_group": "argument-022",
+      "all_groups": [
+        "argument-022"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "wu2024robomind",
+      "track": "resources",
+      "context_group": "argument-082",
+      "all_groups": [
+        "argument-082"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "ai2024robopack",
+      "track": "tactile",
+      "context_group": "argument-045",
+      "all_groups": [
+        "argument-041",
+        "argument-045"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "wang2023fleetmerge",
+      "track": "interaction",
+      "context_group": "argument-092",
+      "all_groups": [
+        "argument-092"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "kressgazit2024empirical",
+      "track": "evaluation",
+      "context_group": "argument-062",
+      "all_groups": [
+        "argument-062",
+        "argument-069"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "huang2024safedreamer",
+      "track": "evaluation",
+      "context_group": "argument-042",
+      "all_groups": [
+        "argument-015",
+        "argument-042",
+        "argument-101"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "crossformer2024",
+      "track": "simulation",
+      "context_group": "argument-082",
+      "all_groups": [
+        "argument-082"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "snell2024scaling",
+      "track": "frontiers",
+      "context_group": "argument-099",
+      "all_groups": [
+        "argument-099"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "higuera2024sparsh",
+      "track": "tactile",
+      "context_group": "argument-044",
+      "all_groups": [
+        "argument-044"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "hansen2024tdmpc2",
+      "track": "learning-control",
+      "context_group": "argument-029",
+      "all_groups": [
+        "argument-029",
+        "argument-062",
+        "argument-064",
+        "argument-071"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "hsu2024safety",
+      "track": "evaluation",
+      "context_group": "argument-101",
+      "all_groups": [
+        "argument-101"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "lyu2024total",
+      "track": "simulation",
+      "context_group": "argument-100",
+      "all_groups": [
+        "argument-100"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "hu2024generalpurpose",
+      "track": "foundations",
+      "context_group": "argument-006",
+      "all_groups": [
+        "argument-004",
+        "argument-006",
+        "argument-007"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "villaflor2024tractable",
+      "track": "learning-control",
+      "context_group": "argument-042",
+      "all_groups": [
+        "argument-042"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "huang2024vbench",
+      "track": "evaluation",
+      "context_group": "argument-072",
+      "all_groups": [
+        "argument-072"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "lin2024verification",
+      "track": "evaluation",
+      "context_group": "argument-101",
+      "all_groups": [
+        "argument-101"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "brooks2024sora",
+      "track": "representations",
+      "context_group": "argument-025",
+      "all_groups": [
+        "argument-025"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "hu2024vpp",
+      "track": "embodiment",
+      "context_group": "argument-059",
+      "all_groups": [
+        "argument-059"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "alakuijala2024video",
+      "track": "evaluation",
+      "context_group": "argument-040",
+      "all_groups": [
+        "argument-040"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "luo2024vision",
+      "track": "evaluation",
+      "context_group": "argument-040",
+      "all_groups": [
+        "argument-040"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "gao2024vista",
+      "track": "embodiment",
+      "context_group": "argument-058",
+      "all_groups": [
+        "argument-054",
+        "argument-058"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "guan2024worldmodels",
+      "track": "embodiment",
+      "context_group": "argument-058",
+      "all_groups": [
+        "argument-058"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "zeng2024world",
+      "track": "evaluation",
+      "context_group": "argument-042",
+      "all_groups": [
+        "argument-042"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "shi2024yell",
+      "track": "embodiment",
+      "context_group": "argument-060",
+      "all_groups": [
+        "argument-060"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "pi0",
+      "track": "simulation",
+      "context_group": "argument-034",
+      "all_groups": [
+        "argument-011",
+        "argument-026",
+        "argument-030",
+        "argument-032",
+        "argument-034",
+        "argument-035",
+        "argument-036",
+        "argument-059",
+        "argument-064",
+        "argument-071",
+        "argument-073",
+        "argument-075",
+        "argument-084",
+        "argument-086",
+        "argument-087",
+        "argument-113"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "niu2023re2h2o",
+      "track": "embodiment",
+      "context_group": "argument-058",
+      "all_groups": [
+        "argument-054",
+        "argument-058"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "tian2023vp2",
+      "track": "evaluation",
+      "context_group": "argument-093",
+      "all_groups": [
+        "argument-093"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "dixit2023adaptive",
+      "track": "evaluation",
+      "context_group": "argument-101",
+      "all_groups": [
+        "argument-101"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "mendonca2023alan",
+      "track": "interaction",
+      "context_group": "argument-089",
+      "all_groups": [
+        "argument-089"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "bridgedatav2",
+      "track": "resources",
+      "context_group": "argument-059",
+      "all_groups": [
+        "argument-054",
+        "argument-059",
+        "argument-073",
+        "argument-074",
+        "argument-084",
+        "argument-085",
+        "argument-086",
+        "argument-087"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "sinha2023closing",
+      "track": "evaluation",
+      "context_group": "argument-092",
+      "all_groups": [
+        "argument-063",
+        "argument-092",
+        "argument-101"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "sun2023conformal",
+      "track": "evaluation",
+      "context_group": "argument-042",
+      "all_groups": [
+        "argument-042"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "kauvar2023curious",
+      "track": "interaction",
+      "context_group": "argument-091",
+      "all_groups": [
+        "argument-091"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "wabersich2023data",
+      "track": "evaluation",
+      "context_group": "argument-101",
+      "all_groups": [
+        "argument-101"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "chi2023diffusionpolicy",
+      "track": "tactile",
+      "context_group": "argument-043",
+      "all_groups": [
+        "argument-043"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "oquab2023dinov2",
+      "track": "representations",
+      "context_group": "argument-019",
+      "all_groups": [
+        "argument-019"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "egoexo4d2023",
+      "track": "human-data",
+      "context_group": "argument-048",
+      "all_groups": [
+        "argument-048",
+        "argument-050"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "hu2023gaia1",
+      "track": "embodiment",
+      "context_group": "argument-025",
+      "all_groups": [
+        "argument-025",
+        "argument-054",
+        "argument-058"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "bauer2023ada",
+      "track": "interaction",
+      "context_group": "argument-090",
+      "all_groups": [
+        "argument-090"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "laskin2023distillation",
+      "track": "interaction",
+      "context_group": "argument-090",
+      "all_groups": [
+        "argument-090"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "iso34503",
+      "track": "evaluation",
+      "context_group": "argument-063",
+      "all_groups": [
+        "argument-063"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "zhao2023act",
+      "track": "tactile",
+      "context_group": "argument-043",
+      "all_groups": [
+        "argument-043"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "du2023unipi",
+      "track": "representations",
+      "context_group": "argument-019",
+      "all_groups": [
+        "argument-019",
+        "argument-024"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "seo2023masked",
+      "track": "representations",
+      "context_group": "argument-024",
+      "all_groups": [
+        "argument-024"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "hafner2023dreamerv3",
+      "track": "learning-control",
+      "context_group": "argument-028",
+      "all_groups": [
+        "argument-001",
+        "argument-007",
+        "argument-008",
+        "argument-024",
+        "argument-028",
+        "argument-032",
+        "argument-062",
+        "argument-066",
+        "argument-088"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "mimicgen",
+      "track": "resources",
+      "context_group": "argument-026",
+      "all_groups": [
+        "argument-026",
+        "argument-032",
+        "argument-062",
+        "argument-066",
+        "argument-071",
+        "argument-073",
+        "argument-078",
+        "argument-084",
+        "argument-085",
+        "argument-086",
+        "argument-100",
+        "argument-113"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "mimicplay2023",
+      "track": "human-data",
+      "context_group": "argument-051",
+      "all_groups": [
+        "argument-042",
+        "argument-051"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "moerland2023modelbasedrl",
+      "track": "foundations",
+      "context_group": "argument-006",
+      "all_groups": [
+        "argument-004",
+        "argument-006"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "han2023koopman",
+      "track": "representations",
+      "context_group": "argument-022",
+      "all_groups": [
+        "argument-022"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "liu2023reflect",
+      "track": "interaction",
+      "context_group": "argument-091",
+      "all_groups": [
+        "argument-082",
+        "argument-091",
+        "argument-106",
+        "argument-109"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "bousmalis2023robocat",
+      "track": "interaction",
+      "context_group": "argument-088",
+      "all_groups": [
+        "argument-088",
+        "argument-092",
+        "argument-096"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "sakagami2023roboticworldmodels",
+      "track": "foundations",
+      "context_group": "argument-006",
+      "all_groups": [
+        "argument-004",
+        "argument-006",
+        "argument-007"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "ren2023knowno",
+      "track": "embodiment",
+      "context_group": "argument-060",
+      "all_groups": [
+        "argument-060",
+        "argument-101"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "rt2",
+      "track": "simulation",
+      "context_group": "argument-026",
+      "all_groups": [
+        "argument-026",
+        "argument-032",
+        "argument-034",
+        "argument-035",
+        "argument-059",
+        "argument-074",
+        "argument-113"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "lindemann2023safe",
+      "track": "evaluation",
+      "context_group": "argument-101",
+      "all_groups": [
+        "argument-101"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "niu2023stackelberg",
+      "track": "embodiment",
+      "context_group": "argument-058",
+      "all_groups": [
+        "argument-054",
+        "argument-058"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "mendonca2023swim",
+      "track": "interaction",
+      "context_group": "argument-089",
+      "all_groups": [
+        "argument-089",
+        "argument-090"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "farid2023taskrelevant",
+      "track": "evaluation",
+      "context_group": "argument-063",
+      "all_groups": [
+        "argument-063"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "twist2023",
+      "track": "learning-control",
+      "context_group": "argument-030",
+      "all_groups": [
+        "argument-030",
+        "argument-063",
+        "argument-066",
+        "argument-076",
+        "argument-085",
+        "argument-086"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "TATU",
+      "track": "learning-control",
+      "context_group": "argument-027",
+      "all_groups": [
+        "argument-027"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "majumdar2023we",
+      "track": "representations",
+      "context_group": "argument-035",
+      "all_groups": [
+        "argument-035"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "xskill2023",
+      "track": "human-data",
+      "context_group": "argument-052",
+      "all_groups": [
+        "argument-052"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "cui2023lilac",
+      "track": "embodiment",
+      "context_group": "argument-060",
+      "all_groups": [
+        "argument-060"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "reed2022gato",
+      "track": "simulation",
+      "context_group": "argument-090",
+      "all_groups": [
+        "argument-090"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "subramanian2022ais",
+      "track": "foundations",
+      "context_group": "argument-093",
+      "all_groups": [
+        "argument-093"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "sharma2022autonomous",
+      "track": "interaction",
+      "context_group": "argument-089",
+      "all_groups": [
+        "argument-062",
+        "argument-089"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "arumugam2022ratedistortion",
+      "track": "foundations",
+      "context_group": "argument-089",
+      "all_groups": [
+        "argument-089"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "mees2022calvin",
+      "track": "resources",
+      "context_group": "argument-069",
+      "all_groups": [
+        "argument-069"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "wang2022cdl",
+      "track": "representations",
+      "context_group": "argument-023",
+      "all_groups": [
+        "argument-023"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "lippe2022citris",
+      "track": "representations",
+      "context_group": "argument-023",
+      "all_groups": [
+        "argument-023"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "as2022constrained",
+      "track": "evaluation",
+      "context_group": "argument-101",
+      "all_groups": [
+        "argument-101"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "chen2022cpl",
+      "track": "interaction",
+      "context_group": "argument-090",
+      "all_groups": [
+        "argument-090"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "sharma2022language",
+      "track": "embodiment",
+      "context_group": "argument-060",
+      "all_groups": [
+        "argument-060"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "sancaktar2022ceeus",
+      "track": "interaction",
+      "context_group": "argument-089",
+      "all_groups": [
+        "argument-089"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "wu2022daydreamer",
+      "track": "learning-control",
+      "context_group": "argument-028",
+      "all_groups": [
+        "argument-001",
+        "argument-008",
+        "argument-024",
+        "argument-028",
+        "argument-032",
+        "argument-043",
+        "argument-062",
+        "argument-066",
+        "argument-088",
+        "argument-089",
+        "argument-090",
+        "argument-111"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "arumugam2022deciding",
+      "track": "foundations",
+      "context_group": "argument-089",
+      "all_groups": [
+        "argument-089",
+        "argument-093"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "hafner2022director",
+      "track": "frontiers",
+      "context_group": "argument-097",
+      "all_groups": [
+        "argument-097"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "skalse2022reward",
+      "track": "evaluation",
+      "context_group": "argument-063",
+      "all_groups": [
+        "argument-063"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "Grauman_2022_CVPR",
+      "track": "human-data",
+      "context_group": "argument-049",
+      "all_groups": [
+        "argument-049"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "farid2022failure",
+      "track": "evaluation",
+      "context_group": "argument-092",
+      "all_groups": [
+        "argument-063",
+        "argument-092"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "hoque2022fleetdagger",
+      "track": "interaction",
+      "context_group": "argument-092",
+      "all_groups": [
+        "argument-092"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "lipman2022flow",
+      "track": "representations",
+      "context_group": "argument-024",
+      "all_groups": [
+        "argument-024"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "liu2022flow",
+      "track": "representations",
+      "context_group": "argument-024",
+      "all_groups": [
+        "argument-024"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "iso21448",
+      "track": "evaluation",
+      "context_group": "argument-063",
+      "all_groups": [
+        "argument-063"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "he2022masked",
+      "track": "representations",
+      "context_group": "argument-019",
+      "all_groups": [
+        "argument-019"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "xiao2022masked",
+      "track": "representations",
+      "context_group": "argument-019",
+      "all_groups": [
+        "argument-019"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "gupta2022maskvit",
+      "track": "representations",
+      "context_group": "argument-024",
+      "all_groups": [
+        "argument-024"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "hu2022mile",
+      "track": "embodiment",
+      "context_group": "argument-058",
+      "all_groups": [
+        "argument-058"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "sun2022plate",
+      "track": "learning-control",
+      "context_group": "argument-042",
+      "all_groups": [
+        "argument-042"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "nair2022r3m",
+      "track": "representations",
+      "context_group": "argument-019",
+      "all_groups": [
+        "argument-019",
+        "argument-035"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "liu2022atacom",
+      "track": "evaluation",
+      "context_group": "argument-063",
+      "all_groups": [
+        "argument-063"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "rt1",
+      "track": "simulation",
+      "context_group": "argument-026",
+      "all_groups": [
+        "argument-026",
+        "argument-073",
+        "argument-074"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "farid2022taskdriven",
+      "track": "evaluation",
+      "context_group": "argument-063",
+      "all_groups": [
+        "argument-063"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "stilgoe2022politics",
+      "track": "evaluation",
+      "context_group": "argument-042",
+      "all_groups": [
+        "argument-042"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "hoque2022thrifty",
+      "track": "interaction",
+      "context_group": "argument-091",
+      "all_groups": [
+        "argument-016",
+        "argument-060",
+        "argument-091"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "ma2022vip",
+      "track": "evaluation",
+      "context_group": "argument-040",
+      "all_groups": [
+        "argument-040"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "wi2022virdopp",
+      "track": "tactile",
+      "context_group": "argument-045",
+      "all_groups": [
+        "argument-045"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "wi2022virdo",
+      "track": "tactile",
+      "context_group": "argument-045",
+      "all_groups": [
+        "argument-045"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "brehmer2022weakly",
+      "track": "representations",
+      "context_group": "argument-023",
+      "all_groups": [
+        "argument-023"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "h2o2022",
+      "track": "learning-control",
+      "context_group": "argument-031",
+      "all_groups": [
+        "argument-031"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "xirl2022",
+      "track": "human-data",
+      "context_group": "argument-052",
+      "all_groups": [
+        "argument-052"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "wabersich2021predictive",
+      "track": "evaluation",
+      "context_group": "argument-101",
+      "all_groups": [
+        "argument-101"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "sun2021adversarial",
+      "track": "learning-control",
+      "context_group": "argument-042",
+      "all_groups": [
+        "argument-042"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "lee2021crest",
+      "track": "representations",
+      "context_group": "argument-098",
+      "all_groups": [
+        "argument-098"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "ahmed2021causalworld",
+      "track": "representations",
+      "context_group": "argument-098",
+      "all_groups": [
+        "argument-098"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "COMBO",
+      "track": "learning-control",
+      "context_group": "argument-027",
+      "all_groups": [
+        "argument-027"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "hagenow2021corrective",
+      "track": "embodiment",
+      "context_group": "argument-060",
+      "all_groups": [
+        "argument-060"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "agarwal2021precipice",
+      "track": "evaluation",
+      "context_group": "argument-062",
+      "all_groups": [
+        "argument-062"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "mendonca2021lexa",
+      "track": "interaction",
+      "context_group": "argument-089",
+      "all_groups": [
+        "argument-089"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "pineau2021improving",
+      "track": "evaluation",
+      "context_group": "argument-068",
+      "all_groups": [
+        "argument-068"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "makoviychuk2021isaacgym",
+      "track": "simulation",
+      "context_group": "argument-013",
+      "all_groups": [
+        "argument-013"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "saej3016",
+      "track": "evaluation",
+      "context_group": "argument-063",
+      "all_groups": [
+        "argument-063"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "huang2021learning",
+      "track": "learning-control",
+      "context_group": "argument-042",
+      "all_groups": [
+        "argument-042"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "luo2021tactiletextiles",
+      "track": "tactile",
+      "context_group": "argument-048",
+      "all_groups": [
+        "argument-048"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "DBC",
+      "track": "learning-control",
+      "context_group": "argument-028",
+      "all_groups": [
+        "argument-028"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "hafner2021dreamerv2",
+      "track": "learning-control",
+      "context_group": "argument-024",
+      "all_groups": [
+        "argument-024"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "sun2021neuro",
+      "track": "learning-control",
+      "context_group": "argument-042",
+      "all_groups": [
+        "argument-042"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "gupta2021resetfree",
+      "track": "interaction",
+      "context_group": "argument-089",
+      "all_groups": [
+        "argument-089"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "bhirangi2021reskin",
+      "track": "tactile",
+      "context_group": "argument-044",
+      "all_groups": [
+        "argument-044"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "scholkopf2021causal",
+      "track": "representations",
+      "context_group": "argument-023",
+      "all_groups": [
+        "argument-023"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "scanlon2021waymo",
+      "track": "evaluation",
+      "context_group": "argument-063",
+      "all_groups": [
+        "argument-063"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "fridovich2020confidence",
+      "track": "evaluation",
+      "context_group": "argument-101",
+      "all_groups": [
+        "argument-101"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "lee2020cadm",
+      "track": "interaction",
+      "context_group": "argument-090",
+      "all_groups": [
+        "argument-090"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "baradel2020cophy",
+      "track": "representations",
+      "context_group": "argument-023",
+      "all_groups": [
+        "argument-023",
+        "argument-098"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "pitis2020coda",
+      "track": "representations",
+      "context_group": "argument-098",
+      "all_groups": [
+        "argument-098"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "lambeta2020digit",
+      "track": "tactile",
+      "context_group": "argument-043",
+      "all_groups": [
+        "argument-043",
+        "argument-044",
+        "argument-048"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "hafner2019dreamer",
+      "track": "learning-control",
+      "context_group": "argument-028",
+      "all_groups": [
+        "argument-007",
+        "argument-010",
+        "argument-012",
+        "argument-015",
+        "argument-017",
+        "argument-024",
+        "argument-028",
+        "argument-032",
+        "argument-038",
+        "argument-043",
+        "argument-061",
+        "argument-071",
+        "argument-088",
+        "argument-111"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "zhang2020effect",
+      "track": "evaluation",
+      "context_group": "argument-101",
+      "all_groups": [
+        "argument-101"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "mandlekar2020iwr",
+      "track": "embodiment",
+      "context_group": "argument-060",
+      "all_groups": [
+        "argument-060"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "manuelli2020keypoints",
+      "track": "representations",
+      "context_group": "argument-022",
+      "all_groups": [
+        "argument-022"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "li2020koopman",
+      "track": "representations",
+      "context_group": "argument-022",
+      "all_groups": [
+        "argument-022"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "spencer2020interventions",
+      "track": "embodiment",
+      "context_group": "argument-060",
+      "all_groups": [
+        "argument-060"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "lee2020quadruped",
+      "track": "embodiment",
+      "context_group": "argument-063",
+      "all_groups": [
+        "argument-063"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "basich2020learning",
+      "track": "evaluation",
+      "context_group": "argument-063",
+      "all_groups": [
+        "argument-063"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "sanchez2020learning",
+      "track": "representations",
+      "context_group": "argument-019",
+      "all_groups": [
+        "argument-019"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "schrittwieser2020muzero",
+      "track": "foundations",
+      "context_group": "argument-061",
+      "all_groups": [
+        "argument-003",
+        "argument-061"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "metaworld",
+      "track": "resources",
+      "context_group": "argument-076",
+      "all_groups": [
+        "argument-073",
+        "argument-076",
+        "argument-079",
+        "argument-111"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "MOPO",
+      "track": "learning-control",
+      "context_group": "argument-027",
+      "all_groups": [
+        "argument-027",
+        "argument-101"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "MOReL",
+      "track": "learning-control",
+      "context_group": "argument-027",
+      "all_groups": [
+        "argument-027"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "lambert2020objective",
+      "track": "foundations",
+      "context_group": "argument-088",
+      "all_groups": [
+        "argument-062",
+        "argument-070",
+        "argument-088",
+        "argument-093",
+        "argument-101"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "sekar2020plan2explore",
+      "track": "interaction",
+      "context_group": "argument-089",
+      "all_groups": [
+        "argument-089"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "jin2020rewardfree",
+      "track": "interaction",
+      "context_group": "argument-089",
+      "all_groups": [
+        "argument-089"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "james2020rlbench",
+      "track": "resources",
+      "context_group": "argument-069",
+      "all_groups": [
+        "argument-069"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "robosuite",
+      "track": "resources",
+      "context_group": "argument-069",
+      "all_groups": [
+        "argument-069",
+        "argument-073",
+        "argument-076",
+        "argument-084",
+        "argument-111"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "ku2020room",
+      "track": "embodiment",
+      "context_group": "argument-056",
+      "all_groups": [
+        "argument-056"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "zhao2020simtoreal",
+      "track": "learning-control",
+      "context_group": "argument-030",
+      "all_groups": [
+        "argument-006",
+        "argument-030"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "grimm2020value",
+      "track": "foundations",
+      "context_group": "argument-088",
+      "all_groups": [
+        "argument-003",
+        "argument-061",
+        "argument-062",
+        "argument-088",
+        "argument-093",
+        "argument-110"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "zeng2019tossingbot",
+      "track": "interaction",
+      "context_group": "argument-088",
+      "all_groups": [
+        "argument-088"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "chen2020trust",
+      "track": "evaluation",
+      "context_group": "argument-101",
+      "all_groups": [
+        "argument-101"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "tang2020worst",
+      "track": "evaluation",
+      "context_group": "argument-063",
+      "all_groups": [
+        "argument-063"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "abraham2019active",
+      "track": "interaction",
+      "context_group": "argument-089",
+      "all_groups": [
+        "argument-089"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "ovadia2019can",
+      "track": "evaluation",
+      "context_group": "argument-101",
+      "all_groups": [
+        "argument-101"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "dehaan2019causal",
+      "track": "representations",
+      "context_group": "argument-098",
+      "all_groups": [
+        "argument-098"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "chebotar2019simopt",
+      "track": "interaction",
+      "context_group": "argument-088",
+      "all_groups": [
+        "argument-088",
+        "argument-090"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "ames2019cbf",
+      "track": "evaluation",
+      "context_group": "argument-063",
+      "all_groups": [
+        "argument-063",
+        "argument-101"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "nagabandi2019pddm",
+      "track": "interaction",
+      "context_group": "argument-088",
+      "all_groups": [
+        "argument-088"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "nagabandi2019mole",
+      "track": "interaction",
+      "context_group": "argument-090",
+      "all_groups": [
+        "argument-090"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "gelada2019deepmdp",
+      "track": "representations",
+      "context_group": "argument-019",
+      "all_groups": [
+        "argument-019"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "cheng2019endtoend",
+      "track": "evaluation",
+      "context_group": "argument-063",
+      "all_groups": [
+        "argument-063"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "burda2018rnd",
+      "track": "interaction",
+      "context_group": "argument-089",
+      "all_groups": [
+        "argument-089"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "habitat",
+      "track": "resources",
+      "context_group": "argument-056",
+      "all_groups": [
+        "argument-054",
+        "argument-056",
+        "argument-069",
+        "argument-073",
+        "argument-076",
+        "argument-084",
+        "argument-111"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "kelly2019hgdagger",
+      "track": "interaction",
+      "context_group": "argument-063",
+      "all_groups": [
+        "argument-016",
+        "argument-063"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "hafner2019planet",
+      "track": "learning-control",
+      "context_group": "argument-029",
+      "all_groups": [
+        "argument-012",
+        "argument-024",
+        "argument-029",
+        "argument-099"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "li2019particle",
+      "track": "representations",
+      "context_group": "argument-022",
+      "all_groups": [
+        "argument-022"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "sundaram2019stag",
+      "track": "tactile",
+      "context_group": "argument-048",
+      "all_groups": [
+        "argument-048"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "nagabandi2019adapt",
+      "track": "interaction",
+      "context_group": "argument-090",
+      "all_groups": [
+        "argument-090"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "tian2019manipulation",
+      "track": "tactile",
+      "context_group": "argument-045",
+      "all_groups": [
+        "argument-041",
+        "argument-045",
+        "argument-093"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "robonet",
+      "track": "resources",
+      "context_group": "argument-092",
+      "all_groups": [
+        "argument-073",
+        "argument-074",
+        "argument-082",
+        "argument-083",
+        "argument-092",
+        "argument-111"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "pathak2019disagreement",
+      "track": "interaction",
+      "context_group": "argument-089",
+      "all_groups": [
+        "argument-089"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "openai2019rubiks",
+      "track": "simulation",
+      "context_group": "argument-013",
+      "all_groups": [
+        "argument-013"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "bansal2019updates",
+      "track": "evaluation",
+      "context_group": "argument-101",
+      "all_groups": [
+        "argument-101"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "janner2019mbpo",
+      "track": "learning-control",
+      "context_group": "argument-088",
+      "all_groups": [
+        "argument-038",
+        "argument-061",
+        "argument-062",
+        "argument-063",
+        "argument-071",
+        "argument-088",
+        "argument-101"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "israelsen2019dave",
+      "track": "evaluation",
+      "context_group": "argument-101",
+      "all_groups": [
+        "argument-101"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "kunze2018ai",
+      "track": "evaluation",
+      "context_group": "argument-063",
+      "all_groups": [
+        "argument-063"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "ajay2018residual",
+      "track": "interaction",
+      "context_group": "argument-088",
+      "all_groups": [
+        "argument-088"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "henderson2018deep",
+      "track": "evaluation",
+      "context_group": "argument-062",
+      "all_groups": [
+        "argument-062"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "peng2018deepmimic",
+      "track": "embodiment",
+      "context_group": "argument-057",
+      "all_groups": [
+        "argument-057"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "iso26262",
+      "track": "evaluation",
+      "context_group": "argument-063",
+      "all_groups": [
+        "argument-063"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "farahmand2018itervaml",
+      "track": "foundations",
+      "context_group": "argument-003",
+      "all_groups": [
+        "argument-003"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "gurau2018learn",
+      "track": "evaluation",
+      "context_group": "argument-101",
+      "all_groups": [
+        "argument-101"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "eysenbach2018leavenotrace",
+      "track": "interaction",
+      "context_group": "argument-089",
+      "all_groups": [
+        "argument-089"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "fisac2018probabilistically",
+      "track": "evaluation",
+      "context_group": "argument-101",
+      "all_groups": [
+        "argument-101"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "kalashnikov2018qtopt",
+      "track": "interaction",
+      "context_group": "argument-092",
+      "all_groups": [
+        "argument-092"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "alshiekh2018safe",
+      "track": "evaluation",
+      "context_group": "argument-063",
+      "all_groups": [
+        "argument-063"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "unterthiner2018fvd",
+      "track": "evaluation",
+      "context_group": "argument-061",
+      "all_groups": [
+        "argument-061"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "ha2018worldmodels",
+      "track": "foundations",
+      "context_group": "argument-007",
+      "all_groups": [
+        "argument-007"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "bellemare2017distributional",
+      "track": "evaluation",
+      "context_group": "argument-063",
+      "all_groups": [
+        "argument-063"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "sadigh2017active",
+      "track": "embodiment",
+      "context_group": "argument-060",
+      "all_groups": [
+        "argument-060"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "ai2thor",
+      "track": "resources",
+      "context_group": "argument-056",
+      "all_groups": [
+        "argument-054",
+        "argument-056",
+        "argument-069",
+        "argument-073",
+        "argument-076",
+        "argument-111"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "pathak2017icm",
+      "track": "interaction",
+      "context_group": "argument-089",
+      "all_groups": [
+        "argument-089"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "christiano2017preferences",
+      "track": "learning-control",
+      "context_group": "argument-015",
+      "all_groups": [
+        "argument-015",
+        "argument-105",
+        "argument-109"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "finn2017deep",
+      "track": "representations",
+      "context_group": "argument-024",
+      "all_groups": [
+        "argument-024"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "tobin2017domain",
+      "track": "simulation",
+      "context_group": "argument-013",
+      "all_groups": [
+        "argument-013"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "yuan2017gelsight",
+      "track": "tactile",
+      "context_group": "argument-043",
+      "all_groups": [
+        "argument-043",
+        "argument-044",
+        "argument-048"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "bansal2017hamilton",
+      "track": "evaluation",
+      "context_group": "argument-101",
+      "all_groups": [
+        "argument-101"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "bajcsy2017objectives",
+      "track": "embodiment",
+      "context_group": "argument-060",
+      "all_groups": [
+        "argument-060"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "polydoros2017mbrlrobotics",
+      "track": "foundations",
+      "context_group": "argument-006",
+      "all_groups": [
+        "argument-004",
+        "argument-006"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "oh2017vpn",
+      "track": "foundations",
+      "context_group": "argument-003",
+      "all_groups": [
+        "argument-003"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "farahmand2017vaml",
+      "track": "foundations",
+      "context_group": "argument-088",
+      "all_groups": [
+        "argument-003",
+        "argument-062",
+        "argument-088",
+        "argument-093"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "daftry2016introspective",
+      "track": "evaluation",
+      "context_group": "argument-063",
+      "all_groups": [
+        "argument-063",
+        "argument-101"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "isots15066",
+      "track": "evaluation",
+      "context_group": "argument-063",
+      "all_groups": [
+        "argument-063"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "schaul2015per",
+      "track": "interaction",
+      "context_group": "argument-091",
+      "all_groups": [
+        "argument-091"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "wang2016trust",
+      "track": "evaluation",
+      "context_group": "argument-101",
+      "all_groups": [
+        "argument-101"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "sculley2015hidden",
+      "track": "evaluation",
+      "context_group": "argument-063",
+      "all_groups": [
+        "argument-063"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "hutchins2015representing",
+      "track": "evaluation",
+      "context_group": "argument-101",
+      "all_groups": [
+        "argument-101"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "javdani2015shared",
+      "track": "embodiment",
+      "context_group": "argument-060",
+      "all_groups": [
+        "argument-060"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "koenemann2015wholebody",
+      "track": "embodiment",
+      "context_group": "argument-057",
+      "all_groups": [
+        "argument-057"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "todorov2012mujoco",
+      "track": "simulation",
+      "context_group": "argument-013",
+      "all_groups": [
+        "argument-013"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "ross2011dagger",
+      "track": "interaction",
+      "context_group": "argument-091",
+      "all_groups": [
+        "argument-060",
+        "argument-063",
+        "argument-091"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "deisenroth2011pilco",
+      "track": "learning-control",
+      "context_group": "argument-090",
+      "all_groups": [
+        "argument-090"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "wettels2008biotac",
+      "track": "tactile",
+      "context_group": "argument-044",
+      "all_groups": [
+        "argument-044"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "leesee2004trust",
+      "track": "evaluation",
+      "context_group": "argument-063",
+      "all_groups": [
+        "argument-063",
+        "argument-101"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "kajita2003preview",
+      "track": "embodiment",
+      "context_group": "argument-057",
+      "all_groups": [
+        "argument-057"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "sha2001simplicity",
+      "track": "evaluation",
+      "context_group": "argument-063",
+      "all_groups": [
+        "argument-063"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "parasuraman1997humans",
+      "track": "evaluation",
+      "context_group": "argument-101",
+      "all_groups": [
+        "argument-101"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "stewart1996implicit",
+      "track": "tactile",
+      "context_group": "argument-043",
+      "all_groups": [
+        "argument-043"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "sutton1991dyna",
+      "track": "foundations",
+      "context_group": "argument-088",
+      "all_groups": [
+        "argument-088"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "hogan1985impedance",
+      "track": "tactile",
+      "context_group": "argument-043",
+      "all_groups": [
+        "argument-043"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "whitney1982quasi",
+      "track": "tactile",
+      "context_group": "argument-043",
+      "all_groups": [
+        "argument-043"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    },
+    {
+      "paper": "wang2026counterfactual",
+      "track": "embodiment",
+      "context_group": "argument-057",
+      "all_groups": [
+        "argument-013",
+        "argument-057"
+      ],
+      "placement_basis": "Editorial reading route; all original citation contexts remain linked"
+    }
+  ]
+}
