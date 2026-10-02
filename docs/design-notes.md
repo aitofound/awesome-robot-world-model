@@ -30,7 +30,7 @@ External repository licenses remain upstream. Because this repository links to t
 
 **4. Offer different paths through the same subject.** Prompt Engineering Guide groups guides, techniques, applications, papers and tools. That separation is useful even when the reader already knows a method name. The Atlas’s route directory groups understanding the model, grounding it in the robot, and testing or improving it. Each group connects to the existing manuscript-aligned routes without changing their scientific placements.
 
-**5. Make a large list easy to return to.** Awesome uses a recognizable brand, spacing, short navigation and hierarchical lists. The Atlas applies those principles with original artwork and consistent category cues. Each route links back to the directory, and the footer returns to the top. The user’s final Control diagram belongs in the expandable overview, with readable text distinguishing prediction use from physical execution.
+**5. Make a large list easy to return to.** Awesome uses a recognizable brand, spacing, short navigation and hierarchical lists. The Atlas applies those principles with original artwork and consistent category cues. Each route links back to the directory, and the footer returns to the top. The user’s final Control diagram is visible on the homepage before the expandable explanation, whose readable text distinguishes prediction use from physical execution.
 
 ## Emoji, color and typography have distinct jobs
 

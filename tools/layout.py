@@ -143,11 +143,12 @@ def build(atlas, catalog, resources, organization, mapping):
           '- **Choosing what to read?** Browse the [annotated entries](#atlas), then open the [interfaces and evidence boundaries](docs/methods.md).',
           '- **Looking for a title or citation key?** Use the [paper index](docs/paper-index.md) or the [bibliographic catalog](docs/catalog.md).',
           '- **Building or evaluating a system?** Find [datasets, environments and implementations](docs/resources.md), then use the [evaluation worksheet](docs/evaluation.md).', '',
-          '<details>', '<summary><strong>🔁 Inside the robot learning loop</strong> · Observe → Predict → Use predictions → Control</summary>', '', '<br>', '',
+          '## 🔁 The robot learning loop', '',
           '[![The robot learning loop: Observe, Predict, Use predictions, Control.](assets/robot-learning-loop.png)](assets/robot-learning-loop.png)', '',
+          '*Select the diagram to view it at full size.*', '',
+          '<details>', '<summary><strong>📖 Follow the loop</strong> · Observe → Predict → Use predictions → Control</summary>', '', '<br>', '',
           '**03 · Use predictions:** improve a policy, choose an action, or assess a policy. These are alternative consumers of prediction.', '',
           '**04 · Control:** execute robot actions and record actual outcomes. New observations return to the next decision; model and policy updates depend on the method.', '',
-          '*Select the diagram to view it at full size.*', '',
           'The survey begins with a practical gap: a model can predict plausible futures while providing little help to the robot’s next decision. '
           'The Atlas therefore follows the handoffs between components. First identify the information state and the alternative actions the model can query. '
           'Then locate the consumer that turns those predictions into an action, learning target, evaluation or intervention. '
