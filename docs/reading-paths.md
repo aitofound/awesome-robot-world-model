@@ -14,9 +14,10 @@ Read a system through five connected questions: what information is available, w
 
 Define the model’s downstream use and distinguish predictive quality from decision utility.
 
-**The question.** What has to happen between predicting the world and improving a robot’s behavior?
+> **🎯 The question**
+> What has to happen between predicting the world and improving a robot’s behavior?
 
-**Reading chain**
+**🧩 Reading chain**
 
 1. **Recover the information state.** Start from observations and action history. A compact latent state is useful when it retains the consequences relevant to the task, even if it cannot reconstruct every visible detail.
 2. **Ask a counterfactual question.** Hold the history fixed and change a feasible action. The prediction should change the affected objects, contacts or outcomes while preserving unrelated parts of the scene.
@@ -31,11 +32,11 @@ Define the model’s downstream use and distinguish predictive quality from deci
 
 Read [PlaNet](methods.md#paper-hafner2019planet) beside [Dreamer](methods.md#paper-hafner2019dreamer). PlaNet uses imagined futures to select actions through planning. Dreamer uses imagined trajectories to train an actor and value model. The two systems illustrate distinct consumers of predictive dynamics, so a single “world-model-based control” label would hide the most useful comparison.
 
-**What would establish usefulness?**
+**🔬 Evidence to look for**
 
 The central test is downstream usefulness under the stated task and budget. Low prediction error or plausible video is relevant only insofar as it preserves the consequences used by the consumer. Keep the [operational criterion](scope-and-taxonomy.md) beside the [six functional roles](roles.md): a role identifies a use, while strict closed-loop qualification also needs action-responsive prediction, implemented coupling and execution evidence.
 
-**Where the argument goes next.** Continue to [representations](#track-representations) to ask what information the model preserves, then to [policy learning and planning](#track-learning-control) to examine the consumer.
+**↗ Where to read next.** Continue to [representations](#track-representations) to ask what information the model preserves, then to [policy learning and planning](#track-learning-control) to examine the consumer.
 
 **Survey connections:** [01. Introduction](chapters/01-introduction.md) · [03. A Robot Learning Loop View of World Models](chapters/03-foundations.md) · [04. The Optimizable Roles of World Models](chapters/04-roles.md).
 
@@ -47,9 +48,10 @@ The central test is downstream usefulness under the stated task and budget. Low 
 
 Choose a state substrate, action interface and rollout mechanism that preserve task-relevant consequences.
 
-**The question.** Which representation preserves the action consequences that the next decision needs?
+> **🎯 The question**
+> Which representation preserves the action consequences that the next decision needs?
 
-**Reading chain**
+**🧩 Reading chain**
 
 1. **Choose the task state.** Compare pixels, visual features, object or point states, contact variables and physical parameters by the information they retain. A visually rich state can still omit the friction or contact event that determines success.
 2. **Specify the query.** Write down the conditioning variables and the predicted quantity. Observation-and-goal conditioning, action-chunk conditioning and a query under an alternative control are different interfaces.
@@ -64,11 +66,11 @@ Choose a state substrate, action interface and rollout mechanism that preserve t
 
 [PointWorld](methods.md#paper-pointworld2026) exposes 3D action consequences to MPPI, while [PhysTwin](methods.md#paper-jiang2025phystwin) reconstructs structured deformable physics from video. [ODEWorld](methods.md#paper-liu2026odeworld) queries observation- and goal-conditioned futures in physical time; its reviewed interface does not accept queried candidate actions. [Causal-JEPA](methods.md#paper-nam2026causaljepa) provides object-aware predictive dependencies, which are not by themselves an identified causal graph. These distinctions prevent an architecture name from substituting for an interface description.
 
-**What would establish usefulness?**
+**🔬 Evidence to look for**
 
 Ask whether the representation preserves task-relevant geometry, occlusion, contact and action sensitivity over the consumer’s horizon. Measure the entire decision pipeline when a planner is used. PointWorld’s reported physical execution remains open loop, so its predictive representation and planning evidence must not be upgraded into a claim of online hardware correction.
 
-**Where the argument goes next.** Use [learning and control](#track-learning-control) to trace the chosen interface into action selection. For hidden contact state, follow [touch and contact](#track-tactile).
+**↗ Where to read next.** Use [learning and control](#track-learning-control) to trace the chosen interface into action selection. For hidden contact state, follow [touch and contact](#track-tactile).
 
 **Survey connections:** [05. Representation Substrates and World-Model Mechanics](chapters/05-representations.md) · [06. From Roles to Policy Improvement](chapters/06-learning-regimes.md) · [10. Embodiment and Task Perspective](chapters/10-embodiments.md).
 
@@ -80,9 +82,10 @@ Ask whether the representation preserves task-relevant geometry, occlusion, cont
 
 Separate actor learning through imagination from action selection through search or control.
 
-**The question.** Does the model change policy parameters during learning, or action choices during execution?
+> **🎯 The question**
+> Does the model change policy parameters during learning, or action choices during execution?
 
-**Reading chain**
+**🧩 Reading chain**
 
 1. **Identify the learning signal.** Determine whether predictions supply imagined transitions, demonstrations, rewards, value targets or a planning cost. The same transition model can support several learning regimes.
 2. **Trace the update.** For an imagination learner, follow generated trajectories into actor and value updates. For a planner, follow candidate actions into predicted consequences, scoring and selection.
@@ -97,11 +100,11 @@ Separate actor learning through imagination from action selection through search
 
 [TD-MPC2](methods.md#paper-hansen2024tdmpc2) combines latent prediction and value estimates with model-predictive action selection. [WorldPlanner](methods.md#paper-worldplanner2025) connects global tree search to local MPC. [Large Video Planner](methods.md#paper-chen2025largevideoplanner) instead turns visual plans into executable motion through retargeting, followed by open-loop execution in the reviewed evidence. [RoboDreamer](methods.md#paper-robodreamer2024) illustrates compositional task imagination. These interfaces should be compared at the handoff from prediction to an executable decision.
 
-**What would establish usefulness?**
+**🔬 Evidence to look for**
 
 Match real interaction, policy capacity and compute when assessing policy improvement. For planning, report candidate count, horizon, scoring, replanning cadence and full latency. For imagination learning, separate real and synthetic transitions and inspect performance under the learned policy’s query distribution. A success rate without these conditions does not establish which consumer benefited.
 
-**Where the argument goes next.** Follow [neural simulation](#track-simulation) when generated experience becomes reusable training data. Follow [interaction](#track-interaction) when real deployment changes the next learning round.
+**↗ Where to read next.** Follow [neural simulation](#track-simulation) when generated experience becomes reusable training data. Follow [interaction](#track-interaction) when real deployment changes the next learning round.
 
 **Survey connections:** [04. The Optimizable Roles of World Models](chapters/04-roles.md) · [06. From Roles to Policy Improvement](chapters/06-learning-regimes.md) · [14. From Interaction to Model Improvement](chapters/14-interaction-learning.md).
 
@@ -113,9 +116,10 @@ Match real interaction, policy capacity and compute when assessing policy improv
 
 Distinguish general priors, interactive neural environments and pipelines that generate training data.
 
-**The question.** What makes generated experience usable by a robot policy, and which learning rule consumes it?
+> **🎯 The question**
+> What makes generated experience usable by a robot policy, and which learning rule consumes it?
 
-**Reading chain**
+**🧩 Reading chain**
 
 1. **Adapt the prior.** Start from the pretrained representation or video prior, then locate robot action grounding, observation compatibility and task conditioning. A broad visual prior is not yet an executable robot environment.
 2. **Define the experience interface.** For interaction, a policy or human chooses an action and receives the predicted next observation before choosing again. Initial contexts, resets and the actor’s required modalities are part of that interface.
@@ -130,11 +134,11 @@ Distinguish general priors, interactive neural environments and pipelines that g
 
 [Cosmos](methods.md#paper-nvidia2025cosmos) and [Genie](methods.md#paper-bruce2024genie) provide generative context. [DreamDojo](methods.md#paper-gao2026dreamdojo) moves from human-video interaction priors toward robot grounding; [GeniWorld](methods.md#paper-gu2026geniworld) grounds conditions through rendered robot actions. [RoboWorld](methods.md#paper-nsim-roboworld) and [WorldEval](methods.md#paper-li2025worldeval) ask whether predicted outcomes can evaluate policies. Evaluation can be useful without a policy update, so its evidence should be read separately from training gains.
 
-**What would establish usefulness?**
+**🔬 Evidence to look for**
 
 For generated demonstrations, include adaptation, generation, filtering, labeling and rejected samples in the cost. For policy optimization, test independent physical performance and the actions favored by the learned policy. For evaluation, measure held-out policy ranking and absolute outcome calibration separately. Matching the final training-set size, as in an IWS comparison, does not by itself match the cost of constructing the world model.
 
-**Where the argument goes next.** Use [resources](#track-resources) to check whether a released artifact exposes the required interface. Continue to [evaluation](#track-evaluation) for the evidence contract or [interaction](#track-interaction) for real–synthetic updates.
+**↗ Where to read next.** Use [resources](#track-resources) to check whether a released artifact exposes the required interface. Continue to [evaluation](#track-evaluation) for the evidence contract or [interaction](#track-interaction) for real–synthetic updates.
 
 **Survey connections:** [07. Foundation-Driven World Models and Robot Priors](chapters/07-foundation-priors.md) · [06. From Roles to Policy Improvement](chapters/06-learning-regimes.md) · [11. Evaluation: From Prediction Metrics to Closed-Loop Utility](chapters/11-evaluation.md) · [14. From Interaction to Model Improvement](chapters/14-interaction-learning.md).
 
@@ -146,9 +150,10 @@ For generated demonstrations, include adaptation, generation, filtering, labelin
 
 Connect hidden contact state to predictive control, corrective action and multisensory learning.
 
-**The question.** What does touch reveal that vision misses, and how does that information change control?
+> **🎯 The question**
+> What does touch reveal that vision misses, and how does that information change control?
 
-**Reading chain**
+**🧩 Reading chain**
 
 1. **Recover local interaction state.** Contact, slip, compliance and occluded deformation can remain ambiguous in camera observations. Tactile or force history supplies evidence about the local interaction rather than just another visual view.
 2. **Predict a contact consequence.** Condition on the robot’s action and predict tactile images, latent contact state or deformation. Distinguish predicting the future from supplying current touch directly to an action policy.
@@ -163,11 +168,11 @@ Connect hidden contact state to predictive control, corrective action and multis
 
 [Sparsh](methods.md#paper-higuera2024sparsh) and [AnyTouch](methods.md#paper-feng2025anytouch) provide reusable tactile representations. [OmniVTLA](methods.md#paper-cheng2025omnivtla) supplies touch-conditioned policy context and is distinct from OmniVTA. [DexTacWAM](methods.md#paper-yuan2026dextacwam), [VTAM](methods.md#paper-yuan2026vtam), [Dream-Tac](methods.md#paper-lou2026dreamtac) and [Tactile-WAM](methods.md#paper-wu2026tactilewam) motivate a further comparison: where visual priors are reused, how touch affects prediction and action, and which pathways are allowed to adapt. [MuSe](methods.md#paper-clark2026muse) adds the retention question when sensing expands.
 
-**What would establish usefulness?**
+**🔬 Evidence to look for**
 
 Compare predictive touch with direct tactile conditioning under matched sensors, data and policy capacity. Check contact-sensitive errors, downstream control and full decision latency. A separated or aligned latent space alone cannot establish utility. Vision-to-touch retention should be measured on earlier behavior as well as the newly acquired sensing task, within the actual sensor and robot scope.
 
-**Where the argument goes next.** Follow [human data](#track-human-data) for the asymmetry between abundant video and scarce robot contact data. Follow [interaction](#track-interaction) for modality expansion, replay and retained behavior.
+**↗ Where to read next.** Follow [human data](#track-human-data) for the asymmetry between abundant video and scarce robot contact data. Follow [interaction](#track-interaction) for modality expansion, replay and retained behavior.
 
 **Survey connections:** [08. Tactile and Contact World Models](chapters/08-tactile-contact.md) · [05. Representation Substrates and World-Model Mechanics](chapters/05-representations.md) · [14. From Interaction to Model Improvement](chapters/14-interaction-learning.md).
 
@@ -179,9 +184,10 @@ Compare predictive touch with direct tactile conditioning under matched sensors,
 
 Separate passive priors, action proxies, paired supervision and deployment-time human context.
 
-**The question.** Which part of human experience transfers, and where do executable robot actions come from?
+> **🎯 The question**
+> Which part of human experience transfers, and where do executable robot actions come from?
 
-**Reading chain**
+**🧩 Reading chain**
 
 1. **Identify the role of the video.** Human video may supply representation pretraining, motion proxies, predictive supervision, generated task motion or context at deployment. These roles require different correspondences to robot experience.
 2. **Expose the transfer gaps.** Track sensing/viewpoint, kinematics, contact dynamics and action labels separately. Matching an image or hand trajectory does not resolve all four gaps.
@@ -196,11 +202,11 @@ Separate passive priors, action proxies, paired supervision and deployment-time 
 
 [Zero-WAM](methods.md#paper-zhou2026zerowam) supplies human video as context to frozen weights. [WAM-TTT](methods.md#paper-feng2026wamttt) adapts fast weights before execution and holds them fixed during rollout in the reviewed account. [TactAlign](methods.md#paper-tactalign2026) tests human–robot touch alignment and policy transfer, which does not by itself validate transferred predictive dynamics. [EgoZero](methods.md#paper-egozero2025) supplies an adjacent route from wearable observations to robot-grounded learning signals.
 
-**What would establish usefulness?**
+**🔬 Evidence to look for**
 
 Disentangle the gain from human data, robot fine-tuning and the grounding mechanism. Test held-out tasks or embodiments under the reported adaptation protocol and identify what stays frozen. If a method reports task progress rather than success, preserve that distinction. For contact transfer, a sensing or policy result needs separate evidence before supporting a claim about predictive robot dynamics.
 
-**Where the argument goes next.** Continue to [embodiment](#track-embodiment) for action semantics and physical feasibility, or [simulation](#track-simulation) when human priors generate experience for policy learning.
+**↗ Where to read next.** Continue to [embodiment](#track-embodiment) for action semantics and physical feasibility, or [simulation](#track-simulation) when human priors generate experience for policy learning.
 
 **Survey connections:** [09. Human and Egocentric Data as a World-Model Source](chapters/09-human-egocentric.md) · [07. Foundation-Driven World Models and Robot Priors](chapters/07-foundation-priors.md) · [08. Tactile and Contact World Models](chapters/08-tactile-contact.md) · [14. From Interaction to Model Improvement](chapters/14-interaction-learning.md).
 
@@ -212,9 +218,10 @@ Disentangle the gain from human data, robot fine-tuning and the grounding mechan
 
 Read manipulation, navigation, locomotion and driving through their action units and feedback requirements.
 
-**The question.** Which assumptions change when the same predictive idea moves between manipulation, navigation, locomotion and driving?
+> **🎯 The question**
+> Which assumptions change when the same predictive idea moves between manipulation, navigation, locomotion and driving?
 
-**Reading chain**
+**🧩 Reading chain**
 
 1. **Specify the controlled quantity.** Record joint commands, end-effector targets, action chunks or higher-level motion commands, together with controller rate and actuation limits. An action token has no portable physical meaning without this mapping.
 2. **Determine the necessary history.** Manipulation needs contact and object state, navigation needs persistent spatial belief, locomotion needs balance and morphology, and driving needs interaction with other traffic. Choose memory and prediction targets for the task.
@@ -229,11 +236,11 @@ Read manipulation, navigation, locomotion and driving through their action units
 
 [OpenVLA](methods.md#paper-openvla2024), [pi0](methods.md#paper-pi0) and [GR00T N1.7](methods.md#paper-nvidia2026groot17) provide policy context. Their action interfaces can consume generated supervision or be evaluated in a learned environment, but action prediction alone is not consequence prediction under alternative actions. Read these policies alongside the relevant world-model consumer rather than assigning them the same model category.
 
-**What would establish usefulness?**
+**🔬 Evidence to look for**
 
 Compare within a stated robot, controller, sensor suite, task distribution and intervention policy. Report full control latency and assistance rather than inference speed alone. For cross-robot transfer, identify what is shared and what is recalibrated or relearned. A stronger result on one embodiment does not establish a general ranking across different action spaces and physical constraints.
 
-**Where the argument goes next.** Use [evaluation](#track-evaluation) to choose the matching evidence. If human assistance changes later behavior, follow [interaction](#track-interaction) to identify the retained update.
+**↗ Where to read next.** Use [evaluation](#track-evaluation) to choose the matching evidence. If human assistance changes later behavior, follow [interaction](#track-interaction) to identify the retained update.
 
 **Survey connections:** [10. Embodiment and Task Perspective](chapters/10-embodiments.md) · [11. Evaluation: From Prediction Metrics to Closed-Loop Utility](chapters/11-evaluation.md) · [04. The Optimizable Roles of World Models](chapters/04-roles.md).
 
@@ -245,9 +252,10 @@ Compare within a stated robot, controller, sensor suite, task distribution and i
 
 Assess model quality, policy utility and deployment reliability with use-specific evidence.
 
-**The question.** Which reported measurement answers the claim the system actually makes?
+> **🎯 The question**
+> Which reported measurement answers the claim the system actually makes?
 
-**Reading chain**
+**🧩 Reading chain**
 
 1. **Test model behavior.** Measure task-relevant prediction, action sensitivity, temporal consistency and contact or geometry validity. Specify the conditioning actions and the query distribution.
 2. **Test the consumer.** Ask whether the planner, learner or evaluator improves under a matched budget. A better-looking video and a better-performing robot are separate observations.
@@ -262,11 +270,11 @@ Assess model quality, policy utility and deployment reliability with use-specifi
 
 [RoboWorld](methods.md#paper-nsim-roboworld) and [WorldEval](methods.md#paper-li2025worldeval) illustrate learned policy evaluation. Ranking agreement does not establish calibrated success probabilities. [Model-Based Runtime Monitoring](methods.md#paper-liu2024runtime) concerns prospective failure detection, while [SafeDreamer](methods.md#paper-huang2024safedreamer) introduces constraint-related prediction and control. A low observed failure rate may reflect the controller, monitor, fallback or human intervention, so model-specific attribution requires an appropriate comparison.
 
-**What would establish usefulness?**
+**🔬 Evidence to look for**
 
 Use the [evaluation worksheet](evaluation.md) to record the predicted quantity, consumer, changed object and feedback before choosing metrics. Preserve intervention-induced censoring: when assistance changes a trajectory, the outcome without assistance is unobserved. Model-to-real disagreement is a reason to investigate, not by itself proof of deliberate model exploitation. Proposed utility curves and reliability margins need measured data and a declared uncertainty procedure.
 
-**Where the argument goes next.** Select the supporting [resources](#track-resources), then follow [interaction](#track-interaction) to connect failures to the next update rather than reporting them only as a final score.
+**↗ Where to read next.** Select the supporting [resources](#track-resources), then follow [interaction](#track-interaction) to connect failures to the next update rather than reporting them only as a final score.
 
 **Survey connections:** [11. Evaluation: From Prediction Metrics to Closed-Loop Utility](chapters/11-evaluation.md) · [15. Open Challenges and Future Directions](chapters/15-research-agenda.md) · [14. From Interaction to Model Improvement](chapters/14-interaction-learning.md).
 
@@ -278,9 +286,10 @@ Use the [evaluation worksheet](evaluation.md) to record the predicted quantity, 
 
 Find the data, tools and evaluation fixtures that support a particular interface.
 
-**The question.** Does a dataset, simulator or harness expose the interface required by the intended experiment?
+> **🎯 The question**
+> Does a dataset, simulator or harness expose the interface required by the intended experiment?
 
-**Reading chain**
+**🧩 Reading chain**
 
 1. **Define the intended use.** Choose model fitting, alternative-action decisions, policy learning or deployment assessment before choosing a resource. Each use imposes a different data and execution contract.
 2. **Inspect the available signals.** Check actions, timestamps, observations, robot and controller metadata, rewards, task labels and intervention records. Missing correspondence can prevent a log from supporting the intended prediction query.
@@ -295,11 +304,11 @@ The survey separates Model, Decision, Learning and Deployment capabilities. They
 
 A [DINO-WM](methods.md#paper-zhou2025dinowm)-style planning question needs compatible visual states and action consequences. An [IWS](methods.md#paper-interactiveworldsim2026)-style demonstration route needs an interactive collection interface and usable supervision. A [RoboWorld](methods.md#paper-nsim-roboworld)-style evaluation question needs independent outcomes on policies beyond those used to construct the evaluator. These examples explain why selecting an artifact is downstream of defining the consumer.
 
-**What would establish usefulness?**
+**🔬 Evidence to look for**
 
 Read the actual released interface, version and metadata, and distinguish a paper description from an executable artifact. The linked resources here are entry points whose identities were checked, not installations or reproduced experiments. To evaluate a release, verify that its inputs, outputs and reset or labeling behavior support the chosen claim, then connect it to an appropriate physical or independently grounded outcome.
 
-**Where the argument goes next.** Return to [evaluation](#track-evaluation) with the chosen interface. Use [interaction](#track-interaction) if failures or deployment traces will become new data.
+**↗ Where to read next.** Return to [evaluation](#track-evaluation) with the chosen interface. Use [interaction](#track-interaction) if failures or deployment traces will become new data.
 
 **Survey connections:** [12. Resources: Datasets, Simulators, Benchmarks, and Frameworks](chapters/12-resources.md) · [11. Evaluation: From Prediction Metrics to Closed-Loop Utility](chapters/11-evaluation.md) · [A. Extended Survey Protocols](chapters/a-review-protocol.md).
 
@@ -311,9 +320,10 @@ Read the actual released interface, version and metadata, and distinguish a pape
 
 Track what feedback updates: context, actions, policy, model parameters or memory.
 
-**The question.** What changes after interaction, and which part of that change persists?
+> **🎯 The question**
+> What changes after interaction, and which part of that change persists?
 
-**Reading chain**
+**🧩 Reading chain**
 
 1. **Acquire experience with provenance.** Record the collection policy, executed actions, observations, predicted outcomes, failures and interventions. Real transitions, human corrections and synthetic alternatives provide different kinds of supervision.
 2. **Route each signal to its learner.** A failed action can provide valid dynamics supervision while being a poor behavior-cloning target. Corrective labels, rewards and counterfactual transitions must be sent to the appropriate policy, value or model update.
@@ -328,11 +338,11 @@ Track what feedback updates: context, actions, policy, model parameters or memor
 
 [Sirius-Fleet](methods.md#paper-liu2025siriusfleet) connects prospective prediction to allocating human supervision, and [Hi-WM](methods.md#paper-li2026hiwm) turns imagined failure states into corrective experience. [Zero-WAM](methods.md#paper-zhou2026zerowam) changes context rather than model weights; [WAM-TTT](methods.md#paper-feng2026wamttt) changes fast weights before rollout. [REGEN](methods.md#paper-govind2026regen) uses generated replay for continual imitation, while [Planning with Online World Models](methods.md#paper-liu2025onlinewm) examines predictive refitting for planning. Their shared question is where experience is stored and how that storage affects the next decision.
 
-**What would establish usefulness?**
+**🔬 Evidence to look for**
 
 Write separate model and policy objectives, update cadence, frozen components and the provenance of each transition. Measure new-task improvement together with old-task retention, including interventions and curation costs. The predictive fidelity of recorded actions does not automatically validate altered-action counterfactuals used to train the policy. An observed failure identifies an outcome; its suspected cause still needs a discriminating comparison.
 
-**Where the argument goes next.** Follow [open problems](#track-frontiers) for query shift, persistent memory and long-run retention. Return to [evaluation](#track-evaluation) to design the comparison for a claimed update.
+**↗ Where to read next.** Follow [open problems](#track-frontiers) for query shift, persistent memory and long-run retention. Return to [evaluation](#track-evaluation) to design the comparison for a claimed update.
 
 **Survey connections:** [14. From Interaction to Model Improvement](chapters/14-interaction-learning.md) · [06. From Roles to Policy Improvement](chapters/06-learning-regimes.md) · [09. Human and Egocentric Data as a World-Model Source](chapters/09-human-egocentric.md) · [08. Tactile and Contact World Models](chapters/08-tactile-contact.md).
 
@@ -344,9 +354,10 @@ Write separate model and policy objectives, update cadence, frozen components an
 
 Follow unresolved questions in efficiency, streaming, memory, causality and accountable systems.
 
-**The question.** What observation would show that a proposed world-model improvement helps the robot for the claimed reason?
+> **🎯 The question**
+> What observation would show that a proposed world-model improvement helps the robot for the claimed reason?
 
-**Reading chain**
+**🧩 Reading chain**
 
 1. **Locate the missing link.** Identify whether the problem is action grounding, hidden state, contact transfer, rollout drift, decision latency, policy-induced queries, evaluation calibration or retained experience. A larger model is an intervention only after that link is specified.
 2. **Propose a concrete change.** Change a query interface, representation, learning objective, memory or feedback destination. Explain how the change is expected to reach the consumer rather than assuming predictive improvement becomes utility.
@@ -361,11 +372,11 @@ Representation work such as [DINO-WM](methods.md#paper-zhou2025dinowm) and [V-JE
 
 The [frontier atlas](chapters/13-frontier-atlas.md) locates emerging systems by mechanism and reported evidence; the [research agenda](chapters/15-research-agenda.md) turns unresolved boundaries into questions. Read them together. Frozen-model adaptation, open-loop execution, policy context and artifact availability should remain visible when interpreting a new paper. A new interface or release can motivate research without supplying a replicated cross-paper superiority claim.
 
-**What would establish usefulness?**
+**🔬 Evidence to look for**
 
 Use the [evaluation guide](evaluation.md) to turn a direction into measurable model behavior, policy effect and deployment behavior. Utility curves, optimism-gap analyses and reliability margins in the survey are proposed analytical constructs whose interpretation depends on actual measurements and a declared protocol. The useful endpoint of the reading chain is a comparison that could change the conclusion, not merely a longer list of new methods.
 
-**Where the argument goes next.** Return to [foundations](#track-foundations) to state the consumer and to [resources](#track-resources) to identify the artifact needed for the proposed test.
+**↗ Where to read next.** Return to [foundations](#track-foundations) to state the consumer and to [resources](#track-resources) to identify the artifact needed for the proposed test.
 
 **Survey connections:** [13. Frontier Evidence Atlas: 2024–2026](chapters/13-frontier-atlas.md) · [15. Open Challenges and Future Directions](chapters/15-research-agenda.md) · [11. Evaluation: From Prediction Metrics to Closed-Loop Utility](chapters/11-evaluation.md) · [14. From Interaction to Model Improvement](chapters/14-interaction-learning.md).
 

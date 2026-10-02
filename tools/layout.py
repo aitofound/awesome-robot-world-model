@@ -89,6 +89,15 @@ BRIEFS = {
     'nvidia2026groot17':'A reasoning VLA with an action-cascade interface.',
 }
 KIND = {'world-model-use':'Predictive use','representation-prior':'Representation prior','policy-context':'Policy context','generative-context':'Generative context','benchmark':'Benchmark'}
+KIND_CUE = {'world-model-use':'🟦','representation-prior':'🟪','policy-context':'🟨','generative-context':'🟧','benchmark':'🟩'}
+TRACK_CUE = {
+    'foundations':('🧭','Foundations'), 'representations':('🧩','Representations'),
+    'learning-control':('🎯','Learning & planning'), 'simulation':('🌐','Simulation'),
+    'tactile':('✋','Touch'), 'human-data':('🎬','Human video'),
+    'embodiment':('🤖','Embodiment'), 'evaluation':('🔬','Evaluation'),
+    'resources':('🧰','Resources'), 'interaction':('🔁','Interaction'),
+    'frontiers':('🔭','Frontiers'),
+}
 
 
 def argument_blocks(track, chapters, in_docs=False):
@@ -96,14 +105,14 @@ def argument_blocks(track, chapters, in_docs=False):
     logic=track['logic']
     def relative(value):
         return value.replace('](docs/', '](') if in_docs else value
-    blocks=['**The question.** '+relative(logic['question']), '', '**Reading chain**', '']
+    blocks=['> **🎯 The question**', '> '+relative(logic['question']), '', '**🧩 Reading chain**', '']
     for number,(title,explanation) in enumerate(logic['steps'],1):
         blocks += [f'{number}. **{title}.** {relative(explanation)}']
     blocks += ['']
     for title,explanation in logic['comparisons']:
         blocks += [f'**{title}**', '', relative(explanation), '']
-    blocks += ['**What would establish usefulness?**', '', relative(logic['evidence']), '',
-               '**Where the argument goes next.** '+relative(logic['next']), '']
+    blocks += ['**🔬 Evidence to look for**', '', relative(logic['evidence']), '',
+               '**↗ Where to read next.** '+relative(logic['next']), '']
     source_links=[]
     for key in logic['source_chapters']:
         chapter=chapters[key]
@@ -121,26 +130,24 @@ def build(atlas, catalog, resources, organization, mapping):
     placements={p['paper']:p for p in organization['placements']}
     tracks=organization['tracks']
     assert set(BRIEFS)==set(cards), 'Every curated entry needs a reviewed compact introduction'
-    home=['<div align="center">','', '<p><strong>awesome-robot-world-model</strong></p>',
-          '<h1>From Prediction to Control</h1>', '<p><strong>An Atlas of Robot World Models</strong></p>', '',
-          '<p>What does a model predict — and how does that prediction change a robot’s decisions?</p>', '',
-          '<p><a href="docs/paper-index.md">Find a paper</a> · <a href="docs/paper-map.md">Follow the survey</a> · <a href="docs/methods.md">Read the annotations</a> · <a href="docs/resources.md">Find a resource</a></p>', '',
-          '<picture>',
-          '  <source media="(prefers-color-scheme: dark) and (max-width: 600px)" srcset="assets/loop-mobile-dark.svg">',
-          '  <source media="(max-width: 600px)" srcset="assets/loop-mobile-light.svg">',
-          '  <source media="(prefers-color-scheme: dark)" srcset="assets/loop-dark.svg">',
-          '  <img src="assets/loop-light.svg" width="100%" alt="Observe, predict, improve a policy or choose an action, then execute. Feedback can return to different parts of the robot learning loop.">',
-          '</picture>', '',
+    home=['<a id="top"></a>', '', '<div align="center">','',
+          '<img src="assets/awesome-rwm.png" width="240" alt="Awesome RWM — Robot World Model. A blue world-model core inside a transparent spatial cube.">', '',
+          '<h1>From Prediction to Control</h1>', '<p><em>An Atlas of Robot World Models</em></p>', '',
+          '<p><strong>What does a model predict — and how does that prediction change a robot’s decisions?</strong></p>', '',
+          '<p><a href="docs/paper-index.md"><b>🔎 Find a paper</b></a> &nbsp;·&nbsp; <a href="#atlas"><b>🧭 Explore the Atlas</b></a><br><a href="docs/paper-map.md">📖 Follow the survey</a> &nbsp;·&nbsp; <a href="docs/resources.md">🧰 Find a resource</a></p>', '',
           '</div>', '',
           'A companion to **'+atlas['companion_to']+'**. The Atlas follows the paper’s central question: '
           'how do predictive models improve robot learning, control and evaluation? Browse by the problem you are solving; use the paper map to recover the original argument.', '',
-          '## Start here', '',
-          '| Your question | Reading route |', '|---|---|',
-          '| What makes a prediction useful for a robot? | [The Prediction-to-Control Gap](docs/scope-and-taxonomy.md) → [six model roles](docs/roles.md) |',
-          '| Which system should I read for my task? | [Annotated entries below](#the-atlas) → [interfaces and evidence boundaries](docs/methods.md) |',
-          '| Where is a particular paper or citation key? | [Complete paper index](docs/paper-index.md) · [bibliographic catalog](docs/catalog.md) |',
-          '| What can I use to train or evaluate? | [Datasets, environments and implementations](docs/resources.md) → [evaluation worksheet](docs/evaluation.md) |', '',
-          '<details>', '<summary><strong>How to follow the argument</strong> · from a predicted future to useful feedback</summary>', '', '<br>', '',
+          '## 🚀 Start here', '',
+          '- **New to robot world models?** Start with [the Prediction-to-Control Gap](docs/scope-and-taxonomy.md), then compare the [six model roles](docs/roles.md).',
+          '- **Choosing what to read?** Browse the [annotated entries](#atlas), then open the [interfaces and evidence boundaries](docs/methods.md).',
+          '- **Looking for a title or citation key?** Use the [paper index](docs/paper-index.md) or the [bibliographic catalog](docs/catalog.md).',
+          '- **Building or evaluating a system?** Find [datasets, environments and implementations](docs/resources.md), then use the [evaluation worksheet](docs/evaluation.md).', '',
+          '<details>', '<summary><strong>🔁 Inside the robot learning loop</strong> · Observe → Predict → Use predictions → Control</summary>', '', '<br>', '',
+          '[![The robot learning loop: Observe, Predict, Use predictions, Control.](assets/robot-learning-loop.png)](assets/robot-learning-loop.png)', '',
+          '**03 · Use predictions:** improve a policy, choose an action, or assess a policy. These are alternative consumers of prediction.', '',
+          '**04 · Control:** execute robot actions and record actual outcomes. New observations return to the next decision; model and policy updates depend on the method.', '',
+          '*Select the diagram to view it at full size.*', '',
           'The survey begins with a practical gap: a model can predict plausible futures while providing little help to the robot’s next decision. '
           'The Atlas therefore follows the handoffs between components. First identify the information state and the alternative actions the model can query. '
           'Then locate the consumer that turns those predictions into an action, learning target, evaluation or intervention. '
@@ -155,40 +162,46 @@ def build(atlas, catalog, resources, organization, mapping):
           'Generated video can supply demonstrations, filtered behavior-cloning data, RL experience or policy-evaluation observations. '
           'The relevant question is which branch is implemented and tested. The sections below unfold those branches with concrete paper comparisons.', '',
           '[Read the complete argument as a continuous guide →](docs/reading-paths.md)', '', '</details>', '',
-          '## The Atlas', '',
+          '<a id="atlas"></a>', '<a id="the-atlas"></a>', '', '## 🗺️ The Atlas', '',
           'The reading order moves from foundations to prediction, downstream use, physical grounding and returned feedback. '
           'Each entry has one home here and can appear in several [functional roles](docs/roles.md). '
-          '**Predictive use**, **policy context**, **representation prior**, **generative context** and **benchmark** are different entry kinds. '
           'Neither citation presence nor the “predictive use” label automatically establishes strict closed-loop qualification. '
           'Expand each argument to follow the reading chain, compare mechanisms and identify the evidence needed. '
-          'The entry table provides quick lookup; its linked method cards retain each interface, consumer and execution boundary.', '',
-          ' · '.join(f"[{i+1:02d} {t['title'].split(' and ')[0]}](#track-{t['id']})" for i,t in enumerate(tracks)), '']
+          'Each paper entry links to its source and a method card retaining the interface, consumer and execution boundary.', '',
+          '**Entry cues:** 🟦 Predictive use · 🟪 Representation prior · 🟨 Policy context · 🟧 Generative context · 🟩 Benchmark', '',
+          '*The color identifies an entry kind, not a score or a maturity level.*', '']
+    for title,keys in [('Understand the model', ['foundations','representations','learning-control','simulation']),
+                       ('Ground it in the robot', ['tactile','human-data','embodiment']),
+                       ('Test and improve', ['evaluation','resources','interaction','frontiers'])]:
+        home += ['**'+title+'**  ', ' · '.join(f"[{TRACK_CUE[k][0]} {TRACK_CUE[k][1]}](#track-{k})" for k in keys), '']
     for i,t in enumerate(tracks):
-        home += [f'<a id="track-{t["id"]}"></a>', '', f"### {i+1:02d} · {t['title']}", '', t['purpose'], '']
-        home += ['<details>', f"<summary><strong>Unfold the argument</strong> · {html.escape(t['logic']['summary'])}</summary>", '', '<br>', '']
+        home += [f'<a id="track-{t["id"]}"></a>', '', f"### {TRACK_CUE[t['id']][0]} {i+1:02d} · {t['title']}", '', '*'+t['purpose']+'*', '']
+        home += ['<details>', f"<summary><strong>📖 Follow the reading chain</strong> · {html.escape(t['logic']['summary'])}</summary>", '', '<br>', '']
         home += argument_blocks(t,chapters)
         home += ['</details>', '']
         selected=[c for c in atlas['curated'] if placements[c['paper']]['track']==t['id']]
         if selected:
-            home += ['| Entry | Read for |', '|---|---|']
             for c in selected:
                 p=papers[c['paper']]
-                home.append(f"| [{text(c['name'])}](docs/methods.md#{anchor(c['paper'])}) · {p['year'] or '?'}<br><sub>{KIND[c['kind']]}</sub> | {BRIEFS[c['paper']]} |")
-            home+=['']
+                links=[f"[Paper](<{p['paper_url']}>)"]
+                links += [f"[Resource]({r['repository']})" for r in resources if r['paper']==c['paper']]
+                links += [f"[Mechanism & limits](docs/methods.md#{anchor(c['paper'])})"]
+                home += [f"- **[{text(c['name'])}](docs/methods.md#{anchor(c['paper'])})** · {p['year'] or '?'} · <sub>{KIND_CUE[c['kind']]} {KIND[c['kind']]}</sub>  ",
+                         '  '+BRIEFS[c['paper']]+'  ', '  '+' · '.join(links), '']
         n=sum(p['track']==t['id'] for p in placements.values())
-        home += [f"[Browse all {n} cited works in this route →](docs/paper-index.md#track-{t['id']})", '']
-    home += ['## Follow the paper', '',
+        home += [f"[Browse all {n} cited works in this route →](docs/paper-index.md#track-{t['id']}) · [↑ Routes](#atlas)", '', '---', '']
+    home += ['## 📚 Follow the paper', '',
              'The complete paper map links every citation-bearing argument group. It preserves multiple uses of the same work, '
              'while the main index uses the clearer reading routes above.', '',
              '[Open the paper map →](docs/paper-map.md)', '', '<details>', '<summary><strong>All paper sections</strong></summary>', '',
              '| Section | Guide |', '|---|---|']
     home += [f"| {c['number']} | [{c['title']}]({chapter_path(c)}) |" for c in atlas['chapters']]
-    home += ['', '</details>', '', '## Read the evidence with the interface', '',
+    home += ['', '</details>', '', '## 🔬 Read the evidence with the interface', '',
              'Latent imagination can train an actor without deployment-time planning. Video generation can supply demonstrations without online RL. '
              'A planner can select a trajectory that is later executed open-loop. Tactile feedback can correct an action without updating model weights. '
              'The [method cards](docs/methods.md) keep these distinctions visible.', '',
              '[Scope and taxonomy](docs/scope-and-taxonomy.md) · [Reading paths](docs/reading-paths.md) · [Evaluation](docs/evaluation.md)', '',
-             '## Contribute', '',
+             '## 🤝 Contribute', '',
              'Correct an identity, clarify a mechanism or add a resource cited by the companion survey. '
              'Keep the predictive interface, downstream consumer and evidence boundary together. See [contributing](CONTRIBUTING.md).', '',
              '[Catalog JSON](data/catalog.json) · [Reading-route JSON](data/organization.json) · [Citation map](data/citation-map.json) · [CSV](data/catalog.csv) · [BibTeX](data/references.bib)', '',
@@ -197,6 +210,7 @@ def build(atlas, catalog, resources, organization, mapping):
              'The catalog includes contextual literature. Primary bibliographic checks do not constitute scientific replication; some source records lack an extracted paper URL.', '',
              '[Verification coverage](docs/provenance.md) · [Five layout references and Apple guidance](docs/design-notes.md)', '',
              'Linked papers, datasets and code retain their authorship and upstream licenses. No full papers or private manuscript paragraphs are redistributed.', '', '</details>', '']
+    home += ['[↑ Back to top](#top)', '']
     result={'README.md':'\n'.join(home)}
     guide=['# From prediction to control: the reading argument', '',
            '[Home](../README.md) · [Method cards](methods.md) · [Source argument map](paper-map.md)', '',

@@ -1,37 +1,39 @@
+<a id="top"></a>
+
 <div align="center">
 
-<p><strong>awesome-robot-world-model</strong></p>
+<img src="assets/awesome-rwm.png" width="240" alt="Awesome RWM — Robot World Model. A blue world-model core inside a transparent spatial cube.">
+
 <h1>From Prediction to Control</h1>
-<p><strong>An Atlas of Robot World Models</strong></p>
+<p><em>An Atlas of Robot World Models</em></p>
 
-<p>What does a model predict — and how does that prediction change a robot’s decisions?</p>
+<p><strong>What does a model predict — and how does that prediction change a robot’s decisions?</strong></p>
 
-<p><a href="docs/paper-index.md">Find a paper</a> · <a href="docs/paper-map.md">Follow the survey</a> · <a href="docs/methods.md">Read the annotations</a> · <a href="docs/resources.md">Find a resource</a></p>
-
-<picture>
-  <source media="(prefers-color-scheme: dark) and (max-width: 600px)" srcset="assets/loop-mobile-dark.svg">
-  <source media="(max-width: 600px)" srcset="assets/loop-mobile-light.svg">
-  <source media="(prefers-color-scheme: dark)" srcset="assets/loop-dark.svg">
-  <img src="assets/loop-light.svg" width="100%" alt="Observe, predict, improve a policy or choose an action, then execute. Feedback can return to different parts of the robot learning loop.">
-</picture>
+<p><a href="docs/paper-index.md"><b>🔎 Find a paper</b></a> &nbsp;·&nbsp; <a href="#atlas"><b>🧭 Explore the Atlas</b></a><br><a href="docs/paper-map.md">📖 Follow the survey</a> &nbsp;·&nbsp; <a href="docs/resources.md">🧰 Find a resource</a></p>
 
 </div>
 
 A companion to **From Prediction to Control: A Survey of Closed-Loop World Models for Robot Learning**. The Atlas follows the paper’s central question: how do predictive models improve robot learning, control and evaluation? Browse by the problem you are solving; use the paper map to recover the original argument.
 
-## Start here
+## 🚀 Start here
 
-| Your question | Reading route |
-|---|---|
-| What makes a prediction useful for a robot? | [The Prediction-to-Control Gap](docs/scope-and-taxonomy.md) → [six model roles](docs/roles.md) |
-| Which system should I read for my task? | [Annotated entries below](#the-atlas) → [interfaces and evidence boundaries](docs/methods.md) |
-| Where is a particular paper or citation key? | [Complete paper index](docs/paper-index.md) · [bibliographic catalog](docs/catalog.md) |
-| What can I use to train or evaluate? | [Datasets, environments and implementations](docs/resources.md) → [evaluation worksheet](docs/evaluation.md) |
+- **New to robot world models?** Start with [the Prediction-to-Control Gap](docs/scope-and-taxonomy.md), then compare the [six model roles](docs/roles.md).
+- **Choosing what to read?** Browse the [annotated entries](#atlas), then open the [interfaces and evidence boundaries](docs/methods.md).
+- **Looking for a title or citation key?** Use the [paper index](docs/paper-index.md) or the [bibliographic catalog](docs/catalog.md).
+- **Building or evaluating a system?** Find [datasets, environments and implementations](docs/resources.md), then use the [evaluation worksheet](docs/evaluation.md).
 
 <details>
-<summary><strong>How to follow the argument</strong> · from a predicted future to useful feedback</summary>
+<summary><strong>🔁 Inside the robot learning loop</strong> · Observe → Predict → Use predictions → Control</summary>
 
 <br>
+
+[![The robot learning loop: Observe, Predict, Use predictions, Control.](assets/robot-learning-loop.png)](assets/robot-learning-loop.png)
+
+**03 · Use predictions:** improve a policy, choose an action, or assess a policy. These are alternative consumers of prediction.
+
+**04 · Control:** execute robot actions and record actual outcomes. New observations return to the next decision; model and policy updates depend on the method.
+
+*Select the diagram to view it at full size.*
 
 The survey begins with a practical gap: a model can predict plausible futures while providing little help to the robot’s next decision. The Atlas therefore follows the handoffs between components. First identify the information state and the alternative actions the model can query. Then locate the consumer that turns those predictions into an action, learning target, evaluation or intervention. Finally trace real execution back to the next decision or update and ask what evidence supports that connection.
 
@@ -49,26 +51,41 @@ These handoffs branch. Dreamer’s imagination can improve a policy during learn
 
 </details>
 
-## The Atlas
+<a id="atlas"></a>
+<a id="the-atlas"></a>
 
-The reading order moves from foundations to prediction, downstream use, physical grounding and returned feedback. Each entry has one home here and can appear in several [functional roles](docs/roles.md). **Predictive use**, **policy context**, **representation prior**, **generative context** and **benchmark** are different entry kinds. Neither citation presence nor the “predictive use” label automatically establishes strict closed-loop qualification. Expand each argument to follow the reading chain, compare mechanisms and identify the evidence needed. The entry table provides quick lookup; its linked method cards retain each interface, consumer and execution boundary.
+## 🗺️ The Atlas
 
-[01 Foundations](#track-foundations) · [02 Representations](#track-representations) · [03 Policy learning](#track-learning-control) · [04 Foundation priors, simulation](#track-simulation) · [05 Touch](#track-tactile) · [06 Human video](#track-human-data) · [07 Embodiments](#track-embodiment) · [08 Evaluation, reliability](#track-evaluation) · [09 Datasets, environments](#track-resources) · [10 Interaction](#track-interaction) · [11 Open problems](#track-frontiers)
+The reading order moves from foundations to prediction, downstream use, physical grounding and returned feedback. Each entry has one home here and can appear in several [functional roles](docs/roles.md). Neither citation presence nor the “predictive use” label automatically establishes strict closed-loop qualification. Expand each argument to follow the reading chain, compare mechanisms and identify the evidence needed. Each paper entry links to its source and a method card retaining the interface, consumer and execution boundary.
+
+**Entry cues:** 🟦 Predictive use · 🟪 Representation prior · 🟨 Policy context · 🟧 Generative context · 🟩 Benchmark
+
+*The color identifies an entry kind, not a score or a maturity level.*
+
+**Understand the model**  
+[🧭 Foundations](#track-foundations) · [🧩 Representations](#track-representations) · [🎯 Learning & planning](#track-learning-control) · [🌐 Simulation](#track-simulation)
+
+**Ground it in the robot**  
+[✋ Touch](#track-tactile) · [🎬 Human video](#track-human-data) · [🤖 Embodiment](#track-embodiment)
+
+**Test and improve**  
+[🔬 Evaluation](#track-evaluation) · [🧰 Resources](#track-resources) · [🔁 Interaction](#track-interaction) · [🔭 Frontiers](#track-frontiers)
 
 <a id="track-foundations"></a>
 
-### 01 · Foundations and the Prediction-to-Control Gap
+### 🧭 01 · Foundations and the Prediction-to-Control Gap
 
-Define the model’s downstream use and distinguish predictive quality from decision utility.
+*Define the model’s downstream use and distinguish predictive quality from decision utility.*
 
 <details>
-<summary><strong>Unfold the argument</strong> · From a predicted future to a decision that changes</summary>
+<summary><strong>📖 Follow the reading chain</strong> · From a predicted future to a decision that changes</summary>
 
 <br>
 
-**The question.** What has to happen between predicting the world and improving a robot’s behavior?
+> **🎯 The question**
+> What has to happen between predicting the world and improving a robot’s behavior?
 
-**Reading chain**
+**🧩 Reading chain**
 
 1. **Recover the information state.** Start from observations and action history. A compact latent state is useful when it retains the consequences relevant to the task, even if it cannot reconstruct every visible detail.
 2. **Ask a counterfactual question.** Hold the history fixed and change a feasible action. The prediction should change the affected objects, contacts or outcomes while preserving unrelated parts of the scene.
@@ -83,36 +100,39 @@ Define the model’s downstream use and distinguish predictive quality from deci
 
 Read [PlaNet](docs/methods.md#paper-hafner2019planet) beside [Dreamer](docs/methods.md#paper-hafner2019dreamer). PlaNet uses imagined futures to select actions through planning. Dreamer uses imagined trajectories to train an actor and value model. The two systems illustrate distinct consumers of predictive dynamics, so a single “world-model-based control” label would hide the most useful comparison.
 
-**What would establish usefulness?**
+**🔬 Evidence to look for**
 
 The central test is downstream usefulness under the stated task and budget. Low prediction error or plausible video is relevant only insofar as it preserves the consequences used by the consumer. Keep the [operational criterion](docs/scope-and-taxonomy.md) beside the [six functional roles](docs/roles.md): a role identifies a use, while strict closed-loop qualification also needs action-responsive prediction, implemented coupling and execution evidence.
 
-**Where the argument goes next.** Continue to [representations](#track-representations) to ask what information the model preserves, then to [policy learning and planning](#track-learning-control) to examine the consumer.
+**↗ Where to read next.** Continue to [representations](#track-representations) to ask what information the model preserves, then to [policy learning and planning](#track-learning-control) to examine the consumer.
 
 **Survey connections:** [01. Introduction](docs/chapters/01-introduction.md) · [03. A Robot Learning Loop View of World Models](docs/chapters/03-foundations.md) · [04. The Optimizable Roles of World Models](docs/chapters/04-roles.md).
 
 </details>
 
-| Entry | Read for |
-|---|---|
-| [World Models](docs/methods.md#paper-ha2018worldmodels) · 2018<br><sub>Predictive use</sub> | A compact starting point for learned latent environments. |
+- **[World Models](docs/methods.md#paper-ha2018worldmodels)** · 2018 · <sub>🟦 Predictive use</sub>  
+  A compact starting point for learned latent environments.  
+  [Paper](<https://arxiv.org/abs/1803.10122>) · [Mechanism & limits](docs/methods.md#paper-ha2018worldmodels)
 
-[Browse all 27 cited works in this route →](docs/paper-index.md#track-foundations)
+[Browse all 27 cited works in this route →](docs/paper-index.md#track-foundations) · [↑ Routes](#atlas)
+
+---
 
 <a id="track-representations"></a>
 
-### 02 · Representations and predictive mechanics
+### 🧩 02 · Representations and predictive mechanics
 
-Choose a state substrate, action interface and rollout mechanism that preserve task-relevant consequences.
+*Choose a state substrate, action interface and rollout mechanism that preserve task-relevant consequences.*
 
 <details>
-<summary><strong>Unfold the argument</strong> · From a state substrate to a usable predictive interface</summary>
+<summary><strong>📖 Follow the reading chain</strong> · From a state substrate to a usable predictive interface</summary>
 
 <br>
 
-**The question.** Which representation preserves the action consequences that the next decision needs?
+> **🎯 The question**
+> Which representation preserves the action consequences that the next decision needs?
 
-**Reading chain**
+**🧩 Reading chain**
 
 1. **Choose the task state.** Compare pixels, visual features, object or point states, contact variables and physical parameters by the information they retain. A visually rich state can still omit the friction or contact event that determines success.
 2. **Specify the query.** Write down the conditioning variables and the predicted quantity. Observation-and-goal conditioning, action-chunk conditioning and a query under an alternative control are different interfaces.
@@ -127,42 +147,63 @@ Choose a state substrate, action interface and rollout mechanism that preserve t
 
 [PointWorld](docs/methods.md#paper-pointworld2026) exposes 3D action consequences to MPPI, while [PhysTwin](docs/methods.md#paper-jiang2025phystwin) reconstructs structured deformable physics from video. [ODEWorld](docs/methods.md#paper-liu2026odeworld) queries observation- and goal-conditioned futures in physical time; its reviewed interface does not accept queried candidate actions. [Causal-JEPA](docs/methods.md#paper-nam2026causaljepa) provides object-aware predictive dependencies, which are not by themselves an identified causal graph. These distinctions prevent an architecture name from substituting for an interface description.
 
-**What would establish usefulness?**
+**🔬 Evidence to look for**
 
 Ask whether the representation preserves task-relevant geometry, occlusion, contact and action sensitivity over the consumer’s horizon. Measure the entire decision pipeline when a planner is used. PointWorld’s reported physical execution remains open loop, so its predictive representation and planning evidence must not be upgraded into a claim of online hardware correction.
 
-**Where the argument goes next.** Use [learning and control](#track-learning-control) to trace the chosen interface into action selection. For hidden contact state, follow [touch and contact](#track-tactile).
+**↗ Where to read next.** Use [learning and control](#track-learning-control) to trace the chosen interface into action selection. For hidden contact state, follow [touch and contact](#track-tactile).
 
 **Survey connections:** [05. Representation Substrates and World-Model Mechanics](docs/chapters/05-representations.md) · [06. From Roles to Policy Improvement](docs/chapters/06-learning-regimes.md) · [10. Embodiment and Task Perspective](docs/chapters/10-embodiments.md).
 
 </details>
 
-| Entry | Read for |
-|---|---|
-| [DINO-WM](docs/methods.md#paper-zhou2025dinowm) · 2025<br><sub>Predictive use</sub> | Predict frozen visual features for goal-directed planning. |
-| [V-JEPA 2](docs/methods.md#paper-assran2025vjepa2) · 2025<br><sub>Predictive use</sub> | Separate video pretraining from action-grounded V-JEPA 2-AC. |
-| [ACT-JEPA](docs/methods.md#paper-actjepa2025) · 2025<br><sub>Representation prior</sub> | Predictive representations and action-chunk learning. |
-| [Causal-JEPA](docs/methods.md#paper-nam2026causaljepa) · 2026<br><sub>Representation prior</sub> | Object-level predictive dependencies; retain identifiability limits. |
-| [ODEWorld](docs/methods.md#paper-liu2026odeworld) · 2026<br><sub>Generative context</sub> | Continuous latent prediction conditioned on observation and goal. |
-| [PointWorld](docs/methods.md#paper-pointworld2026) · 2026<br><sub>Predictive use</sub> | Scene point-flow prediction and MPPI; hardware execution is open-loop. |
-| [PhysTwin](docs/methods.md#paper-jiang2025phystwin) · 2025<br><sub>Predictive use</sub> | Build deformable physical twins from sparse videos. |
+- **[DINO-WM](docs/methods.md#paper-zhou2025dinowm)** · 2025 · <sub>🟦 Predictive use</sub>  
+  Predict frozen visual features for goal-directed planning.  
+  [Paper](<https://arxiv.org/abs/2411.04983>) · [Resource](https://github.com/gaoyuezhou/dino_wm) · [Mechanism & limits](docs/methods.md#paper-zhou2025dinowm)
 
-[Browse all 73 cited works in this route →](docs/paper-index.md#track-representations)
+- **[V-JEPA 2](docs/methods.md#paper-assran2025vjepa2)** · 2025 · <sub>🟦 Predictive use</sub>  
+  Separate video pretraining from action-grounded V-JEPA 2-AC.  
+  [Paper](<https://arxiv.org/abs/2506.09985>) · [Resource](https://github.com/facebookresearch/vjepa2) · [Mechanism & limits](docs/methods.md#paper-assran2025vjepa2)
+
+- **[ACT-JEPA](docs/methods.md#paper-actjepa2025)** · 2025 · <sub>🟪 Representation prior</sub>  
+  Predictive representations and action-chunk learning.  
+  [Paper](<https://arxiv.org/abs/2501.14622>) · [Mechanism & limits](docs/methods.md#paper-actjepa2025)
+
+- **[Causal-JEPA](docs/methods.md#paper-nam2026causaljepa)** · 2026 · <sub>🟪 Representation prior</sub>  
+  Object-level predictive dependencies; retain identifiability limits.  
+  [Paper](<https://arxiv.org/abs/2602.11389>) · [Mechanism & limits](docs/methods.md#paper-nam2026causaljepa)
+
+- **[ODEWorld](docs/methods.md#paper-liu2026odeworld)** · 2026 · <sub>🟧 Generative context</sub>  
+  Continuous latent prediction conditioned on observation and goal.  
+  [Paper](<https://arxiv.org/abs/2607.27924>) · [Mechanism & limits](docs/methods.md#paper-liu2026odeworld)
+
+- **[PointWorld](docs/methods.md#paper-pointworld2026)** · 2026 · <sub>🟦 Predictive use</sub>  
+  Scene point-flow prediction and MPPI; hardware execution is open-loop.  
+  [Paper](<https://arxiv.org/abs/2601.03782>) · [Mechanism & limits](docs/methods.md#paper-pointworld2026)
+
+- **[PhysTwin](docs/methods.md#paper-jiang2025phystwin)** · 2025 · <sub>🟦 Predictive use</sub>  
+  Build deformable physical twins from sparse videos.  
+  [Paper](<https://arxiv.org/abs/2503.17973>) · [Mechanism & limits](docs/methods.md#paper-jiang2025phystwin)
+
+[Browse all 73 cited works in this route →](docs/paper-index.md#track-representations) · [↑ Routes](#atlas)
+
+---
 
 <a id="track-learning-control"></a>
 
-### 03 · Policy learning and planning
+### 🎯 03 · Policy learning and planning
 
-Separate actor learning through imagination from action selection through search or control.
+*Separate actor learning through imagination from action selection through search or control.*
 
 <details>
-<summary><strong>Unfold the argument</strong> · Two consumers: improve a policy or select the next action</summary>
+<summary><strong>📖 Follow the reading chain</strong> · Two consumers: improve a policy or select the next action</summary>
 
 <br>
 
-**The question.** Does the model change policy parameters during learning, or action choices during execution?
+> **🎯 The question**
+> Does the model change policy parameters during learning, or action choices during execution?
 
-**Reading chain**
+**🧩 Reading chain**
 
 1. **Identify the learning signal.** Determine whether predictions supply imagined transitions, demonstrations, rewards, value targets or a planning cost. The same transition model can support several learning regimes.
 2. **Trace the update.** For an imagination learner, follow generated trajectories into actor and value updates. For a planner, follow candidate actions into predicted consequences, scoring and selection.
@@ -177,44 +218,71 @@ Separate actor learning through imagination from action selection through search
 
 [TD-MPC2](docs/methods.md#paper-hansen2024tdmpc2) combines latent prediction and value estimates with model-predictive action selection. [WorldPlanner](docs/methods.md#paper-worldplanner2025) connects global tree search to local MPC. [Large Video Planner](docs/methods.md#paper-chen2025largevideoplanner) instead turns visual plans into executable motion through retargeting, followed by open-loop execution in the reviewed evidence. [RoboDreamer](docs/methods.md#paper-robodreamer2024) illustrates compositional task imagination. These interfaces should be compared at the handoff from prediction to an executable decision.
 
-**What would establish usefulness?**
+**🔬 Evidence to look for**
 
 Match real interaction, policy capacity and compute when assessing policy improvement. For planning, report candidate count, horizon, scoring, replanning cadence and full latency. For imagination learning, separate real and synthetic transitions and inspect performance under the learned policy’s query distribution. A success rate without these conditions does not establish which consumer benefited.
 
-**Where the argument goes next.** Follow [neural simulation](#track-simulation) when generated experience becomes reusable training data. Follow [interaction](#track-interaction) when real deployment changes the next learning round.
+**↗ Where to read next.** Follow [neural simulation](#track-simulation) when generated experience becomes reusable training data. Follow [interaction](#track-interaction) when real deployment changes the next learning round.
 
 **Survey connections:** [04. The Optimizable Roles of World Models](docs/chapters/04-roles.md) · [06. From Roles to Policy Improvement](docs/chapters/06-learning-regimes.md) · [14. From Interaction to Model Improvement](docs/chapters/14-interaction-learning.md).
 
 </details>
 
-| Entry | Read for |
-|---|---|
-| [PlaNet](docs/methods.md#paper-hafner2019planet) · 2019<br><sub>Predictive use</sub> | Plan candidate actions with latent dynamics and CEM. |
-| [Dreamer](docs/methods.md#paper-hafner2019dreamer) · 2020<br><sub>Predictive use</sub> | Learn an actor and value model through latent imagination. |
-| [DreamerV2](docs/methods.md#paper-hafner2021dreamerv2) · 2021<br><sub>Predictive use</sub> | Discrete latent dynamics for imagined policy learning. |
-| [DreamerV3](docs/methods.md#paper-hafner2023dreamerv3) · 2023<br><sub>Predictive use</sub> | A shared world-model agent configuration across domains. |
-| [Dreamer4](docs/methods.md#paper-hafner2025dreamer4) · 2025<br><sub>Predictive use</sub> | Scale agent training inside learned worlds. |
-| [DayDreamer](docs/methods.md#paper-wu2022daydreamer) · 2022<br><sub>Predictive use</sub> | Connect latent imagination to physical robot learning. |
-| [TD-MPC2](docs/methods.md#paper-hansen2024tdmpc2) · 2024<br><sub>Predictive use</sub> | Combine latent planning with scalable continuous control. |
-| [WorldPlanner](docs/methods.md#paper-worldplanner2025) · 2025<br><sub>Predictive use</sub> | Action-conditioned visual prediction for MCTS and MPC. |
-| [Large Video Planner](docs/methods.md#paper-chen2025largevideoplanner) · 2025<br><sub>Predictive use</sub> | Video prediction for long-horizon plans; retain execution limits. |
+- **[PlaNet](docs/methods.md#paper-hafner2019planet)** · 2019 · <sub>🟦 Predictive use</sub>  
+  Plan candidate actions with latent dynamics and CEM.  
+  [Paper](<https://arxiv.org/abs/1811.04551>) · [Mechanism & limits](docs/methods.md#paper-hafner2019planet)
 
-[Browse all 40 cited works in this route →](docs/paper-index.md#track-learning-control)
+- **[Dreamer](docs/methods.md#paper-hafner2019dreamer)** · 2020 · <sub>🟦 Predictive use</sub>  
+  Learn an actor and value model through latent imagination.  
+  [Paper](<https://arxiv.org/abs/1912.01603>) · [Mechanism & limits](docs/methods.md#paper-hafner2019dreamer)
+
+- **[DreamerV2](docs/methods.md#paper-hafner2021dreamerv2)** · 2021 · <sub>🟦 Predictive use</sub>  
+  Discrete latent dynamics for imagined policy learning.  
+  [Paper](<https://arxiv.org/abs/2010.02193>) · [Mechanism & limits](docs/methods.md#paper-hafner2021dreamerv2)
+
+- **[DreamerV3](docs/methods.md#paper-hafner2023dreamerv3)** · 2023 · <sub>🟦 Predictive use</sub>  
+  A shared world-model agent configuration across domains.  
+  [Paper](<https://arxiv.org/abs/2301.04104>) · [Resource](https://github.com/danijar/dreamerv3) · [Mechanism & limits](docs/methods.md#paper-hafner2023dreamerv3)
+
+- **[Dreamer4](docs/methods.md#paper-hafner2025dreamer4)** · 2025 · <sub>🟦 Predictive use</sub>  
+  Scale agent training inside learned worlds.  
+  [Paper](<https://arxiv.org/abs/2509.24527>) · [Mechanism & limits](docs/methods.md#paper-hafner2025dreamer4)
+
+- **[DayDreamer](docs/methods.md#paper-wu2022daydreamer)** · 2022 · <sub>🟦 Predictive use</sub>  
+  Connect latent imagination to physical robot learning.  
+  [Paper](<https://arxiv.org/abs/2206.14176>) · [Resource](https://github.com/danijar/daydreamer) · [Mechanism & limits](docs/methods.md#paper-wu2022daydreamer)
+
+- **[TD-MPC2](docs/methods.md#paper-hansen2024tdmpc2)** · 2024 · <sub>🟦 Predictive use</sub>  
+  Combine latent planning with scalable continuous control.  
+  [Paper](<https://arxiv.org/abs/2310.16828>) · [Mechanism & limits](docs/methods.md#paper-hansen2024tdmpc2)
+
+- **[WorldPlanner](docs/methods.md#paper-worldplanner2025)** · 2025 · <sub>🟦 Predictive use</sub>  
+  Action-conditioned visual prediction for MCTS and MPC.  
+  [Paper](<https://arxiv.org/abs/2511.03077>) · [Mechanism & limits](docs/methods.md#paper-worldplanner2025)
+
+- **[Large Video Planner](docs/methods.md#paper-chen2025largevideoplanner)** · 2025 · <sub>🟦 Predictive use</sub>  
+  Video prediction for long-horizon plans; retain execution limits.  
+  [Paper](<https://arxiv.org/abs/2512.15840>) · [Mechanism & limits](docs/methods.md#paper-chen2025largevideoplanner)
+
+[Browse all 40 cited works in this route →](docs/paper-index.md#track-learning-control) · [↑ Routes](#atlas)
+
+---
 
 <a id="track-simulation"></a>
 
-### 04 · Foundation priors, simulation and generated experience
+### 🌐 04 · Foundation priors, simulation and generated experience
 
-Distinguish general priors, interactive neural environments and pipelines that generate training data.
+*Distinguish general priors, interactive neural environments and pipelines that generate training data.*
 
 <details>
-<summary><strong>Unfold the argument</strong> · From a pretrained prior to interaction, supervision or evaluation</summary>
+<summary><strong>📖 Follow the reading chain</strong> · From a pretrained prior to interaction, supervision or evaluation</summary>
 
 <br>
 
-**The question.** What makes generated experience usable by a robot policy, and which learning rule consumes it?
+> **🎯 The question**
+> What makes generated experience usable by a robot policy, and which learning rule consumes it?
 
-**Reading chain**
+**🧩 Reading chain**
 
 1. **Adapt the prior.** Start from the pretrained representation or video prior, then locate robot action grounding, observation compatibility and task conditioning. A broad visual prior is not yet an executable robot environment.
 2. **Define the experience interface.** For interaction, a policy or human chooses an action and receives the predicted next observation before choosing again. Initial contexts, resets and the actor’s required modalities are part of that interface.
@@ -229,52 +297,103 @@ Distinguish general priors, interactive neural environments and pipelines that g
 
 [Cosmos](docs/methods.md#paper-nvidia2025cosmos) and [Genie](docs/methods.md#paper-bruce2024genie) provide generative context. [DreamDojo](docs/methods.md#paper-gao2026dreamdojo) moves from human-video interaction priors toward robot grounding; [GeniWorld](docs/methods.md#paper-gu2026geniworld) grounds conditions through rendered robot actions. [RoboWorld](docs/methods.md#paper-nsim-roboworld) and [WorldEval](docs/methods.md#paper-li2025worldeval) ask whether predicted outcomes can evaluate policies. Evaluation can be useful without a policy update, so its evidence should be read separately from training gains.
 
-**What would establish usefulness?**
+**🔬 Evidence to look for**
 
 For generated demonstrations, include adaptation, generation, filtering, labeling and rejected samples in the cost. For policy optimization, test independent physical performance and the actions favored by the learned policy. For evaluation, measure held-out policy ranking and absolute outcome calibration separately. Matching the final training-set size, as in an IWS comparison, does not by itself match the cost of constructing the world model.
 
-**Where the argument goes next.** Use [resources](#track-resources) to check whether a released artifact exposes the required interface. Continue to [evaluation](#track-evaluation) for the evidence contract or [interaction](#track-interaction) for real–synthetic updates.
+**↗ Where to read next.** Use [resources](#track-resources) to check whether a released artifact exposes the required interface. Continue to [evaluation](#track-evaluation) for the evidence contract or [interaction](#track-interaction) for real–synthetic updates.
 
 **Survey connections:** [07. Foundation-Driven World Models and Robot Priors](docs/chapters/07-foundation-priors.md) · [06. From Roles to Policy Improvement](docs/chapters/06-learning-regimes.md) · [11. Evaluation: From Prediction Metrics to Closed-Loop Utility](docs/chapters/11-evaluation.md) · [14. From Interaction to Model Improvement](docs/chapters/14-interaction-learning.md).
 
 </details>
 
-| Entry | Read for |
-|---|---|
-| [RoboDreamer](docs/methods.md#paper-robodreamer2024) · 2024<br><sub>Predictive use</sub> | Instruction-conditioned, compositional imagined futures. |
-| [Robotic World Model (RWM)](docs/methods.md#paper-li2025roboticworldmodel) · 2025<br><sub>Predictive use</sub> | A learned neural simulator for policy optimization. |
-| [Interactive World Simulator (IWS)](docs/methods.md#paper-interactiveworldsim2026) · 2026<br><sub>Predictive use</sub> | Interactive demonstration generation and policy evaluation. |
-| [Hi-WM](docs/methods.md#paper-li2026hiwm) · 2026<br><sub>Predictive use</sub> | Human correction through simulator rollback and branching. |
-| [GE-Sim 2.0](docs/methods.md#paper-qiu2026gesim2) · 2026<br><sub>Predictive use</sub> | Filter generated rollouts for supervised policy updates. |
-| [GeniWorld](docs/methods.md#paper-gu2026geniworld) · 2026<br><sub>Predictive use</sub> | Ground interactive video prediction in rendered robot actions. |
-| [DreamGen](docs/methods.md#paper-jang2025dreamgen) · 2025<br><sub>Predictive use</sub> | Recover synthetic robot trajectories from generated videos. |
-| [DreamDojo](docs/methods.md#paper-gao2026dreamdojo) · 2026<br><sub>Predictive use</sub> | Human-video interaction priors followed by robot grounding. |
-| [WoVR](docs/methods.md#paper-nsim-wovr) · 2026<br><sub>Predictive use</sub> | Use action-conditioned simulation to post-train VLA policies. |
-| [Cosmos](docs/methods.md#paper-nvidia2025cosmos) · 2025<br><sub>Generative context</sub> | Pretrained world-model components and generative priors. |
-| [Cosmos 3](docs/methods.md#paper-nvidia2026cosmos3) · 2026<br><sub>Generative context</sub> | Shared multimodal understanding, prediction and action interfaces. |
-| [Genie](docs/methods.md#paper-bruce2024genie) · 2024<br><sub>Generative context</sub> | Latent-action interactive environments from passive video. |
-| [Gen2Act](docs/methods.md#paper-bharadhwaj2025gen2act) · 2025<br><sub>Predictive use</sub> | Condition robot behavior on generated human task motion. |
-| [Dreamitate](docs/methods.md#paper-liang2025dreamitate) · 2025<br><sub>Predictive use</sub> | Convert generated task motion into robot behavior. |
-| [OpenVLA](docs/methods.md#paper-openvla2024) · 2024<br><sub>Policy context</sub> | An open VLA action prior and policy baseline. |
-| [pi0](docs/methods.md#paper-pi0) · 2024<br><sub>Policy context</sub> | A foundation policy with flow-matching action generation. |
-| [GR00T N1.7](docs/methods.md#paper-nvidia2026groot17) · 2026<br><sub>Policy context</sub> | A reasoning VLA with an action-cascade interface. |
+- **[RoboDreamer](docs/methods.md#paper-robodreamer2024)** · 2024 · <sub>🟦 Predictive use</sub>  
+  Instruction-conditioned, compositional imagined futures.  
+  [Paper](<https://arxiv.org/abs/2404.12377>) · [Mechanism & limits](docs/methods.md#paper-robodreamer2024)
 
-[Browse all 77 cited works in this route →](docs/paper-index.md#track-simulation)
+- **[Robotic World Model (RWM)](docs/methods.md#paper-li2025roboticworldmodel)** · 2025 · <sub>🟦 Predictive use</sub>  
+  A learned neural simulator for policy optimization.  
+  [Paper](<https://arxiv.org/abs/2501.10100>) · [Mechanism & limits](docs/methods.md#paper-li2025roboticworldmodel)
+
+- **[Interactive World Simulator (IWS)](docs/methods.md#paper-interactiveworldsim2026)** · 2026 · <sub>🟦 Predictive use</sub>  
+  Interactive demonstration generation and policy evaluation.  
+  [Paper](<https://arxiv.org/abs/2603.08546>) · [Mechanism & limits](docs/methods.md#paper-interactiveworldsim2026)
+
+- **[Hi-WM](docs/methods.md#paper-li2026hiwm)** · 2026 · <sub>🟦 Predictive use</sub>  
+  Human correction through simulator rollback and branching.  
+  [Paper](<https://arxiv.org/abs/2604.21741>) · [Mechanism & limits](docs/methods.md#paper-li2026hiwm)
+
+- **[GE-Sim 2.0](docs/methods.md#paper-qiu2026gesim2)** · 2026 · <sub>🟦 Predictive use</sub>  
+  Filter generated rollouts for supervised policy updates.  
+  [Paper](<https://arxiv.org/abs/2605.27491>) · [Mechanism & limits](docs/methods.md#paper-qiu2026gesim2)
+
+- **[GeniWorld](docs/methods.md#paper-gu2026geniworld)** · 2026 · <sub>🟦 Predictive use</sub>  
+  Ground interactive video prediction in rendered robot actions.  
+  [Paper](<https://arxiv.org/abs/2608.06332>) · [Mechanism & limits](docs/methods.md#paper-gu2026geniworld)
+
+- **[DreamGen](docs/methods.md#paper-jang2025dreamgen)** · 2025 · <sub>🟦 Predictive use</sub>  
+  Recover synthetic robot trajectories from generated videos.  
+  [Paper](<https://arxiv.org/abs/2505.12705>) · [Resource](https://github.com/NVIDIA/GR00T-dreams) · [Mechanism & limits](docs/methods.md#paper-jang2025dreamgen)
+
+- **[DreamDojo](docs/methods.md#paper-gao2026dreamdojo)** · 2026 · <sub>🟦 Predictive use</sub>  
+  Human-video interaction priors followed by robot grounding.  
+  [Paper](<https://arxiv.org/abs/2602.06949>) · [Mechanism & limits](docs/methods.md#paper-gao2026dreamdojo)
+
+- **[WoVR](docs/methods.md#paper-nsim-wovr)** · 2026 · <sub>🟦 Predictive use</sub>  
+  Use action-conditioned simulation to post-train VLA policies.  
+  [Paper](<https://arxiv.org/abs/2602.13977>) · [Mechanism & limits](docs/methods.md#paper-nsim-wovr)
+
+- **[Cosmos](docs/methods.md#paper-nvidia2025cosmos)** · 2025 · <sub>🟧 Generative context</sub>  
+  Pretrained world-model components and generative priors.  
+  [Paper](<https://arxiv.org/abs/2501.03575>) · [Mechanism & limits](docs/methods.md#paper-nvidia2025cosmos)
+
+- **[Cosmos 3](docs/methods.md#paper-nvidia2026cosmos3)** · 2026 · <sub>🟧 Generative context</sub>  
+  Shared multimodal understanding, prediction and action interfaces.  
+  [Paper](<https://arxiv.org/abs/2606.02800>) · [Mechanism & limits](docs/methods.md#paper-nvidia2026cosmos3)
+
+- **[Genie](docs/methods.md#paper-bruce2024genie)** · 2024 · <sub>🟧 Generative context</sub>  
+  Latent-action interactive environments from passive video.  
+  [Paper](<https://arxiv.org/abs/2402.15391>) · [Mechanism & limits](docs/methods.md#paper-bruce2024genie)
+
+- **[Gen2Act](docs/methods.md#paper-bharadhwaj2025gen2act)** · 2025 · <sub>🟦 Predictive use</sub>  
+  Condition robot behavior on generated human task motion.  
+  [Paper](<https://arxiv.org/abs/2409.16283>) · [Mechanism & limits](docs/methods.md#paper-bharadhwaj2025gen2act)
+
+- **[Dreamitate](docs/methods.md#paper-liang2025dreamitate)** · 2025 · <sub>🟦 Predictive use</sub>  
+  Convert generated task motion into robot behavior.  
+  [Paper](<https://arxiv.org/abs/2406.16862>) · [Mechanism & limits](docs/methods.md#paper-liang2025dreamitate)
+
+- **[OpenVLA](docs/methods.md#paper-openvla2024)** · 2024 · <sub>🟨 Policy context</sub>  
+  An open VLA action prior and policy baseline.  
+  [Paper](<https://arxiv.org/abs/2406.09246>) · [Resource](https://github.com/openvla/openvla) · [Mechanism & limits](docs/methods.md#paper-openvla2024)
+
+- **[pi0](docs/methods.md#paper-pi0)** · 2024 · <sub>🟨 Policy context</sub>  
+  A foundation policy with flow-matching action generation.  
+  [Paper](<https://arxiv.org/abs/2410.24164>) · [Mechanism & limits](docs/methods.md#paper-pi0)
+
+- **[GR00T N1.7](docs/methods.md#paper-nvidia2026groot17)** · 2026 · <sub>🟨 Policy context</sub>  
+  A reasoning VLA with an action-cascade interface.  
+  [Paper](<https://huggingface.co/blog/nvidia/gr00t-n1-7>) · [Mechanism & limits](docs/methods.md#paper-nvidia2026groot17)
+
+[Browse all 77 cited works in this route →](docs/paper-index.md#track-simulation) · [↑ Routes](#atlas)
+
+---
 
 <a id="track-tactile"></a>
 
-### 05 · Touch and contact
+### ✋ 05 · Touch and contact
 
-Connect hidden contact state to predictive control, corrective action and multisensory learning.
+*Connect hidden contact state to predictive control, corrective action and multisensory learning.*
 
 <details>
-<summary><strong>Unfold the argument</strong> · From hidden contact to prediction, correction and retained competence</summary>
+<summary><strong>📖 Follow the reading chain</strong> · From hidden contact to prediction, correction and retained competence</summary>
 
 <br>
 
-**The question.** What does touch reveal that vision misses, and how does that information change control?
+> **🎯 The question**
+> What does touch reveal that vision misses, and how does that information change control?
 
-**Reading chain**
+**🧩 Reading chain**
 
 1. **Recover local interaction state.** Contact, slip, compliance and occluded deformation can remain ambiguous in camera observations. Tactile or force history supplies evidence about the local interaction rather than just another visual view.
 2. **Predict a contact consequence.** Condition on the robot’s action and predict tactile images, latent contact state or deformation. Distinguish predicting the future from supplying current touch directly to an action policy.
@@ -289,50 +408,95 @@ Connect hidden contact state to predictive control, corrective action and multis
 
 [Sparsh](docs/methods.md#paper-higuera2024sparsh) and [AnyTouch](docs/methods.md#paper-feng2025anytouch) provide reusable tactile representations. [OmniVTLA](docs/methods.md#paper-cheng2025omnivtla) supplies touch-conditioned policy context and is distinct from OmniVTA. [DexTacWAM](docs/methods.md#paper-yuan2026dextacwam), [VTAM](docs/methods.md#paper-yuan2026vtam), [Dream-Tac](docs/methods.md#paper-lou2026dreamtac) and [Tactile-WAM](docs/methods.md#paper-wu2026tactilewam) motivate a further comparison: where visual priors are reused, how touch affects prediction and action, and which pathways are allowed to adapt. [MuSe](docs/methods.md#paper-clark2026muse) adds the retention question when sensing expands.
 
-**What would establish usefulness?**
+**🔬 Evidence to look for**
 
 Compare predictive touch with direct tactile conditioning under matched sensors, data and policy capacity. Check contact-sensitive errors, downstream control and full decision latency. A separated or aligned latent space alone cannot establish utility. Vision-to-touch retention should be measured on earlier behavior as well as the newly acquired sensing task, within the actual sensor and robot scope.
 
-**Where the argument goes next.** Follow [human data](#track-human-data) for the asymmetry between abundant video and scarce robot contact data. Follow [interaction](#track-interaction) for modality expansion, replay and retained behavior.
+**↗ Where to read next.** Follow [human data](#track-human-data) for the asymmetry between abundant video and scarce robot contact data. Follow [interaction](#track-interaction) for modality expansion, replay and retained behavior.
 
 **Survey connections:** [08. Tactile and Contact World Models](docs/chapters/08-tactile-contact.md) · [05. Representation Substrates and World-Model Mechanics](docs/chapters/05-representations.md) · [14. From Interaction to Model Improvement](docs/chapters/14-interaction-learning.md).
 
 </details>
 
-| Entry | Read for |
-|---|---|
-| [Manipulation by Feel](docs/methods.md#paper-tian2019manipulation) · 2019<br><sub>Predictive use</sub> | Predict tactile images to servo toward a contact goal. |
-| [RoboPack](docs/methods.md#paper-ai2024robopack) · 2024<br><sub>Predictive use</sub> | Infer physical state from vision and touch for planning. |
-| [VIRDO++](docs/methods.md#paper-wi2022virdopp) · 2022<br><sub>Predictive use</sub> | Predict deformable state from vision, contact and force. |
-| [ContactWorld](docs/methods.md#paper-zhang2026contactworld) · 2026<br><sub>Predictive use</sub> | Study which visual-tactile representations help prediction. |
-| [OmniVTA](docs/methods.md#paper-omnivta2026) · 2026<br><sub>Predictive use</sub> | Use tactile forecasts and feedback for execution-time correction. |
-| [Visuo-Tactile World Models](docs/methods.md#paper-visuotactilewm2026) · 2026<br><sub>Predictive use</sub> | Visual-tactile latent dynamics and open-loop physical planning. |
-| [DexTacWAM](docs/methods.md#paper-yuan2026dextacwam) · 2026<br><sub>Predictive use</sub> | Transfer video priors into dexterous tactile world-action modeling. |
-| [VTAM](docs/methods.md#paper-yuan2026vtam) · 2026<br><sub>Predictive use</sub> | Joint video, tactile and action modeling. |
-| [VT-WAM](docs/methods.md#paper-tian2026vtwam) · 2026<br><sub>Predictive use</sub> | Route contact information into world-action prediction. |
-| [Dream-Tac](docs/methods.md#paper-lou2026dreamtac) · 2026<br><sub>Predictive use</sub> | Joint future vision, touch and action with contact-aware fusion. |
-| [Tactile-WAM](docs/methods.md#paper-wu2026tactilewam) · 2026<br><sub>Predictive use</sub> | Asymmetric tactile attention for world-action modeling. |
-| [Sparsh](docs/methods.md#paper-higuera2024sparsh) · 2024<br><sub>Representation prior</sub> | Reusable self-supervised tactile features. |
-| [AnyTouch](docs/methods.md#paper-feng2025anytouch) · 2025<br><sub>Representation prior</sub> | Static and dynamic tactile representations across sensors. |
-| [OmniVTLA](docs/methods.md#paper-cheng2025omnivtla) · 2025<br><sub>Policy context</sub> | Tactile-conditioned VLA policy context, distinct from OmniVTA. |
-| [MuSe](docs/methods.md#paper-clark2026muse) · 2026<br><sub>Policy context</sub> | Add force sensing while testing retention of earlier behavior. |
+- **[Manipulation by Feel](docs/methods.md#paper-tian2019manipulation)** · 2019 · <sub>🟦 Predictive use</sub>  
+  Predict tactile images to servo toward a contact goal.  
+  [Paper](<https://arxiv.org/abs/1903.04128>) · [Mechanism & limits](docs/methods.md#paper-tian2019manipulation)
 
-[Browse all 59 cited works in this route →](docs/paper-index.md#track-tactile)
+- **[RoboPack](docs/methods.md#paper-ai2024robopack)** · 2024 · <sub>🟦 Predictive use</sub>  
+  Infer physical state from vision and touch for planning.  
+  [Paper](<https://arxiv.org/abs/2407.01418>) · [Mechanism & limits](docs/methods.md#paper-ai2024robopack)
+
+- **[VIRDO++](docs/methods.md#paper-wi2022virdopp)** · 2022 · <sub>🟦 Predictive use</sub>  
+  Predict deformable state from vision, contact and force.  
+  [Paper](<https://arxiv.org/abs/2210.03701>) · [Mechanism & limits](docs/methods.md#paper-wi2022virdopp)
+
+- **[ContactWorld](docs/methods.md#paper-zhang2026contactworld)** · 2026 · <sub>🟦 Predictive use</sub>  
+  Study which visual-tactile representations help prediction.  
+  [Paper](<https://arxiv.org/abs/2606.13877>) · [Mechanism & limits](docs/methods.md#paper-zhang2026contactworld)
+
+- **[OmniVTA](docs/methods.md#paper-omnivta2026)** · 2026 · <sub>🟦 Predictive use</sub>  
+  Use tactile forecasts and feedback for execution-time correction.  
+  [Paper](<https://arxiv.org/abs/2603.19201>) · [Mechanism & limits](docs/methods.md#paper-omnivta2026)
+
+- **[Visuo-Tactile World Models](docs/methods.md#paper-visuotactilewm2026)** · 2026 · <sub>🟦 Predictive use</sub>  
+  Visual-tactile latent dynamics and open-loop physical planning.  
+  [Paper](<https://arxiv.org/abs/2602.06001>) · [Mechanism & limits](docs/methods.md#paper-visuotactilewm2026)
+
+- **[DexTacWAM](docs/methods.md#paper-yuan2026dextacwam)** · 2026 · <sub>🟦 Predictive use</sub>  
+  Transfer video priors into dexterous tactile world-action modeling.  
+  [Paper](<https://arxiv.org/abs/2609.24976>) · [Mechanism & limits](docs/methods.md#paper-yuan2026dextacwam)
+
+- **[VTAM](docs/methods.md#paper-yuan2026vtam)** · 2026 · <sub>🟦 Predictive use</sub>  
+  Joint video, tactile and action modeling.  
+  [Paper](<https://arxiv.org/abs/2603.23481>) · [Mechanism & limits](docs/methods.md#paper-yuan2026vtam)
+
+- **[VT-WAM](docs/methods.md#paper-tian2026vtwam)** · 2026 · <sub>🟦 Predictive use</sub>  
+  Route contact information into world-action prediction.  
+  [Paper](<https://arxiv.org/abs/2607.02503>) · [Mechanism & limits](docs/methods.md#paper-tian2026vtwam)
+
+- **[Dream-Tac](docs/methods.md#paper-lou2026dreamtac)** · 2026 · <sub>🟦 Predictive use</sub>  
+  Joint future vision, touch and action with contact-aware fusion.  
+  [Paper](<https://arxiv.org/abs/2606.08737>) · [Mechanism & limits](docs/methods.md#paper-lou2026dreamtac)
+
+- **[Tactile-WAM](docs/methods.md#paper-wu2026tactilewam)** · 2026 · <sub>🟦 Predictive use</sub>  
+  Asymmetric tactile attention for world-action modeling.  
+  [Paper](<https://arxiv.org/abs/2606.26663>) · [Mechanism & limits](docs/methods.md#paper-wu2026tactilewam)
+
+- **[Sparsh](docs/methods.md#paper-higuera2024sparsh)** · 2024 · <sub>🟪 Representation prior</sub>  
+  Reusable self-supervised tactile features.  
+  [Paper](<https://arxiv.org/abs/2410.24090>) · [Resource](https://github.com/facebookresearch/sparsh) · [Mechanism & limits](docs/methods.md#paper-higuera2024sparsh)
+
+- **[AnyTouch](docs/methods.md#paper-feng2025anytouch)** · 2025 · <sub>🟪 Representation prior</sub>  
+  Static and dynamic tactile representations across sensors.  
+  [Paper](<https://arxiv.org/abs/2502.12191>) · [Mechanism & limits](docs/methods.md#paper-feng2025anytouch)
+
+- **[OmniVTLA](docs/methods.md#paper-cheng2025omnivtla)** · 2025 · <sub>🟨 Policy context</sub>  
+  Tactile-conditioned VLA policy context, distinct from OmniVTA.  
+  [Paper](<https://arxiv.org/abs/2508.08706>) · [Mechanism & limits](docs/methods.md#paper-cheng2025omnivtla)
+
+- **[MuSe](docs/methods.md#paper-clark2026muse)** · 2026 · <sub>🟨 Policy context</sub>  
+  Add force sensing while testing retention of earlier behavior.  
+  [Paper](<https://arxiv.org/abs/2606.30988>) · [Mechanism & limits](docs/methods.md#paper-clark2026muse)
+
+[Browse all 59 cited works in this route →](docs/paper-index.md#track-tactile) · [↑ Routes](#atlas)
+
+---
 
 <a id="track-human-data"></a>
 
-### 06 · Human video and embodiment grounding
+### 🎬 06 · Human video and embodiment grounding
 
-Separate passive priors, action proxies, paired supervision and deployment-time human context.
+*Separate passive priors, action proxies, paired supervision and deployment-time human context.*
 
 <details>
-<summary><strong>Unfold the argument</strong> · From observed human motion to robot-grounded supervision</summary>
+<summary><strong>📖 Follow the reading chain</strong> · From observed human motion to robot-grounded supervision</summary>
 
 <br>
 
-**The question.** Which part of human experience transfers, and where do executable robot actions come from?
+> **🎯 The question**
+> Which part of human experience transfers, and where do executable robot actions come from?
 
-**Reading chain**
+**🧩 Reading chain**
 
 1. **Identify the role of the video.** Human video may supply representation pretraining, motion proxies, predictive supervision, generated task motion or context at deployment. These roles require different correspondences to robot experience.
 2. **Expose the transfer gaps.** Track sensing/viewpoint, kinematics, contact dynamics and action labels separately. Matching an image or hand trajectory does not resolve all four gaps.
@@ -347,40 +511,55 @@ Separate passive priors, action proxies, paired supervision and deployment-time 
 
 [Zero-WAM](docs/methods.md#paper-zhou2026zerowam) supplies human video as context to frozen weights. [WAM-TTT](docs/methods.md#paper-feng2026wamttt) adapts fast weights before execution and holds them fixed during rollout in the reviewed account. [TactAlign](docs/methods.md#paper-tactalign2026) tests human–robot touch alignment and policy transfer, which does not by itself validate transferred predictive dynamics. [EgoZero](docs/methods.md#paper-egozero2025) supplies an adjacent route from wearable observations to robot-grounded learning signals.
 
-**What would establish usefulness?**
+**🔬 Evidence to look for**
 
 Disentangle the gain from human data, robot fine-tuning and the grounding mechanism. Test held-out tasks or embodiments under the reported adaptation protocol and identify what stays frozen. If a method reports task progress rather than success, preserve that distinction. For contact transfer, a sensing or policy result needs separate evidence before supporting a claim about predictive robot dynamics.
 
-**Where the argument goes next.** Continue to [embodiment](#track-embodiment) for action semantics and physical feasibility, or [simulation](#track-simulation) when human priors generate experience for policy learning.
+**↗ Where to read next.** Continue to [embodiment](#track-embodiment) for action semantics and physical feasibility, or [simulation](#track-simulation) when human priors generate experience for policy learning.
 
 **Survey connections:** [09. Human and Egocentric Data as a World-Model Source](docs/chapters/09-human-egocentric.md) · [07. Foundation-Driven World Models and Robot Priors](docs/chapters/07-foundation-priors.md) · [08. Tactile and Contact World Models](docs/chapters/08-tactile-contact.md) · [14. From Interaction to Model Improvement](docs/chapters/14-interaction-learning.md).
 
 </details>
 
-| Entry | Read for |
-|---|---|
-| [EgoWAM](docs/methods.md#paper-egowam2026) · 2026<br><sub>Predictive use</sub> | Compare predictive targets using human and robot data. |
-| [AnyWorld](docs/methods.md#paper-chen2026anyworld) · 2026<br><sub>Predictive use</sub> | Factor human motion, camera and embodiment conditions. |
-| [Zero-WAM](docs/methods.md#paper-zhou2026zerowam) · 2026<br><sub>Predictive use</sub> | Condition frozen world-action models on human demonstrations. |
-| [TactAlign](docs/methods.md#paper-tactalign2026) · 2026<br><sub>Policy context</sub> | Align human and robot touch for policy transfer. |
-| [EgoZero](docs/methods.md#paper-egozero2025) · 2025<br><sub>Policy context</sub> | Extract robot-grounded learning signals from smart glasses. |
+- **[EgoWAM](docs/methods.md#paper-egowam2026)** · 2026 · <sub>🟦 Predictive use</sub>  
+  Compare predictive targets using human and robot data.  
+  [Paper](<https://arxiv.org/abs/2607.08436>) · [Mechanism & limits](docs/methods.md#paper-egowam2026)
 
-[Browse all 29 cited works in this route →](docs/paper-index.md#track-human-data)
+- **[AnyWorld](docs/methods.md#paper-chen2026anyworld)** · 2026 · <sub>🟦 Predictive use</sub>  
+  Factor human motion, camera and embodiment conditions.  
+  [Paper](<https://arxiv.org/abs/2608.29242>) · [Mechanism & limits](docs/methods.md#paper-chen2026anyworld)
+
+- **[Zero-WAM](docs/methods.md#paper-zhou2026zerowam)** · 2026 · <sub>🟦 Predictive use</sub>  
+  Condition frozen world-action models on human demonstrations.  
+  [Paper](<https://arxiv.org/abs/2608.26103>) · [Mechanism & limits](docs/methods.md#paper-zhou2026zerowam)
+
+- **[TactAlign](docs/methods.md#paper-tactalign2026)** · 2026 · <sub>🟨 Policy context</sub>  
+  Align human and robot touch for policy transfer.  
+  [Paper](<https://arxiv.org/abs/2602.13579>) · [Mechanism & limits](docs/methods.md#paper-tactalign2026)
+
+- **[EgoZero](docs/methods.md#paper-egozero2025)** · 2025 · <sub>🟨 Policy context</sub>  
+  Extract robot-grounded learning signals from smart glasses.  
+  [Paper](<https://arxiv.org/abs/2505.20290>) · [Mechanism & limits](docs/methods.md#paper-egozero2025)
+
+[Browse all 29 cited works in this route →](docs/paper-index.md#track-human-data) · [↑ Routes](#atlas)
+
+---
 
 <a id="track-embodiment"></a>
 
-### 07 · Embodiments and task interfaces
+### 🤖 07 · Embodiments and task interfaces
 
-Read manipulation, navigation, locomotion and driving through their action units and feedback requirements.
+*Read manipulation, navigation, locomotion and driving through their action units and feedback requirements.*
 
 <details>
-<summary><strong>Unfold the argument</strong> · From a shared model to the constraints of a particular robot</summary>
+<summary><strong>📖 Follow the reading chain</strong> · From a shared model to the constraints of a particular robot</summary>
 
 <br>
 
-**The question.** Which assumptions change when the same predictive idea moves between manipulation, navigation, locomotion and driving?
+> **🎯 The question**
+> Which assumptions change when the same predictive idea moves between manipulation, navigation, locomotion and driving?
 
-**Reading chain**
+**🧩 Reading chain**
 
 1. **Specify the controlled quantity.** Record joint commands, end-effector targets, action chunks or higher-level motion commands, together with controller rate and actuation limits. An action token has no portable physical meaning without this mapping.
 2. **Determine the necessary history.** Manipulation needs contact and object state, navigation needs persistent spatial belief, locomotion needs balance and morphology, and driving needs interaction with other traffic. Choose memory and prediction targets for the task.
@@ -395,32 +574,35 @@ Read manipulation, navigation, locomotion and driving through their action units
 
 [OpenVLA](docs/methods.md#paper-openvla2024), [pi0](docs/methods.md#paper-pi0) and [GR00T N1.7](docs/methods.md#paper-nvidia2026groot17) provide policy context. Their action interfaces can consume generated supervision or be evaluated in a learned environment, but action prediction alone is not consequence prediction under alternative actions. Read these policies alongside the relevant world-model consumer rather than assigning them the same model category.
 
-**What would establish usefulness?**
+**🔬 Evidence to look for**
 
 Compare within a stated robot, controller, sensor suite, task distribution and intervention policy. Report full control latency and assistance rather than inference speed alone. For cross-robot transfer, identify what is shared and what is recalibrated or relearned. A stronger result on one embodiment does not establish a general ranking across different action spaces and physical constraints.
 
-**Where the argument goes next.** Use [evaluation](#track-evaluation) to choose the matching evidence. If human assistance changes later behavior, follow [interaction](#track-interaction) to identify the retained update.
+**↗ Where to read next.** Use [evaluation](#track-evaluation) to choose the matching evidence. If human assistance changes later behavior, follow [interaction](#track-interaction) to identify the retained update.
 
 **Survey connections:** [10. Embodiment and Task Perspective](docs/chapters/10-embodiments.md) · [11. Evaluation: From Prediction Metrics to Closed-Loop Utility](docs/chapters/11-evaluation.md) · [04. The Optimizable Roles of World Models](docs/chapters/04-roles.md).
 
 </details>
 
-[Browse all 59 cited works in this route →](docs/paper-index.md#track-embodiment)
+[Browse all 59 cited works in this route →](docs/paper-index.md#track-embodiment) · [↑ Routes](#atlas)
+
+---
 
 <a id="track-evaluation"></a>
 
-### 08 · Evaluation, reliability and safety
+### 🔬 08 · Evaluation, reliability and safety
 
-Assess model quality, policy utility and deployment reliability with use-specific evidence.
+*Assess model quality, policy utility and deployment reliability with use-specific evidence.*
 
 <details>
-<summary><strong>Unfold the argument</strong> · From prediction quality to utility, reliability and attribution</summary>
+<summary><strong>📖 Follow the reading chain</strong> · From prediction quality to utility, reliability and attribution</summary>
 
 <br>
 
-**The question.** Which reported measurement answers the claim the system actually makes?
+> **🎯 The question**
+> Which reported measurement answers the claim the system actually makes?
 
-**Reading chain**
+**🧩 Reading chain**
 
 1. **Test model behavior.** Measure task-relevant prediction, action sensitivity, temporal consistency and contact or geometry validity. Specify the conditioning actions and the query distribution.
 2. **Test the consumer.** Ask whether the planner, learner or evaluator improves under a matched budget. A better-looking video and a better-performing robot are separate observations.
@@ -435,43 +617,67 @@ Assess model quality, policy utility and deployment reliability with use-specifi
 
 [RoboWorld](docs/methods.md#paper-nsim-roboworld) and [WorldEval](docs/methods.md#paper-li2025worldeval) illustrate learned policy evaluation. Ranking agreement does not establish calibrated success probabilities. [Model-Based Runtime Monitoring](docs/methods.md#paper-liu2024runtime) concerns prospective failure detection, while [SafeDreamer](docs/methods.md#paper-huang2024safedreamer) introduces constraint-related prediction and control. A low observed failure rate may reflect the controller, monitor, fallback or human intervention, so model-specific attribution requires an appropriate comparison.
 
-**What would establish usefulness?**
+**🔬 Evidence to look for**
 
 Use the [evaluation worksheet](docs/evaluation.md) to record the predicted quantity, consumer, changed object and feedback before choosing metrics. Preserve intervention-induced censoring: when assistance changes a trajectory, the outcome without assistance is unobserved. Model-to-real disagreement is a reason to investigate, not by itself proof of deliberate model exploitation. Proposed utility curves and reliability margins need measured data and a declared uncertainty procedure.
 
-**Where the argument goes next.** Select the supporting [resources](#track-resources), then follow [interaction](#track-interaction) to connect failures to the next update rather than reporting them only as a final score.
+**↗ Where to read next.** Select the supporting [resources](#track-resources), then follow [interaction](#track-interaction) to connect failures to the next update rather than reporting them only as a final score.
 
 **Survey connections:** [11. Evaluation: From Prediction Metrics to Closed-Loop Utility](docs/chapters/11-evaluation.md) · [15. Open Challenges and Future Directions](docs/chapters/15-research-agenda.md) · [14. From Interaction to Model Improvement](docs/chapters/14-interaction-learning.md).
 
 </details>
 
-| Entry | Read for |
-|---|---|
-| [RoboWorld](docs/methods.md#paper-nsim-roboworld) · 2026<br><sub>Predictive use</sub> | Compare policies in neural simulation; correlation is not calibration. |
-| [WorldEval](docs/methods.md#paper-li2025worldeval) · 2025<br><sub>Predictive use</sub> | Use predicted consequences to evaluate robot policies. |
-| [Model-Based Runtime Monitoring](docs/methods.md#paper-liu2024runtime) · 2024<br><sub>Predictive use</sub> | Predict near-term failures to support deployment monitoring. |
-| [Sirius-Fleet](docs/methods.md#paper-liu2025siriusfleet) · 2025<br><sub>Predictive use</sub> | Allocate fleet supervision using prospective anomaly prediction. |
-| [WorldArena](docs/methods.md#paper-shang2026worldarena) · 2026<br><sub>Benchmark</sub> | Evaluate perception and functional world-model utility. |
-| [EWMBench](docs/methods.md#paper-yue2025ewmbench) · 2025<br><sub>Benchmark</sub> | Diagnose scene, motion and semantic generation quality. |
-| [World-in-World](docs/methods.md#paper-worldinworld2025) · 2026<br><sub>Benchmark</sub> | Study world-model assessment in a closed-loop setting. |
-| [SafeDreamer](docs/methods.md#paper-huang2024safedreamer) · 2024<br><sub>Predictive use</sub> | Use predicted costs in constrained policy learning. |
+- **[RoboWorld](docs/methods.md#paper-nsim-roboworld)** · 2026 · <sub>🟦 Predictive use</sub>  
+  Compare policies in neural simulation; correlation is not calibration.  
+  [Paper](<https://arxiv.org/abs/2607.01060>) · [Mechanism & limits](docs/methods.md#paper-nsim-roboworld)
 
-[Browse all 105 cited works in this route →](docs/paper-index.md#track-evaluation)
+- **[WorldEval](docs/methods.md#paper-li2025worldeval)** · 2025 · <sub>🟦 Predictive use</sub>  
+  Use predicted consequences to evaluate robot policies.  
+  [Paper](<https://arxiv.org/abs/2505.19017>) · [Mechanism & limits](docs/methods.md#paper-li2025worldeval)
+
+- **[Model-Based Runtime Monitoring](docs/methods.md#paper-liu2024runtime)** · 2024 · <sub>🟦 Predictive use</sub>  
+  Predict near-term failures to support deployment monitoring.  
+  [Paper](<https://arxiv.org/abs/2310.17552>) · [Mechanism & limits](docs/methods.md#paper-liu2024runtime)
+
+- **[Sirius-Fleet](docs/methods.md#paper-liu2025siriusfleet)** · 2025 · <sub>🟦 Predictive use</sub>  
+  Allocate fleet supervision using prospective anomaly prediction.  
+  [Paper](<https://proceedings.mlr.press/v270/liu25g.html>) · [Mechanism & limits](docs/methods.md#paper-liu2025siriusfleet)
+
+- **[WorldArena](docs/methods.md#paper-shang2026worldarena)** · 2026 · <sub>🟩 Benchmark</sub>  
+  Evaluate perception and functional world-model utility.  
+  [Paper](<https://arxiv.org/abs/2602.08971>) · [Mechanism & limits](docs/methods.md#paper-shang2026worldarena)
+
+- **[EWMBench](docs/methods.md#paper-yue2025ewmbench)** · 2025 · <sub>🟩 Benchmark</sub>  
+  Diagnose scene, motion and semantic generation quality.  
+  [Paper](<https://arxiv.org/abs/2505.09694>) · [Mechanism & limits](docs/methods.md#paper-yue2025ewmbench)
+
+- **[World-in-World](docs/methods.md#paper-worldinworld2025)** · 2026 · <sub>🟩 Benchmark</sub>  
+  Study world-model assessment in a closed-loop setting.  
+  [Paper](<https://arxiv.org/abs/2510.18135>) · [Mechanism & limits](docs/methods.md#paper-worldinworld2025)
+
+- **[SafeDreamer](docs/methods.md#paper-huang2024safedreamer)** · 2024 · <sub>🟦 Predictive use</sub>  
+  Use predicted costs in constrained policy learning.  
+  [Paper](<https://arxiv.org/abs/2307.07176>) · [Resource](https://github.com/PKU-Alignment/SafeDreamer) · [Mechanism & limits](docs/methods.md#paper-huang2024safedreamer)
+
+[Browse all 105 cited works in this route →](docs/paper-index.md#track-evaluation) · [↑ Routes](#atlas)
+
+---
 
 <a id="track-resources"></a>
 
-### 09 · Datasets, environments and benchmarks
+### 🧰 09 · Datasets, environments and benchmarks
 
-Find the data, tools and evaluation fixtures that support a particular interface.
+*Find the data, tools and evaluation fixtures that support a particular interface.*
 
 <details>
-<summary><strong>Unfold the argument</strong> · From a research question to the artifact that can test it</summary>
+<summary><strong>📖 Follow the reading chain</strong> · From a research question to the artifact that can test it</summary>
 
 <br>
 
-**The question.** Does a dataset, simulator or harness expose the interface required by the intended experiment?
+> **🎯 The question**
+> Does a dataset, simulator or harness expose the interface required by the intended experiment?
 
-**Reading chain**
+**🧩 Reading chain**
 
 1. **Define the intended use.** Choose model fitting, alternative-action decisions, policy learning or deployment assessment before choosing a resource. Each use imposes a different data and execution contract.
 2. **Inspect the available signals.** Check actions, timestamps, observations, robot and controller metadata, rewards, task labels and intervention records. Missing correspondence can prevent a log from supporting the intended prediction query.
@@ -486,32 +692,35 @@ The survey separates Model, Decision, Learning and Deployment capabilities. They
 
 A [DINO-WM](docs/methods.md#paper-zhou2025dinowm)-style planning question needs compatible visual states and action consequences. An [IWS](docs/methods.md#paper-interactiveworldsim2026)-style demonstration route needs an interactive collection interface and usable supervision. A [RoboWorld](docs/methods.md#paper-nsim-roboworld)-style evaluation question needs independent outcomes on policies beyond those used to construct the evaluator. These examples explain why selecting an artifact is downstream of defining the consumer.
 
-**What would establish usefulness?**
+**🔬 Evidence to look for**
 
 Read the actual released interface, version and metadata, and distinguish a paper description from an executable artifact. The linked resources here are entry points whose identities were checked, not installations or reproduced experiments. To evaluate a release, verify that its inputs, outputs and reset or labeling behavior support the chosen claim, then connect it to an appropriate physical or independently grounded outcome.
 
-**Where the argument goes next.** Return to [evaluation](#track-evaluation) with the chosen interface. Use [interaction](#track-interaction) if failures or deployment traces will become new data.
+**↗ Where to read next.** Return to [evaluation](#track-evaluation) with the chosen interface. Use [interaction](#track-interaction) if failures or deployment traces will become new data.
 
 **Survey connections:** [12. Resources: Datasets, Simulators, Benchmarks, and Frameworks](docs/chapters/12-resources.md) · [11. Evaluation: From Prediction Metrics to Closed-Loop Utility](docs/chapters/11-evaluation.md) · [A. Extended Survey Protocols](docs/chapters/a-review-protocol.md).
 
 </details>
 
-[Browse all 25 cited works in this route →](docs/paper-index.md#track-resources)
+[Browse all 25 cited works in this route →](docs/paper-index.md#track-resources) · [↑ Routes](#atlas)
+
+---
 
 <a id="track-interaction"></a>
 
-### 10 · Interaction and continual improvement
+### 🔁 10 · Interaction and continual improvement
 
-Track what feedback updates: context, actions, policy, model parameters or memory.
+*Track what feedback updates: context, actions, policy, model parameters or memory.*
 
 <details>
-<summary><strong>Unfold the argument</strong> · From execution feedback to a named update and retained behavior</summary>
+<summary><strong>📖 Follow the reading chain</strong> · From execution feedback to a named update and retained behavior</summary>
 
 <br>
 
-**The question.** What changes after interaction, and which part of that change persists?
+> **🎯 The question**
+> What changes after interaction, and which part of that change persists?
 
-**Reading chain**
+**🧩 Reading chain**
 
 1. **Acquire experience with provenance.** Record the collection policy, executed actions, observations, predicted outcomes, failures and interventions. Real transitions, human corrections and synthetic alternatives provide different kinds of supervision.
 2. **Route each signal to its learner.** A failed action can provide valid dynamics supervision while being a poor behavior-cloning target. Corrective labels, rewards and counterfactual transitions must be sent to the appropriate policy, value or model update.
@@ -526,43 +735,67 @@ Track what feedback updates: context, actions, policy, model parameters or memor
 
 [Sirius-Fleet](docs/methods.md#paper-liu2025siriusfleet) connects prospective prediction to allocating human supervision, and [Hi-WM](docs/methods.md#paper-li2026hiwm) turns imagined failure states into corrective experience. [Zero-WAM](docs/methods.md#paper-zhou2026zerowam) changes context rather than model weights; [WAM-TTT](docs/methods.md#paper-feng2026wamttt) changes fast weights before rollout. [REGEN](docs/methods.md#paper-govind2026regen) uses generated replay for continual imitation, while [Planning with Online World Models](docs/methods.md#paper-liu2025onlinewm) examines predictive refitting for planning. Their shared question is where experience is stored and how that storage affects the next decision.
 
-**What would establish usefulness?**
+**🔬 Evidence to look for**
 
 Write separate model and policy objectives, update cadence, frozen components and the provenance of each transition. Measure new-task improvement together with old-task retention, including interventions and curation costs. The predictive fidelity of recorded actions does not automatically validate altered-action counterfactuals used to train the policy. An observed failure identifies an outcome; its suspected cause still needs a discriminating comparison.
 
-**Where the argument goes next.** Follow [open problems](#track-frontiers) for query shift, persistent memory and long-run retention. Return to [evaluation](#track-evaluation) to design the comparison for a claimed update.
+**↗ Where to read next.** Follow [open problems](#track-frontiers) for query shift, persistent memory and long-run retention. Return to [evaluation](#track-evaluation) to design the comparison for a claimed update.
 
 **Survey connections:** [14. From Interaction to Model Improvement](docs/chapters/14-interaction-learning.md) · [06. From Roles to Policy Improvement](docs/chapters/06-learning-regimes.md) · [09. Human and Egocentric Data as a World-Model Source](docs/chapters/09-human-egocentric.md) · [08. Tactile and Contact World Models](docs/chapters/08-tactile-contact.md).
 
 </details>
 
-| Entry | Read for |
-|---|---|
-| [VLA-RFT](docs/methods.md#paper-vlarft2025) · 2025<br><sub>Predictive use</sub> | Policy GRPO with rewards from a frozen world simulator. |
-| [World-Gymnast](docs/methods.md#paper-worldgymnast2026) · 2026<br><sub>Predictive use</sub> | Use learned-world interaction for robot policy learning. |
-| [WAM-TTT](docs/methods.md#paper-feng2026wamttt) · 2026<br><sub>Predictive use</sub> | Adapt fast weights from human video before execution. |
-| [VLAW](docs/methods.md#paper-vlaw2026) · 2026<br><sub>Predictive use</sub> | Refit the world model with real rollouts, then train on selected data. |
-| [WorldSample](docs/methods.md#paper-xue2026worldsample) · 2026<br><sub>Predictive use</sub> | Route real and counterfactual transitions into critic and policy learning. |
-| [WAM-RL](docs/methods.md#paper-wamrl2026) · 2026<br><sub>Predictive use</sub> | Actor RL and world-model video fine-tuning use separate objectives. |
-| [REGEN](docs/methods.md#paper-govind2026regen) · 2026<br><sub>Predictive use</sub> | Generate replay for continual world-action imitation learning. |
-| [Planning with Online World Models](docs/methods.md#paper-liu2025onlinewm) · 2025<br><sub>Predictive use</sub> | Refit predictive models for planning across changing environments. |
+- **[VLA-RFT](docs/methods.md#paper-vlarft2025)** · 2025 · <sub>🟦 Predictive use</sub>  
+  Policy GRPO with rewards from a frozen world simulator.  
+  [Paper](<https://arxiv.org/abs/2510.00406>) · [Mechanism & limits](docs/methods.md#paper-vlarft2025)
 
-[Browse all 76 cited works in this route →](docs/paper-index.md#track-interaction)
+- **[World-Gymnast](docs/methods.md#paper-worldgymnast2026)** · 2026 · <sub>🟦 Predictive use</sub>  
+  Use learned-world interaction for robot policy learning.  
+  [Paper](<https://arxiv.org/abs/2602.02454>) · [Mechanism & limits](docs/methods.md#paper-worldgymnast2026)
+
+- **[WAM-TTT](docs/methods.md#paper-feng2026wamttt)** · 2026 · <sub>🟦 Predictive use</sub>  
+  Adapt fast weights from human video before execution.  
+  [Paper](<https://arxiv.org/abs/2607.06988>) · [Mechanism & limits](docs/methods.md#paper-feng2026wamttt)
+
+- **[VLAW](docs/methods.md#paper-vlaw2026)** · 2026 · <sub>🟦 Predictive use</sub>  
+  Refit the world model with real rollouts, then train on selected data.  
+  [Paper](<https://arxiv.org/abs/2602.12063>) · [Mechanism & limits](docs/methods.md#paper-vlaw2026)
+
+- **[WorldSample](docs/methods.md#paper-xue2026worldsample)** · 2026 · <sub>🟦 Predictive use</sub>  
+  Route real and counterfactual transitions into critic and policy learning.  
+  [Paper](<https://arxiv.org/abs/2607.02431>) · [Mechanism & limits](docs/methods.md#paper-xue2026worldsample)
+
+- **[WAM-RL](docs/methods.md#paper-wamrl2026)** · 2026 · <sub>🟦 Predictive use</sub>  
+  Actor RL and world-model video fine-tuning use separate objectives.  
+  [Paper](<https://arxiv.org/abs/2606.17906>) · [Mechanism & limits](docs/methods.md#paper-wamrl2026)
+
+- **[REGEN](docs/methods.md#paper-govind2026regen)** · 2026 · <sub>🟦 Predictive use</sub>  
+  Generate replay for continual world-action imitation learning.  
+  [Paper](<https://arxiv.org/abs/2606.27374>) · [Mechanism & limits](docs/methods.md#paper-govind2026regen)
+
+- **[Planning with Online World Models](docs/methods.md#paper-liu2025onlinewm)** · 2025 · <sub>🟦 Predictive use</sub>  
+  Refit predictive models for planning across changing environments.  
+  [Paper](<https://arxiv.org/abs/2507.09177>) · [Mechanism & limits](docs/methods.md#paper-liu2025onlinewm)
+
+[Browse all 76 cited works in this route →](docs/paper-index.md#track-interaction) · [↑ Routes](#atlas)
+
+---
 
 <a id="track-frontiers"></a>
 
-### 11 · Open problems and frontier directions
+### 🔭 11 · Open problems and frontier directions
 
-Follow unresolved questions in efficiency, streaming, memory, causality and accountable systems.
+*Follow unresolved questions in efficiency, streaming, memory, causality and accountable systems.*
 
 <details>
-<summary><strong>Unfold the argument</strong> · From an unresolved interface gap to a testable research direction</summary>
+<summary><strong>📖 Follow the reading chain</strong> · From an unresolved interface gap to a testable research direction</summary>
 
 <br>
 
-**The question.** What observation would show that a proposed world-model improvement helps the robot for the claimed reason?
+> **🎯 The question**
+> What observation would show that a proposed world-model improvement helps the robot for the claimed reason?
 
-**Reading chain**
+**🧩 Reading chain**
 
 1. **Locate the missing link.** Identify whether the problem is action grounding, hidden state, contact transfer, rollout drift, decision latency, policy-induced queries, evaluation calibration or retained experience. A larger model is an intervention only after that link is specified.
 2. **Propose a concrete change.** Change a query interface, representation, learning objective, memory or feedback destination. Explain how the change is expected to reach the consumer rather than assuming predictive improvement becomes utility.
@@ -577,19 +810,21 @@ Representation work such as [DINO-WM](docs/methods.md#paper-zhou2025dinowm) and 
 
 The [frontier atlas](docs/chapters/13-frontier-atlas.md) locates emerging systems by mechanism and reported evidence; the [research agenda](docs/chapters/15-research-agenda.md) turns unresolved boundaries into questions. Read them together. Frozen-model adaptation, open-loop execution, policy context and artifact availability should remain visible when interpreting a new paper. A new interface or release can motivate research without supplying a replicated cross-paper superiority claim.
 
-**What would establish usefulness?**
+**🔬 Evidence to look for**
 
 Use the [evaluation guide](docs/evaluation.md) to turn a direction into measurable model behavior, policy effect and deployment behavior. Utility curves, optimism-gap analyses and reliability margins in the survey are proposed analytical constructs whose interpretation depends on actual measurements and a declared protocol. The useful endpoint of the reading chain is a comparison that could change the conclusion, not merely a longer list of new methods.
 
-**Where the argument goes next.** Return to [foundations](#track-foundations) to state the consumer and to [resources](#track-resources) to identify the artifact needed for the proposed test.
+**↗ Where to read next.** Return to [foundations](#track-foundations) to state the consumer and to [resources](#track-resources) to identify the artifact needed for the proposed test.
 
 **Survey connections:** [13. Frontier Evidence Atlas: 2024–2026](docs/chapters/13-frontier-atlas.md) · [15. Open Challenges and Future Directions](docs/chapters/15-research-agenda.md) · [11. Evaluation: From Prediction Metrics to Closed-Loop Utility](docs/chapters/11-evaluation.md) · [14. From Interaction to Model Improvement](docs/chapters/14-interaction-learning.md).
 
 </details>
 
-[Browse all 30 cited works in this route →](docs/paper-index.md#track-frontiers)
+[Browse all 30 cited works in this route →](docs/paper-index.md#track-frontiers) · [↑ Routes](#atlas)
 
-## Follow the paper
+---
+
+## 📚 Follow the paper
 
 The complete paper map links every citation-bearing argument group. It preserves multiple uses of the same work, while the main index uses the clearer reading routes above.
 
@@ -620,13 +855,13 @@ The complete paper map links every citation-bearing argument group. It preserves
 
 </details>
 
-## Read the evidence with the interface
+## 🔬 Read the evidence with the interface
 
 Latent imagination can train an actor without deployment-time planning. Video generation can supply demonstrations without online RL. A planner can select a trajectory that is later executed open-loop. Tactile feedback can correct an action without updating model weights. The [method cards](docs/methods.md) keep these distinctions visible.
 
 [Scope and taxonomy](docs/scope-and-taxonomy.md) · [Reading paths](docs/reading-paths.md) · [Evaluation](docs/evaluation.md)
 
-## Contribute
+## 🤝 Contribute
 
 Correct an identity, clarify a mechanism or add a resource cited by the companion survey. Keep the predictive interface, downstream consumer and evidence boundary together. See [contributing](CONTRIBUTING.md).
 
@@ -642,3 +877,5 @@ Manuscript snapshot: **2026-10-01**. Organization and presentation reviewed: **2
 Linked papers, datasets and code retain their authorship and upstream licenses. No full papers or private manuscript paragraphs are redistributed.
 
 </details>
+
+[↑ Back to top](#top)
