@@ -1014,6 +1014,10 @@ The appendix records how papers were selected, defines the evidence-level labels
 
 This repository follows the survey. Corrections to bibliographic records, paper links and code repositories are welcome; see [CONTRIBUTING.md](CONTRIBUTING.md). Works that the survey does not cite enter with a revision of the survey.
 
+## 📄 License
+
+Text, data and figures in this repository are licensed under [CC BY 4.0](LICENSE); the code in `tools/` is under the [MIT License](tools/LICENSE). Linked papers, datasets and code keep their own licenses.
+
 <sub>Synchronized with the manuscript on 2026-10-21.</sub>
 
 [↑ Back to top](#top)

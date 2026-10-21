@@ -59,6 +59,6 @@ Validation covers record uniqueness, citation aliases, identifiers, headings, ho
 
 All tools use the Python 3.10+ standard library.
 
-## Rights
+## License
 
-Linked papers, datasets and code keep their authorship and upstream licenses. The repository does not redistribute papers or manuscript sources.
+Text, data and figures are licensed under [CC BY 4.0](LICENSE), and the code in `tools/` under the [MIT License](tools/LICENSE). By contributing, you agree to license your contribution under the same terms. Linked papers, datasets and code keep their authorship and upstream licenses; the repository does not redistribute papers or manuscript sources.
