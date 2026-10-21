@@ -2,7 +2,7 @@
   "schema_version": 2,
   "source": {
     "title": "From Prediction to Control: A Survey of Closed-Loop World Models for Robot Learning",
-    "revision": "manuscript@6e28c42",
+    "revision": "manuscript@51fde23",
     "snapshot": "2026-10-21",
     "citation_keys": 565,
     "works": 565,
@@ -601,7 +601,7 @@
       "aliases": [
         "guo2026ctrl"
       ],
-      "title": "Ctrl-world: A controllable generative world model for robot manipulation",
+      "title": "Ctrl-World: A controllable generative world model for robot manipulation",
       "authors": [
         "Guo, Yanjiang",
         "Shi, Lucy",
@@ -1119,7 +1119,7 @@
         "hoque2026egodex",
         "egodex2025"
       ],
-      "title": "Egodex: Learning dexterous manipulation from large-scale egocentric video",
+      "title": "EgoDex: Learning dexterous manipulation from large-scale egocentric video",
       "authors": [
         "Hoque, Ryan",
         "Huang, Peide",
@@ -2908,7 +2908,7 @@
       "aliases": [
         "liu2026omnieva"
       ],
-      "title": "Omnieva: Embodied versatile planner via task-adaptive 3d-grounded and embodiment-aware reasoning",
+      "title": "OmniEVA: Embodied versatile planner via task-adaptive 3D-grounded and embodiment-aware reasoning",
       "authors": [
         "Liu, Yuecheng",
         "Chi, Dafeng",
@@ -5622,7 +5622,7 @@
       "aliases": [
         "ai2025learningdynamicsmanipulation"
       ],
-      "title": "A Review of Learning-Based Dynamics Models for Robotic Manipulation",
+      "title": "A review of learning-based dynamics models for robotic manipulation",
       "authors": [
         "Ai, Bo",
         "Tian, Stephen",
@@ -6064,7 +6064,7 @@
       "aliases": [
         "zhang2025contactdexnet"
       ],
-      "title": "Contactdexnet: Multi-fingered robotic hand grasping in cluttered environments through hand-object contact semantic mapping",
+      "title": "ContactDexNet: Multi-fingered robotic hand grasping in cluttered environments through hand-object contact semantic mapping",
       "authors": [
         "Zhang, Lei",
         "Bai, Kaixin",
@@ -6091,7 +6091,7 @@
       "aliases": [
         "yang2025contactsdf"
       ],
-      "title": "Contactsdf: Signed distance functions as multi-contact models for dexterous manipulation",
+      "title": "ContactSDF: Signed distance functions as multi-contact models for dexterous manipulation",
       "authors": [
         "Yang, Wen",
         "Jin, Wanxin"
@@ -7330,7 +7330,7 @@
       "aliases": [
         "chang2025far"
       ],
-      "title": "How far are ai-generated videos from simulating the 3d visual world: A learned 3d evaluation approach",
+      "title": "How far are AI-generated videos from simulating the 3D visual world: A learned 3D evaluation approach",
       "authors": [
         "Chang, Chirui",
         "Liu, Jiahui",
@@ -7359,7 +7359,7 @@
       "aliases": [
         "zhu2025irasim"
       ],
-      "title": "Irasim: A fine-grained world model for robot manipulation",
+      "title": "IRASim: A fine-grained world model for robot manipulation",
       "authors": [
         "Zhu, Fangqi",
         "Wu, Hongtao",
@@ -8375,7 +8375,7 @@
         "liu2023sirius",
         "sirius2022"
       ],
-      "title": "Robot learning on the job: Human-in-the-loop autonomy and learning during deployment",
+      "title": "Robot Learning on the Job: Human-in-the-Loop Autonomy and Learning During Deployment",
       "authors": [
         "Liu, Huihan",
         "Nasiriany, Soroush",
@@ -9115,7 +9115,7 @@
       "aliases": [
         "yang2025twintrack"
       ],
-      "title": "Twintrack: Bridging vision and contact physics for real-time tracking of unknown dynamic objects",
+      "title": "TwinTrack: Bridging vision and contact physics for real-time tracking of unknown dynamic objects",
       "authors": [
         "Yang, Wen",
         "Xie, Zhixian",
@@ -10020,7 +10020,7 @@
       "aliases": [
         "zhang2024ad"
       ],
-      "title": "Ad-h: Autonomous driving with hierarchical agents",
+      "title": "AD-H: Autonomous Driving with Hierarchical Agents",
       "authors": [
         "Zhang, Zaibin",
         "Tang, Shiyu",
@@ -10444,7 +10444,7 @@
       "aliases": [
         "si2024difftactile"
       ],
-      "title": "Difftactile: A physics-based differentiable tactile simulator for contact-rich robotic manipulation",
+      "title": "DiffTactile: A physics-based differentiable tactile simulator for contact-rich robotic manipulation",
       "authors": [
         "Si, Zilin",
         "Zhang, Gu",
@@ -10505,7 +10505,7 @@
       "aliases": [
         "yang2024diffusion"
       ],
-      "title": "Diffusion-es: Gradient-free planning with diffusion for autonomous and instruction-guided driving",
+      "title": "Diffusion-ES: Gradient-free planning with diffusion for autonomous and instruction-guided driving",
       "authors": [
         "Yang, Brian",
         "Su, Huangyuan",
@@ -10933,7 +10933,7 @@
       "aliases": [
         "wang2024gensim"
       ],
-      "title": "Gensim: Generating robotic simulation tasks via large language models",
+      "title": "GenSim: Generating robotic simulation tasks via large language models",
       "authors": [
         "Wang, Lirui",
         "Ling, Yiyang",
@@ -11165,7 +11165,7 @@
       "aliases": [
         "wu2024ivideogpt"
       ],
-      "title": "ivideogpt: Interactive videogpts are scalable world models",
+      "title": "iVideoGPT: Interactive VideoGPTs are scalable world models",
       "authors": [
         "Wu, Jialong",
         "Yin, Shaofeng",
@@ -11321,7 +11321,7 @@
       "aliases": [
         "shao2024lmdrive"
       ],
-      "title": "Lmdrive: Closed-loop end-to-end driving with large language models",
+      "title": "LMDrive: Closed-loop end-to-end driving with large language models",
       "authors": [
         "Shao, Hao",
         "Hu, Yuxuan",
@@ -11971,7 +11971,7 @@
       "aliases": [
         "radosavovic2024realworld"
       ],
-      "title": "Real-World Humanoid Locomotion with Reinforcement Learning",
+      "title": "Real-world humanoid locomotion with reinforcement learning",
       "authors": [
         "Radosavovic, Ilija",
         "Xiao, Tete",
@@ -11997,7 +11997,7 @@
       "aliases": [
         "torne2024rialto"
       ],
-      "title": "Reconciling Reality through Simulation: A Real-to-Sim-to-Real Approach for Robust Manipulation",
+      "title": "Reconciling Reality through Simulation: A Real-To-Sim-to-Real Approach for Robust Manipulation",
       "authors": [
         "Torne, Marcel",
         "Simeonov, Anthony",
@@ -12378,6 +12378,7 @@
       "doi": null,
       "cited_in": [
         "subsec:dial-y",
+        "subsec:pw-decisions",
         "subsec:consumer-policies",
         "app:eval-utility"
       ],
@@ -12418,7 +12419,7 @@
       "aliases": [
         "lyu2024total"
       ],
-      "title": "Total-decom: Decomposed 3d scene reconstruction with minimal interaction",
+      "title": "Total-Decom: Decomposed 3D scene reconstruction with minimal interaction",
       "authors": [
         "Lyu, Xiaoyang",
         "Chang, Chirui",
@@ -12957,7 +12958,7 @@
       "aliases": [
         "bridgedatav2"
       ],
-      "title": "Bridgedata v2: A dataset for robot learning at scale",
+      "title": "BridgeData V2: A dataset for robot learning at scale",
       "authors": [
         "Walke, Homer Rich",
         "Black, Kevin",
@@ -14713,7 +14714,7 @@
       "aliases": [
         "sun2022plate"
       ],
-      "title": "Plate: Visually-grounded planning with transformers in procedural tasks",
+      "title": "PlaTe: Visually-grounded planning with transformers in procedural tasks",
       "authors": [
         "Sun, Jiankai",
         "Huang, De-An",
@@ -15905,7 +15906,7 @@
       "aliases": [
         "spencer2020interventions"
       ],
-      "title": "Learning from Interventions: Human-Robot Interaction as Both Explicit and Implicit Feedback",
+      "title": "Learning from Interventions: Human-robot interaction as both explicit and implicit feedback",
       "authors": [
         "Spencer, Jonathan",
         "Choudhury, Sanjiban",
@@ -15933,7 +15934,7 @@
       "aliases": [
         "lee2020quadruped"
       ],
-      "title": "Learning Quadrupedal Locomotion over Challenging Terrain",
+      "title": "Learning quadrupedal locomotion over challenging terrain",
       "authors": [
         "Lee, Joonho",
         "Hwangbo, Jemin",
@@ -16251,7 +16252,7 @@
       "aliases": [
         "ku2020room"
       ],
-      "title": "Room-across-room: Multilingual vision-and-language navigation with dense spatiotemporal grounding",
+      "title": "Room-Across-Room: Multilingual vision-and-language navigation with dense spatiotemporal grounding",
       "authors": [
         "Ku, Alexander",
         "Anderson, Peter",
@@ -16667,7 +16668,7 @@
       "aliases": [
         "habitat"
       ],
-      "title": "Habitat: A platform for embodied ai research",
+      "title": "Habitat: A platform for embodied AI research",
       "authors": [
         "Savva, Manolis",
         "Kadian, Abhishek",
@@ -17141,7 +17142,7 @@
       "aliases": [
         "henderson2018deep"
       ],
-      "title": "Deep Reinforcement Learning that Matters",
+      "title": "Deep Reinforcement Learning That Matters",
       "authors": [
         "Henderson, Peter",
         "Islam, Riashat",
@@ -18184,7 +18185,7 @@
       "aliases": [
         "wang2026counterfactual"
       ],
-      "title": "Counterfactual Video Generation for Humanoid Loco-Manipulation",
+      "title": "Counterfactual Video Generation Enables Scalable Humanoid Loco-Manipulation",
       "authors": [
         "Wang, Zihan",
         "Wu, Zhen",

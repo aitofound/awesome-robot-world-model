@@ -376,6 +376,14 @@ def main():
                 membership[p].append(unit)
 
     report['dropped'] = sorted(k for k in records if k not in membership)
+    # Source-derived records follow the manuscript bibliography; checked records keep their verified title.
+    report['title_refreshed'] = []
+    for k in membership:
+        if k in bib and records[k]['metadata_status'] == 'source-derived':
+            title = detex(bib[k].get('title', ''))
+            if title and title != records[k]['title']:
+                records[k]['title'] = title
+                report['title_refreshed'].append(k)
     report['title_differs'] = [k for k in membership if k in bib and norm_title(bib[k].get('title')) not in
                                {norm_title(records[k]['title']), norm_title(records[k].get('manuscript_title'))}]
     papers = []

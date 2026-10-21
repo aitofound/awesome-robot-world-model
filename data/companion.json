@@ -285,16 +285,8 @@
       "subsection": "subsec:loop",
       "leaf": [
         {
-          "name": "PlaNet",
-          "paper": "hafner2019planet"
-        },
-        {
-          "name": "Dreamer",
-          "paper": "hafner2019dreamer"
-        },
-        {
-          "name": "DayDreamer",
-          "paper": "wu2022daydreamer"
+          "name": "acting time and learning time",
+          "paper": null
         }
       ]
     },
@@ -323,8 +315,8 @@
           "paper": "farahmand2017vaml"
         },
         {
-          "name": "MuZero",
-          "paper": "schrittwieser2020muzero"
+          "name": "information states",
+          "paper": "subramanian2022ais"
         }
       ]
     },
@@ -332,8 +324,20 @@
       "subsection": "subsec:loop-to-taxonomy",
       "leaf": [
         {
-          "name": "five pathways and the outer loop",
-          "paper": null
+          "name": "PlaNet",
+          "paper": "hafner2019planet"
+        },
+        {
+          "name": "Dreamer",
+          "paper": "hafner2019dreamer"
+        },
+        {
+          "name": "DayDreamer",
+          "paper": "wu2022daydreamer"
+        },
+        {
+          "name": "DiWA",
+          "paper": "DiWA"
         }
       ]
     },
@@ -592,8 +596,8 @@
       "subsection": "subsec:consumer-learning",
       "leaf": [
         {
-          "name": "MimicGen",
-          "paper": "mimicgen"
+          "name": "RT-1",
+          "paper": "rt1"
         },
         {
           "name": "MOPO",
@@ -608,8 +612,8 @@
           "paper": "COMBO"
         },
         {
-          "name": "Dreamer",
-          "paper": "hafner2019dreamer"
+          "name": "online model-based RL",
+          "paper": null
         }
       ]
     },
@@ -735,8 +739,8 @@
       "subsection": "subsec:emb-hri",
       "leaf": [
         {
-          "name": "HG-DAgger",
-          "paper": "kelly2019hgdagger"
+          "name": "ThriftyDAgger",
+          "paper": "hoque2022thrifty"
         },
         {
           "name": "Sirius-Fleet",
@@ -756,8 +760,8 @@
       "subsection": "subsec:model-quality",
       "leaf": [
         {
-          "name": "VP²",
-          "paper": "tian2023vp2"
+          "name": "FVD",
+          "paper": "unterthiner2018fvd"
         },
         {
           "name": "Physics-IQ",
@@ -815,8 +819,8 @@
           "paper": "maniskill3"
         },
         {
-          "name": "RoboArena",
-          "paper": "atreya2025roboarena"
+          "name": "MimicGen",
+          "paper": "mimicgen"
         }
       ]
     },
@@ -1119,6 +1123,7 @@
     "hansen2024tdmpc2": "TD-MPC2",
     "higuera2024sparsh": "Sparsh",
     "ho2025_1xworldmodel": "1X world model",
+    "hoque2022thrifty": "ThriftyDAgger",
     "hoque2026egodex": "EgoDex",
     "hu2023gaia1": "GAIA-1",
     "huang2024safedreamer": "SafeDreamer",
@@ -1131,7 +1136,6 @@
     "jiang2025phystwin": "PhysTwin",
     "kalashnikov2018qtopt": "QT-Opt",
     "kauvar2023curious": "Curious Replay",
-    "kelly2019hgdagger": "HG-DAgger",
     "khazatsky2024droid": "DROID",
     "li2025roboticworldmodel": "RWM",
     "li2025uva": "UVA",
@@ -1177,7 +1181,6 @@
     "rt1": "RT-1",
     "rt2": "RT-2",
     "saferobotfoundation2025": "Towards Safe Robot Foundation Models",
-    "schrittwieser2020muzero": "MuZero",
     "sekar2020plan2explore": "Plan2Explore",
     "shang2026worldarena": "WorldArena",
     "shao2026symskill": "SymSkill",
@@ -1185,9 +1188,9 @@
     "tactalign2026": "TactAlign",
     "team2025gemini": "Gemini Robotics",
     "tian2019manipulation": "Manipulation by Feel",
-    "tian2023vp2": "VP²",
     "tian2026vtwam": "VT-WAM",
     "twist2023": "TWIST",
+    "unterthiner2018fvd": "FVD",
     "visuotactilewm2026": "VT-WM",
     "vlac2025": "VLAC",
     "vlareview2025": "VLA Review",

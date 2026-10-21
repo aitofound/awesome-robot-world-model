@@ -19,7 +19,7 @@ This section cites 124 works. A work cited in several subsections appears under 
 - [Deep Dynamics Models for Learning Dexterous Manipulation](<https://arxiv.org/abs/1909.11652>) · CoRL 2019 · [ⓘ](../catalog.md#paper-nagabandi2019pddm) ⌂
 - **Dreamer**: [Dream to Control: Learning Behaviors by Latent Imagination](<https://arxiv.org/abs/1912.01603>) · ICLR 2020 · [ⓘ](../catalog.md#paper-hafner2019dreamer)
 - **DreamerV3**: [Mastering Diverse Domains through World Models](<https://arxiv.org/abs/2301.04104>) · 2023 · [Code](<https://github.com/danijar/dreamerv3>) · [ⓘ](../catalog.md#paper-hafner2023dreamerv3) ⌂
-- **DayDreamer**: [World Models for Physical Robot Learning](<https://arxiv.org/abs/2206.14176>) · CoRL 2022 · [Code](<https://github.com/danijar/daydreamer>) · [ⓘ](../catalog.md#paper-wu2022daydreamer) ⌂
+- **DayDreamer**: [World Models for Physical Robot Learning](<https://arxiv.org/abs/2206.14176>) · CoRL 2022 · [Code](<https://github.com/danijar/daydreamer>) · [ⓘ](../catalog.md#paper-wu2022daydreamer)
 - [Augmenting Physical Simulators with Stochastic Neural Networks: Case Study of Planar Pushing and Bouncing](<https://arxiv.org/abs/1808.03246>) · IROS 2018 · [ⓘ](../catalog.md#paper-ajay2018residual) ⌂
 - [ASAP: Aligning Simulation and Real-World Physics for Learning Agile Humanoid Whole-Body Skills](<https://arxiv.org/abs/2502.01143>) · RSS 2025 · [ⓘ](../catalog.md#paper-he2025asap) ⌂
 - [Closing the Sim-to-Real Loop: Adapting Simulation Randomization with Real World Experience](<https://arxiv.org/abs/1810.05687>) · ICRA 2019 · [ⓘ](../catalog.md#paper-chebotar2019simopt) ⌂
@@ -30,7 +30,7 @@ This section cites 124 works. A work cited in several subsections appears under 
 - [RoboCat: A Self-Improving Generalist Agent for Robotic Manipulation](<https://arxiv.org/abs/2306.11706>) · arXiv 2023 · [ⓘ](../catalog.md#paper-bousmalis2023robocat) ⌂
 - [EvoVLA: Self-Evolving Vision-Language-Action Model](<https://arxiv.org/abs/2511.16166>) · arXiv 2025 · [ⓘ](../catalog.md#paper-liu2025evovla) ⌂
 - [π\*0.6: a VLA That Learns From Experience](<https://arxiv.org/abs/2511.14759>) · arXiv 2025 · [ⓘ](../catalog.md#paper-pi2025pistar06)
-- [Robot learning on the job: Human-in-the-loop autonomy and learning during deployment](<https://doi.org/10.15607/RSS.2023.XIX.005>) · RSS 2025 · [ⓘ](../catalog.md#paper-liu2023sirius)
+- [Robot Learning on the Job: Human-in-the-Loop Autonomy and Learning During Deployment](<https://doi.org/10.15607/RSS.2023.XIX.005>) · RSS 2025 · [ⓘ](../catalog.md#paper-liu2023sirius)
 - **Sirius-Fleet**: [Multi-Task Interactive Robot Fleet Learning with Visual World Models](<https://proceedings.mlr.press/v270/liu25g.html>) · CoRL 2025 · [ⓘ](../catalog.md#paper-liu2025siriusfleet)
 - [Self-Evolving World Models for LLM Agent Planning](<https://arxiv.org/abs/2606.30639>) · arXiv 2026 · [ⓘ](../catalog.md#paper-zhang2026worldevolver)
 - Value-Aware Loss Function for Model-based Reinforcement Learning · AISTATS 2017 · [ⓘ](../catalog.md#paper-farahmand2017vaml)
@@ -130,8 +130,8 @@ This section cites 124 works. A work cited in several subsections appears under 
 - [RoboCurate: Harnessing Diversity with Action-Verified Neural Trajectory for Robot Learning](<https://arxiv.org/abs/2602.18742>) · 2026 · [ⓘ](../catalog.md#paper-robocurate2026) ⌂
 - [Robot Data Curation with Mutual Information Estimators](<https://arxiv.org/abs/2502.08623>) · RSS 2025 · [ⓘ](../catalog.md#paper-hejna2025deminf) ⌂
 - [A Reduction of Imitation Learning and Structured Prediction to No-Regret Online Learning](<https://proceedings.mlr.press/v15/ross11a.html>) · Proceedings of the Fourteenth International Conference on Artificial Intelligence and Statistics 2011 · [ⓘ](../catalog.md#paper-ross2011dagger)
-- [Robot learning on the job: Human-in-the-loop autonomy and learning during deployment](<https://doi.org/10.15607/RSS.2023.XIX.005>) · RSS 2025 · [ⓘ](../catalog.md#paper-liu2023sirius) ⌂
-- [ThriftyDAgger: Budget-Aware Novelty and Risk Gating for Interactive Imitation Learning](<https://proceedings.mlr.press/v164/hoque22a.html>) · CoRL 2022 · [ⓘ](../catalog.md#paper-hoque2022thrifty)
+- [Robot Learning on the Job: Human-in-the-Loop Autonomy and Learning During Deployment](<https://doi.org/10.15607/RSS.2023.XIX.005>) · RSS 2025 · [ⓘ](../catalog.md#paper-liu2023sirius) ⌂
+- **ThriftyDAgger**: [Budget-Aware Novelty and Risk Gating for Interactive Imitation Learning](<https://proceedings.mlr.press/v164/hoque22a.html>) · CoRL 2022 · [ⓘ](../catalog.md#paper-hoque2022thrifty)
 - **REFLECT**: [Summarizing robot experiences for failure explanation and correction](<https://arxiv.org/abs/2306.15724>) · arXiv 2023 · [ⓘ](../catalog.md#paper-liu2023reflect) ⌂
 - [Aha: A vision-language-model for detecting and reasoning over failures in robotic manipulation](<https://arxiv.org/abs/2410.00371>) · arXiv 2024 · [ⓘ](../catalog.md#paper-duan2024aha) ⌂
 - **VLAC**: [A Vision-Language-Action-Critic Model for Robotic Real-World Reinforcement Learning](<https://arxiv.org/abs/2509.15937>) · 2025 · [ⓘ](../catalog.md#paper-vlac2025)
@@ -153,7 +153,7 @@ This section cites 124 works. A work cited in several subsections appears under 
 - [Data Scaling Laws in Imitation Learning for Robotic Manipulation](<https://arxiv.org/abs/2410.18647>) · ICLR 2025 · [ⓘ](../catalog.md#paper-lin2024datascaling) ⌂
 - **Zero-WAM**: [In-Context World-Action Modeling from Human Videos for Open-Ended Task Generalization](<https://arxiv.org/abs/2608.26103>) · arXiv 2026 · [ⓘ](../catalog.md#paper-zhou2026zerowam)
 - **UniSim**: [Learning Interactive Real-World Simulators](<https://arxiv.org/abs/2310.06114>) · ICLR 2024 · [ⓘ](../catalog.md#paper-yang2024unisim)
-- Ctrl-world: A controllable generative world model for robot manipulation · ICLR 2026 · [ⓘ](../catalog.md#paper-guo2026ctrl) ⌂
+- Ctrl-World: A controllable generative world model for robot manipulation · ICLR 2026 · [ⓘ](../catalog.md#paper-guo2026ctrl) ⌂
 - **Sirius-Fleet**: [Multi-Task Interactive Robot Fleet Learning with Visual World Models](<https://proceedings.mlr.press/v270/liu25g.html>) · CoRL 2025 · [ⓘ](../catalog.md#paper-liu2025siriusfleet)
 - **QT-Opt**: [Scalable Deep Reinforcement Learning for Vision-Based Robotic Manipulation](<https://arxiv.org/abs/1806.10293>) · CoRL 2018 · [ⓘ](../catalog.md#paper-kalashnikov2018qtopt) ⌂
 - [Robot Fleet Learning via Policy Merging](<https://arxiv.org/abs/2310.01362>) · ICLR 2024 · [ⓘ](../catalog.md#paper-wang2023fleetmerge) ⌂
@@ -175,11 +175,11 @@ This section cites 124 works. A work cited in several subsections appears under 
 - **VLAW**: [Iterative Co-Improvement of Vision-Language-Action Policy and World Model](<https://arxiv.org/abs/2602.12063>) · arXiv 2026 · [ⓘ](../catalog.md#paper-vlaw2026)
 - **World-Gymnast**: [Training robots with reinforcement learning in a world model](<https://arxiv.org/abs/2602.02454>) · arXiv 2026 · [ⓘ](../catalog.md#paper-worldgymnast2026) ⌂
 - **MimicGen**: [A Data Generation System for Scalable Robot Learning using Human Demonstrations](<https://arxiv.org/abs/2310.17596>) · 2023 · [Code](<https://github.com/NVlabs/mimicgen>) · [ⓘ](../catalog.md#paper-mimicgen)
-- Gensim: Generating robotic simulation tasks via large language models · ICLR 2024 · [ⓘ](../catalog.md#paper-wang2024gensim) ⌂
+- GenSim: Generating robotic simulation tasks via large language models · ICLR 2024 · [ⓘ](../catalog.md#paper-wang2024gensim) ⌂
 - [Geometry-Instructed Video Editing](<https://arxiv.org/abs/2606.24225>) · arXiv 2026 · [ⓘ](../catalog.md#paper-chang2026geometry) ⌂
 - ASSIST-3D: Adapted Scene Synthesis for Class-Agnostic 3D Instance Segmentation · AAAI 2026 · [ⓘ](../catalog.md#paper-zhou2026assist) ⌂
 - **PhysTwin**: [Physics-Informed Reconstruction and Simulation of Deformable Objects from Videos](<https://arxiv.org/abs/2503.17973>) · ICCV 2025 · [ⓘ](../catalog.md#paper-jiang2025phystwin)
-- [Reconciling Reality through Simulation: A Real-to-Sim-to-Real Approach for Robust Manipulation](<https://doi.org/10.15607/RSS.2024.XX.015>) · RSS 2024 · [ⓘ](../catalog.md#paper-torne2024rialto)
-- Total-decom: Decomposed 3d scene reconstruction with minimal interaction · CVPR 2024 · [ⓘ](../catalog.md#paper-lyu2024total) ⌂
+- [Reconciling Reality through Simulation: A Real-To-Sim-to-Real Approach for Robust Manipulation](<https://doi.org/10.15607/RSS.2024.XX.015>) · RSS 2024 · [ⓘ](../catalog.md#paper-torne2024rialto)
+- Total-Decom: Decomposed 3D scene reconstruction with minimal interaction · CVPR 2024 · [ⓘ](../catalog.md#paper-lyu2024total) ⌂
 - **IWS**: [Interactive World Simulator for Robot Policy Training and Evaluation](<https://arxiv.org/abs/2603.08546>) · 2026 · [ⓘ](../catalog.md#paper-interactiveworldsim2026)
 

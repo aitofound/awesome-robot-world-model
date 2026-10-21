@@ -12,7 +12,7 @@ This section cites 24 works. A work cited in several subsections appears under e
 - **Cosmos 3**: [Omnimodal World Models for Physical AI](<https://arxiv.org/abs/2606.02800>) · arXiv 2026 · [ⓘ](../catalog.md#paper-nvidia2026cosmos3)
 - The Value Equivalence Principle for Model-Based Reinforcement Learning · NeurIPS 2020 · [ⓘ](../catalog.md#paper-grimm2020value)
 - Value-Aware Loss Function for Model-based Reinforcement Learning · AISTATS 2017 · [ⓘ](../catalog.md#paper-farahmand2017vaml)
-- **MuZero**: [Mastering Atari, Go, chess and shogi by planning with a learned model](<https://doi.org/10.1038/s41586-020-03051-4>) · Nature 2020 · [ⓘ](../catalog.md#paper-schrittwieser2020muzero)
+- [Mastering Atari, Go, chess and shogi by planning with a learned model](<https://doi.org/10.1038/s41586-020-03051-4>) · Nature 2020 · [ⓘ](../catalog.md#paper-schrittwieser2020muzero)
 - **RoboPack**: [Learning Tactile-Informed Dynamics Models for Dense Packing](<https://arxiv.org/abs/2407.01418>) · RSS 2024 · [ⓘ](../catalog.md#paper-ai2024robopack)
 - **VT-WM**: [Visuo-Tactile World Models](<https://arxiv.org/abs/2602.06001>) · 2026 · [ⓘ](../catalog.md#paper-visuotactilewm2026)
 - **WorldPlanner**: [Monte carlo tree search and mpc with action-conditioned visual world models](<https://arxiv.org/abs/2511.03077>) · arXiv 2025 · [ⓘ](../catalog.md#paper-worldplanner2025)
@@ -28,7 +28,7 @@ This section cites 24 works. A work cited in several subsections appears under e
 - [A Definition and Roadmap for World Models](<https://arxiv.org/abs/2607.06401>) · 2026 · [ⓘ](../catalog.md#paper-shanghailab2026definitionroadmap) ⌂
 - [World Model for Robot Learning: A Comprehensive Survey](<https://arxiv.org/abs/2605.00080>) · 2026 · [ⓘ](../catalog.md#paper-hou2026worldmodelrobotlearning) ⌂
 - [A Step Toward World Models: A Survey on Robotic Manipulation](<https://arxiv.org/abs/2511.02097>) · 2025 · [ⓘ](../catalog.md#paper-zhang2025manipulationworldmodels) ⌂
-- [A Review of Learning-Based Dynamics Models for Robotic Manipulation](<https://doi.org/10.1126/scirobotics.adt1497>) · Science Robotics 2025 · [ⓘ](../catalog.md#paper-ai2025learningdynamicsmanipulation) ⌂
+- [A review of learning-based dynamics models for robotic manipulation](<https://doi.org/10.1126/scirobotics.adt1497>) · Science Robotics 2025 · [ⓘ](../catalog.md#paper-ai2025learningdynamicsmanipulation) ⌂
 - [A Comprehensive Survey on World Models for Embodied AI](<https://arxiv.org/abs/2510.16732>) · 2025 · [ⓘ](../catalog.md#paper-li2025embodiedworldmodels) ⌂
 - [World Action Models: The Next Frontier in Embodied AI](<https://arxiv.org/abs/2605.12090>) · 2026 · [ⓘ](../catalog.md#paper-wang2026wamnextfrontier) ⌂
 - [World Action Models: A Survey](<https://arxiv.org/abs/2606.20781>) · arXiv 2026 · [ⓘ](../catalog.md#paper-shen2026wamsurvey) ⌂

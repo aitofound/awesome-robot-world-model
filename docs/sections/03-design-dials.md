@@ -14,7 +14,7 @@ This section cites 177 works. A work cited in several subsections appears under 
 
 *Representative works (Figure 2):* [DINO-WM](../catalog.md#paper-zhou2025dinowm), [V-JEPA 2-AC](../catalog.md#paper-assran2025vjepa2), [PointWorld](../catalog.md#paper-pointworld2026), [PhysTwin](../catalog.md#paper-jiang2025phystwin)
 
-- **MuZero**: [Mastering Atari, Go, chess and shogi by planning with a learned model](<https://doi.org/10.1038/s41586-020-03051-4>) · Nature 2020 · [ⓘ](../catalog.md#paper-schrittwieser2020muzero)
+- [Mastering Atari, Go, chess and shogi by planning with a learned model](<https://doi.org/10.1038/s41586-020-03051-4>) · Nature 2020 · [ⓘ](../catalog.md#paper-schrittwieser2020muzero)
 - **TD-MPC2**: [Scalable, Robust World Models for Continuous Control](<https://arxiv.org/abs/2310.16828>) · ICLR 2024 · [ⓘ](../catalog.md#paper-hansen2024tdmpc2)
 - **DINO-WM**: [World Models on Pre-trained Visual Features Enable Zero-Shot Planning](<https://arxiv.org/abs/2411.04983>) · ICML 2025 · [Code](<https://github.com/gaoyuezhou/dino_wm>) · [ⓘ](../catalog.md#paper-zhou2025dinowm) ⌂
 - **V-JEPA 2-AC**: [V-JEPA 2: Self-Supervised Video Models Enable Understanding, Prediction and Planning](<https://arxiv.org/abs/2506.09985>) · arXiv 2025 · [Code](<https://github.com/facebookresearch/vjepa2>) · [ⓘ](../catalog.md#paper-assran2025vjepa2) ⌂
@@ -36,16 +36,16 @@ This section cites 177 works. A work cited in several subsections appears under 
 - **PhysTwin**: [Physics-Informed Reconstruction and Simulation of Deformable Objects from Videos](<https://arxiv.org/abs/2503.17973>) · ICCV 2025 · [ⓘ](../catalog.md#paper-jiang2025phystwin) ⌂
 - [AdaptiGraph: Material-Adaptive Graph-Based Neural Dynamics for Robotic Manipulation](<https://arxiv.org/abs/2407.07889>) · arXiv 2024 · [ⓘ](../catalog.md#paper-zhang2024adaptigraph) ⌂
 - [PhysCoRe: Physics-Corrected Residual World Models for Material-Aware Deformable Dynamics](<https://arxiv.org/abs/2607.20653>) · arXiv 2026 · [ⓘ](../catalog.md#paper-yin2026physcore) ⌂
-- [Reconciling Reality through Simulation: A Real-to-Sim-to-Real Approach for Robust Manipulation](<https://doi.org/10.15607/RSS.2024.XX.015>) · RSS 2024 · [ⓘ](../catalog.md#paper-torne2024rialto) ⌂
+- [Reconciling Reality through Simulation: A Real-To-Sim-to-Real Approach for Robust Manipulation](<https://doi.org/10.15607/RSS.2024.XX.015>) · RSS 2024 · [ⓘ](../catalog.md#paper-torne2024rialto) ⌂
 - [RoboGSim: A Real2Sim2Real Robotic Gaussian Splatting Simulator](<https://arxiv.org/abs/2411.11839>) · arXiv 2024 · [ⓘ](../catalog.md#paper-li2024robogsim) ⌂
 - [CITRIS: Causal Identifiability from Temporal Intervened Sequences](<https://proceedings.mlr.press/v162/lippe22a.html>) · ICML 2022 · [ⓘ](../catalog.md#paper-lippe2022citris) ⌂
 - [Causal Dynamics Learning for Task-Independent State Abstraction](<https://arxiv.org/abs/2206.13452>) · ICML 2022 · [ⓘ](../catalog.md#paper-wang2022cdl) ⌂
 - **Causal-JEPA**: [Learning World Models through Object-Level Latent Masking](<https://arxiv.org/abs/2602.11389>) · arXiv 2026 · [ⓘ](../catalog.md#paper-nam2026causaljepa) ⌂
 - [CoPhy: Counterfactual Learning of Physical Dynamics](<https://arxiv.org/abs/1909.12000>) · ICLR 2020 · [ⓘ](../catalog.md#paper-baradel2020cophy) ⌂
 - [Particle-grid neural dynamics for learning deformable object models from rgb-d videos](<https://arxiv.org/abs/2506.15680>) · arXiv 2025 · [ⓘ](../catalog.md#paper-zhang2025particle) ⌂
-- Contactsdf: Signed distance functions as multi-contact models for dexterous manipulation · RA-L 2025 · [ⓘ](../catalog.md#paper-yang2025contactsdf) ⌂
-- Twintrack: Bridging vision and contact physics for real-time tracking of unknown dynamic objects · arXiv 2025 · [ⓘ](../catalog.md#paper-yang2025twintrack) ⌂
-- Difftactile: A physics-based differentiable tactile simulator for contact-rich robotic manipulation · ICLR 2024 · [ⓘ](../catalog.md#paper-si2024difftactile) ⌂
+- ContactSDF: Signed distance functions as multi-contact models for dexterous manipulation · RA-L 2025 · [ⓘ](../catalog.md#paper-yang2025contactsdf) ⌂
+- TwinTrack: Bridging vision and contact physics for real-time tracking of unknown dynamic objects · arXiv 2025 · [ⓘ](../catalog.md#paper-yang2025twintrack) ⌂
+- DiffTactile: A physics-based differentiable tactile simulator for contact-rich robotic manipulation · ICLR 2024 · [ⓘ](../catalog.md#paper-si2024difftactile) ⌂
 
 <a id="sec-3-2"></a>
 
@@ -56,7 +56,7 @@ This section cites 177 works. A work cited in several subsections appears under 
 ### 3.2.1 Why Vision-Only World Models Fail at Contact
 
 - Responsible and Generalizable Dexterous Manipulation through Multimodal Perception, Reasoning, and Sim2Real Learning · Staats-und Universitätsbibliothek Hamburg Carl von Ossietzky 2026 · [ⓘ](../catalog.md#paper-zhang2026responsible) ⌂
-- Contactdexnet: Multi-fingered robotic hand grasping in cluttered environments through hand-object contact semantic mapping · IROS 2025 · [ⓘ](../catalog.md#paper-zhang2025contactdexnet) ⌂
+- ContactDexNet: Multi-fingered robotic hand grasping in cluttered environments through hand-object contact semantic mapping · IROS 2025 · [ⓘ](../catalog.md#paper-zhang2025contactdexnet) ⌂
 - [An implicit time-stepping method for rigid body dynamics with inelastic collisions and Coulomb friction](<https://doi.org/10.1002/(SICI)1097-0207(19960815)39:15%3C2673::AID-NME972%3E3.0.CO;2-I>) · International Journal for Numerical Methods in Engineering 1996 · [ⓘ](../catalog.md#paper-stewart1996implicit) ⌂
 - **Dreamer**: [Dream to Control: Learning Behaviors by Latent Imagination](<https://arxiv.org/abs/1912.01603>) · ICLR 2020 · [ⓘ](../catalog.md#paper-hafner2019dreamer)
 - **DayDreamer**: [World Models for Physical Robot Learning](<https://arxiv.org/abs/2206.14176>) · CoRL 2022 · [Code](<https://github.com/danijar/daydreamer>) · [ⓘ](../catalog.md#paper-wu2022daydreamer)
@@ -240,12 +240,12 @@ This section cites 177 works. A work cited in several subsections appears under 
 - **DayDreamer**: [World Models for Physical Robot Learning](<https://arxiv.org/abs/2206.14176>) · CoRL 2022 · [Code](<https://github.com/danijar/daydreamer>) · [ⓘ](../catalog.md#paper-wu2022daydreamer)
 - Deep visual foresight for planning robot motion · ICRA 2017 · [ⓘ](../catalog.md#paper-finn2017deep) ⌂
 - [Maskvit: Masked visual pre-training for video prediction](<https://arxiv.org/abs/2206.11894>) · arXiv 2022 · [ⓘ](../catalog.md#paper-gupta2022maskvit) ⌂
-- **iVideoGPT**: Interactive videogpts are scalable world models · NeurIPS 2024 · [ⓘ](../catalog.md#paper-wu2024ivideogpt) ⌂
+- **iVideoGPT**: Interactive VideoGPTs are scalable world models · NeurIPS 2024 · [ⓘ](../catalog.md#paper-wu2024ivideogpt) ⌂
 - **UniPi**: [Learning Universal Policies via Text-Guided Video Generation](<https://arxiv.org/abs/2302.00111>) · NeurIPS 2023 · [ⓘ](../catalog.md#paper-du2023unipi) ⌂
 - **RoboDreamer**: [Learning Compositional World Models for Robot Imagination](<https://arxiv.org/abs/2404.12377>) · 2024 · [ⓘ](../catalog.md#paper-robodreamer2024)
-- Irasim: A fine-grained world model for robot manipulation · ICCV 2025 · [ⓘ](../catalog.md#paper-zhu2025irasim) ⌂
+- IRASim: A fine-grained world model for robot manipulation · ICCV 2025 · [ⓘ](../catalog.md#paper-zhu2025irasim) ⌂
 - Inference-time enhancement of generative robot policies via predictive world modeling · RA-L 2026 · [ⓘ](../catalog.md#paper-qi2026inference) ⌂
-- Ctrl-world: A controllable generative world model for robot manipulation · ICLR 2026 · [ⓘ](../catalog.md#paper-guo2026ctrl)
+- Ctrl-World: A controllable generative world model for robot manipulation · ICLR 2026 · [ⓘ](../catalog.md#paper-guo2026ctrl)
 - **WorldPlanner**: [Monte carlo tree search and mpc with action-conditioned visual world models](<https://arxiv.org/abs/2511.03077>) · arXiv 2025 · [ⓘ](../catalog.md#paper-worldplanner2025)
 - [Flow matching for generative modeling](<https://arxiv.org/abs/2210.02747>) · arXiv 2022 · [ⓘ](../catalog.md#paper-lipman2022flow) ⌂
 - [Flow straight and fast: Learning to generate and transfer data with rectified flow](<https://arxiv.org/abs/2209.03003>) · arXiv 2022 · [ⓘ](../catalog.md#paper-liu2022flow) ⌂

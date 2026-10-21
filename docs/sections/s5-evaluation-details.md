@@ -10,9 +10,9 @@ This section cites 103 works. A work cited in several subsections appears under 
 
 ## S5.1 Model Diagnostics and Physical Validity
 
-- [Towards Accurate Generative Models of Video: A New Metric &amp; Challenges](<https://arxiv.org/abs/1812.01717>) · arXiv 2018 · [ⓘ](../catalog.md#paper-unterthiner2018fvd)
+- **FVD**: [Towards Accurate Generative Models of Video: A New Metric &amp; Challenges](<https://arxiv.org/abs/1812.01717>) · arXiv 2018 · [ⓘ](../catalog.md#paper-unterthiner2018fvd)
 - The Value Equivalence Principle for Model-Based Reinforcement Learning · NeurIPS 2020 · [ⓘ](../catalog.md#paper-grimm2020value)
-- **MuZero**: [Mastering Atari, Go, chess and shogi by planning with a learned model](<https://doi.org/10.1038/s41586-020-03051-4>) · Nature 2020 · [ⓘ](../catalog.md#paper-schrittwieser2020muzero)
+- [Mastering Atari, Go, chess and shogi by planning with a learned model](<https://doi.org/10.1038/s41586-020-03051-4>) · Nature 2020 · [ⓘ](../catalog.md#paper-schrittwieser2020muzero)
 - **Dreamer**: [Dream to Control: Learning Behaviors by Latent Imagination](<https://arxiv.org/abs/1912.01603>) · ICLR 2020 · [ⓘ](../catalog.md#paper-hafner2019dreamer)
 - **VT-WM**: [Visuo-Tactile World Models](<https://arxiv.org/abs/2602.06001>) · 2026 · [ⓘ](../catalog.md#paper-visuotactilewm2026)
 - **MBPO**: [When to Trust Your Model: Model-Based Policy Optimization](<https://arxiv.org/abs/1906.08253>) · NeurIPS 2019 · [ⓘ](../catalog.md#paper-janner2019mbpo)
@@ -31,7 +31,7 @@ This section cites 103 works. A work cited in several subsections appears under 
 
 ## S5.2 Utility Attribution and Budget-Dependent Evaluation
 
-- [Deep Reinforcement Learning that Matters](<https://doi.org/10.1609/aaai.v32i1.11694>) · AAAI 2018 · [ⓘ](../catalog.md#paper-henderson2018deep)
+- [Deep Reinforcement Learning That Matters](<https://doi.org/10.1609/aaai.v32i1.11694>) · AAAI 2018 · [ⓘ](../catalog.md#paper-henderson2018deep)
 - Deep Reinforcement Learning at the Edge of the Statistical Precipice · NeurIPS 2021 · [ⓘ](../catalog.md#paper-agarwal2021precipice)
 - Empirical Design in Reinforcement Learning · Journal of Machine Learning Research 2024 · [ⓘ](../catalog.md#paper-patterson2024empirical)
 - **TD-MPC2**: [Scalable, Robust World Models for Continuous Control](<https://arxiv.org/abs/2310.16828>) · ICLR 2024 · [ⓘ](../catalog.md#paper-hansen2024tdmpc2)
@@ -68,7 +68,7 @@ This section cites 103 works. A work cited in several subsections appears under 
 - ISO 34503:2023 Road vehicles — Test scenarios for automated driving systems — Specification for operational design domain · 2023 · [ⓘ](../catalog.md#paper-iso34503) ⌂
 - [Evaluating Real-World Robot Manipulation Policies in Simulation](<https://arxiv.org/abs/2405.05941>) · CoRL 2024 · [ⓘ](../catalog.md#paper-li2024simpler)
 - **TWIST**: [Teacher-Student World Model Distillation for Efficient Sim-to-Real Transfer](<https://arxiv.org/abs/2311.03622>) · 2023 · [ⓘ](../catalog.md#paper-twist2023)
-- [Learning Quadrupedal Locomotion over Challenging Terrain](<https://doi.org/10.1126/scirobotics.abc5986>) · Science Robotics 2020 · [ⓘ](../catalog.md#paper-lee2020quadruped) ⌂
+- [Learning quadrupedal locomotion over challenging terrain](<https://doi.org/10.1126/scirobotics.abc5986>) · Science Robotics 2020 · [ⓘ](../catalog.md#paper-lee2020quadruped) ⌂
 - Task-Driven Out-of-Distribution Detection with Statistical Guarantees for Robot Learning · CoRL 2022 · [ⓘ](../catalog.md#paper-farid2022taskdriven)
 - Failure Prediction with Statistical Guarantees for Vision-Based Robot Control · RSS 2022 · [ⓘ](../catalog.md#paper-farid2022failure)
 - Task-Relevant Failure Detection for Trajectory Predictors in Autonomous Vehicles · CoRL 2023 · [ⓘ](../catalog.md#paper-farid2023taskrelevant)
@@ -78,7 +78,7 @@ This section cites 103 works. A work cited in several subsections appears under 
 - [Trust in Automation: Designing for Appropriate Reliance](<https://doi.org/10.1518/hfes.46.1.50_30392>) · Human Factors 2004 · [ⓘ](../catalog.md#paper-leesee2004trust)
 - [Waymo Simulated Driving Behavior in Reconstructed Fatal Crashes within an Autonomous Vehicle Operating Domain](<https://doi.org/10.1016/j.aap.2021.106454>) · Accident Analysis &amp; Prevention 2021 · [ⓘ](../catalog.md#paper-scanlon2021waymo)
 - [A Reduction of Imitation Learning and Structured Prediction to No-Regret Online Learning](<https://proceedings.mlr.press/v15/ross11a.html>) · Proceedings of the Fourteenth International Conference on Artificial Intelligence and Statistics 2011 · [ⓘ](../catalog.md#paper-ross2011dagger)
-- **HG-DAgger**: [Interactive Imitation Learning with Human Experts](<https://doi.org/10.1109/ICRA.2019.8793698>) · ICRA 2019 · [ⓘ](../catalog.md#paper-kelly2019hgdagger)
+- [HG-DAgger: Interactive Imitation Learning with Human Experts](<https://doi.org/10.1109/ICRA.2019.8793698>) · ICRA 2019 · [ⓘ](../catalog.md#paper-kelly2019hgdagger)
 - Robot Reinforcement Learning on the Constraint Manifold · CoRL 2022 · [ⓘ](../catalog.md#paper-liu2022atacom) ⌂
 - Closing the loop on runtime monitors with fallback-safe MPC · CDC 2023 · [ⓘ](../catalog.md#paper-sinha2023closing)
 - [AutoEval: Autonomous Evaluation of Generalist Robot Manipulation Policies in the Real World](<https://arxiv.org/abs/2503.24278>) · CoRL 2025 · [ⓘ](../catalog.md#paper-zhou2025autoeval)
@@ -131,7 +131,7 @@ This section cites 103 works. A work cited in several subsections appears under 
 - [Memory, Benchmark &amp; Robots: A Benchmark for Solving Complex Tasks with Reinforcement Learning](<https://arxiv.org/abs/2502.10550>) · ICLR 2026 · [ⓘ](../catalog.md#paper-cherepanov2026mikasa) ⌂
 - [RoboMME: Benchmarking and Understanding Memory for Robotic Generalist Policies](<https://arxiv.org/abs/2603.04639>) · arXiv 2026 · [ⓘ](../catalog.md#paper-dai2026robomme) ⌂
 - [RoboMemArena: A Comprehensive and Challenging Robotic Memory Benchmark](<https://arxiv.org/abs/2605.10921>) · arXiv 2026 · [ⓘ](../catalog.md#paper-lei2026robomemarena) ⌂
-- **Habitat**: A platform for embodied ai research · ICCV 2019 · [Code](<https://github.com/facebookresearch/habitat-lab>) · [ⓘ](../catalog.md#paper-habitat)
+- **Habitat**: A platform for embodied AI research · ICCV 2019 · [Code](<https://github.com/facebookresearch/habitat-lab>) · [ⓘ](../catalog.md#paper-habitat)
 - **AI2-THOR**: [An interactive 3d environment for visual ai](<https://arxiv.org/abs/1712.05474>) · arXiv 2017 · [Code](<https://github.com/allenai/ai2thor>) · [ⓘ](../catalog.md#paper-ai2thor)
 - [HumanoidBench: Simulated Humanoid Benchmark for Whole-Body Locomotion and Manipulation](<https://doi.org/10.15607/RSS.2024.XX.061>) · RSS 2024 · [Code](<https://github.com/carlosferrazza/humanoid-bench>) · [ⓘ](../catalog.md#paper-sferrazza2024humanoidbench)
 - **Open X-Embodiment**: [Robotic Learning Datasets and RT-X Models](<https://arxiv.org/abs/2310.08864>) · ICRA 2024 · [Code](<https://github.com/google-deepmind/open_x_embodiment>) · [ⓘ](../catalog.md#paper-openxembodiment2023)

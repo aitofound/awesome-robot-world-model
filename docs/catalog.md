@@ -160,7 +160,7 @@ Wang, Zihan; Wang, Jiashun; Tan, Jeff; Zhao, Yiwen; Hodgins, Jessica; Tulsiani, 
 
 <a id="paper-guo2026ctrl"></a>
 
-### Ctrl-world: A controllable generative world model for robot manipulation
+### Ctrl-World: A controllable generative world model for robot manipulation
 
 Guo, Yanjiang; Shi, Lucy; Chen, Jianyu; Finn, Chelsea. International Conference on Learning Representations. 2026. No paper link recorded.
 
@@ -280,7 +280,7 @@ Wang, Ye; Lin, Pei; Chen, Xiong-Hui; Yuan, Haoqi; Liang, Zhixuan; Huang, Yiyang;
 
 <a id="paper-hoque2026egodex"></a>
 
-### Egodex: Learning dexterous manipulation from large-scale egocentric video
+### EgoDex: Learning dexterous manipulation from large-scale egocentric video
 
 Hoque, Ryan; Huang, Peide; Yoon, David; Zhang, Jian; others. International Conference on Learning Representations. 2026. No paper link recorded.
 
@@ -704,7 +704,7 @@ Liu, Dongxiu; Niu, Haoyi; Cheng, Peng; Gao, Yuan; Kang, Xirui; Teng, Sangli; et 
 
 <a id="paper-liu2026omnieva"></a>
 
-### Omnieva: Embodied versatile planner via task-adaptive 3d-grounded and embodiment-aware reasoning
+### OmniEVA: Embodied versatile planner via task-adaptive 3D-grounded and embodiment-aware reasoning
 
 Liu, Yuecheng; Chi, Dafeng; Wu, Shiguang; Zhang, Zhanguang; Zhuang, Yuzheng; Yang, Bowen; et al. International Conference on Learning Representations. 2026. No paper link recorded.
 
@@ -1314,7 +1314,7 @@ Li, Xinqing; He, Xin; Zhang, Le; Liu, Yun. 2025. [Paper](<https://arxiv.org/abs/
 
 <a id="paper-ai2025learningdynamicsmanipulation"></a>
 
-### A Review of Learning-Based Dynamics Models for Robotic Manipulation
+### A review of learning-based dynamics models for robotic manipulation
 
 Ai, Bo; Tian, Stephen; Shi, Haochen; Wang, Yixuan; Pfaff, Tobias; Tan, Cheston; et al. Science Robotics. 2025. [Paper](<https://doi.org/10.1126/scirobotics.adt1497>).
 
@@ -1426,7 +1426,7 @@ Xu, Chen; Nguyen, Tony Khuong; Dixon, Emma; Rodriguez, Christopher; Miller, Patr
 
 <a id="paper-zhang2025contactdexnet"></a>
 
-### Contactdexnet: Multi-fingered robotic hand grasping in cluttered environments through hand-object contact semantic mapping
+### ContactDexNet: Multi-fingered robotic hand grasping in cluttered environments through hand-object contact semantic mapping
 
 Zhang, Lei; Bai, Kaixin; Huang, Guowen; Bing, Zhenshan; Chen, Zhaopeng; Knoll, Alois; et al. 2025 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS). 2025. No paper link recorded.
 
@@ -1434,7 +1434,7 @@ Zhang, Lei; Bai, Kaixin; Huang, Guowen; Bing, Zhenshan; Chen, Zhaopeng; Knoll, A
 
 <a id="paper-yang2025contactsdf"></a>
 
-### Contactsdf: Signed distance functions as multi-contact models for dexterous manipulation
+### ContactSDF: Signed distance functions as multi-contact models for dexterous manipulation
 
 Yang, Wen; Jin, Wanxin. IEEE Robotics and Automation Letters. 2025. No paper link recorded.
 
@@ -1730,7 +1730,7 @@ Figure AI. 2025. [Paper](<https://www.figure.ai/news/helix>).
 
 <a id="paper-chang2025far"></a>
 
-### How far are ai-generated videos from simulating the 3d visual world: A learned 3d evaluation approach
+### How far are AI-generated videos from simulating the 3D visual world: A learned 3D evaluation approach
 
 Chang, Chirui; Liu, Jiahui; Liu, Zhengzhe; Lyu, Xiaoyang; Huang, Yi-Hua; Tao, Xin; et al. 2025 IEEE/CVF International Conference on Computer Vision (ICCV). 2025. No paper link recorded.
 
@@ -1738,7 +1738,7 @@ Chang, Chirui; Liu, Jiahui; Liu, Zhengzhe; Lyu, Xiaoyang; Huang, Yi-Hua; Tao, Xi
 
 <a id="paper-zhu2025irasim"></a>
 
-### Irasim: A fine-grained world model for robot manipulation
+### IRASim: A fine-grained world model for robot manipulation
 
 Zhu, Fangqi; Wu, Hongtao; Guo, Song; Liu, Yuxiao; Cheang, Chilam; Kong, Tao. 2025 IEEE/CVF International Conference on Computer Vision (ICCV). 2025. No paper link recorded.
 
@@ -2002,7 +2002,7 @@ Mao, Jiageng; He, Sicheng; Wu, Hao-Ning; You, Yang; Sun, Shuyang; Wang, Zhicheng
 
 <a id="paper-liu2023sirius"></a>
 
-### Robot learning on the job: Human-in-the-loop autonomy and learning during deployment
+### Robot Learning on the Job: Human-in-the-Loop Autonomy and Learning During Deployment
 
 Liu, Huihan; Nasiriany, Soroush; Zhang, Lance; Bao, Zhiyao; Zhu, Yuke. Robotics: Science and Systems (RSS). 2025. [Paper](<https://doi.org/10.15607/RSS.2023.XIX.005>).
 
@@ -2186,7 +2186,7 @@ Hafner, Danijar; Yan, Wilson; Lillicrap, Timothy. arXiv preprint arXiv:2509.2452
 
 <a id="paper-yang2025twintrack"></a>
 
-### Twintrack: Bridging vision and contact physics for real-time tracking of unknown dynamic objects
+### TwinTrack: Bridging vision and contact physics for real-time tracking of unknown dynamic objects
 
 Yang, Wen; Xie, Zhixian; Zhang, Xuechao; Ben Amor, Heni; Lin, Shan; Jin, Wanxin. arXiv e-prints. 2025. No paper link recorded.
 
@@ -2428,7 +2428,7 @@ Wei, Ran; Lambert, Nathan; McDonald, Anthony D.; Garcia, Alfredo; Calandra, Robe
 
 <a id="paper-zhang2024ad"></a>
 
-### Ad-h: Autonomous driving with hierarchical agents
+### AD-H: Autonomous Driving with Hierarchical Agents
 
 Zhang, Zaibin; Tang, Shiyu; Fu, Talas; Zhang, Yuanhang; Wang, Yifan; Liu, Yang; et al. 2024. No paper link recorded.
 
@@ -2532,7 +2532,7 @@ Mandlekar, Ajay; others. 2024. [Paper](<https://arxiv.org/abs/2410.24185>).
 
 <a id="paper-si2024difftactile"></a>
 
-### Difftactile: A physics-based differentiable tactile simulator for contact-rich robotic manipulation
+### DiffTactile: A physics-based differentiable tactile simulator for contact-rich robotic manipulation
 
 Si, Zilin; Zhang, Gu; Ben, Qingwei; Romero, Branden; Xian, Zhou; Liu, Chao; et al. International Conference on Learning Representations. 2024. No paper link recorded.
 
@@ -2548,7 +2548,7 @@ Alonso, Eloi; Jelley, Adam; Micheli, Vincent; Kanervisto, Anssi; Storkey, Amos; 
 
 <a id="paper-yang2024diffusion"></a>
 
-### Diffusion-es: Gradient-free planning with diffusion for autonomous and instruction-guided driving
+### Diffusion-ES: Gradient-free planning with diffusion for autonomous and instruction-guided driving
 
 Yang, Brian; Su, Huangyuan; Gkanatsios, Nikolaos; Ke, Tsung-Wei; Jain, Ayush; Schneider, Jeff; et al. 2024 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR). 2024. No paper link recorded.
 
@@ -2644,7 +2644,7 @@ Bruce, Jake; Dennis, Michael; Edwards, Ashley; Parker-Holder, Jack; Shi, Yuge; H
 
 <a id="paper-wang2024gensim"></a>
 
-### Gensim: Generating robotic simulation tasks via large language models
+### GenSim: Generating robotic simulation tasks via large language models
 
 Wang, Lirui; Ling, Yiyang; Yuan, Zhecheng; Shridhar, Mohit; Bao, Chen; Qin, Yuzhe; et al. International Conference on Learning Representations. 2024. No paper link recorded.
 
@@ -2708,7 +2708,7 @@ Gerstgrasser, Matthias; Schaeffer, Rylan; Dey, Apratim; Rafailov, Rafael; Sleigh
 
 <a id="paper-wu2024ivideogpt"></a>
 
-### ivideogpt: Interactive videogpts are scalable world models
+### iVideoGPT: Interactive VideoGPTs are scalable world models
 
 Wu, Jialong; Yin, Shaofeng; Feng, Ningya; He, Xu; Li, Dong; Hao, Jianye; et al. Advances in Neural Information Processing Systems. 2024. No paper link recorded.
 
@@ -2748,7 +2748,7 @@ Xu, Zhengtong; She, Yu. IEEE Transactions on Robotics. 2024. [Paper](<https://ar
 
 <a id="paper-shao2024lmdrive"></a>
 
-### Lmdrive: Closed-loop end-to-end driving with large language models
+### LMDrive: Closed-loop end-to-end driving with large language models
 
 Shao, Hao; Hu, Yuxuan; Wang, Letian; Song, Guanglu; Waslander, Steven L; Liu, Yu; et al. 2024 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR). 2024. No paper link recorded.
 
@@ -2836,7 +2836,7 @@ Luo, Jianlan; Xu, Charles; Wu, Jeffrey; Levine, Sergey. 2024. [Paper](<https://a
 
 <a id="paper-radosavovic2024realworld"></a>
 
-### Real-World Humanoid Locomotion with Reinforcement Learning
+### Real-world humanoid locomotion with reinforcement learning
 
 Radosavovic, Ilija; Xiao, Tete; Zhang, Bike; Darrell, Trevor; Malik, Jitendra; Sreenath, Koushil. Science Robotics. 2024. [Paper](<https://doi.org/10.1126/scirobotics.adi9579>).
 
@@ -2844,7 +2844,7 @@ Radosavovic, Ilija; Xiao, Tete; Zhang, Bike; Darrell, Trevor; Malik, Jitendra; S
 
 <a id="paper-torne2024rialto"></a>
 
-### Reconciling Reality through Simulation: A Real-to-Sim-to-Real Approach for Robust Manipulation
+### Reconciling Reality through Simulation: A Real-To-Sim-to-Real Approach for Robust Manipulation
 
 Torne, Marcel; Simeonov, Anthony; Li, Zechu; Chan, April; Chen, Tao; Gupta, Abhishek; et al. Proceedings of Robotics: Science and Systems. 2024. [Paper](<https://doi.org/10.15607/RSS.2024.XX.015>).
 
@@ -2936,7 +2936,7 @@ Higuera, Carolina; Sharma, Akash; Bodduluri, Chaithanya Krishna; Fan, Taosha; La
 
 Hansen, Nicklas; Su, Hao; Wang, Xiaolong. International Conference on Learning Representations (ICLR). 2024. [Paper](<https://arxiv.org/abs/2310.16828>).
 
-**Cited in:** [3.1 Y: What Is Predicted](../docs/sections/03-design-dials.md#sec-3-1), [5.2 Policies and Planners](../docs/sections/05-learners-and-policies.md#sec-5-2), [S5.2 Utility Attribution and Budget-Dependent Evaluation](../docs/sections/s5-evaluation-details.md#sec-s5-2). **Keys:** `hansen2024tdmpc2`. **Metadata:** `primary-identity-checked`, checked 2026-10-01.
+**Cited in:** [3.1 Y: What Is Predicted](../docs/sections/03-design-dials.md#sec-3-1), [4.4 Decisions: Futures of Candidate Actions](../docs/sections/04-pathways.md#sec-4-4), [5.2 Policies and Planners](../docs/sections/05-learners-and-policies.md#sec-5-2), [S5.2 Utility Attribution and Budget-Dependent Evaluation](../docs/sections/s5-evaluation-details.md#sec-s5-2). **Keys:** `hansen2024tdmpc2`. **Metadata:** `primary-identity-checked`, checked 2026-10-01.
 
 <a id="paper-hsu2024safety"></a>
 
@@ -2948,7 +2948,7 @@ Hsu, Kai-Chieh; Hu, Haimin; Fisac, Jaime F. Annual Review of Control, Robotics, 
 
 <a id="paper-lyu2024total"></a>
 
-### Total-decom: Decomposed 3d scene reconstruction with minimal interaction
+### Total-Decom: Decomposed 3D scene reconstruction with minimal interaction
 
 Lyu, Xiaoyang; Chang, Chirui; Dai, Peng; Sun, Yang-Tian; Qi, Xiaojuan. 2024 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR). 2024. No paper link recorded.
 
@@ -3094,7 +3094,7 @@ Mendonca, Russell; Bahl, Shikhar; Pathak, Deepak. IEEE International Conference 
 
 <a id="paper-bridgedatav2"></a>
 
-### Bridgedata v2: A dataset for robot learning at scale
+### BridgeData V2: A dataset for robot learning at scale
 
 Walke, Homer Rich; Black, Kevin; Zhao, Tony Z; Vuong, Quan; Zheng, Chongyi; Hansen-Estruch, Philippe; et al. Conference on robot learning. 2023. No paper link recorded.
 
@@ -3536,7 +3536,7 @@ Hu, Anthony; Corrado, Gianluca; Griffiths, Nicolas; Murez, Zak; Gurau, Corina; Y
 
 <a id="paper-sun2022plate"></a>
 
-### Plate: Visually-grounded planning with transformers in procedural tasks
+### PlaTe: Visually-grounded planning with transformers in procedural tasks
 
 Sun, Jiankai; Huang, De-An; Lu, Bo; Liu, Yun-Hui; Zhou, Bolei; Garg, Animesh. IEEE Robotics and Automation Letters. 2022. No paper link recorded.
 
@@ -3868,7 +3868,7 @@ Li, Yunzhu; He, Hao; Wu, Jiajun; Katabi, Dina; Torralba, Antonio. International 
 
 <a id="paper-spencer2020interventions"></a>
 
-### Learning from Interventions: Human-Robot Interaction as Both Explicit and Implicit Feedback
+### Learning from Interventions: Human-robot interaction as both explicit and implicit feedback
 
 Spencer, Jonathan; Choudhury, Sanjiban; Barnes, Matt; Schmittle, Matthew; Chiang, Mung; Ramadge, Peter; et al. Robotics: Science and Systems (RSS). 2020. [Paper](<https://doi.org/10.15607/RSS.2020.XVI.055>).
 
@@ -3876,7 +3876,7 @@ Spencer, Jonathan; Choudhury, Sanjiban; Barnes, Matt; Schmittle, Matthew; Chiang
 
 <a id="paper-lee2020quadruped"></a>
 
-### Learning Quadrupedal Locomotion over Challenging Terrain
+### Learning quadrupedal locomotion over challenging terrain
 
 Lee, Joonho; Hwangbo, Jemin; Wellhausen, Lorenz; Koltun, Vladlen; Hutter, Marco. Science Robotics. 2020. [Paper](<https://doi.org/10.1126/scirobotics.abc5986>).
 
@@ -3964,7 +3964,7 @@ Zhu, Yuke; Wong, Josiah; Mandlekar, Ajay; Martín-Martín, Roberto; Joshi, Abhis
 
 <a id="paper-ku2020room"></a>
 
-### Room-across-room: Multilingual vision-and-language navigation with dense spatiotemporal grounding
+### Room-Across-Room: Multilingual vision-and-language navigation with dense spatiotemporal grounding
 
 Ku, Alexander; Anderson, Peter; Patel, Roma; Ie, Eugene; Baldridge, Jason. Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing (EMNLP). 2020. No paper link recorded.
 
@@ -4086,7 +4086,7 @@ Burda, Yuri; Edwards, Harrison; Storkey, Amos; Klimov, Oleg. International Confe
 
 <a id="paper-habitat"></a>
 
-### Habitat: A platform for embodied ai research
+### Habitat: A platform for embodied AI research
 
 Savva, Manolis; Kadian, Abhishek; Maksymets, Oleksandr; Zhao, Yili; Wijmans, Erik; Jain, Bhavana; et al. 2019 IEEE/CVF International Conference on Computer Vision (ICCV). 2019. No paper link recorded.
 
@@ -4208,7 +4208,7 @@ Ajay, Anurag; Wu, Jiajun; Fazeli, Nima; Bauza, Maria; Kaelbling, Leslie P.; Tene
 
 <a id="paper-henderson2018deep"></a>
 
-### Deep Reinforcement Learning that Matters
+### Deep Reinforcement Learning That Matters
 
 Henderson, Peter; Islam, Riashat; Bachman, Philip; Pineau, Joelle; Precup, Doina; Meger, David. Proceedings of the AAAI Conference on Artificial Intelligence. 2018. [Paper](<https://doi.org/10.1609/aaai.v32i1.11694>).
 
@@ -4566,7 +4566,7 @@ Whitney, Daniel E. Journal of Dynamic Systems, Measurement, and Control. 1982. [
 
 <a id="paper-wang2026counterfactual"></a>
 
-### Counterfactual Video Generation for Humanoid Loco-Manipulation
+### Counterfactual Video Generation Enables Scalable Humanoid Loco-Manipulation
 
 Wang, Zihan; Wu, Zhen; Abbeel, Pieter; Duan, Rocky; Malik, Jitendra; Sferrazza, Carmelo; et al. RSS 2026 Workshop Whole-body Control and Bimanual Manipulation: Applications in Humanoids and Beyond. . No paper link recorded.
 

@@ -12,11 +12,11 @@ This section cites 43 works. A work cited in several subsections appears under e
 
 ## 7.1 Model Quality and Physical Validity
 
-*Representative works (Figure 2):* [VP²](../catalog.md#paper-tian2023vp2), [Physics-IQ](../catalog.md#paper-motamed2026physicsiq), [WorldArena](../catalog.md#paper-shang2026worldarena), [WorldEcho](../catalog.md#paper-chen2026worldsync)
+*Representative works (Figure 2):* [FVD](../catalog.md#paper-unterthiner2018fvd), [Physics-IQ](../catalog.md#paper-motamed2026physicsiq), [WorldArena](../catalog.md#paper-shang2026worldarena), [WorldEcho](../catalog.md#paper-chen2026worldsync)
 
-- [Towards Accurate Generative Models of Video: A New Metric &amp; Challenges](<https://arxiv.org/abs/1812.01717>) · arXiv 2018 · [ⓘ](../catalog.md#paper-unterthiner2018fvd) ⌂
+- **FVD**: [Towards Accurate Generative Models of Video: A New Metric &amp; Challenges](<https://arxiv.org/abs/1812.01717>) · arXiv 2018 · [ⓘ](../catalog.md#paper-unterthiner2018fvd) ⌂
 - The Value Equivalence Principle for Model-Based Reinforcement Learning · NeurIPS 2020 · [ⓘ](../catalog.md#paper-grimm2020value)
-- **MuZero**: [Mastering Atari, Go, chess and shogi by planning with a learned model](<https://doi.org/10.1038/s41586-020-03051-4>) · Nature 2020 · [ⓘ](../catalog.md#paper-schrittwieser2020muzero) ⌂
+- [Mastering Atari, Go, chess and shogi by planning with a learned model](<https://doi.org/10.1038/s41586-020-03051-4>) · Nature 2020 · [ⓘ](../catalog.md#paper-schrittwieser2020muzero) ⌂
 - **Dreamer**: [Dream to Control: Learning Behaviors by Latent Imagination](<https://arxiv.org/abs/1912.01603>) · ICLR 2020 · [ⓘ](../catalog.md#paper-hafner2019dreamer)
 - **MBPO**: [When to Trust Your Model: Model-Based Policy Optimization](<https://arxiv.org/abs/1906.08253>) · NeurIPS 2019 · [ⓘ](../catalog.md#paper-janner2019mbpo)
 - **WorldEcho**: [Do Robotic World Models Really Follow Actions? Diagnosing and Aligning Action-Conditioned Generation for Policy Learning](<https://arxiv.org/abs/2608.24885>) · 2026 · [ⓘ](../catalog.md#paper-chen2026worldsync) ⌂
@@ -33,7 +33,7 @@ This section cites 43 works. A work cited in several subsections appears under e
 
 *Representative works (Figure 2):* matched substitution and pathway removal
 
-- [Deep Reinforcement Learning that Matters](<https://doi.org/10.1609/aaai.v32i1.11694>) · AAAI 2018 · [ⓘ](../catalog.md#paper-henderson2018deep) ⌂
+- [Deep Reinforcement Learning That Matters](<https://doi.org/10.1609/aaai.v32i1.11694>) · AAAI 2018 · [ⓘ](../catalog.md#paper-henderson2018deep) ⌂
 - Deep Reinforcement Learning at the Edge of the Statistical Precipice · NeurIPS 2021 · [ⓘ](../catalog.md#paper-agarwal2021precipice)
 - Empirical Design in Reinforcement Learning · Journal of Machine Learning Research 2024 · [ⓘ](../catalog.md#paper-patterson2024empirical) ⌂
 - [Robot Learning as an Empirical Science: Best Practices for Policy Evaluation](<https://arxiv.org/abs/2409.09491>) · arXiv 2024 · [ⓘ](../catalog.md#paper-kressgazit2024robot)
@@ -64,7 +64,7 @@ This section cites 43 works. A work cited in several subsections appears under e
 
 ## 7.4 Resources
 
-*Representative works (Figure 2):* [Open X-Embodiment](../catalog.md#paper-openxembodiment2023), [DROID](../catalog.md#paper-khazatsky2024droid), [ManiSkill3](../catalog.md#paper-maniskill3), [RoboArena](../catalog.md#paper-atreya2025roboarena)
+*Representative works (Figure 2):* [Open X-Embodiment](../catalog.md#paper-openxembodiment2023), [DROID](../catalog.md#paper-khazatsky2024droid), [ManiSkill3](../catalog.md#paper-maniskill3), [MimicGen](../catalog.md#paper-mimicgen)
 
 ### 7.4.1 Available Resources and Reuse
 

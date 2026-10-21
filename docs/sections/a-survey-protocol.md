@@ -15,7 +15,7 @@ This section cites 10 works. A work cited in several subsections appears under e
 - **Dreamer**: [Dream to Control: Learning Behaviors by Latent Imagination](<https://arxiv.org/abs/1912.01603>) · ICLR 2020 · [ⓘ](../catalog.md#paper-hafner2019dreamer)
 - **DayDreamer**: [World Models for Physical Robot Learning](<https://arxiv.org/abs/2206.14176>) · CoRL 2022 · [Code](<https://github.com/danijar/daydreamer>) · [ⓘ](../catalog.md#paper-wu2022daydreamer)
 - **RoboNet**: [Large-Scale Multi-Robot Learning](<https://arxiv.org/abs/1910.11215>) · 2019 · [ⓘ](../catalog.md#paper-robonet)
-- **Habitat**: A platform for embodied ai research · ICCV 2019 · [Code](<https://github.com/facebookresearch/habitat-lab>) · [ⓘ](../catalog.md#paper-habitat)
+- **Habitat**: A platform for embodied AI research · ICCV 2019 · [Code](<https://github.com/facebookresearch/habitat-lab>) · [ⓘ](../catalog.md#paper-habitat)
 - **AI2-THOR**: [An interactive 3d environment for visual ai](<https://arxiv.org/abs/1712.05474>) · arXiv 2017 · [Code](<https://github.com/allenai/ai2thor>) · [ⓘ](../catalog.md#paper-ai2thor)
 - **Meta-World**: [A Benchmark and Evaluation for Multi-Task and Meta Reinforcement Learning](<https://meta-world.github.io/>) · CoRL 2020 · [ⓘ](../catalog.md#paper-metaworld) ⌂
 - **robosuite**: [A Modular Simulation Framework and Benchmark for Robot Learning](<https://arxiv.org/abs/2009.12293>) · 2020 · [Code](<https://github.com/ARISE-Initiative/robosuite>) · [ⓘ](../catalog.md#paper-robosuite) ⌂

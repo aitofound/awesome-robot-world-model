@@ -15,14 +15,14 @@ This section cites 50 works. A work cited in several subsections appears under e
 - **VLAW**: [Iterative Co-Improvement of Vision-Language-Action Policy and World Model](<https://arxiv.org/abs/2602.12063>) · arXiv 2026 · [ⓘ](../catalog.md#paper-vlaw2026)
 - **RoboHorizon**: [An llm-assisted multi-view world model for long-horizon robotic manipulation](<https://arxiv.org/abs/2501.06605>) · arXiv 2025 · [ⓘ](../catalog.md#paper-robohorizon2025)
 - **WorldPlanner**: [Monte carlo tree search and mpc with action-conditioned visual world models](<https://arxiv.org/abs/2511.03077>) · arXiv 2025 · [ⓘ](../catalog.md#paper-worldplanner2025)
-- **Habitat**: A platform for embodied ai research · ICCV 2019 · [Code](<https://github.com/facebookresearch/habitat-lab>) · [ⓘ](../catalog.md#paper-habitat)
+- **Habitat**: A platform for embodied AI research · ICCV 2019 · [Code](<https://github.com/facebookresearch/habitat-lab>) · [ⓘ](../catalog.md#paper-habitat)
 - **AI2-THOR**: [An interactive 3d environment for visual ai](<https://arxiv.org/abs/1712.05474>) · arXiv 2017 · [Code](<https://github.com/allenai/ai2thor>) · [ⓘ](../catalog.md#paper-ai2thor)
 - **WMR**: [Learning Humanoid Locomotion with World Model Reconstruction](<https://arxiv.org/abs/2502.16230>) · 2025 · [ⓘ](../catalog.md#paper-wmr2025)
 - **Ego-Vision Contact Planning**: [Ego-vision world model for humanoid contact planning](<https://arxiv.org/abs/2510.11682>) · arXiv 2025 · [ⓘ](../catalog.md#paper-egovisioncontact2025)
 - **GR00T**: [Gr00t n1: An open foundation model for generalist humanoid robots](<https://arxiv.org/abs/2503.14734>) · arXiv 2025 · [ⓘ](../catalog.md#paper-nvidia2025groot)
 - **OccWorld**: [Learning a 3D Occupancy World Model for Autonomous Driving](<https://arxiv.org/abs/2311.16038>) · ECCV 2024 · [ⓘ](../catalog.md#paper-zheng2024occworld)
-- Lmdrive: Closed-loop end-to-end driving with large language models · CVPR 2024 · [ⓘ](../catalog.md#paper-shao2024lmdrive) ⌂
-- Ad-h: Autonomous driving with hierarchical agents · 2024 · [ⓘ](../catalog.md#paper-zhang2024ad) ⌂
+- LMDrive: Closed-loop end-to-end driving with large language models · CVPR 2024 · [ⓘ](../catalog.md#paper-shao2024lmdrive) ⌂
+- AD-H: Autonomous Driving with Hierarchical Agents · 2024 · [ⓘ](../catalog.md#paper-zhang2024ad) ⌂
 - **GAIA-1**: [A Generative World Model for Autonomous Driving](<https://arxiv.org/abs/2309.17080>) · arXiv 2023 · [ⓘ](../catalog.md#paper-hu2023gaia1)
 - [GAIA-2: A Controllable Multi-View Generative World Model for Autonomous Driving](<https://arxiv.org/abs/2503.20523>) · arXiv 2025 · [ⓘ](../catalog.md#paper-russell2025gaia2)
 - **DriveDreamer**: [Towards Real-world-driven World Models for Autonomous Driving](<https://arxiv.org/abs/2309.09777>) · ECCV 2024 · [ⓘ](../catalog.md#paper-wang2024drivedreamer)
@@ -51,15 +51,15 @@ This section cites 50 works. A work cited in several subsections appears under e
 - [Yell At Your Robot: Improving On-the-Fly from Language Corrections](<https://doi.org/10.15607/RSS.2024.XX.025>) · RSS 2024 · [ⓘ](../catalog.md#paper-shi2024yell) ⌂
 - [Learning Interpretable Features from Interventions](<https://doi.org/10.15607/RSS.2025.XXI.163>) · RSS 2025 · [ⓘ](../catalog.md#paper-hedlundbotti2025lifi) ⌂
 - [A Reduction of Imitation Learning and Structured Prediction to No-Regret Online Learning](<https://proceedings.mlr.press/v15/ross11a.html>) · Proceedings of the Fourteenth International Conference on Artificial Intelligence and Statistics 2011 · [ⓘ](../catalog.md#paper-ross2011dagger)
-- [Learning from Interventions: Human-Robot Interaction as Both Explicit and Implicit Feedback](<https://doi.org/10.15607/RSS.2020.XVI.055>) · RSS 2020 · [ⓘ](../catalog.md#paper-spencer2020interventions)
+- [Learning from Interventions: Human-robot interaction as both explicit and implicit feedback](<https://doi.org/10.15607/RSS.2020.XVI.055>) · RSS 2020 · [ⓘ](../catalog.md#paper-spencer2020interventions)
 - [Human-in-the-Loop Imitation Learning using Remote Teleoperation](<https://arxiv.org/abs/2012.06733>) · 2020 · [ⓘ](../catalog.md#paper-mandlekar2020iwr) ⌂
 - [Precise and Dexterous Robotic Manipulation via Human-in-the-Loop Reinforcement Learning](<https://arxiv.org/abs/2410.21845>) · 2024 · [ⓘ](../catalog.md#paper-luo2024hilserl)
-- [ThriftyDAgger: Budget-Aware Novelty and Risk Gating for Interactive Imitation Learning](<https://proceedings.mlr.press/v164/hoque22a.html>) · CoRL 2022 · [ⓘ](../catalog.md#paper-hoque2022thrifty)
+- **ThriftyDAgger**: [Budget-Aware Novelty and Risk Gating for Interactive Imitation Learning](<https://proceedings.mlr.press/v164/hoque22a.html>) · CoRL 2022 · [ⓘ](../catalog.md#paper-hoque2022thrifty)
 - **KnowNo**: [Robots That Ask For Help: Uncertainty Alignment for Large Language Model Planners](<https://proceedings.mlr.press/v229/ren23a.html>) · CoRL 2023 · [ⓘ](../catalog.md#paper-ren2023knowno)
 - [Risk-Calibrated Human-Robot Interaction via Set-Valued Intent Prediction](<https://doi.org/10.15607/RSS.2024.XX.027>) · RSS 2024 · [ⓘ](../catalog.md#paper-lidard2024rcip)
 - **Model-Based Runtime Monitoring**: [Model-Based Runtime Monitoring with Interactive Imitation Learning](<https://arxiv.org/abs/2310.17552>) · ICRA 2024 · [ⓘ](../catalog.md#paper-liu2024runtime)
 - **Sirius-Fleet**: [Multi-Task Interactive Robot Fleet Learning with Visual World Models](<https://proceedings.mlr.press/v270/liu25g.html>) · CoRL 2025 · [ⓘ](../catalog.md#paper-liu2025siriusfleet)
-- [Robot learning on the job: Human-in-the-loop autonomy and learning during deployment](<https://doi.org/10.15607/RSS.2023.XIX.005>) · RSS 2025 · [ⓘ](../catalog.md#paper-liu2023sirius)
+- [Robot Learning on the Job: Human-in-the-Loop Autonomy and Learning During Deployment](<https://doi.org/10.15607/RSS.2023.XIX.005>) · RSS 2025 · [ⓘ](../catalog.md#paper-liu2023sirius)
 - **Hi-WM**: [Human-in-the-World-Model for Scalable Robot Post-Training](<https://arxiv.org/abs/2604.21741>) · 2026 · [ⓘ](../catalog.md#paper-li2026hiwm)
 - [FineMLD: A Fine-Grained Motion Latent Diffusion for Human Motion Prediction in Human–Robot Collaboration](<https://doi.org/10.1016/j.aei.2025.104119>) · Advanced Engineering Informatics 2026 · [ⓘ](../catalog.md#paper-zhong2026finemld) ⌂
 - Efficient One-Step Human Motion Prediction Under Occlusions via Constrained MeanFlow · IEEE Transactions on Industrial Informatics 2026 · [ⓘ](../catalog.md#paper-zhong2026efficient) ⌂

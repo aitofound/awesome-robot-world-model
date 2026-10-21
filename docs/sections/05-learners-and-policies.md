@@ -10,7 +10,7 @@ This section cites 20 works. A work cited in several subsections appears under e
 
 ## 5.1 Policy-Learning Regimes
 
-*Representative works (Figure 2):* [MimicGen](../catalog.md#paper-mimicgen), [MOPO](../catalog.md#paper-mopo), [MOReL](../catalog.md#paper-morel), [COMBO](../catalog.md#paper-combo), [Dreamer](../catalog.md#paper-hafner2019dreamer)
+*Representative works (Figure 2):* [RT-1](../catalog.md#paper-rt1), [MOPO](../catalog.md#paper-mopo), [MOReL](../catalog.md#paper-morel), [COMBO](../catalog.md#paper-combo), online model-based RL
 
 - **RT-1**: [Robotics Transformer for Real-World Control at Scale](<https://arxiv.org/abs/2212.06817>) · 2022 · [ⓘ](../catalog.md#paper-rt1) ⌂
 - **RT-2**: [Vision-language-action models transfer web knowledge to robotic control](<https://arxiv.org/abs/2307.15818>) · arXiv 2023 · [ⓘ](../catalog.md#paper-rt2)
@@ -41,6 +41,6 @@ This section cites 20 works. A work cited in several subsections appears under e
 - **GR00T N1.7**: [NVIDIA Isaac GR00T N1.7: Open Reasoning VLA Model for Humanoid Robots](<https://huggingface.co/blog/nvidia/gr00t-n1-7>) · 2026 · [ⓘ](../catalog.md#paper-nvidia2026groot17) ⌂
 - **DreamZero**: [World Action Models are Zero-shot Policies](<https://arxiv.org/abs/2602.15922>) · arXiv 2026 · [ⓘ](../catalog.md#paper-ye2026dreamzero)
 - **PlaNet**: [Learning Latent Dynamics for Planning from Pixels](<https://arxiv.org/abs/1811.04551>) · ICML 2019 · [ⓘ](../catalog.md#paper-hafner2019planet)
-- **TD-MPC2**: [Scalable, Robust World Models for Continuous Control](<https://arxiv.org/abs/2310.16828>) · ICLR 2024 · [ⓘ](../catalog.md#paper-hansen2024tdmpc2) ⌂
+- **TD-MPC2**: [Scalable, Robust World Models for Continuous Control](<https://arxiv.org/abs/2310.16828>) · ICLR 2024 · [ⓘ](../catalog.md#paper-hansen2024tdmpc2)
 - **WorldEcho**: [Do Robotic World Models Really Follow Actions? Diagnosing and Aligning Action-Conditioned Generation for Policy Learning](<https://arxiv.org/abs/2608.24885>) · 2026 · [ⓘ](../catalog.md#paper-chen2026worldsync)
 

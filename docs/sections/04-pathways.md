@@ -6,7 +6,7 @@ The survey classifies each use of a world model by what the model hands to its c
 
 [![When each of the five pathways consumes predictions, and how each typically fails.](../../assets/figures/pathway-timing.svg)](../../assets/figures/pathway-timing.svg)
 
-This section cites 107 works. A work cited in several subsections appears under each; ⌂ marks the subsection where the README lists it.
+This section cites 108 works. A work cited in several subsections appears under each; ⌂ marks the subsection where the README lists it.
 
 ## Section opening
 
@@ -39,7 +39,7 @@ This section cites 107 works. A work cited in several subsections appears under 
 - **DayDreamer**: [World Models for Physical Robot Learning](<https://arxiv.org/abs/2206.14176>) · CoRL 2022 · [Code](<https://github.com/danijar/daydreamer>) · [ⓘ](../catalog.md#paper-wu2022daydreamer)
 - **RWM**: [Robotic World Model: A Neural Network Simulator for Robust Policy Optimization in Robotics](<https://arxiv.org/abs/2501.10100>) · 2025 · [ⓘ](../catalog.md#paper-li2025roboticworldmodel) ⌂
 - **RoboHorizon**: [An llm-assisted multi-view world model for long-horizon robotic manipulation](<https://arxiv.org/abs/2501.06605>) · arXiv 2025 · [ⓘ](../catalog.md#paper-robohorizon2025)
-- **DiWA**: [Diffusion Policy Adaptation with World Models](<https://arxiv.org/abs/2508.03645>) · 2025 · [ⓘ](../catalog.md#paper-diwa) ⌂
+- **DiWA**: [Diffusion Policy Adaptation with World Models](<https://arxiv.org/abs/2508.03645>) · 2025 · [ⓘ](../catalog.md#paper-diwa)
 - **GeniWorld**: [A Generalizable Interactive World Model for Robotic Manipulation via Visual Actions](<https://arxiv.org/abs/2608.06332>) · arXiv 2026 · [ⓘ](../catalog.md#paper-gu2026geniworld) ⌂
 - **GE-Sim 2.0**: [A Roadmap Towards Comprehensive Closed-loop Video World Simulators for Robotic Manipulation](<https://arxiv.org/abs/2605.27491>) · arXiv 2026 · [ⓘ](../catalog.md#paper-qiu2026gesim2) ⌂
 - [Atlas: A World Model for Spatial Intelligence](<https://www.worldlabs.ai/blog/atlas>) · World Labs Blog 2026 · [ⓘ](../catalog.md#paper-worldlabs2026atlas)
@@ -55,7 +55,7 @@ This section cites 107 works. A work cited in several subsections appears under 
 - **UniSim**: [Learning Interactive Real-World Simulators](<https://arxiv.org/abs/2310.06114>) · ICLR 2024 · [ⓘ](../catalog.md#paper-yang2024unisim)
 - RoboScape-R: Unified Reward-Observation World Models for Generalizable Robotics Training via RL · CVPR 2026 · [ⓘ](../catalog.md#paper-roboscape-r) ⌂
 - **VLA-RFT**: [Vision-Language-Action Reinforcement Fine-tuning with Verified Rewards in World Simulators](<https://arxiv.org/abs/2510.00406>) · arXiv 2025 · [ⓘ](../catalog.md#paper-vlarft2025) ⌂
-- [Reconciling Reality through Simulation: A Real-to-Sim-to-Real Approach for Robust Manipulation](<https://doi.org/10.15607/RSS.2024.XX.015>) · RSS 2024 · [ⓘ](../catalog.md#paper-torne2024rialto)
+- [Reconciling Reality through Simulation: A Real-To-Sim-to-Real Approach for Robust Manipulation](<https://doi.org/10.15607/RSS.2024.XX.015>) · RSS 2024 · [ⓘ](../catalog.md#paper-torne2024rialto)
 - X-Sim: Cross-Embodiment Learning via Real-to-Sim-to-Real · CoRL 2025 · [ⓘ](../catalog.md#paper-dan2025xsim) ⌂
 - **VideoMimic**: Visual Imitation Enables Contextual Humanoid Control · CoRL 2025 · [ⓘ](../catalog.md#paper-allshire2025videomimic)
 - EmbodMocap: In-the-Wild 4D Human-Scene Reconstruction for Embodied Agents · CVPR 2026 · [ⓘ](../catalog.md#paper-wang2026embodmocap) ⌂
@@ -71,7 +71,7 @@ This section cites 107 works. A work cited in several subsections appears under 
 - **MimicGen**: [A Data Generation System for Scalable Robot Learning using Human Demonstrations](<https://arxiv.org/abs/2310.17596>) · 2023 · [Code](<https://github.com/NVlabs/mimicgen>) · [ⓘ](../catalog.md#paper-mimicgen)
 - **DexMimicGen**: [Automated Data Generation for Bimanual Dexterous Manipulation via Imitation Learning](<https://arxiv.org/abs/2410.24185>) · 2024 · [Code](<https://github.com/NVlabs/dexmimicgen>) · [ⓘ](../catalog.md#paper-dexmimicgen)
 - [GRAIL: Generating Humanoid Loco-Manipulation from 3D Assets and Video Priors](<https://arxiv.org/abs/2606.05160>) · 2026 · [ⓘ](../catalog.md#paper-xie2026grail)
-- Counterfactual Video Generation for Humanoid Loco-Manipulation · RSS 2026 Workshop Whole-body Control and Bimanual Manipulation: Applications in Humanoids and Beyond · [ⓘ](../catalog.md#paper-wang2026counterfactual)
+- Counterfactual Video Generation Enables Scalable Humanoid Loco-Manipulation · RSS 2026 Workshop Whole-body Control and Bimanual Manipulation: Applications in Humanoids and Beyond · [ⓘ](../catalog.md#paper-wang2026counterfactual)
 - **World-Gymnast**: [Training robots with reinforcement learning in a world model](<https://arxiv.org/abs/2602.02454>) · arXiv 2026 · [ⓘ](../catalog.md#paper-worldgymnast2026)
 - [WISE: World-model-guided Imagination Scheduling for Efficient Post-training of Vision-Language-Action Models](<https://arxiv.org/abs/2609.03681>) · 2026 · [ⓘ](../catalog.md#paper-nsim-wise) ⌂
 
@@ -110,7 +110,7 @@ This section cites 107 works. A work cited in several subsections appears under 
 - Neuro-symbolic program search for autonomous driving decision module design · CoRL 2021 · [ⓘ](../catalog.md#paper-sun2021neuro) ⌂
 - ARCH: Hierarchical hybrid learning for long-horizon contact-rich robotic assembly · CoRL 2024 · [ⓘ](../catalog.md#paper-sun2024arch) ⌂
 - [MimicPlay: Long-Horizon Imitation Learning by Watching Human Play](<https://arxiv.org/abs/2302.12422>) · CoRL 2023 · [ⓘ](../catalog.md#paper-wang2023mimicplay)
-- Diffusion-es: Gradient-free planning with diffusion for autonomous and instruction-guided driving · CVPR 2024 · [ⓘ](../catalog.md#paper-yang2024diffusion) ⌂
+- Diffusion-ES: Gradient-free planning with diffusion for autonomous and instruction-guided driving · CVPR 2024 · [ⓘ](../catalog.md#paper-yang2024diffusion) ⌂
 - Tractable joint prediction and planning over discrete behavior modes for urban driving · ICRA 2024 · [ⓘ](../catalog.md#paper-villaflor2024tractable) ⌂
 - A collision-aware cable grasping method in cluttered environment · ICRA 2024 · [ⓘ](../catalog.md#paper-zhang2024collision) ⌂
 - [ParticleFormer: A 3D Point Cloud World Model for Multi-Object, Multi-Material Robotic Manipulation](<https://arxiv.org/abs/2506.23126>) · arXiv 2025 · [ⓘ](../catalog.md#paper-huang2025particleformer)
@@ -122,6 +122,7 @@ This section cites 107 works. A work cited in several subsections appears under 
 *Representative works (Figure 2):* [TD-MPC2](../catalog.md#paper-hansen2024tdmpc2), [V-JEPA 2-AC](../catalog.md#paper-assran2025vjepa2), [WorldPlanner](../catalog.md#paper-worldplanner2025), [LVP](../catalog.md#paper-chen2025largevideoplanner), [TrAct](../catalog.md#paper-cao2026tract)
 
 - **PlaNet**: [Learning Latent Dynamics for Planning from Pixels](<https://arxiv.org/abs/1811.04551>) · ICML 2019 · [ⓘ](../catalog.md#paper-hafner2019planet)
+- **TD-MPC2**: [Scalable, Robust World Models for Continuous Control](<https://arxiv.org/abs/2310.16828>) · ICLR 2024 · [ⓘ](../catalog.md#paper-hansen2024tdmpc2) ⌂
 - **Ego-Vision Contact Planning**: [Ego-vision world model for humanoid contact planning](<https://arxiv.org/abs/2510.11682>) · arXiv 2025 · [ⓘ](../catalog.md#paper-egovisioncontact2025) ⌂
 - **PointWorld**: [Scaling 3d world models for in-the-wild robotic manipulation](<https://arxiv.org/abs/2601.03782>) · arXiv 2026 · [ⓘ](../catalog.md#paper-pointworld2026)
 - **VT-WM**: [Visuo-Tactile World Models](<https://arxiv.org/abs/2602.06001>) · 2026 · [ⓘ](../catalog.md#paper-visuotactilewm2026)
@@ -153,8 +154,8 @@ This section cites 107 works. A work cited in several subsections appears under 
 - **TacForeSight**: [Force-Guided Tactile World Model for Contact-Rich Manipulation](<https://arxiv.org/abs/2606.11184>) · arXiv 2026 · [ⓘ](../catalog.md#paper-zang2026tacforesight) ⌂
 - [TouchWorld: A Predictive and Reactive Tactile Foundation Model for Dexterous Manipulation](<https://arxiv.org/abs/2607.07287>) · arXiv 2026 · [ⓘ](../catalog.md#paper-zhou2026touchworld) ⌂
 - **OmniVTA**: [Visuo-Tactile World Modeling for Contact-Rich Robotic Manipulation](<https://arxiv.org/abs/2603.19201>) · 2026 · [ⓘ](../catalog.md#paper-omnivta2026)
-- **HG-DAgger**: [Interactive Imitation Learning with Human Experts](<https://doi.org/10.1109/ICRA.2019.8793698>) · ICRA 2019 · [ⓘ](../catalog.md#paper-kelly2019hgdagger) ⌂
-- [ThriftyDAgger: Budget-Aware Novelty and Risk Gating for Interactive Imitation Learning](<https://proceedings.mlr.press/v164/hoque22a.html>) · CoRL 2022 · [ⓘ](../catalog.md#paper-hoque2022thrifty) ⌂
+- [HG-DAgger: Interactive Imitation Learning with Human Experts](<https://doi.org/10.1109/ICRA.2019.8793698>) · ICRA 2019 · [ⓘ](../catalog.md#paper-kelly2019hgdagger) ⌂
+- **ThriftyDAgger**: [Budget-Aware Novelty and Risk Gating for Interactive Imitation Learning](<https://proceedings.mlr.press/v164/hoque22a.html>) · CoRL 2022 · [ⓘ](../catalog.md#paper-hoque2022thrifty)
 - **Model-Based Runtime Monitoring**: [Model-Based Runtime Monitoring with Interactive Imitation Learning](<https://arxiv.org/abs/2310.17552>) · ICRA 2024 · [ⓘ](../catalog.md#paper-liu2024runtime) ⌂
 - **LocoFormer**: Generalist Locomotion via Long-context Adaptation · CoRL 2025 · [ⓘ](../catalog.md#paper-locoformer2025) ⌂
 - [In-Context World Modeling for Robotic Control](<https://arxiv.org/abs/2606.26025>) · arXiv 2026 · [ⓘ](../catalog.md#paper-icwm2026) ⌂

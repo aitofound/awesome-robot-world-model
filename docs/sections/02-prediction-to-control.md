@@ -12,7 +12,7 @@ This section cites 10 works. A work cited in several subsections appears under e
 
 ## 2.1 The Robot Learning Loop
 
-*Representative works (Figure 2):* [PlaNet](../catalog.md#paper-hafner2019planet), [Dreamer](../catalog.md#paper-hafner2019dreamer), [DayDreamer](../catalog.md#paper-wu2022daydreamer)
+*Representative works (Figure 2):* acting time and learning time
 
 No citations.
 
@@ -28,7 +28,7 @@ No citations.
 
 ## 2.3 Why Prediction Is Not Control
 
-*Representative works (Figure 2):* [value equivalence](../catalog.md#paper-grimm2020value), [value-aware learning](../catalog.md#paper-farahmand2017vaml), [MuZero](../catalog.md#paper-schrittwieser2020muzero)
+*Representative works (Figure 2):* [value equivalence](../catalog.md#paper-grimm2020value), [value-aware learning](../catalog.md#paper-farahmand2017vaml), [information states](../catalog.md#paper-subramanian2022ais)
 
 - Value-Aware Loss Function for Model-based Reinforcement Learning · AISTATS 2017 · [ⓘ](../catalog.md#paper-farahmand2017vaml) ⌂
 - The Value Equivalence Principle for Model-Based Reinforcement Learning · NeurIPS 2020 · [ⓘ](../catalog.md#paper-grimm2020value) ⌂
@@ -40,10 +40,10 @@ No citations.
 
 ## 2.4 From the Loop to the Taxonomy
 
-*Representative works (Figure 2):* five pathways and the outer loop
+*Representative works (Figure 2):* [PlaNet](../catalog.md#paper-hafner2019planet), [Dreamer](../catalog.md#paper-hafner2019dreamer), [DayDreamer](../catalog.md#paper-wu2022daydreamer), [DiWA](../catalog.md#paper-diwa)
 
 - **PlaNet**: [Learning Latent Dynamics for Planning from Pixels](<https://arxiv.org/abs/1811.04551>) · ICML 2019 · [ⓘ](../catalog.md#paper-hafner2019planet) ⌂
 - **Dreamer**: [Dream to Control: Learning Behaviors by Latent Imagination](<https://arxiv.org/abs/1912.01603>) · ICLR 2020 · [ⓘ](../catalog.md#paper-hafner2019dreamer)
-- **DayDreamer**: [World Models for Physical Robot Learning](<https://arxiv.org/abs/2206.14176>) · CoRL 2022 · [Code](<https://github.com/danijar/daydreamer>) · [ⓘ](../catalog.md#paper-wu2022daydreamer)
-- **DiWA**: [Diffusion Policy Adaptation with World Models](<https://arxiv.org/abs/2508.03645>) · 2025 · [ⓘ](../catalog.md#paper-diwa)
+- **DayDreamer**: [World Models for Physical Robot Learning](<https://arxiv.org/abs/2206.14176>) · CoRL 2022 · [Code](<https://github.com/danijar/daydreamer>) · [ⓘ](../catalog.md#paper-wu2022daydreamer) ⌂
+- **DiWA**: [Diffusion Policy Adaptation with World Models](<https://arxiv.org/abs/2508.03645>) · 2025 · [ⓘ](../catalog.md#paper-diwa) ⌂
 

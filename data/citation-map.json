@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "revision": "manuscript@6e28c42",
+  "revision": "manuscript@51fde23",
   "outline": [
     {
       "id": "sec:intro",
@@ -1532,6 +1532,7 @@
       "subsubsection": null,
       "papers": [
         "hafner2019planet",
+        "hansen2024tdmpc2",
         "egovisioncontact2025",
         "pointworld2026",
         "visuotactilewm2026",
@@ -1555,6 +1556,7 @@
       ],
       "id": "group-021",
       "citations": [
+        1,
         1,
         1,
         1,

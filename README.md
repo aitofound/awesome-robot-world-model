@@ -77,7 +77,7 @@ World models now supply robot systems with representations, training experience,
 - [A Definition and Roadmap for World Models](<https://arxiv.org/abs/2607.06401>) · 2026
 - [World Model for Robot Learning: A Comprehensive Survey](<https://arxiv.org/abs/2605.00080>) · 2026
 - [A Step Toward World Models: A Survey on Robotic Manipulation](<https://arxiv.org/abs/2511.02097>) · 2025
-- [A Review of Learning-Based Dynamics Models for Robotic Manipulation](<https://doi.org/10.1126/scirobotics.adt1497>) · Science Robotics 2025
+- [A review of learning-based dynamics models for robotic manipulation](<https://doi.org/10.1126/scirobotics.adt1497>) · Science Robotics 2025
 - [A Comprehensive Survey on World Models for Embodied AI](<https://arxiv.org/abs/2510.16732>) · 2025
 - [World Action Models: The Next Frontier in Embodied AI](<https://arxiv.org/abs/2605.12090>) · 2026
 - [World Action Models: A Survey](<https://arxiv.org/abs/2606.20781>) · arXiv 2026
@@ -88,24 +88,24 @@ World models now supply robot systems with representations, training experience,
 
 This section fixes the vocabulary of the survey: the robot learning loop, the definition of a world model and the reading key of Figure 1. [Section page →](docs/sections/02-prediction-to-control.md)
 
-**2.1 The Robot Learning Loop** · Figure 2: [PlaNet](docs/sections/02-prediction-to-control.md#sec-2-4) (2.4), [Dreamer](docs/sections/04-pathways.md#sec-4-2) (4.2), [DayDreamer](docs/sections/08-outer-loop.md#sec-8-1) (8.1).
-
 <details>
-<summary><b>2.3 Why Prediction Is Not Control</b> · value equivalence, value-aware learning, MuZero · 4 works</summary>
+<summary><b>2.3 Why Prediction Is Not Control</b> · value equivalence, value-aware learning, information states · 4 works</summary>
 
 - The Value Equivalence Principle for Model-Based Reinforcement Learning · NeurIPS 2020 ★
 - Value-Aware Loss Function for Model-based Reinforcement Learning · AISTATS 2017 ★
+- [Approximate Information State for Approximate Planning and Reinforcement Learning in Partially Observed Systems](<https://www.jmlr.org/papers/v23/20-1165.html>) · Journal of Machine Learning Research 2022 ★
 - [Deciding What to Model: Value-Equivalent Sampling for Reinforcement Learning](<https://arxiv.org/abs/2206.02072>) · NeurIPS 2022
-- [Approximate Information State for Approximate Planning and Reinforcement Learning in Partially Observed Systems](<https://www.jmlr.org/papers/v23/20-1165.html>) · Journal of Machine Learning Research 2022
-
-★ Also representative here (Figure 2): [MuZero](docs/sections/07-evaluation.md#sec-7-1) (7.1).
 
 </details>
 
 <details>
-<summary><b>2.4 From the Loop to the Taxonomy</b> · five pathways and the outer loop · 1 work</summary>
+<summary><b>2.4 From the Loop to the Taxonomy</b> · PlaNet, Dreamer, DayDreamer, DiWA · 3 works</summary>
 
-- **PlaNet**: [Learning Latent Dynamics for Planning from Pixels](<https://arxiv.org/abs/1811.04551>) · ICML 2019
+- **PlaNet**: [Learning Latent Dynamics for Planning from Pixels](<https://arxiv.org/abs/1811.04551>) · ICML 2019 ★
+- **DayDreamer**: [World Models for Physical Robot Learning](<https://arxiv.org/abs/2206.14176>) · CoRL 2022 · [Code](<https://github.com/danijar/daydreamer>) ★
+- **DiWA**: [Diffusion Policy Adaptation with World Models](<https://arxiv.org/abs/2508.03645>) · 2025 ★
+
+★ Also representative here (Figure 2): [Dreamer](docs/sections/04-pathways.md#sec-4-2) (4.2).
 
 </details>
 
@@ -135,16 +135,16 @@ A world model is a learned conditional predictor, and four design dials determin
 - [On the Utility of Koopman Operator Theory in Learning Dexterous Manipulation Skills](<https://arxiv.org/abs/2303.13446>) · CoRL 2023
 - [AdaptiGraph: Material-Adaptive Graph-Based Neural Dynamics for Robotic Manipulation](<https://arxiv.org/abs/2407.07889>) · arXiv 2024
 - [PhysCoRe: Physics-Corrected Residual World Models for Material-Aware Deformable Dynamics](<https://arxiv.org/abs/2607.20653>) · arXiv 2026
-- [Reconciling Reality through Simulation: A Real-to-Sim-to-Real Approach for Robust Manipulation](<https://doi.org/10.15607/RSS.2024.XX.015>) · RSS 2024
+- [Reconciling Reality through Simulation: A Real-To-Sim-to-Real Approach for Robust Manipulation](<https://doi.org/10.15607/RSS.2024.XX.015>) · RSS 2024
 - [RoboGSim: A Real2Sim2Real Robotic Gaussian Splatting Simulator](<https://arxiv.org/abs/2411.11839>) · arXiv 2024
 - [CITRIS: Causal Identifiability from Temporal Intervened Sequences](<https://proceedings.mlr.press/v162/lippe22a.html>) · ICML 2022
 - [Causal Dynamics Learning for Task-Independent State Abstraction](<https://arxiv.org/abs/2206.13452>) · ICML 2022
 - **Causal-JEPA**: [Learning World Models through Object-Level Latent Masking](<https://arxiv.org/abs/2602.11389>) · arXiv 2026
 - [CoPhy: Counterfactual Learning of Physical Dynamics](<https://arxiv.org/abs/1909.12000>) · ICLR 2020
 - [Particle-grid neural dynamics for learning deformable object models from rgb-d videos](<https://arxiv.org/abs/2506.15680>) · arXiv 2025
-- Contactsdf: Signed distance functions as multi-contact models for dexterous manipulation · RA-L 2025
-- Twintrack: Bridging vision and contact physics for real-time tracking of unknown dynamic objects · arXiv 2025
-- Difftactile: A physics-based differentiable tactile simulator for contact-rich robotic manipulation · ICLR 2024
+- ContactSDF: Signed distance functions as multi-contact models for dexterous manipulation · RA-L 2025
+- TwinTrack: Bridging vision and contact physics for real-time tracking of unknown dynamic objects · arXiv 2025
+- DiffTactile: A physics-based differentiable tactile simulator for contact-rich robotic manipulation · ICLR 2024
 
 ★ Also representative here (Figure 2): [PointWorld](docs/sections/06-embodiments.md#sec-6-1) (6.1).
 
@@ -159,7 +159,7 @@ A world model is a learned conditional predictor, and four design dials determin
 - **VTAM**: [Video-Tactile-Action Models for Complex Physical Interaction Beyond VLAs](<https://arxiv.org/abs/2603.23481>) · arXiv 2026 ★
 - **DexTacWAM**: [A Visuo-Tactile World-Action Model for Dexterous Manipulation](<https://arxiv.org/abs/2609.24976>) · arXiv 2026 ★
 - Responsible and Generalizable Dexterous Manipulation through Multimodal Perception, Reasoning, and Sim2Real Learning · Staats-und Universitätsbibliothek Hamburg Carl von Ossietzky 2026
-- Contactdexnet: Multi-fingered robotic hand grasping in cluttered environments through hand-object contact semantic mapping · IROS 2025
+- ContactDexNet: Multi-fingered robotic hand grasping in cluttered environments through hand-object contact semantic mapping · IROS 2025
 - [An implicit time-stepping method for rigid body dynamics with inelastic collisions and Coulomb friction](<https://doi.org/10.1002/(SICI)1097-0207(19960815)39:15%3C2673::AID-NME972%3E3.0.CO;2-I>) · International Journal for Numerical Methods in Engineering 1996
 - [Diffusion for World Modeling: Visual Details Matter in Atari](<https://arxiv.org/abs/2405.12399>) · NeurIPS 2024
 - [Efficient-WAM: A 1B-Parameter World-Action Model with Low-Cost Future Imagination](<https://arxiv.org/abs/2606.10040>) · arXiv 2026
@@ -266,14 +266,14 @@ A world model is a learned conditional predictor, and four design dials determin
 <details>
 <summary><b>3.5 M: Dynamics Mechanisms and Inference Cost</b> · RSSMs, iVideoGPT, UniPi, CausVid, Self Forcing · 29 works</summary>
 
-- **iVideoGPT**: Interactive videogpts are scalable world models · NeurIPS 2024 ★
+- **iVideoGPT**: Interactive VideoGPTs are scalable world models · NeurIPS 2024 ★
 - **UniPi**: [Learning Universal Policies via Text-Guided Video Generation](<https://arxiv.org/abs/2302.00111>) · NeurIPS 2023 ★
 - **CausVid**: [From Slow Bidirectional to Fast Autoregressive Video Diffusion Models](<https://arxiv.org/abs/2412.07772>) · CVPR 2025 ★
 - **Self Forcing**: [Bridging the Train-Test Gap in Autoregressive Video Diffusion](<https://arxiv.org/abs/2506.08009>) · arXiv 2025 ★
 - **DreamerV2**: [Mastering Atari with Discrete World Models](<https://arxiv.org/abs/2010.02193>) · ICLR 2021
 - Deep visual foresight for planning robot motion · ICRA 2017
 - [Maskvit: Masked visual pre-training for video prediction](<https://arxiv.org/abs/2206.11894>) · arXiv 2022
-- Irasim: A fine-grained world model for robot manipulation · ICCV 2025
+- IRASim: A fine-grained world model for robot manipulation · ICCV 2025
 - Inference-time enhancement of generative robot policies via predictive world modeling · RA-L 2026
 - [Flow matching for generative modeling](<https://arxiv.org/abs/2210.02747>) · arXiv 2022
 - [Flow straight and fast: Learning to generate and transfer data with rectified flow](<https://arxiv.org/abs/2209.03003>) · arXiv 2022
@@ -316,10 +316,9 @@ The survey classifies each use of a world model by what the model hands to its c
 </details>
 
 <details>
-<summary><b>4.2 Experience: Learning from Generated Data</b> · Dreamer, DiWA, RWM, VLA-RFT, IWS, DreamGen · 24 works</summary>
+<summary><b>4.2 Experience: Learning from Generated Data</b> · Dreamer, DiWA, RWM, VLA-RFT, IWS, DreamGen · 23 works</summary>
 
 - **Dreamer**: [Dream to Control: Learning Behaviors by Latent Imagination](<https://arxiv.org/abs/1912.01603>) · ICLR 2020 ★
-- **DiWA**: [Diffusion Policy Adaptation with World Models](<https://arxiv.org/abs/2508.03645>) · 2025 ★
 - **RWM**: [Robotic World Model: A Neural Network Simulator for Robust Policy Optimization in Robotics](<https://arxiv.org/abs/2501.10100>) · 2025 ★
 - **VLA-RFT**: [Vision-Language-Action Reinforcement Fine-tuning with Verified Rewards in World Simulators](<https://arxiv.org/abs/2510.00406>) · arXiv 2025 ★
 - **IWS**: [Interactive World Simulator for Robot Policy Training and Evaluation](<https://arxiv.org/abs/2603.08546>) · 2026 ★
@@ -342,6 +341,8 @@ The survey classifies each use of a world model by what the model hands to its c
 - MonoFusion: Sparse-View 4D Reconstruction via Monocular Fusion · ICCV 2025
 - Vid2Sim: Realistic and Interactive Simulation from Video for Urban Navigation · CVPR 2025
 - [WISE: World-model-guided Imagination Scheduling for Efficient Post-training of Vision-Language-Action Models](<https://arxiv.org/abs/2609.03681>) · 2026
+
+★ Also representative here (Figure 2): [DiWA](docs/sections/02-prediction-to-control.md#sec-2-4) (2.4).
 
 </details>
 
@@ -371,15 +372,16 @@ The survey classifies each use of a world model by what the model hands to its c
 - Learning a decision module by imitating driver's control behaviors · CoRL 2021
 - Neuro-symbolic program search for autonomous driving decision module design · CoRL 2021
 - ARCH: Hierarchical hybrid learning for long-horizon contact-rich robotic assembly · CoRL 2024
-- Diffusion-es: Gradient-free planning with diffusion for autonomous and instruction-guided driving · CVPR 2024
+- Diffusion-ES: Gradient-free planning with diffusion for autonomous and instruction-guided driving · CVPR 2024
 - Tractable joint prediction and planning over discrete behavior modes for urban driving · ICRA 2024
 - A collision-aware cable grasping method in cluttered environment · ICRA 2024
 
 </details>
 
 <details>
-<summary><b>4.4 Decisions: Futures of Candidate Actions</b> · TD-MPC2, V-JEPA 2-AC, WorldPlanner, LVP, TrAct · 14 works</summary>
+<summary><b>4.4 Decisions: Futures of Candidate Actions</b> · TD-MPC2, V-JEPA 2-AC, WorldPlanner, LVP, TrAct · 15 works</summary>
 
+- **TD-MPC2**: [Scalable, Robust World Models for Continuous Control](<https://arxiv.org/abs/2310.16828>) · ICLR 2024 ★
 - **WorldPlanner**: [Monte carlo tree search and mpc with action-conditioned visual world models](<https://arxiv.org/abs/2511.03077>) · arXiv 2025 ★
 - **LVP**: [Large video planner enables generalizable robot control](<https://arxiv.org/abs/2512.15840>) · arXiv 2025 ★
 - **TrAct**: [Bridging Robot Control and Visual Prediction with Visual Tracks](<https://arxiv.org/abs/2608.24101>) · 2026 ★
@@ -395,19 +397,18 @@ The survey classifies each use of a world model by what the model hands to its c
 - [Native Video-Action Pretraining for Generalizable Robot Control](<https://arxiv.org/abs/2607.08639>) · arXiv 2026
 - [Genie Envisioner: A Unified World Foundation Platform for Robotic Manipulation](<https://arxiv.org/abs/2508.05635>) · arXiv 2025
 
-★ Also representative here (Figure 2): [TD-MPC2](docs/sections/05-learners-and-policies.md#sec-5-2) (5.2), [V-JEPA 2-AC](docs/sections/03-design-dials.md#sec-3-1) (3.1).
+★ Also representative here (Figure 2): [V-JEPA 2-AC](docs/sections/03-design-dials.md#sec-3-1) (3.1).
 
 </details>
 
 <details>
-<summary><b>4.5 Residuals: Comparing Predictions with Observations</b> · OmniVTA, runtime monitoring, LocoFormer · 7 works</summary>
+<summary><b>4.5 Residuals: Comparing Predictions with Observations</b> · OmniVTA, runtime monitoring, LocoFormer · 6 works</summary>
 
 - **Model-Based Runtime Monitoring**: [Model-Based Runtime Monitoring with Interactive Imitation Learning](<https://arxiv.org/abs/2310.17552>) · ICRA 2024 ★
 - **LocoFormer**: Generalist Locomotion via Long-context Adaptation · CoRL 2025 ★
 - **TacForeSight**: [Force-Guided Tactile World Model for Contact-Rich Manipulation](<https://arxiv.org/abs/2606.11184>) · arXiv 2026
 - [TouchWorld: A Predictive and Reactive Tactile Foundation Model for Dexterous Manipulation](<https://arxiv.org/abs/2607.07287>) · arXiv 2026
-- **HG-DAgger**: [Interactive Imitation Learning with Human Experts](<https://doi.org/10.1109/ICRA.2019.8793698>) · ICRA 2019
-- [ThriftyDAgger: Budget-Aware Novelty and Risk Gating for Interactive Imitation Learning](<https://proceedings.mlr.press/v164/hoque22a.html>) · CoRL 2022
+- [HG-DAgger: Interactive Imitation Learning with Human Experts](<https://doi.org/10.1109/ICRA.2019.8793698>) · ICRA 2019
 - [In-Context World Modeling for Robotic Control](<https://arxiv.org/abs/2606.26025>) · arXiv 2026
 
 ★ Also representative here (Figure 2): [OmniVTA](docs/sections/03-design-dials.md#sec-3-2) (3.2).
@@ -426,20 +427,18 @@ The survey classifies each use of a world model by what the model hands to its c
 The consumer of a prediction sets two of the three factors in ΔJ: the queries it issues and the sensitivity of its output to errors in the answers. The same world model can therefore help one consumer and mislead another. [Section page →](docs/sections/05-learners-and-policies.md)
 
 <details>
-<summary><b>5.1 Policy-Learning Regimes</b> · MimicGen, MOPO, MOReL, COMBO, Dreamer · 5 works</summary>
+<summary><b>5.1 Policy-Learning Regimes</b> · RT-1, MOPO, MOReL, COMBO, online model-based RL · 5 works</summary>
 
+- **RT-1**: [Robotics Transformer for Real-World Control at Scale](<https://arxiv.org/abs/2212.06817>) · 2022 ★
 - **MOPO**: [Model-based Offline Policy Optimization](<https://proceedings.neurips.cc/paper_files/paper/2020/file/a322852ce0df73e204b7e67cbbef0d0a-Paper.pdf>) · NeurIPS 2020 ★
 - **MOReL**: [Model-Based Offline Reinforcement Learning](<https://proceedings.neurips.cc/paper_files/paper/2020/file/f7efa4f864ae9b88d43527f4b14f750f-Paper.pdf>) · NeurIPS 2020 ★
 - **COMBO**: [Conservative Offline Model-Based Policy Optimization](<https://proceedings.neurips.cc/paper_files/paper/2021/file/f29a179746902e331572c483c45e5086-Paper.pdf>) · NeurIPS 2021 ★
-- **RT-1**: [Robotics Transformer for Real-World Control at Scale](<https://arxiv.org/abs/2212.06817>) · 2022
 - [Uncertainty-driven Trajectory Truncation for Data Augmentation in Offline Reinforcement Learning](<https://arxiv.org/abs/2304.04660>) · 2023
-
-★ Also representative here (Figure 2): [MimicGen](docs/sections/07-evaluation.md#sec-7-4) (7.4), [Dreamer](docs/sections/04-pathways.md#sec-4-2) (4.2).
 
 </details>
 
 <details>
-<summary><b>5.2 Policies and Planners</b> · OpenVLA, π0, GR00T, MPC and tree search · 9 works</summary>
+<summary><b>5.2 Policies and Planners</b> · OpenVLA, π0, GR00T, MPC and tree search · 8 works</summary>
 
 - **OpenVLA**: [An open-source vision-language-action model](<https://arxiv.org/abs/2406.09246>) · arXiv 2024 · [Code](<https://github.com/openvla/openvla>) ★
 - **π0**: [A Vision-Language-Action Flow Model for General Robot Control](<https://arxiv.org/abs/2410.24164>) · arXiv 2024 ★
@@ -449,7 +448,6 @@ The consumer of a prediction sets two of the three factors in ΔJ: the queries i
 - [π\*0.6: a VLA That Learns From Experience](<https://arxiv.org/abs/2511.14759>) · arXiv 2025
 - [π0.7: a Steerable Generalist Robotic Foundation Model with Emergent Capabilities](<https://arxiv.org/abs/2604.15483>) · arXiv 2026
 - **GR00T N1.7**: [NVIDIA Isaac GR00T N1.7: Open Reasoning VLA Model for Humanoid Robots](<https://huggingface.co/blog/nvidia/gr00t-n1-7>) · 2026
-- **TD-MPC2**: [Scalable, Robust World Models for Continuous Control](<https://arxiv.org/abs/2310.16828>) · ICLR 2024
 
 </details>
 
@@ -471,14 +469,14 @@ Each embodiment sets requirements on the four dials and favors some pathways ove
 <summary><b>6.2 Navigation &amp; Mobile Robots</b> · navigation world models, Habitat, AI2-THOR · 9 works</summary>
 
 - Navigation world models · CVPR 2025 ★
-- **Habitat**: A platform for embodied ai research · ICCV 2019 · [Code](<https://github.com/facebookresearch/habitat-lab>) ★
+- **Habitat**: A platform for embodied AI research · ICCV 2019 · [Code](<https://github.com/facebookresearch/habitat-lab>) ★
 - **AI2-THOR**: [An interactive 3d environment for visual ai](<https://arxiv.org/abs/1712.05474>) · arXiv 2017 · [Code](<https://github.com/allenai/ai2thor>) ★
 - [An efficient and multi-modal navigation system with one-step world model](<https://arxiv.org/abs/2601.12277>) · arXiv 2026
 - [Anticipate Before Acting: Future-State-Conditioned Vision-Language Navigation](<https://arxiv.org/abs/2607.18042>) · arXiv 2026
 - [Mem2ego: Empowering vision-language models with global-to-ego memory for long-horizon embodied navigation](<https://arxiv.org/abs/2502.14254>) · arXiv 2025
 - [Spatialcot: Advancing spatial reasoning through coordinate alignment and chain-of-thought for embodied task planning](<https://arxiv.org/abs/2501.10074>) · arXiv 2025
-- Omnieva: Embodied versatile planner via task-adaptive 3d-grounded and embodiment-aware reasoning · ICLR 2026
-- Room-across-room: Multilingual vision-and-language navigation with dense spatiotemporal grounding · EMNLP 2020
+- OmniEVA: Embodied versatile planner via task-adaptive 3D-grounded and embodiment-aware reasoning · ICLR 2026
+- Room-Across-Room: Multilingual vision-and-language navigation with dense spatiotemporal grounding · EMNLP 2020
 
 </details>
 
@@ -491,11 +489,11 @@ Each embodiment sets requirements on the four dials and favors some pathways ove
 - [HumanoidBench: Simulated Humanoid Benchmark for Whole-Body Locomotion and Manipulation](<https://doi.org/10.15607/RSS.2024.XX.061>) · RSS 2024 · [Code](<https://github.com/carlosferrazza/humanoid-bench>)
 - [Biped Walking Pattern Generation by Using Preview Control of Zero-Moment Point](<https://doi.org/10.1109/ROBOT.2003.1241826>) · ICRA 2003
 - [Whole-Body Model-Predictive Control Applied to the HRP-2 Humanoid](<https://doi.org/10.1109/IROS.2015.7353843>) · IROS 2015
-- [Real-World Humanoid Locomotion with Reinforcement Learning](<https://doi.org/10.1126/scirobotics.adi9579>) · Science Robotics 2024
+- [Real-world humanoid locomotion with reinforcement learning](<https://doi.org/10.1126/scirobotics.adi9579>) · Science Robotics 2024
 - [DeepMimic: Example-Guided Deep Reinforcement Learning of Physics-Based Character Skills](<https://doi.org/10.1145/3197517.3201311>) · ACM Transactions on Graphics 2018
 - [Hdmi: Learning interactive humanoid whole-body control from human videos](<https://arxiv.org/abs/2509.16757>) · arXiv 2025
 - [GRAIL: Generating Humanoid Loco-Manipulation from 3D Assets and Video Priors](<https://arxiv.org/abs/2606.05160>) · 2026
-- Counterfactual Video Generation for Humanoid Loco-Manipulation · RSS 2026 Workshop Whole-body Control and Bimanual Manipulation: Applications in Humanoids and Beyond
+- Counterfactual Video Generation Enables Scalable Humanoid Loco-Manipulation · RSS 2026 Workshop Whole-body Control and Bimanual Manipulation: Applications in Humanoids and Beyond
 
 ★ Also representative here (Figure 2): [WMR](docs/sections/04-pathways.md#sec-4-1) (4.1), [DreamDojo](docs/sections/03-design-dials.md#sec-3-4) (3.4).
 
@@ -535,22 +533,21 @@ Each embodiment sets requirements on the four dials and favors some pathways ove
 </details>
 
 <details>
-<summary><b>6.6 Human-Robot Interaction &amp; Correctable Autonomy</b> · HG-DAgger, Sirius-Fleet, Hi-WM, KnowNo · 12 works</summary>
+<summary><b>6.6 Human-Robot Interaction &amp; Correctable Autonomy</b> · ThriftyDAgger, Sirius-Fleet, Hi-WM, KnowNo · 13 works</summary>
 
+- **ThriftyDAgger**: [Budget-Aware Novelty and Risk Gating for Interactive Imitation Learning](<https://proceedings.mlr.press/v164/hoque22a.html>) · CoRL 2022 ★
 - **Sirius-Fleet**: [Multi-Task Interactive Robot Fleet Learning with Visual World Models](<https://proceedings.mlr.press/v270/liu25g.html>) · CoRL 2025 ★
 - **Hi-WM**: [Human-in-the-World-Model for Scalable Robot Post-Training](<https://arxiv.org/abs/2604.21741>) · 2026 ★
 - **KnowNo**: [Robots That Ask For Help: Uncertainty Alignment for Large Language Model Planners](<https://proceedings.mlr.press/v229/ren23a.html>) · CoRL 2023 ★
 - [Corrective Shared Autonomy for Addressing Task Variability](<https://arxiv.org/abs/2102.07165>) · RA-L 2021
 - [A Reduction of Imitation Learning and Structured Prediction to No-Regret Online Learning](<https://proceedings.mlr.press/v15/ross11a.html>) · Proceedings of the Fourteenth International Conference on Artificial Intelligence and Statistics 2011
-- [Learning from Interventions: Human-Robot Interaction as Both Explicit and Implicit Feedback](<https://doi.org/10.15607/RSS.2020.XVI.055>) · RSS 2020
+- [Learning from Interventions: Human-robot interaction as both explicit and implicit feedback](<https://doi.org/10.15607/RSS.2020.XVI.055>) · RSS 2020
 - [Active Preference-Based Learning of Reward Functions](<https://doi.org/10.15607/RSS.2017.XIII.053>) · RSS 2017
 - [Learning Robot Objectives from Physical Human Interaction](<https://proceedings.mlr.press/v78/bajcsy17a.html>) · CoRL 2017
 - [Correcting Robot Plans with Natural Language Feedback](<https://doi.org/10.15607/RSS.2022.XVIII.065>) · RSS 2022
 - [Shared Autonomy via Hindsight Optimization](<https://doi.org/10.15607/RSS.2015.XI.032>) · RSS 2015
 - [Risk-Calibrated Human-Robot Interaction via Set-Valued Intent Prediction](<https://doi.org/10.15607/RSS.2024.XX.027>) · RSS 2024
 - [Effects of Robot Competency and Motion Legibility on Human Correction Feedback](<https://arxiv.org/abs/2501.03515>) · 2025
-
-★ Also representative here (Figure 2): [HG-DAgger](docs/sections/04-pathways.md#sec-4-5) (4.5).
 
 </details>
 
@@ -559,26 +556,24 @@ Each embodiment sets requirements on the four dials and favors some pathways ove
 The utility of a world model is observable only in the real world. Evaluation therefore separates three axes, model quality, closed-loop utility and deployment reliability, and states the evidence boundary of each claim. [Section page →](docs/sections/07-evaluation.md)
 
 <details>
-<summary><b>7.1 Model Quality and Physical Validity</b> · VP², Physics-IQ, WorldArena, WorldEcho · 9 works</summary>
+<summary><b>7.1 Model Quality and Physical Validity</b> · FVD, Physics-IQ, WorldArena, WorldEcho · 9 works</summary>
 
+- **FVD**: [Towards Accurate Generative Models of Video: A New Metric &amp; Challenges](<https://arxiv.org/abs/1812.01717>) · arXiv 2018 ★
 - **Physics-IQ**: [Do Generative Video Models Understand Physical Principles?](<https://arxiv.org/abs/2501.09038>) · WACV 2026 ★
 - **WorldArena**: [A Unified Benchmark for Evaluating Perception and Functional Utility of Embodied World Models](<https://arxiv.org/abs/2602.08971>) · arXiv 2026 ★
 - **WorldEcho**: [Do Robotic World Models Really Follow Actions? Diagnosing and Aligning Action-Conditioned Generation for Policy Learning](<https://arxiv.org/abs/2608.24885>) · 2026 ★
-- [Towards Accurate Generative Models of Video: A New Metric &amp; Challenges](<https://arxiv.org/abs/1812.01717>) · arXiv 2018
-- **MuZero**: [Mastering Atari, Go, chess and shogi by planning with a learned model](<https://doi.org/10.1038/s41586-020-03051-4>) · Nature 2020
+- [Mastering Atari, Go, chess and shogi by planning with a learned model](<https://doi.org/10.1038/s41586-020-03051-4>) · Nature 2020
 - [Physics-IQ Verified](<https://arxiv.org/abs/2606.18943>) · 2026
 - [PhysisForcing: Physics Reinforced World Simulator for Robotic Manipulation](<https://arxiv.org/abs/2606.28128>) · 2026
 - [CreFlow: Corrective Reflow for Sparse-Reward Embodied Video Diffusion RL](<https://arxiv.org/abs/2605.14274>) · arXiv 2026
 - [EmboAlign: Aligning Video Generation with Compositional Constraints for Zero-Shot Manipulation](<https://arxiv.org/abs/2603.05757>) · arXiv 2026
-
-★ Also representative here (Figure 2): [VP²](docs/sections/09-open-problems.md#sec-9-1) (9.1).
 
 </details>
 
 <details>
 <summary><b>7.2 Attributing Closed-Loop Utility</b> · matched substitution and pathway removal · 4 works</summary>
 
-- [Deep Reinforcement Learning that Matters](<https://doi.org/10.1609/aaai.v32i1.11694>) · AAAI 2018
+- [Deep Reinforcement Learning That Matters](<https://doi.org/10.1609/aaai.v32i1.11694>) · AAAI 2018
 - Empirical Design in Reinforcement Learning · Journal of Machine Learning Research 2024
 - Objective Mismatch in Model-based Reinforcement Learning · Proceedings of the 2nd Conference on Learning for Dynamics and Control 2020
 - Defining and Characterizing Reward Gaming · NeurIPS 2022
@@ -600,15 +595,15 @@ The utility of a world model is observable only in the real world. Evaluation th
 </details>
 
 <details>
-<summary><b>7.4 Resources</b> · Open X-Embodiment, DROID, ManiSkill3, RoboArena · 5 works</summary>
+<summary><b>7.4 Resources</b> · Open X-Embodiment, DROID, ManiSkill3, MimicGen · 5 works</summary>
 
 - **DROID**: A Large-Scale In-The-Wild Robot Manipulation Dataset · RSS 2024 ★
 - **ManiSkill3**: [GPU Parallelized Robotics Simulation and Rendering for Generalizable Embodied AI](<https://arxiv.org/abs/2410.00425>) · 2024 · [Code](<https://github.com/haosulab/ManiSkill>) ★
+- **MimicGen**: [A Data Generation System for Scalable Robot Learning using Human Demonstrations](<https://arxiv.org/abs/2310.17596>) · 2023 · [Code](<https://github.com/NVlabs/mimicgen>) ★
 - **RoboNet**: [Large-Scale Multi-Robot Learning](<https://arxiv.org/abs/1910.11215>) · 2019
-- **MimicGen**: [A Data Generation System for Scalable Robot Learning using Human Demonstrations](<https://arxiv.org/abs/2310.17596>) · 2023 · [Code](<https://github.com/NVlabs/mimicgen>)
 - **DexMimicGen**: [Automated Data Generation for Bimanual Dexterous Manipulation via Imitation Learning](<https://arxiv.org/abs/2410.24185>) · 2024 · [Code](<https://github.com/NVlabs/dexmimicgen>)
 
-★ Also representative here (Figure 2): [Open X-Embodiment](docs/sections/06-embodiments.md#sec-6-5) (6.5), [RoboArena](docs/sections/s5-evaluation-details.md#sec-s5-6) (S5.6).
+★ Also representative here (Figure 2): [Open X-Embodiment](docs/sections/06-embodiments.md#sec-6-5) (6.5).
 
 </details>
 
@@ -628,11 +623,10 @@ The utility of a world model is observable only in the real world. Evaluation th
 As the policy improves, the queries it poses drift toward regions the model has seen least. [Section page →](docs/sections/08-outer-loop.md)
 
 <details>
-<summary><b>8.1 Formulation and Architecture of the Outer Loop</b> · Dyna, MBPO, DayDreamer, VLAW, WAM-RL · 14 works</summary>
+<summary><b>8.1 Formulation and Architecture of the Outer Loop</b> · Dyna, MBPO, DayDreamer, VLAW, WAM-RL · 13 works</summary>
 
 - **Dyna**: Dyna, an Integrated Architecture for Learning, Planning, and Reacting · ACM SIGART Bulletin 1991 ★
 - **MBPO**: [When to Trust Your Model: Model-Based Policy Optimization](<https://arxiv.org/abs/1906.08253>) · NeurIPS 2019 ★
-- **DayDreamer**: [World Models for Physical Robot Learning](<https://arxiv.org/abs/2206.14176>) · CoRL 2022 · [Code](<https://github.com/danijar/daydreamer>) ★
 - **VLAW**: [Iterative Co-Improvement of Vision-Language-Action Policy and World Model](<https://arxiv.org/abs/2602.12063>) · arXiv 2026 ★
 - **WAM-RL**: [World-Action Model Reinforcement Learning with Reconstruction Rewards and Online Video SFT](<https://arxiv.org/abs/2606.17906>) · arXiv 2026 ★
 - [Deep Dynamics Models for Learning Dexterous Manipulation](<https://arxiv.org/abs/1909.11652>) · CoRL 2019
@@ -644,6 +638,8 @@ As the policy improves, the queries it poses drift toward regions the model has 
 - [RoboCat: A Self-Improving Generalist Agent for Robotic Manipulation](<https://arxiv.org/abs/2306.11706>) · arXiv 2023
 - [EvoVLA: Self-Evolving Vision-Language-Action Model](<https://arxiv.org/abs/2511.16166>) · arXiv 2025
 - **World-model risk survey**: [Safety, Security, and Cognitive Risks in World Models](<https://arxiv.org/abs/2604.01346>) · 2026
+
+★ Also representative here (Figure 2): [DayDreamer](docs/sections/02-prediction-to-control.md#sec-2-4) (2.4).
 
 </details>
 
@@ -717,7 +713,7 @@ As the policy improves, the queries it poses drift toward regions the model has 
 - [Prioritized Experience Replay](<https://arxiv.org/abs/1511.05952>) · ICLR 2016
 - [RoboCurate: Harnessing Diversity with Action-Verified Neural Trajectory for Robot Learning](<https://arxiv.org/abs/2602.18742>) · 2026
 - [Robot Data Curation with Mutual Information Estimators](<https://arxiv.org/abs/2502.08623>) · RSS 2025
-- [Robot learning on the job: Human-in-the-loop autonomy and learning during deployment](<https://doi.org/10.15607/RSS.2023.XIX.005>) · RSS 2025
+- [Robot Learning on the Job: Human-in-the-Loop Autonomy and Learning During Deployment](<https://doi.org/10.15607/RSS.2023.XIX.005>) · RSS 2025
 - [Aha: A vision-language-model for detecting and reasoning over failures in robotic manipulation](<https://arxiv.org/abs/2410.00371>) · arXiv 2024
 - [ReWiND: Language-Guided Rewards Teach Robot Policies without New Demonstrations](<https://arxiv.org/abs/2505.10911>) · arXiv 2025
 - [Eureka: Human-Level Reward Design via Coding Large Language Models](<https://arxiv.org/abs/2310.12931>) · ICLR 2024
@@ -733,7 +729,7 @@ As the policy improves, the queries it poses drift toward regions the model has 
 - **AutoRT**: [Embodied Foundation Models for Large Scale Orchestration of Robotic Agents](<https://arxiv.org/abs/2401.12963>) · arXiv 2024 ★
 - **Ego2Robot**: [Scalable Robot Data Synthesis from Egocentric Human Data](<https://arxiv.org/abs/2608.02580>) · arXiv 2026 ★
 - [Data Scaling Laws in Imitation Learning for Robotic Manipulation](<https://arxiv.org/abs/2410.18647>) · ICLR 2025
-- Ctrl-world: A controllable generative world model for robot manipulation · ICLR 2026
+- Ctrl-World: A controllable generative world model for robot manipulation · ICLR 2026
 - [Robot Fleet Learning via Policy Merging](<https://arxiv.org/abs/2310.01362>) · ICLR 2024
 - [Fleet-DAgger: Interactive Robot Fleet Learning with Scalable Human Supervision](<https://arxiv.org/abs/2206.14349>) · CoRL 2022
 - Failure Prediction with Statistical Guarantees for Vision-Based Robot Control · RSS 2022
@@ -742,10 +738,10 @@ As the policy improves, the queries it poses drift toward regions the model has 
 - [HandEdit: A Unified Benchmark for Egocentric Human-to-Robot Dexterous Hand Image Editing](<https://arxiv.org/abs/2608.12122>) · arXiv 2026
 - **AnyWorld**: [Factorized Egocentric World Models for Cross-Embodiment Generalization](<https://arxiv.org/abs/2608.29242>) · 2026
 - **World-Gymnast**: [Training robots with reinforcement learning in a world model](<https://arxiv.org/abs/2602.02454>) · arXiv 2026
-- Gensim: Generating robotic simulation tasks via large language models · ICLR 2024
+- GenSim: Generating robotic simulation tasks via large language models · ICLR 2024
 - [Geometry-Instructed Video Editing](<https://arxiv.org/abs/2606.24225>) · arXiv 2026
 - ASSIST-3D: Adapted Scene Synthesis for Class-Agnostic 3D Instance Segmentation · AAAI 2026
-- Total-decom: Decomposed 3d scene reconstruction with minimal interaction · CVPR 2024
+- Total-Decom: Decomposed 3D scene reconstruction with minimal interaction · CVPR 2024
 
 ★ Also representative here (Figure 2): [Sirius-Fleet](docs/sections/06-embodiments.md#sec-6-6) (6.6).
 
@@ -758,7 +754,7 @@ Every design dial is an open trade-off, and the Prediction-to-Control Gap preven
 <details>
 <summary><b>9.1 The Prediction-to-Control Gap</b> · what to preserve before the consumer is known · 2 works</summary>
 
-- **VP²**: [A Control-Centric Benchmark for Video Prediction](<https://arxiv.org/abs/2304.13723>) · ICLR 2023
+- [A Control-Centric Benchmark for Video Prediction](<https://arxiv.org/abs/2304.13723>) · ICLR 2023
 - [Calibrated Value-Aware Model Learning with Probabilistic Environment Models](<https://proceedings.mlr.press/v267/voelcker25a.html>) · ICML 2025
 
 </details>
@@ -785,7 +781,7 @@ Every design dial is an open trade-off, and the Prediction-to-Control Gap preven
 
 - Scaling up test-time compute with latent reasoning: A recurrent depth approach · NeurIPS 2026
 - [Scaling llm test-time compute optimally can be more effective than scaling model parameters](<https://arxiv.org/abs/2408.03314>) · arXiv 2024
-- How far are ai-generated videos from simulating the 3d visual world: A learned 3d evaluation approach · ICCV 2025
+- How far are AI-generated videos from simulating the 3D visual world: A learned 3D evaluation approach · ICCV 2025
 - [Robomind: Benchmark on multi-embodiment intelligence normative data for robot manipulation](<https://arxiv.org/abs/2412.13877>) · arXiv 2024
 - [Precise and Dexterous Robotic Manipulation via Human-in-the-Loop Reinforcement Learning](<https://arxiv.org/abs/2410.21845>) · 2024
 
@@ -844,7 +840,7 @@ Every design dial is an open trade-off, and the Prediction-to-Control Gap preven
 - Adaptive conformal prediction for motion planning among dynamic agents · Learning for Dynamics and Control Conference 2023
 - Updates in human-AI teams: Understanding and addressing the performance/compatibility tradeoff · AAAI 2019
 - Verification of neural reachable tubes via scenario optimization and conformal prediction · Learning for Dynamics and Control Conference 2024
-- Plate: Visually-grounded planning with transformers in procedural tasks · RA-L 2022
+- PlaTe: Visually-grounded planning with transformers in procedural tasks · RA-L 2022
 - Adversarial inverse reinforcement learning with self-attention dynamics model · RA-L 2021
 - The politics of autonomous vehicles · Humanities and Social Sciences Communications 2022
 - [Guidelines and Recommendations for ADS Safety Requirements, Assessments and Test Methods to Inform Regulatory Development](<https://unece.org/transport/publications/guidelines-and-recommendations-ads-safety-requirements-assessments-and-test>) · 2025
@@ -923,8 +919,8 @@ The appendix records how papers were selected, defines the evidence-level labels
 <details>
 <summary><b>S4.1 Extended embodiment constraints</b> · 4 works</summary>
 
-- Lmdrive: Closed-loop end-to-end driving with large language models · CVPR 2024
-- Ad-h: Autonomous driving with hierarchical agents · 2024
+- LMDrive: Closed-loop end-to-end driving with large language models · CVPR 2024
+- AD-H: Autonomous Driving with Hierarchical Agents · 2024
 - [Qwen-robotmanip technical report: Alignment unlocks scale for robotic manipulation foundation models](<https://arxiv.org/abs/2606.17846>) · arXiv 2026
 - [Training Vision-Language-Action Models with Dense Embodied Chain-of-Thought Supervision](<https://arxiv.org/abs/2606.30552>) · arXiv 2026
 
@@ -965,7 +961,7 @@ The appendix records how papers were selected, defines the evidence-level labels
 - [Advancing Humanoid Locomotion: Mastering Challenging Terrains with Denoising World Model Learning](<https://doi.org/10.15607/RSS.2024.XX.058>) · RSS 2024
 - J3016: Taxonomy and Definitions for Terms Related to Driving Automation Systems for On-Road Motor Vehicles · 2021
 - ISO 34503:2023 Road vehicles — Test scenarios for automated driving systems — Specification for operational design domain · 2023
-- [Learning Quadrupedal Locomotion over Challenging Terrain](<https://doi.org/10.1126/scirobotics.abc5986>) · Science Robotics 2020
+- [Learning quadrupedal locomotion over challenging terrain](<https://doi.org/10.1126/scirobotics.abc5986>) · Science Robotics 2020
 - [Task-Driven Detection of Distribution Shifts with Statistical Guarantees for Robot Learning](<https://doi.org/10.1109/TRO.2024.3521963>) · IEEE Transactions on Robotics 2025
 - Learning to Optimize Autonomy in Competence-Aware Systems · AAMAS 2020
 - Robot Reinforcement Learning on the Constraint Manifold · CoRL 2022

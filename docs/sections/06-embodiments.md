@@ -32,10 +32,10 @@ This section cites 66 works. A work cited in several subsections appears under e
 - [Anticipate Before Acting: Future-State-Conditioned Vision-Language Navigation](<https://arxiv.org/abs/2607.18042>) · arXiv 2026 · [ⓘ](../catalog.md#paper-zhang2026anticipate) ⌂
 - [Mem2ego: Empowering vision-language models with global-to-ego memory for long-horizon embodied navigation](<https://arxiv.org/abs/2502.14254>) · arXiv 2025 · [ⓘ](../catalog.md#paper-zhang2025mem2ego) ⌂
 - [Spatialcot: Advancing spatial reasoning through coordinate alignment and chain-of-thought for embodied task planning](<https://arxiv.org/abs/2501.10074>) · arXiv 2025 · [ⓘ](../catalog.md#paper-liu2025spatialcot) ⌂
-- Omnieva: Embodied versatile planner via task-adaptive 3d-grounded and embodiment-aware reasoning · ICLR 2026 · [ⓘ](../catalog.md#paper-liu2026omnieva) ⌂
-- **Habitat**: A platform for embodied ai research · ICCV 2019 · [Code](<https://github.com/facebookresearch/habitat-lab>) · [ⓘ](../catalog.md#paper-habitat) ⌂
+- OmniEVA: Embodied versatile planner via task-adaptive 3D-grounded and embodiment-aware reasoning · ICLR 2026 · [ⓘ](../catalog.md#paper-liu2026omnieva) ⌂
+- **Habitat**: A platform for embodied AI research · ICCV 2019 · [Code](<https://github.com/facebookresearch/habitat-lab>) · [ⓘ](../catalog.md#paper-habitat) ⌂
 - **AI2-THOR**: [An interactive 3d environment for visual ai](<https://arxiv.org/abs/1712.05474>) · arXiv 2017 · [Code](<https://github.com/allenai/ai2thor>) · [ⓘ](../catalog.md#paper-ai2thor) ⌂
-- Room-across-room: Multilingual vision-and-language navigation with dense spatiotemporal grounding · EMNLP 2020 · [ⓘ](../catalog.md#paper-ku2020room) ⌂
+- Room-Across-Room: Multilingual vision-and-language navigation with dense spatiotemporal grounding · EMNLP 2020 · [ⓘ](../catalog.md#paper-ku2020room) ⌂
 
 <a id="sec-6-3"></a>
 
@@ -47,14 +47,14 @@ This section cites 66 works. A work cited in several subsections appears under e
 - [HumanoidBench: Simulated Humanoid Benchmark for Whole-Body Locomotion and Manipulation](<https://doi.org/10.15607/RSS.2024.XX.061>) · RSS 2024 · [Code](<https://github.com/carlosferrazza/humanoid-bench>) · [ⓘ](../catalog.md#paper-sferrazza2024humanoidbench) ⌂
 - [Biped Walking Pattern Generation by Using Preview Control of Zero-Moment Point](<https://doi.org/10.1109/ROBOT.2003.1241826>) · ICRA 2003 · [ⓘ](../catalog.md#paper-kajita2003preview) ⌂
 - [Whole-Body Model-Predictive Control Applied to the HRP-2 Humanoid](<https://doi.org/10.1109/IROS.2015.7353843>) · IROS 2015 · [ⓘ](../catalog.md#paper-koenemann2015wholebody) ⌂
-- [Real-World Humanoid Locomotion with Reinforcement Learning](<https://doi.org/10.1126/scirobotics.adi9579>) · Science Robotics 2024 · [ⓘ](../catalog.md#paper-radosavovic2024realworld) ⌂
+- [Real-world humanoid locomotion with reinforcement learning](<https://doi.org/10.1126/scirobotics.adi9579>) · Science Robotics 2024 · [ⓘ](../catalog.md#paper-radosavovic2024realworld) ⌂
 - **WMR**: [Learning Humanoid Locomotion with World Model Reconstruction](<https://arxiv.org/abs/2502.16230>) · 2025 · [ⓘ](../catalog.md#paper-wmr2025)
 - [DeepMimic: Example-Guided Deep Reinforcement Learning of Physics-Based Character Skills](<https://doi.org/10.1145/3197517.3201311>) · ACM Transactions on Graphics 2018 · [ⓘ](../catalog.md#paper-peng2018deepmimic) ⌂
 - **VideoMimic**: Visual Imitation Enables Contextual Humanoid Control · CoRL 2025 · [ⓘ](../catalog.md#paper-allshire2025videomimic) ⌂
 - [Hdmi: Learning interactive humanoid whole-body control from human videos](<https://arxiv.org/abs/2509.16757>) · arXiv 2025 · [ⓘ](../catalog.md#paper-weng2025hdmi) ⌂
 - **DreamGen**: [Unlocking Generalization in Robot Learning through Video World Models](<https://arxiv.org/abs/2505.12705>) · CoRL 2025 · [Code](<https://github.com/NVIDIA/GR00T-dreams>) · [ⓘ](../catalog.md#paper-jang2025dreamgen)
 - [GRAIL: Generating Humanoid Loco-Manipulation from 3D Assets and Video Priors](<https://arxiv.org/abs/2606.05160>) · 2026 · [ⓘ](../catalog.md#paper-xie2026grail) ⌂
-- Counterfactual Video Generation for Humanoid Loco-Manipulation · RSS 2026 Workshop Whole-body Control and Bimanual Manipulation: Applications in Humanoids and Beyond · [ⓘ](../catalog.md#paper-wang2026counterfactual) ⌂
+- Counterfactual Video Generation Enables Scalable Humanoid Loco-Manipulation · RSS 2026 Workshop Whole-body Control and Bimanual Manipulation: Applications in Humanoids and Beyond · [ⓘ](../catalog.md#paper-wang2026counterfactual) ⌂
 - **DreamDojo**: [A Generalist Robot World Model from Large-Scale Human Videos](<https://arxiv.org/abs/2602.06949>) · arXiv 2026 · [ⓘ](../catalog.md#paper-gao2026dreamdojo)
 - **ω-0**: [A Latent Predictive World Action Model for Concurrent Humanoid Loco-Manipulation](<https://arxiv.org/abs/2608.06375>) · arXiv 2026 · [ⓘ](../catalog.md#paper-li2026omega0) ⌂
 
@@ -106,11 +106,11 @@ This section cites 66 works. A work cited in several subsections appears under e
 
 ## 6.6 Human-Robot Interaction &amp; Correctable Autonomy
 
-*Representative works (Figure 2):* [HG-DAgger](../catalog.md#paper-kelly2019hgdagger), [Sirius-Fleet](../catalog.md#paper-liu2025siriusfleet), [Hi-WM](../catalog.md#paper-li2026hiwm), [KnowNo](../catalog.md#paper-ren2023knowno)
+*Representative works (Figure 2):* [ThriftyDAgger](../catalog.md#paper-hoque2022thrifty), [Sirius-Fleet](../catalog.md#paper-liu2025siriusfleet), [Hi-WM](../catalog.md#paper-li2026hiwm), [KnowNo](../catalog.md#paper-ren2023knowno)
 
 - [Corrective Shared Autonomy for Addressing Task Variability](<https://arxiv.org/abs/2102.07165>) · RA-L 2021 · [ⓘ](../catalog.md#paper-hagenow2021corrective) ⌂
 - [A Reduction of Imitation Learning and Structured Prediction to No-Regret Online Learning](<https://proceedings.mlr.press/v15/ross11a.html>) · Proceedings of the Fourteenth International Conference on Artificial Intelligence and Statistics 2011 · [ⓘ](../catalog.md#paper-ross2011dagger) ⌂
-- [Learning from Interventions: Human-Robot Interaction as Both Explicit and Implicit Feedback](<https://doi.org/10.15607/RSS.2020.XVI.055>) · RSS 2020 · [ⓘ](../catalog.md#paper-spencer2020interventions) ⌂
+- [Learning from Interventions: Human-robot interaction as both explicit and implicit feedback](<https://doi.org/10.15607/RSS.2020.XVI.055>) · RSS 2020 · [ⓘ](../catalog.md#paper-spencer2020interventions) ⌂
 - [Active Preference-Based Learning of Reward Functions](<https://doi.org/10.15607/RSS.2017.XIII.053>) · RSS 2017 · [ⓘ](../catalog.md#paper-sadigh2017active) ⌂
 - [Learning Robot Objectives from Physical Human Interaction](<https://proceedings.mlr.press/v78/bajcsy17a.html>) · CoRL 2017 · [ⓘ](../catalog.md#paper-bajcsy2017objectives) ⌂
 - [Correcting Robot Plans with Natural Language Feedback](<https://doi.org/10.15607/RSS.2022.XVIII.065>) · RSS 2022 · [ⓘ](../catalog.md#paper-sharma2022language) ⌂
@@ -118,7 +118,7 @@ This section cites 66 works. A work cited in several subsections appears under e
 - **Sirius-Fleet**: [Multi-Task Interactive Robot Fleet Learning with Visual World Models](<https://proceedings.mlr.press/v270/liu25g.html>) · CoRL 2025 · [ⓘ](../catalog.md#paper-liu2025siriusfleet) ⌂
 - **Hi-WM**: [Human-in-the-World-Model for Scalable Robot Post-Training](<https://arxiv.org/abs/2604.21741>) · 2026 · [ⓘ](../catalog.md#paper-li2026hiwm) ⌂
 - [Shared Autonomy via Hindsight Optimization](<https://doi.org/10.15607/RSS.2015.XI.032>) · RSS 2015 · [ⓘ](../catalog.md#paper-javdani2015shared) ⌂
-- [ThriftyDAgger: Budget-Aware Novelty and Risk Gating for Interactive Imitation Learning](<https://proceedings.mlr.press/v164/hoque22a.html>) · CoRL 2022 · [ⓘ](../catalog.md#paper-hoque2022thrifty)
+- **ThriftyDAgger**: [Budget-Aware Novelty and Risk Gating for Interactive Imitation Learning](<https://proceedings.mlr.press/v164/hoque22a.html>) · CoRL 2022 · [ⓘ](../catalog.md#paper-hoque2022thrifty) ⌂
 - **KnowNo**: [Robots That Ask For Help: Uncertainty Alignment for Large Language Model Planners](<https://proceedings.mlr.press/v229/ren23a.html>) · CoRL 2023 · [ⓘ](../catalog.md#paper-ren2023knowno) ⌂
 - [Risk-Calibrated Human-Robot Interaction via Set-Valued Intent Prediction](<https://doi.org/10.15607/RSS.2024.XX.027>) · RSS 2024 · [ⓘ](../catalog.md#paper-lidard2024rcip) ⌂
 - [Effects of Robot Competency and Motion Legibility on Human Correction Feedback](<https://arxiv.org/abs/2501.03515>) · 2025 · [ⓘ](../catalog.md#paper-wang2025correctionfeedback) ⌂

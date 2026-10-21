@@ -30,7 +30,7 @@ No citations.
 - **Meta-World**: [A Benchmark and Evaluation for Multi-Task and Meta Reinforcement Learning](<https://meta-world.github.io/>) · CoRL 2020 · [ⓘ](../catalog.md#paper-metaworld)
 - **MimicGen**: [A Data Generation System for Scalable Robot Learning using Human Demonstrations](<https://arxiv.org/abs/2310.17596>) · 2023 · [Code](<https://github.com/NVlabs/mimicgen>) · [ⓘ](../catalog.md#paper-mimicgen)
 - **DexMimicGen**: [Automated Data Generation for Bimanual Dexterous Manipulation via Imitation Learning](<https://arxiv.org/abs/2410.24185>) · 2024 · [Code](<https://github.com/NVlabs/dexmimicgen>) · [ⓘ](../catalog.md#paper-dexmimicgen)
-- **Habitat**: A platform for embodied ai research · ICCV 2019 · [Code](<https://github.com/facebookresearch/habitat-lab>) · [ⓘ](../catalog.md#paper-habitat)
+- **Habitat**: A platform for embodied AI research · ICCV 2019 · [Code](<https://github.com/facebookresearch/habitat-lab>) · [ⓘ](../catalog.md#paper-habitat)
 - **AI2-THOR**: [An interactive 3d environment for visual ai](<https://arxiv.org/abs/1712.05474>) · arXiv 2017 · [Code](<https://github.com/allenai/ai2thor>) · [ⓘ](../catalog.md#paper-ai2thor)
 - **Cosmos**: [Cosmos world foundation model platform for physical ai](<https://arxiv.org/abs/2501.03575>) · arXiv 2025 · [ⓘ](../catalog.md#paper-nvidia2025cosmos)
 - **RWM**: [Robotic World Model: A Neural Network Simulator for Robust Policy Optimization in Robotics](<https://arxiv.org/abs/2501.10100>) · 2025 · [ⓘ](../catalog.md#paper-li2025roboticworldmodel)
@@ -59,7 +59,7 @@ No citations.
 - **DROID**: A Large-Scale In-The-Wild Robot Manipulation Dataset · RSS 2024 · [ⓘ](../catalog.md#paper-khazatsky2024droid)
 - **ManiSkill3**: [GPU Parallelized Robotics Simulation and Rendering for Generalizable Embodied AI](<https://arxiv.org/abs/2410.00425>) · 2024 · [Code](<https://github.com/haosulab/ManiSkill>) · [ⓘ](../catalog.md#paper-maniskill3)
 - **robosuite**: [A Modular Simulation Framework and Benchmark for Robot Learning](<https://arxiv.org/abs/2009.12293>) · 2020 · [Code](<https://github.com/ARISE-Initiative/robosuite>) · [ⓘ](../catalog.md#paper-robosuite)
-- **Habitat**: A platform for embodied ai research · ICCV 2019 · [Code](<https://github.com/facebookresearch/habitat-lab>) · [ⓘ](../catalog.md#paper-habitat)
+- **Habitat**: A platform for embodied AI research · ICCV 2019 · [Code](<https://github.com/facebookresearch/habitat-lab>) · [ⓘ](../catalog.md#paper-habitat)
 - [Evaluating Real-World Robot Manipulation Policies in Simulation](<https://arxiv.org/abs/2405.05941>) · CoRL 2024 · [ⓘ](../catalog.md#paper-li2024simpler) ⌂
 - **World-in-World**: [World models in a closed-loop world](<https://arxiv.org/abs/2510.18135>) · ICLR 2026 · [ⓘ](../catalog.md#paper-worldinworld2025)
 - **Physics-IQ**: [Do Generative Video Models Understand Physical Principles?](<https://arxiv.org/abs/2501.09038>) · WACV 2026 · [ⓘ](../catalog.md#paper-motamed2026physicsiq)

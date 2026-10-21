@@ -13,7 +13,7 @@ This section cites 105 works. A work cited in several subsections appears under 
 *Representative works (Figure 2):* what to preserve before the consumer is known
 
 - Objective Mismatch in Model-based Reinforcement Learning · Proceedings of the 2nd Conference on Learning for Dynamics and Control 2020 · [ⓘ](../catalog.md#paper-lambert2020objective)
-- **VP²**: [A Control-Centric Benchmark for Video Prediction](<https://arxiv.org/abs/2304.13723>) · ICLR 2023 · [ⓘ](../catalog.md#paper-tian2023vp2) ⌂
+- [A Control-Centric Benchmark for Video Prediction](<https://arxiv.org/abs/2304.13723>) · ICLR 2023 · [ⓘ](../catalog.md#paper-tian2023vp2) ⌂
 - **WorldEval**: [World Model as Real-World Robot Policies Evaluator](<https://arxiv.org/abs/2505.19017>) · arXiv 2025 · [ⓘ](../catalog.md#paper-worldeval2025)
 - [Diffusion for World Modeling: Visual Details Matter in Atari](<https://arxiv.org/abs/2405.12399>) · NeurIPS 2024 · [ⓘ](../catalog.md#paper-alonso2024diamond)
 - [Calibrated Value-Aware Model Learning with Probabilistic Environment Models](<https://proceedings.mlr.press/v267/voelcker25a.html>) · ICML 2025 · [ⓘ](../catalog.md#paper-voelcker2025calibrated) ⌂
@@ -59,7 +59,7 @@ This section cites 105 works. A work cited in several subsections appears under 
 - Scaling up test-time compute with latent reasoning: A recurrent depth approach · NeurIPS 2026 · [ⓘ](../catalog.md#paper-geiping2025recurrentdepth) ⌂
 - **PlaNet**: [Learning Latent Dynamics for Planning from Pixels](<https://arxiv.org/abs/1811.04551>) · ICML 2019 · [ⓘ](../catalog.md#paper-hafner2019planet)
 - [Scaling llm test-time compute optimally can be more effective than scaling model parameters](<https://arxiv.org/abs/2408.03314>) · arXiv 2024 · [ⓘ](../catalog.md#paper-snell2024scaling) ⌂
-- How far are ai-generated videos from simulating the 3d visual world: A learned 3d evaluation approach · ICCV 2025 · [ⓘ](../catalog.md#paper-chang2025far) ⌂
+- How far are AI-generated videos from simulating the 3D visual world: A learned 3D evaluation approach · ICCV 2025 · [ⓘ](../catalog.md#paper-chang2025far) ⌂
 - **WorldEval**: [World Model as Real-World Robot Policies Evaluator](<https://arxiv.org/abs/2505.19017>) · arXiv 2025 · [ⓘ](../catalog.md#paper-worldeval2025)
 - **VLAW**: [Iterative Co-Improvement of Vision-Language-Action Policy and World Model](<https://arxiv.org/abs/2602.12063>) · arXiv 2026 · [ⓘ](../catalog.md#paper-vlaw2026)
 - **WorldSample**: [Closed-loop Real-robot RL with World Modelling](<https://arxiv.org/abs/2607.02431>) · arXiv 2026 · [ⓘ](../catalog.md#paper-xue2026worldsample)
@@ -137,7 +137,7 @@ This section cites 105 works. A work cited in several subsections appears under 
 - Adaptive conformal prediction for motion planning among dynamic agents · Learning for Dynamics and Control Conference 2023 · [ⓘ](../catalog.md#paper-dixit2023adaptive) ⌂
 - Updates in human-AI teams: Understanding and addressing the performance/compatibility tradeoff · AAAI 2019 · [ⓘ](../catalog.md#paper-bansal2019updates) ⌂
 - Verification of neural reachable tubes via scenario optimization and conformal prediction · Learning for Dynamics and Control Conference 2024 · [ⓘ](../catalog.md#paper-lin2024verification) ⌂
-- Plate: Visually-grounded planning with transformers in procedural tasks · RA-L 2022 · [ⓘ](../catalog.md#paper-sun2022plate) ⌂
+- PlaTe: Visually-grounded planning with transformers in procedural tasks · RA-L 2022 · [ⓘ](../catalog.md#paper-sun2022plate) ⌂
 - Adversarial inverse reinforcement learning with self-attention dynamics model · RA-L 2021 · [ⓘ](../catalog.md#paper-sun2021adversarial) ⌂
 - The politics of autonomous vehicles · Humanities and Social Sciences Communications 2022 · [ⓘ](../catalog.md#paper-stilgoe2022politics) ⌂
 - [Guidelines and Recommendations for ADS Safety Requirements, Assessments and Test Methods to Inform Regulatory Development](<https://unece.org/transport/publications/guidelines-and-recommendations-ads-safety-requirements-assessments-and-test>) · 2025 · [ⓘ](../catalog.md#paper-unece2025ads) ⌂
