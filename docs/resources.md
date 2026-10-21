@@ -1,179 +1,54 @@
-# Datasets, benchmarks and implementations
-
-[Home](../README.md) · [Paper section 12](chapters/12-resources.md)
-
-These are upstream artifact entry points linked to works cited by the survey. The README endpoints were retrieved and their identity sections inspected. Packages, datasets, weights and robot experiments were not installed or run. A repository link is not a reproduction result.
-
-Model, Decision, Learning and Deployment are separate interface capabilities. Establish each from the artifact and chosen protocol rather than assigning a single maturity score.
-
-## robosuite
-
-**Type:** `benchmark`. [Repository](https://github.com/ARISE-Initiative/robosuite) · [Cited paper](catalog.md#paper-robosuite).
-
-Manipulation environments and controller interfaces; useful for isolating model and planning effects.
-
-**Link provenance:** [retrieved upstream README](https://raw.githubusercontent.com/ARISE-Initiative/robosuite/master/README.md), 2026-10-01. No runtime validation.
-
-## ManiSkill
-
-**Type:** `benchmark`. [Repository](https://github.com/haosulab/ManiSkill) · [Cited paper](catalog.md#paper-maniskill3).
-
-Parallel robotics simulation and rendering; report tasks, controllers and randomization.
-
-**Link provenance:** [retrieved upstream README](https://raw.githubusercontent.com/haosulab/ManiSkill/main/README.md), 2026-10-01. No runtime validation.
-
-## RoboTwin
-
-**Type:** `benchmark`. [Repository](https://github.com/RoboTwin-Platform/RoboTwin) · [Cited paper](catalog.md#paper-chen2025robotwin2).
-
-Bimanual tasks and data generation; separate task variation from execution robustness.
-
-**Link provenance:** [retrieved upstream README](https://raw.githubusercontent.com/RoboTwin-Platform/RoboTwin/main/README.md), 2026-10-01. No runtime validation.
-
-## CALVIN
-
-**Type:** `benchmark`. [Repository](https://github.com/mees/calvin) · [Cited paper](catalog.md#paper-mees2022calvin).
-
-Language-conditioned long-horizon manipulation; report chain length and reset assumptions.
-
-**Link provenance:** [retrieved upstream README](https://raw.githubusercontent.com/mees/calvin/main/README.md), 2026-10-01. No runtime validation.
-
-## RLBench
-
-**Type:** `benchmark`. [Repository](https://github.com/stepjam/RLBench) · [Cited paper](catalog.md#paper-james2020rlbench).
-
-Robot manipulation task suite; preserve observation, action and success-test settings.
-
-**Link provenance:** [retrieved upstream README](https://raw.githubusercontent.com/stepjam/RLBench/master/README.md), 2026-10-01. No runtime validation.
-
-## Habitat
-
-**Type:** `benchmark`. [Repository](https://github.com/facebookresearch/habitat-lab) · [Cited paper](catalog.md#paper-habitat).
-
-Embodied navigation and interaction; useful for persistent spatial belief and partial observability.
-
-**Maintenance:** Upstream README states that Meta internal teams no longer actively develop or maintain habitat-lab beyond v0.3.4; inspected 2026-10-01.
-
-**Link provenance:** [retrieved upstream README](https://raw.githubusercontent.com/facebookresearch/habitat-lab/main/README.md), 2026-10-01. No runtime validation.
-
-## AI2-THOR
-
-**Type:** `benchmark`. [Repository](https://github.com/allenai/ai2thor) · [Cited paper](catalog.md#paper-ai2thor).
-
-Interactive indoor environments; a simulator resource rather than a learned world model.
-
-**Link provenance:** [retrieved upstream README](https://raw.githubusercontent.com/allenai/ai2thor/main/README.md), 2026-10-01. No runtime validation.
-
-## HumanoidBench
-
-**Type:** `benchmark`. [Repository](https://github.com/carlosferrazza/humanoid-bench) · [Cited paper](catalog.md#paper-sferrazza2024humanoidbench).
-
-Whole-body locomotion and manipulation; useful for balance and embodiment constraints.
-
-**Link provenance:** [retrieved upstream README](https://raw.githubusercontent.com/carlosferrazza/humanoid-bench/main/README.md), 2026-10-01. No runtime validation.
-
-## RoboCasa
-
-**Type:** `benchmark`. [Repository](https://github.com/robocasa/robocasa) · [Cited paper](catalog.md#paper-nasiriany2026robocasa365).
-
-Kitchen manipulation scenes and task variation; pin the release matching the cited benchmark.
-
-**Link provenance:** [retrieved upstream README](https://raw.githubusercontent.com/robocasa/robocasa/main/README.md), 2026-10-01. No runtime validation.
-
-## Open X-Embodiment
-
-**Type:** `dataset`. [Repository](https://github.com/google-deepmind/open_x_embodiment) · [Cited paper](catalog.md#paper-openxembodiment2023).
-
-Cross-robot demonstration data; action schemas and embodiment metadata require alignment.
-
-**Link provenance:** [retrieved upstream README](https://raw.githubusercontent.com/google-deepmind/open_x_embodiment/main/README.md), 2026-10-01. No runtime validation.
-
-## BridgeData V2
-
-**Type:** `dataset`. [Repository](https://github.com/rail-berkeley/bridge_data_v2) · [Cited paper](catalog.md#paper-bridgedatav2).
-
-Robot manipulation trajectories; static data do not provide interactive deployment tests.
-
-[Dataset project](https://rail-berkeley.github.io/bridgedata/). The linked GitHub repository contains training implementations; the dataset is linked from its project page.
-
-**Link provenance:** [retrieved upstream README](https://raw.githubusercontent.com/rail-berkeley/bridge_data_v2/main/README.md), 2026-10-01. No runtime validation.
-
-## MimicGen
-
-**Type:** `data-generation`. [Repository](https://github.com/NVlabs/mimicgen) · [Cited paper](catalog.md#paper-mimicgen).
-
-Demonstration-based data generation; distinguish environment-generated data from learned neural simulation.
-
-**Link provenance:** [retrieved upstream README](https://raw.githubusercontent.com/NVlabs/mimicgen/main/README.md), 2026-10-01. No runtime validation.
-
-## DexMimicGen
-
-**Type:** `data-generation`. [Repository](https://github.com/NVlabs/dexmimicgen) · [Cited paper](catalog.md#paper-dexmimicgen).
-
-Bimanual dexterous demonstration generation; document task-specific validity checks.
-
-**Link provenance:** [retrieved upstream README](https://raw.githubusercontent.com/NVlabs/dexmimicgen/main/README.md), 2026-10-01. No runtime validation.
-
-## DreamGen / GR00T Dreams
-
-**Type:** `method-code`. [Repository](https://github.com/NVIDIA/GR00T-dreams) · [Cited paper](catalog.md#paper-jang2025dreamgen).
-
-Video-generated behavior and pseudo-action recovery support policy training; data generation is distinct from online RL.
-
-**Link provenance:** [retrieved upstream README](https://raw.githubusercontent.com/NVIDIA/GR00T-dreams/main/README.md), 2026-10-01. No runtime validation.
-
-## DreamerV3
-
-**Type:** `method-code`. [Repository](https://github.com/danijar/dreamerv3) · [Cited paper](catalog.md#paper-hafner2023dreamerv3).
-
-Latent imagination for actor learning; policy deployment need not run an explicit planner.
-
-**Link provenance:** [retrieved upstream README](https://raw.githubusercontent.com/danijar/dreamerv3/main/README.md), 2026-10-01. No runtime validation.
-
-## DayDreamer
-
-**Type:** `method-code`. [Repository](https://github.com/danijar/daydreamer) · [Cited paper](catalog.md#paper-wu2022daydreamer).
-
-Physical robot world-model learning; hardware and task setup remain part of reproduction.
-
-**Link provenance:** [retrieved upstream README](https://raw.githubusercontent.com/danijar/daydreamer/main/README.md), 2026-10-01. No runtime validation.
-
-## DINO-WM
-
-**Type:** `method-code`. [Repository](https://github.com/gaoyuezhou/dino_wm) · [Cited paper](catalog.md#paper-zhou2025dinowm).
-
-Predictive dynamics on pretrained visual features for planning; distinguish feature pretraining from action-grounded dynamics.
-
-**Link provenance:** [retrieved upstream README](https://raw.githubusercontent.com/gaoyuezhou/dino_wm/main/README.md), 2026-10-01. No runtime validation.
-
-## V-JEPA 2
-
-**Type:** `method-code`. [Repository](https://github.com/facebookresearch/vjepa2) · [Cited paper](catalog.md#paper-assran2025vjepa2).
-
-Video predictive features and action-conditioned adaptation; inspect the planning interface used by a particular experiment.
-
-**Link provenance:** [retrieved upstream README](https://raw.githubusercontent.com/facebookresearch/vjepa2/main/README.md), 2026-10-01. No runtime validation.
-
-## SafeDreamer
-
-**Type:** `method-code`. [Repository](https://github.com/PKU-Alignment/SafeDreamer) · [Cited paper](catalog.md#paper-huang2024safedreamer).
-
-World-model-based safety-constrained learning; constraint satisfaction is protocol-specific.
-
-**Link provenance:** [retrieved upstream README](https://raw.githubusercontent.com/PKU-Alignment/SafeDreamer/main/README.md), 2026-10-01. No runtime validation.
-
-## OpenVLA
-
-**Type:** `policy-context`. [Repository](https://github.com/openvla/openvla) · [Cited paper](catalog.md#paper-openvla2024).
-
-Foundation policy code used as context or a downstream consumer; VLA status alone does not qualify it as a world model.
-
-**Link provenance:** [retrieved upstream README](https://raw.githubusercontent.com/openvla/openvla/main/README.md), 2026-10-01. No runtime validation.
-
-## Sparsh
-
-**Type:** `representation`. [Repository](https://github.com/facebookresearch/sparsh) · [Cited paper](catalog.md#paper-higuera2024sparsh).
-
-Tactile representation learning; useful as a sensor prior, with predictive control evaluated separately.
-
-**Link provenance:** [retrieved upstream README](https://raw.githubusercontent.com/facebookresearch/sparsh/main/README.md), 2026-10-01. No runtime validation.
+# Resources
+
+[Home](../README.md)
+
+Catalogue of 21 representative resources and research systems. Experimental use describes the cited system's relevance to robot learning; access conditions depend on the specific release.
+
+*Source: Supplementary Material S1.*
+
+| Resource | Type | Embodiment | Modality | Real / sim | Experimental use | Links |
+|---|---|---|---|---|---|---|
+| **RoboNet** | dataset | robot arms | video, actions | real | representation learning, video prediction, and action-conditioned modeling | [Paper](<https://arxiv.org/abs/1910.11215>) |
+| **RT-1** | dataset / model | mobile manipulator | vision, language, actions | real | policy priors and representations for behavior cloning and scalable robot control | [Paper](<https://arxiv.org/abs/2212.06817>) |
+| **Open X-Embodiment** | dataset | many robots | vision, language, actions | real | representation learning and data scaling for cross-robot generalist policies | [Paper](<https://arxiv.org/abs/2310.08864>) [Code](<https://github.com/google-deepmind/open_x_embodiment>) |
+| **BridgeData V2** | dataset | manipulation | vision, actions, goals | real | representation learning and data scaling for multi-task imitation and goal-conditioned policies | [Code](<https://github.com/rail-berkeley/bridge_data_v2>) |
+| **OpenVLA** | model | robot manipulators | vision, language, actions | real / sim | open VLA baseline for policy priors and representations | [Paper](<https://arxiv.org/abs/2406.09246>) [Code](<https://github.com/openvla/openvla>) |
+| **π0** | model | multiple robot platforms | vision, language, actions | real | action priors, representations, and fine-tuning for generalist flow-matching policies | [Paper](<https://arxiv.org/abs/2410.24164>) |
+| **GR00T N1** | model | humanoids | vision, language, actions | real / sim | VLA priors and synthetic-data interfaces for humanoid policy training and transfer | [Paper](<https://arxiv.org/abs/2503.14734>) |
+| **ManiSkill3** | simulator / benchmark | manipulation | RGB-D, state, actions | sim | GPU-parallel simulation, data generation, and RL evaluation | [Paper](<https://arxiv.org/abs/2410.00425>) [Code](<https://github.com/haosulab/ManiSkill>) |
+| **robosuite** | simulator | manipulation | state, vision, actions | sim | simulation and reproducible manipulation-control benchmarking | [Paper](<https://arxiv.org/abs/2009.12293>) [Code](<https://github.com/ARISE-Initiative/robosuite>) |
+| **Meta-World** | benchmark | manipulation | state, actions | sim | multi-task and meta-RL evaluation | [Paper](<https://meta-world.github.io/>) |
+| **MimicGen** | data generation | manipulation | demos, actions | sim / real | scalable synthetic demonstrations for imitation learning | [Paper](<https://arxiv.org/abs/2310.17596>) [Code](<https://github.com/NVlabs/mimicgen>) |
+| **DexMimicGen** | data generation | bimanual dexterity | demos, actions | sim | synthetic demonstrations for bimanual dexterous imitation learning | [Paper](<https://arxiv.org/abs/2410.24185>) [Code](<https://github.com/NVlabs/dexmimicgen>) |
+| **Habitat** | simulator | navigation | vision, maps, actions | sim | spatial representation, navigation planning, and mapping | [Code](<https://github.com/facebookresearch/habitat-lab>) |
+| **AI2-THOR** | simulator | household agents | vision, actions | sim | spatial representation and planning in interactive household tasks | [Paper](<https://arxiv.org/abs/1712.05474>) [Code](<https://github.com/allenai/ai2thor>) |
+| **NVIDIA Cosmos** | platform / model | robots, autonomous vehicles | video | sim / real | world-model adaptation, video curation, tokenization, and synthetic-data generation | [Paper](<https://arxiv.org/abs/2501.03575>) |
+| **Robotic World Model** | model | manipulation, locomotion | state, actions, dynamics | sim / real | neural simulation and prediction for imagined policy optimization and robust deployment | [Paper](<https://arxiv.org/abs/2501.10100>) |
+| **RoboHorizon** | model / benchmark study | manipulation | multi-view vision, language, actions | sim | planning, reward shaping, and representation learning for long-horizon visual RL | [Paper](<https://arxiv.org/abs/2501.06605>) |
+| **VLAC** | critic / model | manipulation | vision, language, actions, rewards | real | policy prior and critic for dense rewards and asynchronous real-world RL | [Paper](<https://arxiv.org/abs/2509.15937>) |
+| **World Model Reconstruction** | model / control system | humanoid locomotion | proprioception, terrain state | real | world-state representation and adaptation for robust locomotion | [Paper](<https://arxiv.org/abs/2502.16230>) |
+| **Ego-Vision Contact Planning** | model / control system | humanoids | depth, proprioception, contacts | real / sim | predictive MPC and value surrogates for contact-rich planning | [Paper](<https://arxiv.org/abs/2510.11682>) |
+| **World-in-World** | benchmark | embodied agents | video, actions, tasks | sim | testing whether world-model rollouts improve embodied decisions | [Paper](<https://arxiv.org/abs/2510.18135>) |
+
+## Further code repositories
+
+Official repositories of other works cited in the survey.
+
+| Repository | Work | Kind |
+|---|---|---|
+| [RoboTwin](<https://github.com/RoboTwin-Platform/RoboTwin>) | [RoboTwin 2.0: A Scalable Data Generator and Benchmark with Strong Domain Randomization for Robust Bimanual Robotic Manipulation](<https://arxiv.org/abs/2506.18088>) · 2025 · [ⓘ](catalog.md#paper-chen2025robotwin2) | `benchmark` |
+| [CALVIN](<https://github.com/mees/calvin>) | [CALVIN: A Benchmark for Language-Conditioned Policy Learning for Long-Horizon Robot Manipulation Tasks](<https://arxiv.org/abs/2112.03227>) · RA-L 2022 · [ⓘ](catalog.md#paper-mees2022calvin) | `benchmark` |
+| [RLBench](<https://github.com/stepjam/RLBench>) | [RLBench: The Robot Learning Benchmark and Learning Environment](<https://arxiv.org/abs/1909.12271>) · RA-L 2020 · [ⓘ](catalog.md#paper-james2020rlbench) | `benchmark` |
+| [HumanoidBench](<https://github.com/carlosferrazza/humanoid-bench>) | [HumanoidBench: Simulated Humanoid Benchmark for Whole-Body Locomotion and Manipulation](<https://doi.org/10.15607/RSS.2024.XX.061>) · RSS 2024 · [ⓘ](catalog.md#paper-sferrazza2024humanoidbench) | `benchmark` |
+| [RoboCasa](<https://github.com/robocasa/robocasa>) | [RoboCasa365: A Large-Scale Simulation Framework for Training and Benchmarking Generalist Robots](<https://arxiv.org/abs/2603.04356>) · ICLR 2026 · [ⓘ](catalog.md#paper-nasiriany2026robocasa365) | `benchmark` |
+| [DreamGen / GR00T Dreams](<https://github.com/NVIDIA/GR00T-dreams>) | **DreamGen**: [Unlocking Generalization in Robot Learning through Video World Models](<https://arxiv.org/abs/2505.12705>) · CoRL 2025 · [ⓘ](catalog.md#paper-jang2025dreamgen) | `method-code` |
+| [DreamerV3](<https://github.com/danijar/dreamerv3>) | **DreamerV3**: [Mastering Diverse Domains through World Models](<https://arxiv.org/abs/2301.04104>) · 2023 · [ⓘ](catalog.md#paper-hafner2023dreamerv3) | `method-code` |
+| [DayDreamer](<https://github.com/danijar/daydreamer>) | **DayDreamer**: [World Models for Physical Robot Learning](<https://arxiv.org/abs/2206.14176>) · CoRL 2022 · [ⓘ](catalog.md#paper-wu2022daydreamer) | `method-code` |
+| [DINO-WM](<https://github.com/gaoyuezhou/dino_wm>) | **DINO-WM**: [World Models on Pre-trained Visual Features Enable Zero-Shot Planning](<https://arxiv.org/abs/2411.04983>) · ICML 2025 · [ⓘ](catalog.md#paper-zhou2025dinowm) | `method-code` |
+| [V-JEPA 2](<https://github.com/facebookresearch/vjepa2>) | **V-JEPA 2-AC**: [V-JEPA 2: Self-Supervised Video Models Enable Understanding, Prediction and Planning](<https://arxiv.org/abs/2506.09985>) · arXiv 2025 · [ⓘ](catalog.md#paper-assran2025vjepa2) | `method-code` |
+| [SafeDreamer](<https://github.com/PKU-Alignment/SafeDreamer>) | **SafeDreamer**: [Safe reinforcement learning with world models](<https://arxiv.org/abs/2307.07176>) · ICLR 2024 · [ⓘ](catalog.md#paper-huang2024safedreamer) | `method-code` |
+| [Sparsh](<https://github.com/facebookresearch/sparsh>) | **Sparsh**: [Self-supervised Touch Representations for Vision-based Tactile Sensing](<https://arxiv.org/abs/2410.24090>) · CoRL 2024 · [ⓘ](catalog.md#paper-higuera2024sparsh) | `representation` |
+
+**Notes.** Habitat: Upstream README states that Meta internal teams no longer actively develop or maintain habitat-lab beyond v0.3.4; inspected 2026-10-01. BridgeData V2: The linked GitHub repository contains training implementations; the dataset is linked from its project page.
+
+Each repository link was checked against the upstream README; see the `primary_check` field in [resources.json](../data/resources.json). Packages were not installed or run.

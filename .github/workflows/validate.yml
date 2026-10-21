@@ -1,4 +1,4 @@
-name: Validate Atlas
+name: Validate
 on:
   push:
   pull_request:

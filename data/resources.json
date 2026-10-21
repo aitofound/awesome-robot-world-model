@@ -1,12 +1,11 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "resources": [
     {
       "name": "robosuite",
       "repository": "https://github.com/ARISE-Initiative/robosuite",
       "paper": "robosuite",
       "kind": "benchmark",
-      "use": "Manipulation environments and controller interfaces; useful for isolating model and planning effects.",
       "primary_check": {
         "source": "https://raw.githubusercontent.com/ARISE-Initiative/robosuite/master/README.md",
         "checked_at": "2026-10-01T13:29:00.505708+00:00",
@@ -18,7 +17,6 @@
       "repository": "https://github.com/haosulab/ManiSkill",
       "paper": "maniskill3",
       "kind": "benchmark",
-      "use": "Parallel robotics simulation and rendering; report tasks, controllers and randomization.",
       "primary_check": {
         "source": "https://raw.githubusercontent.com/haosulab/ManiSkill/main/README.md",
         "checked_at": "2026-10-01T13:28:58.978197+00:00",
@@ -30,7 +28,6 @@
       "repository": "https://github.com/RoboTwin-Platform/RoboTwin",
       "paper": "chen2025robotwin2",
       "kind": "benchmark",
-      "use": "Bimanual tasks and data generation; separate task variation from execution robustness.",
       "primary_check": {
         "source": "https://raw.githubusercontent.com/RoboTwin-Platform/RoboTwin/main/README.md",
         "checked_at": "2026-10-01T13:28:59.880259+00:00",
@@ -42,7 +39,6 @@
       "repository": "https://github.com/mees/calvin",
       "paper": "mees2022calvin",
       "kind": "benchmark",
-      "use": "Language-conditioned long-horizon manipulation; report chain length and reset assumptions.",
       "primary_check": {
         "source": "https://raw.githubusercontent.com/mees/calvin/main/README.md",
         "checked_at": "2026-10-01T13:28:58.787072+00:00",
@@ -54,7 +50,6 @@
       "repository": "https://github.com/stepjam/RLBench",
       "paper": "james2020rlbench",
       "kind": "benchmark",
-      "use": "Robot manipulation task suite; preserve observation, action and success-test settings.",
       "primary_check": {
         "source": "https://raw.githubusercontent.com/stepjam/RLBench/master/README.md",
         "checked_at": "2026-10-01T13:29:04.219972+00:00",
@@ -66,7 +61,6 @@
       "repository": "https://github.com/facebookresearch/habitat-lab",
       "paper": "habitat",
       "kind": "benchmark",
-      "use": "Embodied navigation and interaction; useful for persistent spatial belief and partial observability.",
       "primary_check": {
         "source": "https://raw.githubusercontent.com/facebookresearch/habitat-lab/main/README.md",
         "checked_at": "2026-10-01T13:29:01.361855+00:00",
@@ -79,7 +73,6 @@
       "repository": "https://github.com/allenai/ai2thor",
       "paper": "ai2thor",
       "kind": "benchmark",
-      "use": "Interactive indoor environments; a simulator resource rather than a learned world model.",
       "primary_check": {
         "source": "https://raw.githubusercontent.com/allenai/ai2thor/main/README.md",
         "checked_at": "2026-10-01T13:29:01.855503+00:00",
@@ -91,7 +84,6 @@
       "repository": "https://github.com/carlosferrazza/humanoid-bench",
       "paper": "sferrazza2024humanoidbench",
       "kind": "benchmark",
-      "use": "Whole-body locomotion and manipulation; useful for balance and embodiment constraints.",
       "primary_check": {
         "source": "https://raw.githubusercontent.com/carlosferrazza/humanoid-bench/main/README.md",
         "checked_at": "2026-10-01T13:29:02.894435+00:00",
@@ -103,7 +95,6 @@
       "repository": "https://github.com/robocasa/robocasa",
       "paper": "nasiriany2026robocasa365",
       "kind": "benchmark",
-      "use": "Kitchen manipulation scenes and task variation; pin the release matching the cited benchmark.",
       "primary_check": {
         "source": "https://raw.githubusercontent.com/robocasa/robocasa/main/README.md",
         "checked_at": "2026-10-01T13:29:02.884393+00:00",
@@ -115,7 +106,6 @@
       "repository": "https://github.com/google-deepmind/open_x_embodiment",
       "paper": "openxembodiment2023",
       "kind": "dataset",
-      "use": "Cross-robot demonstration data; action schemas and embodiment metadata require alignment.",
       "primary_check": {
         "source": "https://raw.githubusercontent.com/google-deepmind/open_x_embodiment/main/README.md",
         "checked_at": "2026-10-01T13:29:04.469300+00:00",
@@ -127,7 +117,6 @@
       "repository": "https://github.com/rail-berkeley/bridge_data_v2",
       "paper": "bridgedatav2",
       "kind": "dataset",
-      "use": "Robot manipulation trajectories; static data do not provide interactive deployment tests.",
       "primary_check": {
         "source": "https://raw.githubusercontent.com/rail-berkeley/bridge_data_v2/main/README.md",
         "checked_at": "2026-10-01T13:29:08.090947+00:00",
@@ -141,7 +130,6 @@
       "repository": "https://github.com/NVlabs/mimicgen",
       "paper": "mimicgen",
       "kind": "data-generation",
-      "use": "Demonstration-based data generation; distinguish environment-generated data from learned neural simulation.",
       "primary_check": {
         "source": "https://raw.githubusercontent.com/NVlabs/mimicgen/main/README.md",
         "checked_at": "2026-10-01T13:29:04.406049+00:00",
@@ -153,7 +141,6 @@
       "repository": "https://github.com/NVlabs/dexmimicgen",
       "paper": "dexmimicgen",
       "kind": "data-generation",
-      "use": "Bimanual dexterous demonstration generation; document task-specific validity checks.",
       "primary_check": {
         "source": "https://raw.githubusercontent.com/NVlabs/dexmimicgen/main/README.md",
         "checked_at": "2026-10-01T13:29:05.765133+00:00",
@@ -165,7 +152,6 @@
       "repository": "https://github.com/NVIDIA/GR00T-dreams",
       "paper": "jang2025dreamgen",
       "kind": "method-code",
-      "use": "Video-generated behavior and pseudo-action recovery support policy training; data generation is distinct from online RL.",
       "primary_check": {
         "source": "https://raw.githubusercontent.com/NVIDIA/GR00T-dreams/main/README.md",
         "checked_at": "2026-10-01T13:29:05.955331+00:00",
@@ -177,7 +163,6 @@
       "repository": "https://github.com/danijar/dreamerv3",
       "paper": "hafner2023dreamerv3",
       "kind": "method-code",
-      "use": "Latent imagination for actor learning; policy deployment need not run an explicit planner.",
       "primary_check": {
         "source": "https://raw.githubusercontent.com/danijar/dreamerv3/main/README.md",
         "checked_at": "2026-10-01T13:29:07.671330+00:00",
@@ -189,7 +174,6 @@
       "repository": "https://github.com/danijar/daydreamer",
       "paper": "wu2022daydreamer",
       "kind": "method-code",
-      "use": "Physical robot world-model learning; hardware and task setup remain part of reproduction.",
       "primary_check": {
         "source": "https://raw.githubusercontent.com/danijar/daydreamer/main/README.md",
         "checked_at": "2026-10-01T13:29:07.924412+00:00",
@@ -201,7 +185,6 @@
       "repository": "https://github.com/gaoyuezhou/dino_wm",
       "paper": "zhou2025dinowm",
       "kind": "method-code",
-      "use": "Predictive dynamics on pretrained visual features for planning; distinguish feature pretraining from action-grounded dynamics.",
       "primary_check": {
         "source": "https://raw.githubusercontent.com/gaoyuezhou/dino_wm/main/README.md",
         "checked_at": "2026-10-01T13:29:07.153240+00:00",
@@ -213,7 +196,6 @@
       "repository": "https://github.com/facebookresearch/vjepa2",
       "paper": "assran2025vjepa2",
       "kind": "method-code",
-      "use": "Video predictive features and action-conditioned adaptation; inspect the planning interface used by a particular experiment.",
       "primary_check": {
         "source": "https://raw.githubusercontent.com/facebookresearch/vjepa2/main/README.md",
         "checked_at": "2026-10-01T13:29:08.520900+00:00",
@@ -225,7 +207,6 @@
       "repository": "https://github.com/PKU-Alignment/SafeDreamer",
       "paper": "huang2024safedreamer",
       "kind": "method-code",
-      "use": "World-model-based safety-constrained learning; constraint satisfaction is protocol-specific.",
       "primary_check": {
         "source": "https://raw.githubusercontent.com/PKU-Alignment/SafeDreamer/main/README.md",
         "checked_at": "2026-10-01T13:29:09.416818+00:00",
@@ -237,7 +218,6 @@
       "repository": "https://github.com/openvla/openvla",
       "paper": "openvla2024",
       "kind": "policy-context",
-      "use": "Foundation policy code used as context or a downstream consumer; VLA status alone does not qualify it as a world model.",
       "primary_check": {
         "source": "https://raw.githubusercontent.com/openvla/openvla/main/README.md",
         "checked_at": "2026-10-01T13:29:10.240441+00:00",
@@ -249,7 +229,6 @@
       "repository": "https://github.com/facebookresearch/sparsh",
       "paper": "higuera2024sparsh",
       "kind": "representation",
-      "use": "Tactile representation learning; useful as a sensor prior, with predictive control evaluated separately.",
       "primary_check": {
         "source": "https://raw.githubusercontent.com/facebookresearch/sparsh/main/README.md",
         "checked_at": "2026-10-01T13:29:12.847941+00:00",
