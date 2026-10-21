@@ -1,0 +1,1228 @@
+{
+  "schema_version": 2,
+  "title": "Awesome Robot World Models",
+  "companion_to": "From Prediction to Control: A Survey of Closed-Loop World Models for Robot Learning",
+  "repository": "https://github.com/awesome-robot-world-model/awesome-robot-world-model",
+  "paper_links": {
+    "arxiv": null,
+    "pdf": null
+  },
+  "citation": null,
+  "summary": [
+    "A world model affects a robot only through the component that consumes its predictions, so the quality of a world model is relative to its consumer.",
+    "The survey describes each model by four design dials, follows its predictions through five pathways to the learners and policies that change robot behavior, and relates these pathways to embodiment requirements, real-world evaluation and the outer loop that refits models from deployment data."
+  ],
+  "dials": [
+    {
+      "id": "Y",
+      "subsection": "subsec:dial-y",
+      "question": "What is predicted?",
+      "ends": [
+        "pixels",
+        "task quantities"
+      ],
+      "tradeoff": [
+        "general",
+        "decision-sufficient"
+      ]
+    },
+    {
+      "id": "C",
+      "subsection": "subsec:dial-c",
+      "question": "Conditioned on what?",
+      "ends": [
+        "passive video",
+        "robot actions"
+      ],
+      "tradeoff": [
+        "passive",
+        "controllable"
+      ]
+    },
+    {
+      "id": "D",
+      "subsection": "subsec:dial-d",
+      "question": "Learned from what?",
+      "ends": [
+        "web video",
+        "robot data"
+      ],
+      "tradeoff": [
+        "abundant",
+        "grounded"
+      ]
+    },
+    {
+      "id": "M",
+      "subsection": "subsec:dial-m",
+      "question": "Computed how?",
+      "ends": [
+        "rich generators",
+        "compact"
+      ],
+      "tradeoff": [
+        "expressive",
+        "fast"
+      ]
+    }
+  ],
+  "pathways": [
+    {
+      "number": 1,
+      "name": "Features",
+      "subsection": "subsec:pw-features",
+      "hands_over": "state for the policy",
+      "learning_time": "predictive loss shapes the policy's state z<sub>t</sub>",
+      "acting_time": "state estimate z<sub>t</sub> as input",
+      "typical_failure": "state aliasing; missing contact state"
+    },
+    {
+      "number": 2,
+      "name": "Experience",
+      "subsection": "subsec:pw-experience",
+      "hands_over": "generated training data",
+      "learning_time": "rollouts or synthetic demonstrations train the policy",
+      "acting_time": null,
+      "typical_failure": "simulator bias; exploited model errors"
+    },
+    {
+      "number": 3,
+      "name": "Scores",
+      "subsection": "subsec:pw-scores",
+      "hands_over": "reward, success, cost",
+      "learning_time": "rewards and progress signals for the learner",
+      "acting_time": "costs and success estimates rank candidates",
+      "typical_failure": "reward hacking; miscalibration"
+    },
+    {
+      "number": 4,
+      "name": "Decisions",
+      "subsection": "subsec:pw-decisions",
+      "hands_over": "futures of candidate actions",
+      "learning_time": null,
+      "acting_time": "simulate candidate actions, choose a<sub>t</sub>",
+      "typical_failure": "compounding error; optimistic search"
+    },
+    {
+      "number": 5,
+      "name": "Residuals",
+      "subsection": "subsec:pw-residuals",
+      "hands_over": "predicted vs. observed",
+      "learning_time": null,
+      "acting_time": "compare o<sub>t+1</sub> with its prediction; correct or alert",
+      "typical_failure": "delayed detection; false alarms"
+    }
+  ],
+  "sections": {
+    "sec:intro": {
+      "slug": "introduction",
+      "emoji": "📖",
+      "summary": [
+        "World models now supply robot systems with representations, training experience, action choices and assessments of behavior.",
+        "The introduction states the position of the survey, that the quality of a world model is relative to the component that consumes its predictions, compares it with earlier world-model and world-action-model surveys, and fixes the scope."
+      ]
+    },
+    "sec:foundations": {
+      "slug": "prediction-to-control",
+      "emoji": "💡",
+      "figure": "loop",
+      "summary": [
+        "This section fixes the vocabulary of the survey: the robot learning loop, the definition of a world model and the reading key of Figure 1.",
+        "A first-order expansion, ΔJ ≈ E<sub>q∼Q</sub>[(∂J/∂ŷ)(q) ε(q)], shows that the error ε of a model reaches the return J of the deployed policy through two factors that the consumer sets: the queries Q it issues and its sensitivity ∂J/∂ŷ to each error."
+      ]
+    },
+    "sec:model": {
+      "slug": "design-dials",
+      "emoji": "🧠",
+      "figure": "dials",
+      "summary": [
+        "A world model is a learned conditional predictor, and four design dials determine it: what it predicts (Y), what it is conditioned on (C), where its knowledge comes from (D) and how it computes a prediction (M).",
+        "Each dial spans a trade-off between two useful ends, and current technical routes are settings of all four dials at once. Section 3.2 extends the prediction space to contact and touch."
+      ]
+    },
+    "sec:pathways": {
+      "slug": "pathways",
+      "emoji": "🔀",
+      "figure": "pathway-timing",
+      "summary": [
+        "The survey classifies each use of a world model by what the model hands to its consumer: features, generated experience, scores, futures of candidate actions (decisions) or residuals between prediction and observation.",
+        "Features and experience change what the policy learns, decisions and residuals change what it does at acting time, and scores serve both. An evidence map of pathway against prediction space closes the section."
+      ]
+    },
+    "sec:consumers": {
+      "slug": "learners-and-policies",
+      "emoji": "🤖",
+      "summary": [
+        "The consumer of a prediction sets two of the three factors in ΔJ: the queries it issues and the sensitivity of its output to errors in the answers. The same world model can therefore help one consumer and mislead another.",
+        "The section covers the learners that turn model outputs into parameter updates (imitation learning, offline and online reinforcement learning) and the policies and planners that turn them into actions."
+      ]
+    },
+    "sec:embodiment": {
+      "slug": "embodiments",
+      "emoji": "🌍",
+      "figure": "embodiment-requirements",
+      "summary": [
+        "Each embodiment sets requirements on the four dials and favors some pathways over others.",
+        "The section covers manipulation, navigation, humanoids, autonomous driving, cross-embodiment learning and human-robot interaction, and separates prediction used during execution from priors and generated experience used during learning."
+      ]
+    },
+    "sec:evaluation": {
+      "slug": "evaluation",
+      "emoji": "📋",
+      "figure": "pathway-tests",
+      "summary": [
+        "The utility of a world model is observable only in the real world. Evaluation therefore separates three axes, model quality, closed-loop utility and deployment reliability, and states the evidence boundary of each claim.",
+        "The section also reviews datasets, simulators and benchmarks, and protocols for reporting results."
+      ]
+    },
+    "sec:outer-loop": {
+      "slug": "outer-loop",
+      "emoji": "🔁",
+      "figure": "outer-loop",
+      "summary": [
+        "As the policy improves, the queries it poses drift toward regions the model has seen least.",
+        "The outer loop returns deployment experience to the model. The section covers what to revise, exploration, continual updating, failure mining and fleet-scale data flywheels."
+      ]
+    },
+    "sec:open-problems": {
+      "slug": "open-problems",
+      "emoji": "❓",
+      "summary": [
+        "Every design dial is an open trade-off, and the Prediction-to-Control Gap prevents settling any of them in isolation.",
+        "The open problems cover the gap itself, one problem per dial, and two deployment questions: safety and trust calibration, and auditable closed systems. Each is paired with a comparison that would make progress measurable."
+      ]
+    },
+    "sec:conclusion": {
+      "slug": "conclusion",
+      "emoji": "🏁",
+      "figure": "takeaways",
+      "summary": [
+        "A robot world model should be judged by what its predictions change in the behavior of the robot. The conclusion restates the framework and the limitations of the survey."
+      ]
+    },
+    "app:survey-protocols": {
+      "slug": "survey-protocol",
+      "emoji": "🧾",
+      "summary": [
+        "The appendix records how papers were selected, defines the evidence-level labels, and gives a minimum reporting checklist and a glossary of loop terms."
+      ],
+      "tables": [
+        "glossary",
+        "reporting-checklist"
+      ]
+    },
+    "sec:resource-catalogue-and-experimental-interfaces": {
+      "slug": "resources",
+      "summary": [
+        "A catalogue of 21 representative resources and research systems, with their experimental interfaces, capability contracts and evaluation axes."
+      ],
+      "tables": [
+        "resources"
+      ]
+    },
+    "sec:claim-level-frontier-evidence-atlas": {
+      "slug": "evidence-atlas",
+      "summary": [
+        "Claim-level records for 27 representative frontier systems: pathway, loop location, learning regime, source, evidence level and scope, with each headline claim, its locator in the cited work and its limit."
+      ],
+      "tables": [
+        "evidence-atlas"
+      ]
+    },
+    "sec:expanded-reading-map-and-timeline": {
+      "slug": "reading-map",
+      "summary": [
+        "A reading map that assigns representative and contextual works to primary and secondary clusters, and a timeline of frontier releases."
+      ],
+      "tables": [
+        "reading-map"
+      ]
+    },
+    "sec:supp-embodiment-details": {
+      "slug": "embodiment-details",
+      "summary": [
+        "Extended embodiment constraints and the interfaces through which humans correct robot behavior."
+      ]
+    },
+    "app:evaluation-details": {
+      "slug": "evaluation-details",
+      "summary": [
+        "Extended evaluation protocols: model diagnostics, utility attribution, deployment reliability, pathway- and regime-specific protocols, failure records and benchmark coverage."
+      ]
+    }
+  },
+  "evidence_levels": {
+    "source": "Supplementary Material S2.1",
+    "levels": [
+      {
+        "level": "E0",
+        "meaning": "an unverified lead"
+      },
+      {
+        "level": "E1",
+        "meaning": "inspectable descriptive or synthesis evidence"
+      },
+      {
+        "level": "E2",
+        "meaning": "a controlled empirical comparison"
+      },
+      {
+        "level": "E3",
+        "meaning": "empirical evaluation of an implemented feedback-coupled system"
+      },
+      {
+        "level": "E4",
+        "meaning": "evidence extended across independent evaluations or multiple sites, with the form of validation stated"
+      }
+    ],
+    "notes": [
+      "P denotes the primary pathway relevant to the claim of a row and S a secondary one. A record whose evidence stops at the model, such as open-loop generation or replay, is labeled model only. A policy baseline, benchmark or explicit constraint layer without a demonstrated world-model component is labeled a comparator.",
+      "E3 can concern simulated or physical execution and does not, by itself, isolate the contribution of a world model. The labels summarize the evidence attached to a claim; they define no ranking of model quality."
+    ]
+  },
+  "tree": [
+    {
+      "subsection": "subsec:loop",
+      "leaf": [
+        {
+          "name": "PlaNet",
+          "paper": "hafner2019planet"
+        },
+        {
+          "name": "Dreamer",
+          "paper": "hafner2019dreamer"
+        },
+        {
+          "name": "DayDreamer",
+          "paper": "wu2022daydreamer"
+        }
+      ]
+    },
+    {
+      "subsection": "subsec:wm-definition",
+      "leaf": [
+        {
+          "name": "action-conditioned prediction",
+          "paper": null
+        },
+        {
+          "name": "VLAs as consumers",
+          "paper": null
+        }
+      ]
+    },
+    {
+      "subsection": "subsec:delta-j",
+      "leaf": [
+        {
+          "name": "value equivalence",
+          "paper": "grimm2020value"
+        },
+        {
+          "name": "value-aware learning",
+          "paper": "farahmand2017vaml"
+        },
+        {
+          "name": "MuZero",
+          "paper": "schrittwieser2020muzero"
+        }
+      ]
+    },
+    {
+      "subsection": "subsec:loop-to-taxonomy",
+      "leaf": [
+        {
+          "name": "five pathways and the outer loop",
+          "paper": null
+        }
+      ]
+    },
+    {
+      "subsection": "subsec:dial-y",
+      "leaf": [
+        {
+          "name": "DINO-WM",
+          "paper": "zhou2025dinowm"
+        },
+        {
+          "name": "V-JEPA 2-AC",
+          "paper": "assran2025vjepa2"
+        },
+        {
+          "name": "PointWorld",
+          "paper": "pointworld2026"
+        },
+        {
+          "name": "PhysTwin",
+          "paper": "jiang2025phystwin"
+        }
+      ]
+    },
+    {
+      "subsection": "subsec:dial-touch",
+      "leaf": [
+        {
+          "name": "RoboPack",
+          "paper": "ai2024robopack"
+        },
+        {
+          "name": "VT-WM",
+          "paper": "visuotactilewm2026"
+        },
+        {
+          "name": "OmniVTA",
+          "paper": "omnivta2026"
+        },
+        {
+          "name": "VTAM",
+          "paper": "yuan2026vtam"
+        },
+        {
+          "name": "DexTacWAM",
+          "paper": "yuan2026dextacwam"
+        }
+      ]
+    },
+    {
+      "subsection": "subsec:dial-c",
+      "leaf": [
+        {
+          "name": "UniSim",
+          "paper": "yang2024unisim"
+        },
+        {
+          "name": "RoboDreamer",
+          "paper": "robodreamer2024"
+        },
+        {
+          "name": "UVA",
+          "paper": "li2025uva"
+        },
+        {
+          "name": "DreamZero",
+          "paper": "ye2026dreamzero"
+        },
+        {
+          "name": "Flex-π",
+          "paper": "yan2026flexpi"
+        }
+      ]
+    },
+    {
+      "subsection": "subsec:dial-d",
+      "leaf": [
+        {
+          "name": "Cosmos",
+          "paper": "nvidia2025cosmos"
+        },
+        {
+          "name": "DreamDojo",
+          "paper": "gao2026dreamdojo"
+        },
+        {
+          "name": "Isaac Gym",
+          "paper": "makoviychuk2021isaacgym"
+        },
+        {
+          "name": "Ego4D",
+          "paper": "Grauman_2022_CVPR"
+        },
+        {
+          "name": "EgoDex",
+          "paper": "hoque2026egodex"
+        }
+      ]
+    },
+    {
+      "subsection": "subsec:dial-m",
+      "leaf": [
+        {
+          "name": "RSSMs",
+          "paper": null
+        },
+        {
+          "name": "iVideoGPT",
+          "paper": "wu2024ivideogpt"
+        },
+        {
+          "name": "UniPi",
+          "paper": "du2023unipi"
+        },
+        {
+          "name": "CausVid",
+          "paper": "yin2024causvid"
+        },
+        {
+          "name": "Self Forcing",
+          "paper": "huang2025selfforcing"
+        }
+      ]
+    },
+    {
+      "subsection": "subsec:pw-features",
+      "leaf": [
+        {
+          "name": "WMR",
+          "paper": "wmr2025"
+        },
+        {
+          "name": "ODEWorld",
+          "paper": "liu2026odeworld"
+        },
+        {
+          "name": "DBC",
+          "paper": "DBC"
+        },
+        {
+          "name": "EgoWAM",
+          "paper": "egowam2026"
+        },
+        {
+          "name": "PALM",
+          "paper": "liu2026palm"
+        }
+      ]
+    },
+    {
+      "subsection": "subsec:pw-experience",
+      "leaf": [
+        {
+          "name": "Dreamer",
+          "paper": "hafner2019dreamer"
+        },
+        {
+          "name": "DiWA",
+          "paper": "DiWA"
+        },
+        {
+          "name": "RWM",
+          "paper": "li2025roboticworldmodel"
+        },
+        {
+          "name": "VLA-RFT",
+          "paper": "vlarft2025"
+        },
+        {
+          "name": "IWS",
+          "paper": "interactiveworldsim2026"
+        },
+        {
+          "name": "DreamGen",
+          "paper": "jang2025dreamgen"
+        }
+      ]
+    },
+    {
+      "subsection": "subsec:pw-scores",
+      "leaf": [
+        {
+          "name": "VLAC",
+          "paper": "vlac2025"
+        },
+        {
+          "name": "WorldEval",
+          "paper": "worldeval2025"
+        },
+        {
+          "name": "World-in-World",
+          "paper": "worldinworld2025"
+        },
+        {
+          "name": "SafeDreamer",
+          "paper": "huang2024safedreamer"
+        }
+      ]
+    },
+    {
+      "subsection": "subsec:pw-decisions",
+      "leaf": [
+        {
+          "name": "TD-MPC2",
+          "paper": "hansen2024tdmpc2"
+        },
+        {
+          "name": "V-JEPA 2-AC",
+          "paper": "assran2025vjepa2"
+        },
+        {
+          "name": "WorldPlanner",
+          "paper": "worldplanner2025"
+        },
+        {
+          "name": "LVP",
+          "paper": "chen2025largevideoplanner"
+        },
+        {
+          "name": "TrAct",
+          "paper": "cao2026tract"
+        }
+      ]
+    },
+    {
+      "subsection": "subsec:pw-residuals",
+      "leaf": [
+        {
+          "name": "OmniVTA",
+          "paper": "omnivta2026"
+        },
+        {
+          "name": "runtime monitoring",
+          "paper": "liu2024runtime"
+        },
+        {
+          "name": "LocoFormer",
+          "paper": "locoformer2025"
+        }
+      ]
+    },
+    {
+      "subsection": "subsec:pw-evidence-map",
+      "leaf": [
+        {
+          "name": "pathway × prediction space",
+          "paper": null
+        },
+        {
+          "name": "with evidence labels",
+          "paper": null
+        }
+      ]
+    },
+    {
+      "subsection": "subsec:consumer-learning",
+      "leaf": [
+        {
+          "name": "MimicGen",
+          "paper": "mimicgen"
+        },
+        {
+          "name": "MOPO",
+          "paper": "MOPO"
+        },
+        {
+          "name": "MOReL",
+          "paper": "MOReL"
+        },
+        {
+          "name": "COMBO",
+          "paper": "COMBO"
+        },
+        {
+          "name": "Dreamer",
+          "paper": "hafner2019dreamer"
+        }
+      ]
+    },
+    {
+      "subsection": "subsec:consumer-policies",
+      "leaf": [
+        {
+          "name": "OpenVLA",
+          "paper": "openvla2024"
+        },
+        {
+          "name": "π0",
+          "paper": "pi0"
+        },
+        {
+          "name": "GR00T",
+          "paper": "nvidia2025groot"
+        },
+        {
+          "name": "MPC and tree search",
+          "paper": null
+        }
+      ]
+    },
+    {
+      "subsection": "subsec:emb-manipulation",
+      "leaf": [
+        {
+          "name": "WorldPlanner",
+          "paper": "worldplanner2025"
+        },
+        {
+          "name": "PointWorld",
+          "paper": "pointworld2026"
+        },
+        {
+          "name": "RoboHorizon",
+          "paper": "robohorizon2025"
+        },
+        {
+          "name": "VLAW",
+          "paper": "vlaw2026"
+        }
+      ]
+    },
+    {
+      "subsection": "subsec:emb-navigation",
+      "leaf": [
+        {
+          "name": "navigation world models",
+          "paper": "bar2025navigation"
+        },
+        {
+          "name": "Habitat",
+          "paper": "habitat"
+        },
+        {
+          "name": "AI2-THOR",
+          "paper": "ai2thor"
+        }
+      ]
+    },
+    {
+      "subsection": "subsec:emb-humanoid",
+      "leaf": [
+        {
+          "name": "WMR",
+          "paper": "wmr2025"
+        },
+        {
+          "name": "VideoMimic",
+          "paper": "allshire2025videomimic"
+        },
+        {
+          "name": "DreamDojo",
+          "paper": "gao2026dreamdojo"
+        },
+        {
+          "name": "ω-0",
+          "paper": "li2026omega0"
+        }
+      ]
+    },
+    {
+      "subsection": "subsec:emb-driving",
+      "leaf": [
+        {
+          "name": "GAIA-1",
+          "paper": "hu2023gaia1"
+        },
+        {
+          "name": "Vista",
+          "paper": "gao2024vista"
+        },
+        {
+          "name": "OccWorld",
+          "paper": "zheng2024occworld"
+        },
+        {
+          "name": "DriveDreamer",
+          "paper": "wang2024drivedreamer"
+        }
+      ]
+    },
+    {
+      "subsection": "subsec:emb-generalist",
+      "leaf": [
+        {
+          "name": "Open X-Embodiment",
+          "paper": "openxembodiment2023"
+        },
+        {
+          "name": "RT-2",
+          "paper": "rt2"
+        },
+        {
+          "name": "GR00T",
+          "paper": "nvidia2025groot"
+        }
+      ]
+    },
+    {
+      "subsection": "subsec:emb-hri",
+      "leaf": [
+        {
+          "name": "HG-DAgger",
+          "paper": "kelly2019hgdagger"
+        },
+        {
+          "name": "Sirius-Fleet",
+          "paper": "liu2025siriusfleet"
+        },
+        {
+          "name": "Hi-WM",
+          "paper": "li2026hiwm"
+        },
+        {
+          "name": "KnowNo",
+          "paper": "ren2023knowno"
+        }
+      ]
+    },
+    {
+      "subsection": "subsec:model-quality",
+      "leaf": [
+        {
+          "name": "VP²",
+          "paper": "tian2023vp2"
+        },
+        {
+          "name": "Physics-IQ",
+          "paper": "motamed2026physicsiq"
+        },
+        {
+          "name": "WorldArena",
+          "paper": "shang2026worldarena"
+        },
+        {
+          "name": "WorldEcho",
+          "paper": "chen2026worldsync"
+        }
+      ]
+    },
+    {
+      "subsection": "subsec:policy-utility",
+      "leaf": [
+        {
+          "name": "matched substitution and pathway removal",
+          "paper": null
+        }
+      ]
+    },
+    {
+      "subsection": "subsec:deployment-reliability",
+      "leaf": [
+        {
+          "name": "shift",
+          "paper": null
+        },
+        {
+          "name": "interventions",
+          "paper": null
+        },
+        {
+          "name": "recovery",
+          "paper": null
+        }
+      ]
+    },
+    {
+      "subsection": "sec:resources",
+      "leaf": [
+        {
+          "name": "Open X-Embodiment",
+          "paper": "openxembodiment2023"
+        },
+        {
+          "name": "DROID",
+          "paper": "khazatsky2024droid"
+        },
+        {
+          "name": "ManiSkill3",
+          "paper": "maniskill3"
+        },
+        {
+          "name": "RoboArena",
+          "paper": "atreya2025roboarena"
+        }
+      ]
+    },
+    {
+      "subsection": "subsec:four-layer-reporting",
+      "leaf": [
+        {
+          "name": "protocols and evidence boundaries",
+          "paper": null
+        }
+      ]
+    },
+    {
+      "subsection": "subsec:interaction-formulation",
+      "leaf": [
+        {
+          "name": "Dyna",
+          "paper": "sutton1991dyna"
+        },
+        {
+          "name": "MBPO",
+          "paper": "janner2019mbpo"
+        },
+        {
+          "name": "DayDreamer",
+          "paper": "wu2022daydreamer"
+        },
+        {
+          "name": "VLAW",
+          "paper": "vlaw2026"
+        },
+        {
+          "name": "WAM-RL",
+          "paper": "wamrl2026"
+        }
+      ]
+    },
+    {
+      "subsection": "subsec:interaction-exploration",
+      "leaf": [
+        {
+          "name": "Plan2Explore",
+          "paper": "sekar2020plan2explore"
+        },
+        {
+          "name": "LEXA",
+          "paper": "mendonca2021lexa"
+        },
+        {
+          "name": "autonomous practice",
+          "paper": null
+        }
+      ]
+    },
+    {
+      "subsection": "subsec:interaction-continual",
+      "leaf": [
+        {
+          "name": "REGEN",
+          "paper": "govind2026regen"
+        },
+        {
+          "name": "MuSe",
+          "paper": "clark2026muse"
+        },
+        {
+          "name": "H2O",
+          "paper": "h2o2022"
+        },
+        {
+          "name": "xTED",
+          "paper": "xted2026"
+        }
+      ]
+    },
+    {
+      "subsection": "subsec:interaction-failure-curation",
+      "leaf": [
+        {
+          "name": "Curious Replay",
+          "paper": "kauvar2023curious"
+        },
+        {
+          "name": "DGAC",
+          "paper": "dgac2026"
+        },
+        {
+          "name": "WorldSample",
+          "paper": "xue2026worldsample"
+        },
+        {
+          "name": "REFLECT",
+          "paper": "liu2023reflect"
+        }
+      ]
+    },
+    {
+      "subsection": "subsec:interaction-fleet",
+      "leaf": [
+        {
+          "name": "QT-Opt",
+          "paper": "kalashnikov2018qtopt"
+        },
+        {
+          "name": "AutoRT",
+          "paper": "ahn2024autort"
+        },
+        {
+          "name": "Sirius-Fleet",
+          "paper": "liu2025siriusfleet"
+        },
+        {
+          "name": "Ego2Robot",
+          "paper": "wang2026ego2robot"
+        }
+      ]
+    },
+    {
+      "subsection": "subsec:prediction-control-gap",
+      "leaf": [
+        {
+          "name": "what to preserve before the consumer is known",
+          "paper": null
+        }
+      ]
+    },
+    {
+      "subsection": "subsec:open-physical",
+      "leaf": [
+        {
+          "name": "contact",
+          "paper": null
+        },
+        {
+          "name": "deformation",
+          "paper": null
+        },
+        {
+          "name": "interventions",
+          "paper": null
+        }
+      ]
+    },
+    {
+      "subsection": "subsec:open-coupling",
+      "leaf": [
+        {
+          "name": "off-demonstration queries",
+          "paper": null
+        },
+        {
+          "name": "joint vs. separate",
+          "paper": null
+        }
+      ]
+    },
+    {
+      "subsection": "subsec:open-data",
+      "leaf": [
+        {
+          "name": "grounded vs. abundant data",
+          "paper": null
+        },
+        {
+          "name": "synthetic flywheels",
+          "paper": null
+        }
+      ]
+    },
+    {
+      "subsection": "subsec:open-latency",
+      "leaf": [
+        {
+          "name": "control deadlines",
+          "paper": null
+        },
+        {
+          "name": "long horizons",
+          "paper": null
+        }
+      ]
+    },
+    {
+      "subsection": "subsec:open-safety",
+      "leaf": [
+        {
+          "name": "latent safety filters",
+          "paper": "seo2025uncertainty"
+        },
+        {
+          "name": "calibrated reliance",
+          "paper": null
+        }
+      ]
+    },
+    {
+      "subsection": "subsec:open-closed",
+      "leaf": [
+        {
+          "name": "Gemini Robotics",
+          "paper": "team2025gemini"
+        },
+        {
+          "name": "Helix",
+          "paper": "figure2025helix"
+        },
+        {
+          "name": "1X world model",
+          "paper": "ho2025_1xworldmodel"
+        }
+      ]
+    }
+  ],
+  "home_overrides": {},
+  "figures": {
+    "structure": {
+      "label": "fig:structure",
+      "alt": "Organization of the survey: a world model (left) and the real world (right) as two poles of the robot learning loop, read clockwise."
+    },
+    "loop": {
+      "label": "fig:closed-loop",
+      "alt": "Two timescales at which predictions reach the robot: acting time and learning time, with the refit path at the bottom."
+    },
+    "dials": {
+      "label": "fig:route-map",
+      "alt": "Current technical routes as settings of the four design dials, with the pathways each route serves."
+    },
+    "pathway-timing": {
+      "label": "fig:pathway-timing",
+      "alt": "When each of the five pathways consumes predictions, and how each typically fails."
+    },
+    "evidence-map": {
+      "label": "fig:evidence-map",
+      "alt": "Evidence map: coded atlas records placed by pathway and prediction space, with evidence labels."
+    },
+    "embodiment-requirements": {
+      "label": "fig:embodiment-constraints",
+      "alt": "For each embodiment: the state the model must preserve, how the model is used and the evaluation priority."
+    },
+    "pathway-tests": {
+      "label": "fig:pathway-tests",
+      "alt": "For each pathway: the model diagnostic, the removal or substitution comparison at matched budgets, and the decision outcome to measure."
+    },
+    "outer-loop": {
+      "label": "fig:interaction-loop",
+      "alt": "The outer loop: deployment data return to refit the model and the policy."
+    },
+    "takeaways": {
+      "label": "fig:conclusion-takeaways",
+      "alt": "Seven takeaways of the survey, each with the evidence to seek and its practical implication."
+    }
+  },
+  "names": {
+    "COMBO": "COMBO",
+    "DBC": "DBC",
+    "DiWA": "DiWA",
+    "Grauman_2022_CVPR": "Ego4D",
+    "MOPO": "MOPO",
+    "MOReL": "MOReL",
+    "abotphysworld2026": "ABot-PhysWorld",
+    "actjepa2025": "ACT-JEPA",
+    "ahn2024autort": "AutoRT",
+    "ai2024robopack": "RoboPack",
+    "ai2thor": "AI2-THOR",
+    "allshire2025videomimic": "VideoMimic",
+    "alzayer2026maskedvisual": "Masked Visual Actions",
+    "assran2025vjepa2": "V-JEPA 2-AC",
+    "atreya2025roboarena": "RoboArena",
+    "bharadhwaj2025gen2act": "Gen2Act",
+    "bridgedatav2": "BridgeData V2",
+    "bruce2024genie": "Genie",
+    "cao2026tract": "TrAct",
+    "chen2025largevideoplanner": "LVP",
+    "chen2026anyworld": "AnyWorld",
+    "chen2026worldsync": "WorldEcho",
+    "cheng2025omnivtla": "OmniVTLA",
+    "clark2026muse": "MuSe",
+    "dexmimicgen": "DexMimicGen",
+    "dgac2026": "DGAC",
+    "du2023unipi": "UniPi",
+    "egobridge2025": "EgoBridge",
+    "egovisioncontact2025": "Ego-Vision Contact Planning",
+    "egowam2026": "EgoWAM",
+    "egozero2025": "EgoZero",
+    "feng2025anytouch": "AnyTouch",
+    "feng2026wamttt": "WAM-TTT",
+    "figure2025helix": "Helix",
+    "gao2024vista": "Vista",
+    "gao2026dreamdojo": "DreamDojo",
+    "garcin2026persist": "PERSIST",
+    "govind2026regen": "REGEN",
+    "gu2026geniworld": "GeniWorld",
+    "h2o2022": "H2O",
+    "habitat": "Habitat",
+    "hafner2019dreamer": "Dreamer",
+    "hafner2019planet": "PlaNet",
+    "hafner2021dreamerv2": "DreamerV2",
+    "hafner2023dreamerv3": "DreamerV3",
+    "hafner2025dreamer4": "Dreamer 4",
+    "hansen2024tdmpc2": "TD-MPC2",
+    "higuera2024sparsh": "Sparsh",
+    "ho2025_1xworldmodel": "1X world model",
+    "hoque2026egodex": "EgoDex",
+    "hu2023gaia1": "GAIA-1",
+    "huang2024safedreamer": "SafeDreamer",
+    "huang2025selfforcing": "Self Forcing",
+    "huang2026solarwm": "SolarWM",
+    "hydra02026": "Hydra-0",
+    "interactiveworldsim2026": "IWS",
+    "jang2025dreamgen": "DreamGen",
+    "janner2019mbpo": "MBPO",
+    "jiang2025phystwin": "PhysTwin",
+    "kalashnikov2018qtopt": "QT-Opt",
+    "kauvar2023curious": "Curious Replay",
+    "kelly2019hgdagger": "HG-DAgger",
+    "khazatsky2024droid": "DROID",
+    "li2025roboticworldmodel": "RWM",
+    "li2025uva": "UVA",
+    "li2026hiwm": "Hi-WM",
+    "li2026omega0": "ω-0",
+    "liang2025dreamitate": "Dreamitate",
+    "liao2026puffinworld": "Puffin-World",
+    "liu2023reflect": "REFLECT",
+    "liu2024runtime": "Model-Based Runtime Monitoring",
+    "liu2025onlinewm": "Planning with Online World Models",
+    "liu2025siriusfleet": "Sirius-Fleet",
+    "liu2026odeworld": "ODEWorld",
+    "liu2026palm": "PALM",
+    "locoformer2025": "LocoFormer",
+    "lou2026dreamtac": "Dream-Tac",
+    "makoviychuk2021isaacgym": "Isaac Gym",
+    "maniskill3": "ManiSkill3",
+    "mendonca2021lexa": "LEXA",
+    "metaworld": "Meta-World",
+    "mimicgen": "MimicGen",
+    "motamed2026physicsiq": "Physics-IQ",
+    "nam2026causaljepa": "Causal-JEPA",
+    "nsim_roboworld": "RoboWorld",
+    "nsim_wovr": "WoVR",
+    "nvidia2025cosmos": "Cosmos",
+    "nvidia2025groot": "GR00T",
+    "nvidia2026cosmos3": "Cosmos 3",
+    "nvidia2026groot17": "GR00T N1.7",
+    "omnivta2026": "OmniVTA",
+    "openvla2024": "OpenVLA",
+    "openxembodiment2023": "Open X-Embodiment",
+    "pi0": "π0",
+    "pi2025pistar06": "π^*_{0.6}",
+    "pi2026pi07": "π0.7",
+    "pointworld2026": "PointWorld",
+    "qiu2026gesim2": "GE-Sim 2.0",
+    "ranawaka2026simfoundry": "SimFoundry",
+    "ren2023knowno": "KnowNo",
+    "robodreamer2024": "RoboDreamer",
+    "robohorizon2025": "RoboHorizon",
+    "robonet": "RoboNet",
+    "robosuite": "robosuite",
+    "rt1": "RT-1",
+    "rt2": "RT-2",
+    "saferobotfoundation2025": "Towards Safe Robot Foundation Models",
+    "schrittwieser2020muzero": "MuZero",
+    "sekar2020plan2explore": "Plan2Explore",
+    "shang2026worldarena": "WorldArena",
+    "shao2026symskill": "SymSkill",
+    "sutton1991dyna": "Dyna",
+    "tactalign2026": "TactAlign",
+    "team2025gemini": "Gemini Robotics",
+    "tian2019manipulation": "Manipulation by Feel",
+    "tian2023vp2": "VP²",
+    "tian2026vtwam": "VT-WAM",
+    "twist2023": "TWIST",
+    "visuotactilewm2026": "VT-WM",
+    "vlac2025": "VLAC",
+    "vlareview2025": "VLA Review",
+    "vlarft2025": "VLA-RFT",
+    "vlaw2026": "VLAW",
+    "wamrl2026": "WAM-RL",
+    "wang2024drivedreamer": "DriveDreamer",
+    "wang2026ego2robot": "Ego2Robot",
+    "wang2026matrixgame3": "Matrix-Game 3.0",
+    "wi2022virdopp": "VIRDO++",
+    "wmr2025": "WMR",
+    "worldeval2025": "WorldEval",
+    "worldgymnast2026": "World-Gymnast",
+    "worldinworld2025": "World-in-World",
+    "worldmodelrisks2026": "World-model risk survey",
+    "worldplanner2025": "WorldPlanner",
+    "wu2022daydreamer": "DayDreamer",
+    "wu2024ivideogpt": "iVideoGPT",
+    "wu2026tactilewam": "Tactile-WAM",
+    "xiao2025worldmem": "WorldMem",
+    "xsquare2026wallwm": "WALL-WM",
+    "xted2026": "xTED",
+    "xue2026worldsample": "WorldSample",
+    "yan2026flexpi": "Flex-π",
+    "yang2024unisim": "UniSim",
+    "ye2026dreamzero": "DreamZero",
+    "yin2024causvid": "CausVid",
+    "yuan2026dextacwam": "DexTacWAM",
+    "yuan2026vtam": "VTAM",
+    "yue2025ewmbench": "EWMBench",
+    "zang2026tacforesight": "TacForeSight",
+    "zhang2026contactworld": "ContactWorld",
+    "zheng2024occworld": "OccWorld",
+    "zheng2026egoscale": "EgoScale",
+    "zhou2025dinowm": "DINO-WM",
+    "zhou2026zerowam": "Zero-WAM"
+  }
+}

@@ -1,0 +1,1764 @@
+{
+  "schema_version": 1,
+  "revision": "manuscript@6e28c42",
+  "evidence_atlas": {
+    "label": "tab:frontier-atlas",
+    "document": "supplement",
+    "caption": "Representative frontier evidence atlas. P and S denote primary and secondary fields. Citations identify the works; locators specify the source version where needed. Source labels describe the consulted documents rather than later publication status. Each claim should be read together with its locator and limit; evidence level is not a ranking of model quality.",
+    "columns": [
+      "Work",
+      "Pathway / loop location",
+      "Regime / mechanism",
+      "Source / object",
+      "Level / scope",
+      "Headline claim / locator / boundary"
+    ],
+    "rows": [
+      {
+        "name": "OpenVLA",
+        "papers": [
+          "openvla2024"
+        ],
+        "pathway": "Comparator (policy)",
+        "secondary_pathway": null,
+        "loop_location": "Learning",
+        "regime": "Imitation learning",
+        "mechanism": "Cross-embodiment transfer",
+        "source": "Preprint version",
+        "object": "Model",
+        "level": "E3",
+        "scope": "Real-robot closed loop",
+        "claim": "OpenVLA provides an open 7B VLA baseline trained on the Open X-Embodiment mixture and reports higher author-run success than RT-2-X.",
+        "locator": "arXiv v3, Tables 4–6; Appendix D.1, Table 9.",
+        "limit": "Action-policy evidence; no explicit dynamics or consequence model."
+      },
+      {
+        "name": "RoboDreamer",
+        "papers": [
+          "robodreamer2024"
+        ],
+        "pathway": "Decisions",
+        "secondary_pathway": null,
+        "loop_location": "Decision",
+        "regime": "Model fitting",
+        "mechanism": "Supervised prediction; compositional conditioning",
+        "source": "Preprint version",
+        "object": "Model",
+        "level": "E3",
+        "scope": "Simulation closed loop",
+        "claim": "RoboDreamer generates compositional video plans for unseen instructions and periodically replans during RLBench execution.",
+        "locator": "arXiv v1, Secs. 2.2, 4.1–4.2; Table 3.",
+        "limit": "Robot execution is evaluated in simulation; real-robot datasets support video-generation evaluation, not physical closed-loop deployment."
+      },
+      {
+        "name": "DexMimicGen",
+        "papers": [
+          "dexmimicgen"
+        ],
+        "pathway": "Experience",
+        "secondary_pathway": null,
+        "loop_location": "Learning",
+        "regime": "Imitation learning",
+        "mechanism": "Synthetic demonstrations; sim-to-real transfer",
+        "source": "Preprint version",
+        "object": "Method",
+        "level": "E3",
+        "scope": "Real-robot closed loop",
+        "claim": "DexMimicGen extends object-centric demonstration transformation to bimanual and dexterous manipulation.",
+        "locator": "arXiv v2, Sec. IV; Sec. VI-D; Fig. 6.",
+        "limit": "Assumes observable reference-object poses before contact and may inherit simulator or source-strategy bias."
+      },
+      {
+        "name": "Robotic World Model",
+        "papers": [
+          "li2025roboticworldmodel"
+        ],
+        "pathway": "Experience",
+        "secondary_pathway": null,
+        "loop_location": "Learning",
+        "regime": "Online model-based RL",
+        "mechanism": "Sim-to-real transfer; supervised model fitting",
+        "source": "Preprint",
+        "object": "Model",
+        "level": "E3",
+        "scope": "Real-robot closed loop",
+        "claim": "RWM combines dual-autoregressive dynamics learning with MBPO-PPO and deploys the resulting policies zero-shot on ANYmal D and Unitree G1.",
+        "locator": "arXiv v5, Sec. 4.4; Fig. 5; Table 1; hardware results in Fig. 1.",
+        "limit": "Velocity-tracking evidence; not a general manipulation result."
+      },
+      {
+        "name": "WorldPlanner",
+        "papers": [
+          "worldplanner2025"
+        ],
+        "pathway": "Decisions",
+        "secondary_pathway": null,
+        "loop_location": "Decision",
+        "regime": "Planning-time control",
+        "mechanism": "MCTS / MPC; supervised model fitting",
+        "source": "Preprint",
+        "object": "Method",
+        "level": "E3",
+        "scope": "Real-robot closed loop",
+        "claim": "WorldPlanner combines an action-conditioned visual model, diffusion action sampler, reward model, and MCTS planning followed by MPC tracking.",
+        "locator": "arXiv v1, Secs. III-E–III-F, IV-F; Fig. 1.",
+        "limit": "Bounded by the play-data distribution, tested horizons, latency, and possible model exploitation."
+      },
+      {
+        "name": "WorldEval",
+        "papers": [
+          "worldeval2025"
+        ],
+        "pathway": "Scores",
+        "secondary_pathway": null,
+        "loop_location": "Decision",
+        "regime": "Evaluation protocol",
+        "mechanism": "Policy ranking; supervised model fitting",
+        "source": "Preprint",
+        "object": "Method",
+        "level": "E2",
+        "scope": "Paired simulated / real policy evaluation",
+        "claim": "WorldEval conditions video generation on Policy2Vec embeddings and compares generated-video policy rankings with paired real outcomes.",
+        "locator": "Secs. 3.2–3.3, 4.1–4.3; Tables 1–2.",
+        "limit": "Paired ranking evidence; no demonstrated gain from using the evaluator to select or update a deployed policy."
+      },
+      {
+        "name": "Towards Safe Robot Foundation Models",
+        "papers": [
+          "saferobotfoundation2025"
+        ],
+        "pathway": "Comparator (safety layer)",
+        "secondary_pathway": null,
+        "loop_location": "Deployment",
+        "regime": "Imitation learning",
+        "mechanism": "Execution constraints; closed-loop evaluation",
+        "source": "Preprint",
+        "object": "Method",
+        "level": "E3",
+        "scope": "Real-robot closed loop",
+        "claim": "An ATACOM-based post-policy layer constrains generalist-policy actions and prevents collisions in an air-hockey evaluation.",
+        "locator": "Secs. II–III; Figs. 1–2.",
+        "limit": "Physical air-hockey evidence under specified dynamics and constraints; no learned world-model contribution is isolated."
+      },
+      {
+        "name": "World-in-World",
+        "papers": [
+          "worldinworld2025"
+        ],
+        "pathway": "Comparator (benchmark)",
+        "secondary_pathway": null,
+        "loop_location": "Decision",
+        "regime": "Evaluation protocol",
+        "mechanism": "Closed-loop planning; MCTS",
+        "source": "Peer-reviewed paper",
+        "object": "Benchmark",
+        "level": "E3",
+        "scope": "Simulation closed loop",
+        "claim": "World-in-World evaluates generative models through four closed-loop embodied tasks and separates decision utility from visual quality.",
+        "locator": "Fig. 1; main tables; controllability, post-training, and inference-compute ablations.",
+        "limit": "Closed-loop benchmark environments rather than real-robot deployment."
+      },
+      {
+        "name": "Interactive World Simulator",
+        "papers": [
+          "interactiveworldsim2026"
+        ],
+        "pathway": "Experience",
+        "secondary_pathway": "Scores",
+        "loop_location": "Learning",
+        "regime": "Model fitting",
+        "mechanism": "Supervised prediction; downstream data generation / evaluation",
+        "source": "Preprint version",
+        "object": "Simulator",
+        "level": "E3",
+        "scope": "Real-robot closed loop",
+        "claim": "Interactive World Simulator reports stable interaction beyond 10 minutes at 15 FPS and relates generated-data and simulated-ranking results to real policies.",
+        "locator": "arXiv v1, Secs. IV-B–IV-D; Figs. 4–7.",
+        "limit": "Author-run tasks and hardware; correlation may not transfer to novel sensors, policies, or contacts."
+      },
+      {
+        "name": "SimFoundry",
+        "papers": [
+          "ranawaka2026simfoundry"
+        ],
+        "pathway": "Experience",
+        "secondary_pathway": null,
+        "loop_location": "Learning",
+        "regime": "Imitation learning",
+        "mechanism": "Synthetic demonstrations; sim-to-real evaluation",
+        "source": "Preprint",
+        "object": "System",
+        "level": "E3",
+        "scope": "Author-run real-robot closed loop",
+        "claim": "Reconstructed twins and generated cousins support policy training and evaluation. Simulated versus physical success yields mean Pearson r=0.911 and MMRV =0.018 across seven tasks and five policy types.",
+        "locator": "arXiv v4, Secs. 4, 5.1–5.2; Appendix B (FAQ); Table G.1.",
+        "limit": "Experiments include minutes of manual scene tuning; agreement covers the evaluated task–policy pairs, without establishing absolute calibration."
+      },
+      {
+        "name": "PointWorld",
+        "papers": [
+          "pointworld2026"
+        ],
+        "pathway": "Decisions",
+        "secondary_pathway": null,
+        "loop_location": "Decision",
+        "regime": "Planning-time control",
+        "mechanism": "Trajectory optimization; supervised model fitting",
+        "source": "Preprint version",
+        "object": "Model",
+        "level": "E2",
+        "scope": "Open-loop real-robot execution",
+        "claim": "PointWorld predicts full-scene 3D point flow and uses MPPI to optimize Franka trajectories without task-specific demonstrations or post-training.",
+        "locator": "arXiv v1, Secs. 3.2, 5.4; Appendix A.6.1–A.6.3.",
+        "limit": "Eight tasks, ten initial configurations each; manually specified spatial goals. Experiments do not replan online; model inference time excludes the full planning cost."
+      },
+      {
+        "name": "TrAct",
+        "papers": [
+          "cao2026tract"
+        ],
+        "pathway": "Decisions",
+        "secondary_pathway": null,
+        "loop_location": "Decision",
+        "regime": "Planning-time control",
+        "mechanism": "Candidate selection; imitation learning",
+        "source": "Preprint",
+        "object": "System",
+        "level": "E3",
+        "scope": "Real-robot closed loop",
+        "claim": "Track-conditioned candidate selection reaches 76% success on Franka, versus 66% for action-conditioned selection with the same action–track proposal policy.",
+        "locator": "arXiv v3, Secs. 3.3, 5.4; Table 4; Appendix A, Algorithm 1.",
+        "limit": "Five tasks under two backgrounds, with ten trials per condition; author-run hardware evaluation."
+      },
+      {
+        "name": "Hydra-0",
+        "papers": [
+          "hydra02026"
+        ],
+        "pathway": "Model only",
+        "secondary_pathway": "Scores",
+        "loop_location": "Model",
+        "regime": "Model fitting",
+        "mechanism": "Supervised prediction; recorded replay",
+        "source": "Preprint",
+        "object": "Model",
+        "level": "E2",
+        "scope": "Open-loop replay",
+        "claim": "Action-flow conditioning preserves recorded-trajectory outcomes in RoboLab video replay; desired object flow also conditions inverse motion prediction.",
+        "locator": "Secs. 2.4, 4.5–4.6; Table 2; Figs. 7–9.",
+        "limit": "Quantitative evaluation fixes recorded motion before generation; real inverse execution is a qualitative example."
+      },
+      {
+        "name": "Masked Visual Actions",
+        "papers": [
+          "alzayer2026maskedvisual"
+        ],
+        "pathway": "Decisions",
+        "secondary_pathway": null,
+        "loop_location": "Decision",
+        "regime": "Planning-time control",
+        "mechanism": "Candidate selection; supervised model fitting",
+        "source": "Preprint",
+        "object": "Method",
+        "level": "E2",
+        "scope": "Offline downstream evaluation",
+        "claim": "Masked visual actions support RoboCasa candidate selection and inverse action extraction; physical-data tests compare predicted progress with recorded demonstrations.",
+        "locator": "Sec. 5.2; Figs. 8–11.",
+        "limit": "Planning and inverse-policy tests use RoboCasa; physical evidence replays recorded demonstrations and retains optimistic progress bias."
+      },
+      {
+        "name": "Cosmos 3",
+        "papers": [
+          "nvidia2026cosmos3"
+        ],
+        "pathway": "Model only",
+        "secondary_pathway": null,
+        "loop_location": "Model",
+        "regime": "Model fitting",
+        "mechanism": "Self-supervised pretraining; supervised prediction",
+        "source": "Technical report",
+        "object": "Model",
+        "level": "E2",
+        "scope": "Offline downstream evaluation",
+        "claim": "Cosmos 3 describes one mixture-of-transformers family for language, image, video, audio, and action input–output configurations.",
+        "locator": "Technical-report abstract; architecture figure; modality and WAM evaluation sections.",
+        "limit": "Broad technical-report evidence; robot claims remain model- and task-specific."
+      },
+      {
+        "name": "V-JEPA 2",
+        "papers": [
+          "assran2025vjepa2"
+        ],
+        "pathway": "Decisions",
+        "secondary_pathway": null,
+        "loop_location": "Decision",
+        "regime": "Planning-time control",
+        "mechanism": "MPC; self-supervised pretraining",
+        "source": "Preprint",
+        "object": "Model",
+        "level": "E3",
+        "scope": "Multi-site / field evaluation",
+        "claim": "V-JEPA 2 post-trains an action-conditioned latent model on under 62 hours of DROID video and deploys image-goal planning in two labs.",
+        "locator": "Fig. 1; V-JEPA 2-AC section; two-lab result tables.",
+        "limit": "Franka image-goal evaluation; not general action prediction or arbitrary embodiment transfer."
+      },
+      {
+        "name": "DreamGen",
+        "papers": [
+          "jang2025dreamgen"
+        ],
+        "pathway": "Experience",
+        "secondary_pathway": null,
+        "loop_location": "Learning",
+        "regime": "Imitation learning",
+        "mechanism": "Synthetic demonstrations; embodiment transfer",
+        "source": "Peer-reviewed paper",
+        "object": "Method",
+        "level": "E3",
+        "scope": "Real-robot closed loop",
+        "claim": "DreamGen generates video trajectories and recovers pseudo-actions, reporting 22 new humanoid behaviors from one teleoperated task.",
+        "locator": "arXiv v1, Secs. 2–4; behavior-generalization results in Sec. 3.2.",
+        "limit": "Selected GR1 tasks and environments; video fidelity alone is not the downstream claim."
+      },
+      {
+        "name": "DreamZero",
+        "papers": [
+          "ye2026dreamzero"
+        ],
+        "pathway": "Decisions",
+        "secondary_pathway": null,
+        "loop_location": "Decision",
+        "regime": "Imitation learning",
+        "mechanism": "Joint video/action modeling; embodiment transfer",
+        "source": "Preprint",
+        "object": "Model",
+        "level": "E3",
+        "scope": "Real-robot closed loop",
+        "claim": "DreamZero jointly predicts video and actions with a 14B WAM, reporting more than 2× generalization gains and 7 Hz closed-loop execution.",
+        "locator": "Abstract; unseen-task and environment tables; latency table; cross-embodiment experiments.",
+        "limit": "Author-reported robots, tasks, baselines, and data budgets; not universal zero-shot control."
+      },
+      {
+        "name": "Flex-π",
+        "papers": [
+          "yan2026flexpi"
+        ],
+        "pathway": "Decisions",
+        "secondary_pathway": null,
+        "loop_location": "Decision",
+        "regime": "Imitation learning",
+        "mechanism": "Joint predictive training; action-only/joint inference",
+        "source": "Preprint",
+        "object": "Model",
+        "level": "E3",
+        "scope": "Author-run real-robot closed loop",
+        "claim": "Each task's fine-tuned checkpoint supports action-only or full-joint generation on bimanual YAM, refreshing observations between action chunks. Joint generation improves the reported average partial-credit completion score at additional compute cost.",
+        "locator": "arXiv v3, Secs. 3.2, 4.2, 4.5; Appendices C, F.2, G.1.",
+        "limit": "Five tasks; 20 trials per task except Sort Utensils (10). Results depend on inference mode and task protocol; baseline task coverage differs."
+      },
+      {
+        "name": "EgoWAM",
+        "papers": [
+          "egowam2026"
+        ],
+        "pathway": "Features",
+        "secondary_pathway": null,
+        "loop_location": "Learning",
+        "regime": "Imitation learning",
+        "mechanism": "Human–robot co-training; predictive supervision",
+        "source": "Preprint",
+        "object": "Method",
+        "level": "E3",
+        "scope": "Real-robot closed loop",
+        "claim": "EgoWAM compares pixel, DINO, and 3D-motion-flow prediction targets under a matched human–robot co-training pipeline.",
+        "locator": "Secs. 3.2, 4.3; Fig. 1; matched target and bimanual task comparisons.",
+        "limit": "Three-task study; the world head supplies training supervision and is removed at inference."
+      },
+      {
+        "name": "Puffin-World",
+        "papers": [
+          "liao2026puffinworld"
+        ],
+        "pathway": "Model only",
+        "secondary_pathway": null,
+        "loop_location": "Model",
+        "regime": "Model fitting",
+        "mechanism": "Supervised prediction; multi-task training",
+        "source": "Preprint",
+        "object": "Model",
+        "level": "E2",
+        "scope": "Open-loop generation",
+        "claim": "Predicts camera orientation and jointly generates RGB-D views for 3D reconstruction, with controlled camera and geometry benchmarks.",
+        "locator": "Secs. 3.1–3.2, 5.2–5.6.",
+        "limit": "Camera-view generation and reconstruction; the self-calibration loop adjusts generated views, not a physical robot. No robot-policy or contact-force evaluation."
+      },
+      {
+        "name": "SolarWM",
+        "papers": [
+          "huang2026solarwm"
+        ],
+        "pathway": "Model only",
+        "secondary_pathway": null,
+        "loop_location": "Model",
+        "regime": "Model fitting",
+        "mechanism": "Supervised prediction; distillation",
+        "source": "Preprint",
+        "object": "System",
+        "level": "E1",
+        "scope": "Open-loop generation",
+        "claim": "Unifies data preparation and backbone adaptation; its 5B causal student demonstrates a 60-minute camera-conditioned rollout after five-second-sequence training.",
+        "locator": "Secs. 4–7; Fig. 11.",
+        "limit": "Long-horizon evidence is qualitative, with prescribed cameras and fixed prompts; no measured robot-policy gains."
+      },
+      {
+        "name": "PERSIST",
+        "papers": [
+          "garcin2026persist"
+        ],
+        "pathway": "Model only",
+        "secondary_pathway": null,
+        "loop_location": "Model",
+        "regime": "Model fitting",
+        "mechanism": "Supervised prediction; persistent scene state",
+        "source": "Preprint version",
+        "object": "Model",
+        "level": "E2",
+        "scope": "Open-loop generation",
+        "claim": "PERSIST maintains a latent 3D scene state to improve spatial memory and long-horizon consistency over pixel-history baselines.",
+        "locator": "arXiv v2, Secs. 4, 6.1; Tables 1–2; Appendices B–C.",
+        "limit": "Generated environments; no downstream robot-policy or contact evidence."
+      },
+      {
+        "name": "VLAW",
+        "papers": [
+          "vlaw2026"
+        ],
+        "pathway": "Experience",
+        "secondary_pathway": null,
+        "loop_location": "Learning",
+        "regime": "Supervised policy updating",
+        "mechanism": "Filtered real/synthetic rollouts; policy–model updating",
+        "source": "Preprint",
+        "object": "Method",
+        "level": "E3",
+        "scope": "Real-robot closed loop",
+        "claim": "VLAW alternates real rollouts for model improvement with weighted flow-matching policy updates on successful real and synthetic trajectories.",
+        "locator": "Sec. 4.2, Eq. (4), Algorithm 1; synthetic-rollout ablation.",
+        "limit": "The regularized-RL interpretation does not make the implemented update a policy-gradient method; isolate synthetic-data gains."
+      },
+      {
+        "name": "VLA-RFT",
+        "papers": [
+          "vlarft2025"
+        ],
+        "pathway": "Experience",
+        "secondary_pathway": "Scores",
+        "loop_location": "Learning",
+        "regime": "Offline model-based RL",
+        "mechanism": "GRPO fine-tuning; synthetic rollouts",
+        "source": "Preprint",
+        "object": "Method",
+        "level": "E3",
+        "scope": "Simulation closed loop",
+        "claim": "VLA-RFT fine-tunes a VLA through action-conditioned learned-simulator rollouts with trajectory rewards computed from predicted states.",
+        "locator": "Sec. 3.3, Eq. (13); Secs. 4.1–4.3; Tables 2–3.",
+        "limit": "Simulation evidence; reward verification here does not establish real-outcome validity or immunity to simulator exploitation."
+      },
+      {
+        "name": "VT-WAM",
+        "papers": [
+          "tian2026vtwam"
+        ],
+        "pathway": "Decisions",
+        "secondary_pathway": null,
+        "loop_location": "Decision",
+        "regime": "Imitation learning",
+        "mechanism": "Joint tactile/video/action prediction",
+        "source": "Preprint",
+        "object": "Model",
+        "level": "E3",
+        "scope": "Real-robot closed loop",
+        "claim": "VT-WAM jointly predicts future vision, tactile deformation, and actions, reporting 71.67% average success across six real tasks.",
+        "locator": "arXiv v1, Fig. 2; Secs. IV-C–IV-D, Tables I–III.",
+        "limit": "Author-run hardware and sensors; cross-sensor and cross-object transfer remain bounded."
+      },
+      {
+        "name": "RoboArena",
+        "papers": [
+          "atreya2025roboarena"
+        ],
+        "pathway": "Comparator (benchmark)",
+        "secondary_pathway": null,
+        "loop_location": "Deployment",
+        "regime": "Evaluation protocol",
+        "mechanism": "Distributed real-robot comparison",
+        "source": "Preprint version",
+        "object": "Benchmark",
+        "level": "E4",
+        "scope": "Multi-site / field evaluation",
+        "claim": "RoboArena aggregates distributed, pairwise double-blind real-robot comparisons over a DROID evaluator network.",
+        "locator": "Fig. 1; distributed protocol; ranking and reliability tables.",
+        "limit": "Coverage depends on participating sites, policies, resets, and tasks; the ranking is not universal capability."
+      }
+    ]
+  },
+  "resources": {
+    "label": "tab:resources",
+    "document": "supplement",
+    "caption": "Catalogue of 21 representative resources and research systems. Experimental use describes the cited system's relevance to robot learning; access conditions depend on the specific release.",
+    "columns": [
+      "Resource",
+      "Type",
+      "Embodiment",
+      "Modality",
+      "Real / sim",
+      "Experimental use"
+    ],
+    "rows": [
+      {
+        "name": "RoboNet",
+        "papers": [
+          "robonet"
+        ],
+        "cells": [
+          "dataset",
+          "robot arms",
+          "video, actions",
+          "real",
+          "representation learning, video prediction, and action-conditioned modeling"
+        ]
+      },
+      {
+        "name": "RT-1",
+        "papers": [
+          "rt1"
+        ],
+        "cells": [
+          "dataset / model",
+          "mobile manipulator",
+          "vision, language, actions",
+          "real",
+          "policy priors and representations for behavior cloning and scalable robot control"
+        ]
+      },
+      {
+        "name": "Open X-Embodiment",
+        "papers": [
+          "openxembodiment2023"
+        ],
+        "cells": [
+          "dataset",
+          "many robots",
+          "vision, language, actions",
+          "real",
+          "representation learning and data scaling for cross-robot generalist policies"
+        ]
+      },
+      {
+        "name": "BridgeData V2",
+        "papers": [
+          "bridgedatav2"
+        ],
+        "cells": [
+          "dataset",
+          "manipulation",
+          "vision, actions, goals",
+          "real",
+          "representation learning and data scaling for multi-task imitation and goal-conditioned policies"
+        ]
+      },
+      {
+        "name": "OpenVLA",
+        "papers": [
+          "openvla2024"
+        ],
+        "cells": [
+          "model",
+          "robot manipulators",
+          "vision, language, actions",
+          "real / sim",
+          "open VLA baseline for policy priors and representations"
+        ]
+      },
+      {
+        "name": "π0",
+        "papers": [
+          "pi0"
+        ],
+        "cells": [
+          "model",
+          "multiple robot platforms",
+          "vision, language, actions",
+          "real",
+          "action priors, representations, and fine-tuning for generalist flow-matching policies"
+        ]
+      },
+      {
+        "name": "GR00T N1",
+        "papers": [
+          "nvidia2025groot"
+        ],
+        "cells": [
+          "model",
+          "humanoids",
+          "vision, language, actions",
+          "real / sim",
+          "VLA priors and synthetic-data interfaces for humanoid policy training and transfer"
+        ]
+      },
+      {
+        "name": "ManiSkill3",
+        "papers": [
+          "maniskill3"
+        ],
+        "cells": [
+          "simulator / benchmark",
+          "manipulation",
+          "RGB-D, state, actions",
+          "sim",
+          "GPU-parallel simulation, data generation, and RL evaluation"
+        ]
+      },
+      {
+        "name": "robosuite",
+        "papers": [
+          "robosuite"
+        ],
+        "cells": [
+          "simulator",
+          "manipulation",
+          "state, vision, actions",
+          "sim",
+          "simulation and reproducible manipulation-control benchmarking"
+        ]
+      },
+      {
+        "name": "Meta-World",
+        "papers": [
+          "metaworld"
+        ],
+        "cells": [
+          "benchmark",
+          "manipulation",
+          "state, actions",
+          "sim",
+          "multi-task and meta-RL evaluation"
+        ]
+      },
+      {
+        "name": "MimicGen",
+        "papers": [
+          "mimicgen"
+        ],
+        "cells": [
+          "data generation",
+          "manipulation",
+          "demos, actions",
+          "sim / real",
+          "scalable synthetic demonstrations for imitation learning"
+        ]
+      },
+      {
+        "name": "DexMimicGen",
+        "papers": [
+          "dexmimicgen"
+        ],
+        "cells": [
+          "data generation",
+          "bimanual dexterity",
+          "demos, actions",
+          "sim",
+          "synthetic demonstrations for bimanual dexterous imitation learning"
+        ]
+      },
+      {
+        "name": "Habitat",
+        "papers": [
+          "habitat"
+        ],
+        "cells": [
+          "simulator",
+          "navigation",
+          "vision, maps, actions",
+          "sim",
+          "spatial representation, navigation planning, and mapping"
+        ]
+      },
+      {
+        "name": "AI2-THOR",
+        "papers": [
+          "ai2thor"
+        ],
+        "cells": [
+          "simulator",
+          "household agents",
+          "vision, actions",
+          "sim",
+          "spatial representation and planning in interactive household tasks"
+        ]
+      },
+      {
+        "name": "NVIDIA Cosmos",
+        "papers": [
+          "nvidia2025cosmos"
+        ],
+        "cells": [
+          "platform / model",
+          "robots, autonomous vehicles",
+          "video",
+          "sim / real",
+          "world-model adaptation, video curation, tokenization, and synthetic-data generation"
+        ]
+      },
+      {
+        "name": "Robotic World Model",
+        "papers": [
+          "li2025roboticworldmodel"
+        ],
+        "cells": [
+          "model",
+          "manipulation, locomotion",
+          "state, actions, dynamics",
+          "sim / real",
+          "neural simulation and prediction for imagined policy optimization and robust deployment"
+        ]
+      },
+      {
+        "name": "RoboHorizon",
+        "papers": [
+          "robohorizon2025"
+        ],
+        "cells": [
+          "model / benchmark study",
+          "manipulation",
+          "multi-view vision, language, actions",
+          "sim",
+          "planning, reward shaping, and representation learning for long-horizon visual RL"
+        ]
+      },
+      {
+        "name": "VLAC",
+        "papers": [
+          "vlac2025"
+        ],
+        "cells": [
+          "critic / model",
+          "manipulation",
+          "vision, language, actions, rewards",
+          "real",
+          "policy prior and critic for dense rewards and asynchronous real-world RL"
+        ]
+      },
+      {
+        "name": "World Model Reconstruction",
+        "papers": [
+          "wmr2025"
+        ],
+        "cells": [
+          "model / control system",
+          "humanoid locomotion",
+          "proprioception, terrain state",
+          "real",
+          "world-state representation and adaptation for robust locomotion"
+        ]
+      },
+      {
+        "name": "Ego-Vision Contact Planning",
+        "papers": [
+          "egovisioncontact2025"
+        ],
+        "cells": [
+          "model / control system",
+          "humanoids",
+          "depth, proprioception, contacts",
+          "real / sim",
+          "predictive MPC and value surrogates for contact-rich planning"
+        ]
+      },
+      {
+        "name": "World-in-World",
+        "papers": [
+          "worldinworld2025"
+        ],
+        "cells": [
+          "benchmark",
+          "embodied agents",
+          "video, actions, tasks",
+          "sim",
+          "testing whether world-model rollouts improve embodied decisions"
+        ]
+      }
+    ]
+  },
+  "reading_map": {
+    "label": "tab:atlas-cluster-mapping",
+    "document": "supplement",
+    "caption": "Extended reading map of primary and secondary clusters, including main-table entries and contextual works. Grouped versions are reading aids, not interchangeable evidence records.",
+    "columns": [
+      "Work",
+      "Primary cluster",
+      "Secondary cluster(s)"
+    ],
+    "rows": [
+      {
+        "name": "OpenVLA",
+        "papers": [
+          "openvla2024"
+        ],
+        "cells": [
+          "Foundation priors and predictive policy learning",
+          "–"
+        ]
+      },
+      {
+        "name": "π0",
+        "papers": [
+          "pi0"
+        ],
+        "cells": [
+          "Foundation priors and predictive policy learning",
+          "–"
+        ]
+      },
+      {
+        "name": "RoboDreamer",
+        "papers": [
+          "robodreamer2024"
+        ],
+        "cells": [
+          "Predictive and planning",
+          "Learned simulator and data engine"
+        ]
+      },
+      {
+        "name": "ManiSkill3",
+        "papers": [
+          "maniskill3"
+        ],
+        "cells": [
+          "Learned simulator and data engine",
+          "–"
+        ]
+      },
+      {
+        "name": "MimicGen/DexMimicGen",
+        "papers": [
+          "mimicgen",
+          "dexmimicgen"
+        ],
+        "cells": [
+          "Learned simulator and data engine",
+          "Foundation priors and predictive policy learning"
+        ]
+      },
+      {
+        "name": "Open X-Embodiment/BridgeData V2",
+        "papers": [
+          "openxembodiment2023",
+          "bridgedatav2"
+        ],
+        "cells": [
+          "Foundation priors and predictive policy learning",
+          "Learned simulator and data engine"
+        ]
+      },
+      {
+        "name": "TWIST",
+        "papers": [
+          "twist2023"
+        ],
+        "cells": [
+          "Learned simulator and data engine",
+          "Evaluation and deployment feedback"
+        ]
+      },
+      {
+        "name": "Robotic World Model",
+        "papers": [
+          "li2025roboticworldmodel"
+        ],
+        "cells": [
+          "Learned simulator and data engine",
+          "Predictive and planning"
+        ]
+      },
+      {
+        "name": "RoboHorizon",
+        "papers": [
+          "robohorizon2025"
+        ],
+        "cells": [
+          "Predictive and planning",
+          "Evaluation and deployment feedback"
+        ]
+      },
+      {
+        "name": "GR00T N1",
+        "papers": [
+          "nvidia2025groot"
+        ],
+        "cells": [
+          "Foundation priors and predictive policy learning",
+          "Predictive and planning"
+        ]
+      },
+      {
+        "name": "Large Video Planner",
+        "papers": [
+          "chen2025largevideoplanner"
+        ],
+        "cells": [
+          "Predictive and planning",
+          "Foundation priors and predictive policy learning"
+        ]
+      },
+      {
+        "name": "WorldPlanner",
+        "papers": [
+          "worldplanner2025"
+        ],
+        "cells": [
+          "Predictive and planning",
+          "Foundation priors and predictive policy learning"
+        ]
+      },
+      {
+        "name": "TrAct",
+        "papers": [
+          "cao2026tract"
+        ],
+        "cells": [
+          "Predictive and planning",
+          "Foundation priors and predictive policy learning"
+        ]
+      },
+      {
+        "name": "Hydra-0",
+        "papers": [
+          "hydra02026"
+        ],
+        "cells": [
+          "Evaluation and deployment feedback",
+          "Predictive and planning"
+        ]
+      },
+      {
+        "name": "Masked Visual Actions",
+        "papers": [
+          "alzayer2026maskedvisual"
+        ],
+        "cells": [
+          "Predictive and planning",
+          "Evaluation and deployment feedback"
+        ]
+      },
+      {
+        "name": "WorldEval",
+        "papers": [
+          "worldeval2025"
+        ],
+        "cells": [
+          "Evaluation and deployment feedback",
+          "Predictive and planning"
+        ]
+      },
+      {
+        "name": "VLAC",
+        "papers": [
+          "vlac2025"
+        ],
+        "cells": [
+          "Evaluation and deployment feedback",
+          "Foundation priors and predictive policy learning"
+        ]
+      },
+      {
+        "name": "World Model Reconstruction",
+        "papers": [
+          "wmr2025"
+        ],
+        "cells": [
+          "Evaluation and deployment feedback",
+          "Predictive and planning"
+        ]
+      },
+      {
+        "name": "Ego-Vision Contact Planning",
+        "papers": [
+          "egovisioncontact2025"
+        ],
+        "cells": [
+          "Predictive and planning",
+          "Evaluation and deployment feedback"
+        ]
+      },
+      {
+        "name": "VLA Review",
+        "papers": [
+          "vlareview2025"
+        ],
+        "cells": [
+          "Foundation priors and predictive policy learning",
+          "–"
+        ]
+      },
+      {
+        "name": "Safe Robot Foundation Models",
+        "papers": [
+          "saferobotfoundation2025"
+        ],
+        "cells": [
+          "Evaluation and deployment feedback",
+          "Foundation priors and predictive policy learning"
+        ]
+      },
+      {
+        "name": "World-in-World",
+        "papers": [
+          "worldinworld2025"
+        ],
+        "cells": [
+          "Evaluation and deployment feedback",
+          "Predictive and planning"
+        ]
+      },
+      {
+        "name": "Interactive World Simulator",
+        "papers": [
+          "interactiveworldsim2026"
+        ],
+        "cells": [
+          "Learned simulator and data engine",
+          "Evaluation and deployment feedback"
+        ]
+      },
+      {
+        "name": "SimFoundry",
+        "papers": [
+          "ranawaka2026simfoundry"
+        ],
+        "cells": [
+          "Learned simulator and data engine",
+          "Evaluation and deployment feedback"
+        ]
+      },
+      {
+        "name": "VT-WM",
+        "papers": [
+          "visuotactilewm2026"
+        ],
+        "cells": [
+          "Predictive and planning",
+          "Evaluation and deployment feedback"
+        ]
+      },
+      {
+        "name": "OmniVTA",
+        "papers": [
+          "omnivta2026"
+        ],
+        "cells": [
+          "Evaluation and deployment feedback",
+          "Predictive and planning"
+        ]
+      },
+      {
+        "name": "ABot-PhysWorld",
+        "papers": [
+          "abotphysworld2026"
+        ],
+        "cells": [
+          "Predictive and planning",
+          "Learned simulator and data engine"
+        ]
+      },
+      {
+        "name": "PointWorld",
+        "papers": [
+          "pointworld2026"
+        ],
+        "cells": [
+          "Predictive and planning",
+          "Foundation priors and predictive policy learning"
+        ]
+      },
+      {
+        "name": "Cosmos",
+        "papers": [
+          "nvidia2025cosmos"
+        ],
+        "cells": [
+          "Learned simulator and data engine",
+          "Foundation priors and predictive policy learning"
+        ]
+      },
+      {
+        "name": "Cosmos 3",
+        "papers": [
+          "nvidia2026cosmos3"
+        ],
+        "cells": [
+          "Foundation priors and predictive policy learning",
+          "Predictive and planning"
+        ]
+      },
+      {
+        "name": "WALL-WM",
+        "papers": [
+          "xsquare2026wallwm"
+        ],
+        "cells": [
+          "Predictive and planning",
+          "Foundation priors and predictive policy learning"
+        ]
+      },
+      {
+        "name": "Dreamer 4",
+        "papers": [
+          "hafner2025dreamer4"
+        ],
+        "cells": [
+          "Learned simulator and data engine",
+          "Predictive and planning"
+        ]
+      },
+      {
+        "name": "V-JEPA 2/2.1",
+        "papers": [
+          "assran2025vjepa2",
+          "meta2026vjepa21"
+        ],
+        "cells": [
+          "Foundation priors and predictive policy learning",
+          "Predictive and planning"
+        ]
+      },
+      {
+        "name": "DreamGen",
+        "papers": [
+          "jang2025dreamgen"
+        ],
+        "cells": [
+          "Learned simulator and data engine",
+          "Predictive and planning"
+        ]
+      },
+      {
+        "name": "DreamZero",
+        "papers": [
+          "ye2026dreamzero"
+        ],
+        "cells": [
+          "Predictive and planning",
+          "Foundation priors and predictive policy learning"
+        ]
+      },
+      {
+        "name": "Flex-π",
+        "papers": [
+          "yan2026flexpi"
+        ],
+        "cells": [
+          "Predictive and planning",
+          "Foundation priors and predictive policy learning"
+        ]
+      },
+      {
+        "name": "DreamDojo",
+        "papers": [
+          "gao2026dreamdojo"
+        ],
+        "cells": [
+          "Learned simulator and data engine",
+          "Foundation priors and predictive policy learning; Predictive and planning"
+        ]
+      },
+      {
+        "name": "EgoWAM",
+        "papers": [
+          "egowam2026"
+        ],
+        "cells": [
+          "Foundation priors and predictive policy learning",
+          "Predictive and planning"
+        ]
+      },
+      {
+        "name": "EgoScale",
+        "papers": [
+          "zheng2026egoscale"
+        ],
+        "cells": [
+          "Foundation priors and predictive policy learning",
+          "Learned simulator and data engine"
+        ]
+      },
+      {
+        "name": "EgoBridge",
+        "papers": [
+          "egobridge2025"
+        ],
+        "cells": [
+          "Foundation priors and predictive policy learning",
+          "Evaluation and deployment feedback"
+        ]
+      },
+      {
+        "name": "SymSkill",
+        "papers": [
+          "shao2026symskill"
+        ],
+        "cells": [
+          "Predictive and planning",
+          "Evaluation and deployment feedback"
+        ]
+      },
+      {
+        "name": "π^*_{0.6}",
+        "papers": [
+          "pi2025pistar06"
+        ],
+        "cells": [
+          "Foundation priors and predictive policy learning",
+          "Evaluation and deployment feedback"
+        ]
+      },
+      {
+        "name": "π0.7",
+        "papers": [
+          "pi2026pi07"
+        ],
+        "cells": [
+          "Foundation priors and predictive policy learning",
+          "–"
+        ]
+      },
+      {
+        "name": "GR00T N1.7",
+        "papers": [
+          "nvidia2026groot17"
+        ],
+        "cells": [
+          "Foundation priors and predictive policy learning",
+          "–"
+        ]
+      },
+      {
+        "name": "Matrix-Game 3.0",
+        "papers": [
+          "wang2026matrixgame3"
+        ],
+        "cells": [
+          "Predictive and planning",
+          "Learned simulator and data engine"
+        ]
+      },
+      {
+        "name": "WorldMem",
+        "papers": [
+          "xiao2025worldmem"
+        ],
+        "cells": [
+          "Predictive and planning",
+          "Evaluation and deployment feedback"
+        ]
+      },
+      {
+        "name": "Puffin-World",
+        "papers": [
+          "liao2026puffinworld"
+        ],
+        "cells": [
+          "Predictive and planning",
+          "Foundation priors and predictive policy learning"
+        ]
+      },
+      {
+        "name": "SolarWM",
+        "papers": [
+          "huang2026solarwm"
+        ],
+        "cells": [
+          "Learned simulator and data engine",
+          "Predictive and planning"
+        ]
+      },
+      {
+        "name": "PERSIST",
+        "papers": [
+          "garcin2026persist"
+        ],
+        "cells": [
+          "Predictive and planning",
+          "Foundation priors and predictive policy learning"
+        ]
+      },
+      {
+        "name": "VLAW",
+        "papers": [
+          "vlaw2026"
+        ],
+        "cells": [
+          "Learned simulator and data engine",
+          "Evaluation and deployment feedback"
+        ]
+      },
+      {
+        "name": "VLA-RFT",
+        "papers": [
+          "vlarft2025"
+        ],
+        "cells": [
+          "Learned simulator and data engine",
+          "Foundation priors and predictive policy learning"
+        ]
+      },
+      {
+        "name": "TacForeSight",
+        "papers": [
+          "zang2026tacforesight"
+        ],
+        "cells": [
+          "Predictive and planning",
+          "Evaluation and deployment feedback"
+        ]
+      },
+      {
+        "name": "VT-WAM",
+        "papers": [
+          "tian2026vtwam"
+        ],
+        "cells": [
+          "Predictive and planning",
+          "Evaluation and deployment feedback"
+        ]
+      },
+      {
+        "name": "PhysTwin",
+        "papers": [
+          "jiang2025phystwin"
+        ],
+        "cells": [
+          "Learned simulator and data engine",
+          "Predictive and planning"
+        ]
+      },
+      {
+        "name": "RoboArena",
+        "papers": [
+          "atreya2025roboarena"
+        ],
+        "cells": [
+          "Evaluation and deployment feedback",
+          "–"
+        ]
+      },
+      {
+        "name": "World-model risk survey",
+        "papers": [
+          "worldmodelrisks2026"
+        ],
+        "cells": [
+          "Evaluation and deployment feedback",
+          "–"
+        ]
+      },
+      {
+        "name": "Hou et al.",
+        "papers": [
+          "hou2026worldmodelrobotlearning"
+        ],
+        "cells": [
+          "Foundation priors and predictive policy learning",
+          "–"
+        ]
+      }
+    ]
+  },
+  "glossary": {
+    "label": "tab:glossary",
+    "document": "main",
+    "caption": "Glossary of loop terms used in the survey.",
+    "columns": [
+      "Term",
+      "Meaning in this survey",
+      "Loop variable",
+      "Common ambiguity avoided"
+    ],
+    "rows": [
+      {
+        "name": "World model",
+        "cells": [
+          "learned model that predicts action-dependent future consequences (Section 2.2)",
+          "queryable rollout p_{θ}(y_{t+1:t+H}| z_{t},a_{t:t+H-1})",
+          "not every large model is automatically a world model"
+        ]
+      },
+      {
+        "name": "Prediction-to-Control Gap",
+        "cells": [
+          "the observation that accurate predictions need not improve decisions",
+          "ΔJ in Eq. (1)",
+          "prediction metrics are not utility"
+        ]
+      },
+      {
+        "name": "Consumer",
+        "cells": [
+          "learner, policy, planner, evaluator or monitor that reads the model's output",
+          "queries Q and sensitivity ∂J/∂ŷ",
+          "model quality is relative to the consumer"
+        ]
+      },
+      {
+        "name": "Design dial",
+        "cells": [
+          "one of four questions that specify a world model, each with a trade-off",
+          "Y, C, D, M",
+          "routes are dial settings, not rival paradigms"
+        ]
+      },
+      {
+        "name": "Prediction space (Y)",
+        "cells": [
+          "what the model predicts, from pixels to task quantities",
+          "ŷ",
+          "not the same as the feature pathway"
+        ]
+      },
+      {
+        "name": "Conditioning (C)",
+        "cells": [
+          "what the prediction is conditioned on, from passive video to robot actions or joint generation",
+          "query interface",
+          "instruction conditioning is not action conditioning"
+        ]
+      },
+      {
+        "name": "Knowledge source (D)",
+        "cells": [
+          "where the model's knowledge comes from: web or human video, simulation, robot interaction",
+          "training and pretraining data",
+          "abundance is not action grounding"
+        ]
+      },
+      {
+        "name": "Computation (M)",
+        "cells": [
+          "how a prediction is computed and how long it takes",
+          "rollout mechanism, memory, latency",
+          "a slow model cannot serve a fast consumer"
+        ]
+      },
+      {
+        "name": "Pathway",
+        "cells": [
+          "what the model hands to its consumer; labels a use, not a paper",
+          "features, experience, scores, decisions, residuals",
+          "one system may use several pathways"
+        ]
+      },
+      {
+        "name": "Features pathway",
+        "cells": [
+          "prediction shapes the state a policy acts on",
+          "z_{t} or predictive training loss",
+          "no rollout is needed at decision time"
+        ]
+      },
+      {
+        "name": "Experience pathway",
+        "cells": [
+          "generated trajectories or demonstrations serve as training data",
+          "D̂",
+          "generated data must be judged by downstream transfer"
+        ]
+      },
+      {
+        "name": "Scores pathway",
+        "cells": [
+          "model returns reward, success, progress or cost estimates",
+          "r̂, Q̂, success score, cost",
+          "scores become optimization targets"
+        ]
+      },
+      {
+        "name": "Decisions pathway",
+        "cells": [
+          "predicted futures of candidate actions select the current action",
+          "action or subgoal ranking",
+          "plan visualization is not enough"
+        ]
+      },
+      {
+        "name": "Residuals pathway",
+        "cells": [
+          "difference between prediction and observation corrects behavior without parameter updates",
+          "e_{t}=Δ(o_{t},ô_{t| t-1})",
+          "correction is not adaptation of parameters"
+        ]
+      },
+      {
+        "name": "Outer loop",
+        "cells": [
+          "deployment data refit the model or the policy",
+          "update rule O_{WM} in Eq. (4)",
+          "queries drift as the policy improves"
+        ]
+      },
+      {
+        "name": "Closed-loop utility",
+        "cells": [
+          "improvement in robot behavior caused by using the model in the loop",
+          "success, return, sample efficiency, safety, transfer",
+          "not the same as open-loop prediction quality"
+        ]
+      },
+      {
+        "name": "Imagination",
+        "cells": [
+          "use of predicted futures for planning, training, or evaluation",
+          "latent/video rollout",
+          "not necessarily photorealistic generation"
+        ]
+      },
+      {
+        "name": "Neural simulator",
+        "cells": [
+          "learned model used as an environment surrogate for policy training or evaluation",
+          "synthetic experience and policy ranking",
+          "stronger claim than open-loop prediction"
+        ]
+      },
+      {
+        "name": "Monitor",
+        "cells": [
+          "deployment component that tracks uncertainty, OOD state, contact mismatch, or predicted failure",
+          "intervention and fallback decisions",
+          "monitoring cost includes false positives"
+        ]
+      },
+      {
+        "name": "Failure library",
+        "cells": [
+          "structured record of predicted and real failed episodes",
+          "reusable negative data",
+          "failures should be categorized by pathway"
+        ]
+      },
+      {
+        "name": "Query distribution",
+        "cells": [
+          "states and actions on which the model is actually used by a consumer",
+          "planner proposals, policy rollouts, deployment shifts",
+          "random held-out test data may be insufficient"
+        ]
+      },
+      {
+        "name": "Model exploitation",
+        "cells": [
+          "planner or policy finds behavior that maximizes model score but fails in reality",
+          "optimized model errors",
+          "especially important for decisions and learned rewards"
+        ]
+      },
+      {
+        "name": "Support constraint",
+        "cells": [
+          "offline-RL or safety condition that limits out-of-distribution actions",
+          "feasible update region",
+          "uncertainty is useful only if it affects decisions"
+        ]
+      },
+      {
+        "name": "Foundation prior",
+        "cells": [
+          "pretrained knowledge that initializes representation, policy, prediction, critic, or simulator",
+          "initial state/action/world knowledge",
+          "foundation scale does not imply closed-loop evidence"
+        ]
+      },
+      {
+        "name": "VLA policy",
+        "cells": [
+          "vision-language-action model that maps context to robot actions",
+          "action prior and representation",
+          "a consumer of predictions; a world model only if it predicts action-dependent futures"
+        ]
+      },
+      {
+        "name": "World foundation model",
+        "cells": [
+          "large model trained to predict or simulate broad world dynamics",
+          "simulator/imagination prior",
+          "must still be grounded in robot control utility"
+        ]
+      },
+      {
+        "name": "Tactile grounding",
+        "cells": [
+          "use of touch/contact signals to improve prediction, planning, or correction",
+          "contact state and error signal",
+          "modality count is not the contribution"
+        ]
+      },
+      {
+        "name": "Closed-loop utility",
+        "cells": [
+          "measured improvement in learned or executed policy",
+          "success, return, data efficiency",
+          "distinct from model quality"
+        ]
+      },
+      {
+        "name": "Deployment reliability",
+        "cells": [
+          "behavior under real-world shift, failures, and interventions",
+          "safety, recovery, maintenance",
+          "success rate alone can hide unsafe execution"
+        ]
+      },
+      {
+        "name": "Evidence boundary",
+        "cells": [
+          "explicit statement of what a paper's evidence does not prove",
+          "claim calibration",
+          "especially needed for technical reports and demos"
+        ]
+      },
+      {
+        "name": "Pathway-removal ablation",
+        "cells": [
+          "experiment disabling or replacing a claimed world-model pathway",
+          "causal evidence for pathway utility",
+          "architecture ablations alone are insufficient"
+        ]
+      },
+      {
+        "name": "Action-conditioned metric",
+        "cells": [
+          "metric evaluated under candidate actions relevant to control",
+          "action ranking and outcome prediction",
+          "avoids passive prediction bias"
+        ]
+      },
+      {
+        "name": "Generated-data ablation",
+        "cells": [
+          "comparison of real-only, generated-only, and mixed training",
+          "data contribution",
+          "prevents synthetic data from being assumed helpful"
+        ]
+      },
+      {
+        "name": "Calibration",
+        "cells": [
+          "agreement between predicted confidence/scores and real outcomes",
+          "uncertainty, reward, risk",
+          "essential for scores and monitors"
+        ]
+      },
+      {
+        "name": "Human correction",
+        "cells": [
+          "intervention, preference, instruction, or repair signal from a person",
+          "reward/update/fallback signal",
+          "human input is part of the loop, not only annotation"
+        ]
+      },
+      {
+        "name": "Auditable system",
+        "cells": [
+          "system with inspectable pathways, evidence, failures, and fallback conditions",
+          "reproducibility and trust",
+          "important for closed-source frontier systems"
+        ]
+      }
+    ]
+  },
+  "reporting_checklist": {
+    "label": "tab:min-reporting-checklist",
+    "document": "main",
+    "caption": "Minimum reporting checklist for future robot world-model papers.",
+    "columns": [
+      "Category",
+      "Report",
+      "Reason",
+      "Common omission"
+    ],
+    "rows": [
+      {
+        "name": "Pathway",
+        "cells": [
+          "what the model hands over, to which consumer, and when",
+          "determines the evidence standard",
+          "calling the whole system a world model without specifying the pathway"
+        ]
+      },
+      {
+        "name": "Robot/task scope",
+        "cells": [
+          "embodiments, sensors, action spaces, tasks, horizons",
+          "defines transfer and deployment boundaries",
+          "aggregate task counts without physical variables"
+        ]
+      },
+      {
+        "name": "Training data",
+        "cells": [
+          "real/sim/generated mixture, demonstrations, failures, human labels",
+          "reveals support and possible bias",
+          "no breakdown of generated vs. real data effect"
+        ]
+      },
+      {
+        "name": "Optimization signal",
+        "cells": [
+          "imitation loss, reward, value, calibration, uncertainty, intervention",
+          "links model learning to policy improvement",
+          "architecture described without update rule"
+        ]
+      },
+      {
+        "name": "Query distribution",
+        "cells": [
+          "demonstration, planner proposal, policy rollout, deployment shift",
+          "exposes where model accuracy matters",
+          "evaluating only random held-out trajectories"
+        ]
+      },
+      {
+        "name": "Baselines",
+        "cells": [
+          "policy-only, model-free, scripted reward, simulator-only, real-data-only",
+          "tests whether the world-model pathway adds value",
+          "comparing only to weaker architecture variants"
+        ]
+      },
+      {
+        "name": "Metrics",
+        "cells": [
+          "model quality, closed-loop utility, deployment reliability",
+          "prevents prediction quality from replacing utility",
+          "reporting success without safety or intervention cost"
+        ]
+      },
+      {
+        "name": "Failure cases",
+        "cells": [
+          "negative examples, uncertainty, recovery, suspected pathway failure",
+          "makes errors reusable and interpretable",
+          "only successful videos or averaged results"
+        ]
+      },
+      {
+        "name": "Artifacts",
+        "cells": [
+          "code, data, benchmark, model, videos, logs, or evidence label",
+          "calibrates reproducibility",
+          "unclear boundary between demos and evaluated trials"
+        ]
+      }
+    ]
+  }
+}
