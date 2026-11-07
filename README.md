@@ -8,7 +8,7 @@
 
 <p>Companion repository to the survey<br><b>From Prediction to Control: A Survey of Closed-Loop World Models for Robot Learning</b></p>
 
-<p><a href="#papers"><b>📚 Papers by section</b></a> &nbsp;·&nbsp; <a href="docs/evidence-atlas.md"><b>🔬 Evidence atlas</b></a> &nbsp;·&nbsp; <a href="docs/resources.md"><b>🧰 Resources</b></a> &nbsp;·&nbsp; <a href="docs/catalog.md"><b>🔎 Catalog</b></a></p>
+<p><a href="#papers"><b>📚 Papers by section</b></a> &nbsp;·&nbsp; <a href="docs/evidence-atlas.md"><b>🔬 Evidence atlas</b></a> &nbsp;·&nbsp; <a href="docs/resources.md"><b>🧰 Resources</b></a> &nbsp;·&nbsp; <a href="docs/catalog.md"><b>🔎 Catalog</b></a> &nbsp;·&nbsp; <a href="https://doi.org/10.20944/preprints202611.0078.v1"><b>📄 Preprint</b></a></p>
 
 </div>
 

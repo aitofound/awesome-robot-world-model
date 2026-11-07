@@ -197,6 +197,8 @@ def readme(s):
     links = [f'<a href="{url}"><b>{label}</b></a>' for label, url in [('📄 Paper', c['paper_links'].get('arxiv') or c['paper_links'].get('pdf'))] if url]
     links += ['<a href="#papers"><b>📚 Papers by section</b></a>', '<a href="docs/evidence-atlas.md"><b>🔬 Evidence atlas</b></a>',
               '<a href="docs/resources.md"><b>🧰 Resources</b></a>', '<a href="docs/catalog.md"><b>🔎 Catalog</b></a>']
+    if preprint := c['paper_links'].get('preprint'):
+        links.append(f'<a href="{html.escape(preprint)}"><b>📄 Preprint</b></a>')
     out += ['<p>' + ' &nbsp;·&nbsp; '.join(links) + '</p>', '', '</div>', '']
     out += [' '.join(c['summary']), '']
 

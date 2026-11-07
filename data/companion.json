@@ -4,6 +4,7 @@
   "companion_to": "From Prediction to Control: A Survey of Closed-Loop World Models for Robot Learning",
   "repository": "https://github.com/awesome-robot-world-model/awesome-robot-world-model",
   "paper_links": {
+    "preprint": "https://doi.org/10.20944/preprints202611.0078.v1",
     "arxiv": null,
     "pdf": null
   },
