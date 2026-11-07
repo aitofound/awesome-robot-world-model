@@ -16,7 +16,7 @@ A world model affects a robot only through the component that consumes its predi
 
 ## 🗺️ How the survey is organized
 
-[![Organization of the survey: a world model (left) and the real world (right) as two poles of the robot learning loop, read clockwise.](assets/figures/structure.svg)](assets/figures/structure.svg)
+<a href="assets/figures/structure.svg"><img src="assets/figures/structure.svg" width="100%" alt="Organization of the survey: a world model (left) and the real world (right) as two poles of the robot learning loop, read clockwise."></a>
 
 *Figure 1 of the survey, read clockwise.* The model (§3) is specified by four design dials; its predictions reach the robot through five pathways (§4) that feed either policy learning or action selection (§5). The real world sets the requirements (§6) and is the only place where utility is measured (§7). Deployment data travel back along the outer loop to refit the model (§8).
 
@@ -1000,7 +1000,7 @@ The appendix records how papers were selected, defines the evidence-level labels
 
 ## 🧭 Seven takeaways
 
-[![Seven takeaways of the survey, each with the evidence to seek and its practical implication.](assets/figures/takeaways.svg)](assets/figures/takeaways.svg)
+<a href="assets/figures/takeaways.svg"><img src="assets/figures/takeaways.svg" width="100%" alt="Seven takeaways of the survey, each with the evidence to seek and its practical implication."></a>
 
 ## 🧰 Companion tables and data
 

@@ -177,9 +177,12 @@ class Survey:
         return ', '.join(items)
 
 
-def figure(s, name, prefix):
-    meta = s.companion['figures'][name]
-    return f"[![{meta['alt']}]({prefix}assets/figures/{name}.svg)]({prefix}assets/figures/{name}.svg)"
+def figure(s, name, prefix, *, full_width=False):
+    alt = s.companion['figures'][name]['alt']
+    src = f'{prefix}assets/figures/{name}.svg'
+    if full_width:
+        return f'<a href="{src}"><img src="{src}" width="100%" alt="{html.escape(alt)}"></a>'
+    return f'[![{alt}]({src})]({src})'
 
 
 def readme(s):
@@ -197,7 +200,7 @@ def readme(s):
     out += ['<p>' + ' &nbsp;·&nbsp; '.join(links) + '</p>', '', '</div>', '']
     out += [' '.join(c['summary']), '']
 
-    out += ['## 🗺️ How the survey is organized', '', figure(s, 'structure', ''), '',
+    out += ['## 🗺️ How the survey is organized', '', figure(s, 'structure', '', full_width=True), '',
             '*Figure 1 of the survey, read clockwise.* '
             'The model (§3) is specified by four design dials; its predictions reach the robot through five pathways (§4) '
             'that feed either policy learning or action selection (§5). The real world sets the requirements (§6) and is the only place '
@@ -231,7 +234,7 @@ def readme(s):
             out += [f"**{sec['number']} · [{text(sec['title'])}]({s.page(sec)})**. {c['sections'][sec['id']]['summary'][0]}", '']
             out += unit_lists(s, sec, papers_by_home)
 
-    out += ['## 🧭 Seven takeaways', '', figure(s, 'takeaways', ''), '']
+    out += ['## 🧭 Seven takeaways', '', figure(s, 'takeaways', '', full_width=True), '']
     out += ['## 🧰 Companion tables and data', '',
             f"- [Evidence atlas](docs/evidence-atlas.md): {len(s.manuscript['evidence_atlas']['rows'])} claim-level records with pathway, evidence level and limits (Supplementary S2).",
             f"- [Reading map](docs/reading-map.md): {len(s.manuscript['reading_map']['rows'])} entries by primary and secondary cluster (Supplementary S3).",
